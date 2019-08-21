@@ -28,8 +28,8 @@ public class Duke {
             } else if (command.equals("list")) {
                 Task.printTaskList();
             } else {
-                String taskString = command + sc.nextLine();
-                Task task = new Task(taskString);
+                String taskString = sc.nextLine().trim();
+                Task task = new Task(command, taskString);
             }
         }
 
