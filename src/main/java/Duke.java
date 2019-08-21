@@ -29,7 +29,13 @@ public class Duke {
                 Task.printTaskList();
             } else {
                 String taskString = sc.nextLine().trim();
-                Task task = new Task(command, taskString);
+                if (command.equals("todo")) {
+                    Todo todo = new Todo(taskString);
+                } else if (command.equals("deadline")) {
+                    Deadline deadline = new Deadline(taskString);
+                } else if (command.equals("event")) {
+                    Event event = new Event(taskString);
+                }
             }
         }
 

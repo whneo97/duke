@@ -6,19 +6,23 @@ class Task {
     String taskString;
     String isDone = "[ ]";
     String type = null;
+    String dateAndTime = "";
+
+    //Precondition: Task type is a valid type that has its own individual class
+    Task(String type) {
+        this.type = type;
+        Task.tasklist.add(this);
+        //printing will be handled by individual class
+    }
 
     Task(String type, String taskString) {
-        this.type = type.equals("deadline") ? "[D]" : type.equals("event") ? "[E]" : "[T]";
-        if (this.type.equals("[E]")) {
-            String[] arr = taskString.split(" /at ");
-            this.taskString = arr[0] + " (at: " + arr[1] + ")";
-        } else if (this.type.equals("[D]")) {
-            String[] arr = taskString.split(" /by ");
-            this.taskString = arr[0] + " (by: " + arr[1] + ")";
-        } else {
-            this.taskString = taskString;
-        }
+        this.taskString = taskString;
+        this.type = type;
         Task.tasklist.add(this);
+        this.printAdded();
+    }
+
+    void printAdded() {
         System.out.println("Got it. I've added this task:\n  " + this);
         System.out.print("Now you have " + tasklist.size());
         if (tasklist.size() == 1) {

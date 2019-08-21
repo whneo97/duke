@@ -1,13 +1,14 @@
 class Deadline extends Task{
     Deadline(String taskString) {
-        super("[E]", taskString);
-        String[] arr = taskString.split(" /at ");
-        this.dateAndTime = arr[1];
+        super("[D]");
+        String[] arr = taskString.split(" /by ");
         this.taskString = arr[0];
+        this.dateAndTime = arr[1];
+        this.printAdded();
     }
 
     @Override
     public String toString() {
-        return type + isDone + " " + this.taskString + "(at: " + this.dateAndTime + ")";
+        return super.toString() + " (by: " + this.dateAndTime + ")";
     }
 }
