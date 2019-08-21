@@ -25,26 +25,50 @@ public class Duke {
                     System.out.println("Bye. Hope to see you again soon!");
                     break;
                 } else if (command.equals("done")) {
-                    int n = Integer.parseInt(sc.next());
-                    Task.getTaskList().get(n - 1).setDone(true);
+                    String s = sc.nextLine().trim();
+                    if (s.equals("")) {
+                        throw new DukeException("Please enter a valid numerical value after \"done\" (separated by a space) for the task to be marked as done.\n" +
+                                "This number cannot be empty.");
+                    }
+
+                    int n = 0;
+
+                    try {
+                        n = Integer.parseInt(s);
+                        if (n < Task.getTaskList().size() || n > Task.getTaskList().size()) {
+                            throw new NumberFormatException();
+                        }
+                        Task.getTaskList().get(n - 1).setDone(true);
+                    } catch (NumberFormatException ex) {
+                        if (Task.getTaskList().size() == 1) {
+                            throw new DukeException("Please enter a valid numerical value after \"done\" (separated by a space) for the task to be marked as done.\n" +
+                                    "There is currently 1 task in the list numbered 1.\n" +
+                                    "Input \"list\" to view the full list of tasks.");
+                        } else {
+                            throw new DukeException("Please enter a valid numerical value after \"done\" (separated by a space) for the task to be marked as done.\n" +
+                                    "There are currently " + Task.getTaskList().size() + " tasks in the list that are numbered from 1.\n" +
+                                    "Input \"list\" to view the full list of tasks.");
+                        }
+                    }
+
                 } else if (command.equals("list")) {
                     Task.printTaskList();
                 } else {
                     String taskString = sc.nextLine().trim();
                     if (command.equals("todo")) {
-                        if (taskString.trim().equals("")) {
+                        if (taskString.equals("")) {
                             throw new DukeException("The description of a todo cannot be empty.");
                         }
                         Todo todo = new Todo(taskString);
                     } else if (command.equals("deadline")) {
-                        if (taskString.trim().equals("")) {
+                        if (taskString.equals("")) {
                             throw new DukeException("The description of a deadline cannot be empty.");
                         } else if (!taskString.contains(" /by ")) {
                             throw new DukeException("Please separate deadline description and date/time by \" /by \"");
                         }
                         Deadline deadline = new Deadline(taskString);
                     } else if (command.equals("event")) {
-                        if (taskString.trim().equals("")) {
+                        if (taskString.equals("")) {
                             throw new DukeException("The description of an event cannot be empty.");
                         } else if (!taskString.contains(" /at ")) {
                             throw new DukeException("Please separate event description and date/time by \" /at \"");
