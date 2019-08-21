@@ -11,8 +11,7 @@ class Task {
     //Precondition: Task type is a valid type that has its own individual class
     Task(String type) {
         this.type = type;
-        Task.tasklist.add(this);
-        //printing will be handled by individual class
+        //printing and adding to tasklist will be handled by individual class
     }
 
     Task(String type, String taskString) {
@@ -33,10 +32,44 @@ class Task {
         System.out.println();
     }
 
-    void setDone(boolean isDone) {
-        this.isDone = "[+]";
+    static void ensureEmptyTaskString(String taskString) throws DukeException {
+        if (!taskString.equals("")) {
+            throw new DukeException("There cannot be any additional characters after this command (other than trailing spaces).");
+        }
+    }
+
+    static int getValidatedListIndex(String s) throws DukeException {
+        if (s.equals("")) {
+            throw new DukeException("Please enter a valid numerical value after the intended command (separated by a space).\n" +
+                    "The number cannot be empty for this command.");
+        }
+
+        int n = 0;
+
+        try {
+            n = Integer.parseInt(s);
+            if (n <= 0 || n > Task.tasklist.size()) {
+                throw new NumberFormatException();
+            }
+            return n;
+        } catch (NumberFormatException ex) {
+            if (Task.getTaskList().size() == 1) {
+                throw new DukeException("Please enter a valid numerical value from 1 to the tasklist's size after the intended command (separated by a space).\n" +
+                        "There is currently 1 task in the list.\n" +
+                        "Try entering \"list\" to view the full list of tasks.");
+            } else {
+                throw new DukeException("Please enter a valid numerical value from 1 to the tasklist's size after the intended command (separated by a space).\n" +
+                        "There are currently " + Task.getTaskList().size() + " tasks in the list.\n" +
+                        "Try entering \"list\" to view the full list of tasks.");
+            }
+        }
+    }
+
+    static void setDone(int n) {
+        Task task = Task.tasklist.get(n);
+        task.isDone = "[+]";
         System.out.println("Nice! I've marked this task as done:");
-        System.out.println("  " + this);
+        System.out.println("  " + task);
     }
 
     static void printTaskList() {
@@ -49,6 +82,18 @@ class Task {
 
     static ArrayList<Task> getTaskList() {
         return Task.tasklist;
+    }
+
+    static void deleteTask(int n) {
+        Task task = Task.tasklist.get(n);
+        Task.tasklist.remove(task);
+        System.out.println("Noted. I've removed this task:\n"
+                + task);
+        if (Task.tasklist.size() == 1) {
+            System.out.println("Now you have 1 task in the list.");
+        } else {
+            System.out.println("Now you have " + Task.tasklist.size() + " tasks in the list.");
+        }
     }
 
     @Override

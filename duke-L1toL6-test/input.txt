@@ -1,0 +1,26 @@
+list
+echo
+todo buy bread
+todo buy milk
+event hello
+deadline return book /by Sunday
+event return book /by Sunday
+event project meeting /at Mon 2-4pm
+deadline project meeting /at Mon 2-4pm
+deadline
+event
+todo
+list
+list 8
+done 4
+done -19
+done a
+done 10
+delete 7
+delete 2
+delete 109
+delete -0as1
+list
+todo hello
+list
+bye

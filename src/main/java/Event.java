@@ -1,20 +1,19 @@
 class Event extends Task{
-    Event(String taskString) {
+    Event(String taskString) throws DukeException {
         super("[E]");
-        this.taskString = taskString;
+
+        if (taskString.equals("")) {
+            throw new DukeException("The description of an event cannot be empty.");
+        } else if (!taskString.contains("/at ")) {
+            throw new DukeException("Please separate event description and date/time by \" /at \".");
+        }
+
+        Task.tasklist.add(this);
 
         String[] arr = taskString.split(" /at ");
         this.taskString = arr[0];
         this.dateAndTime = arr[1];
-
-        System.out.println("Got it. I've added this task:\n  " + this);
-        System.out.print("Now you have " + tasklist.size());
-        if (tasklist.size() == 1) {
-            System.out.print(" task in the list");
-        }  else {
-            System.out.print(" tasks in the list");
-        }
-        System.out.println();
+        this.printAdded();
     }
 
     @Override
