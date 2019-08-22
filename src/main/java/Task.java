@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-class Task {
+public class Task {
 
     static ArrayList<Task> tasklist = new ArrayList<>(100);
     String taskString;
@@ -17,7 +17,7 @@ class Task {
      * @param type Type of task (either todo, deadline or event)
      */
     //
-    Task(String type) {
+    public Task(String type) {
         this.type = type;
     }
 
@@ -28,7 +28,7 @@ class Task {
      * @param type General type of task (currently Todo, Deadline or Event)
      * @param taskString Task description that follows after the given command to create the task
      */
-    Task(String type, String taskString) {
+    public Task(String type, String taskString) {
         this.taskString = taskString;
         this.type = type;
         Task.tasklist.add(this);
@@ -39,7 +39,7 @@ class Task {
      * Pre-condition: The Task that uses this method has been added to the Tasklist.
      * Prints the statement to the user that the particular task has been added into the Tasklist
      */
-    void printAdded() {
+    public void printAdded() {
         System.out.println("Got it. I've added this task:\n  " + this);
         System.out.print("Now you have " + tasklist.size());
         if (tasklist.size() == 1) {
@@ -56,7 +56,7 @@ class Task {
      * @param taskString Description of a task, following a command
      * @throws DukeException Exception that is thrown if taskString taken in is non-empty
      */
-    static void ensureEmptyTaskString(String taskString) throws DukeException {
+    public static void ensureEmptyTaskString(String taskString) throws DukeException {
         if (!taskString.equals("")) {
             throw new DukeException("There cannot be any additional characters after this command"
                     + " (other than trailing spaces).");
@@ -78,7 +78,7 @@ class Task {
      *     to a valid integer that can be used to access any task in the tasklist. A valid number should start from 0
      *     and not equal or exceed the size of the current tasklist.
      */
-    static int getValidatedListIndex(String s) throws DukeException {
+    public static int getValidatedListIndex(String s) throws DukeException {
         if (s.equals("")) {
             throw new DukeException("Please enter a valid numerical value after the intended command"
                     + " (separated by a space).\n" + "The number cannot be empty for this command.");
@@ -112,7 +112,7 @@ class Task {
      * @param n A number from 0 to size of tasklist representing the index of the element in the tasklist
      *          at position n.
      */
-    static void setDone(int n) {
+    public static void setDone(int n) {
         Task task = Task.tasklist.get(n);
         task.isDone = "[+]";
         System.out.println("Nice! I've marked this task as done:");
@@ -122,7 +122,7 @@ class Task {
     /**
      * Prints out all elements in the tasklist as a list, numbered from 1 to n, where n is the size of the tasklist.
      */
-    static void printTaskList() {
+    public static void printTaskList() {
         int count = 1;
         for (Task task : Task.getTaskList()) {
             System.out.println(count + "." + task);
@@ -134,7 +134,7 @@ class Task {
      * Client may use this method to access the tasklist.
      * @return Tasklist that contains all tasks that are created.
      */
-    static ArrayList<Task> getTaskList() {
+    public static ArrayList<Task> getTaskList() {
         return Task.tasklist;
     }
 
@@ -143,7 +143,7 @@ class Task {
      * @param n A number from 0 to size of tasklist representing the index of the element in the tasklist
      *          at position n.
      */
-    static void deleteTask(int n) {
+    public static void deleteTask(int n) {
         Task task = Task.tasklist.get(n);
         Task.tasklist.remove(task);
         System.out.println("Noted. I've removed this task:\n"

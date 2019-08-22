@@ -1,10 +1,10 @@
-class DukeException extends Exception {
+public class DukeException extends Exception {
 
     /**
      * DukeException constructor that takes in the display message for users.
      * @param message Message that indicates to users details regarding the exception.
      */
-    DukeException(String message) {
+    public DukeException(String message) {
         super(message);
     }
 
@@ -14,7 +14,7 @@ class DukeException extends Exception {
      * @param cause Throwable cause that chains this exception to the exception (or other Throwable)
      *              that gave rise to it.
      */
-    DukeException(String message, Throwable cause) {
+    public DukeException(String message, Throwable cause) {
         super(message, cause);
     }
 }

@@ -10,6 +10,7 @@ public class Duke {
      * to be the command corresponding to each function in the interface, ensuring that commands are not empty, and
      * that commands are within the scope known to the program. If user input is invalid, the program throws a
      * DukeException and awaits the next user input. Program terminates when user enters "bye"
+     * @param args String[] args of main method
      */
     public static void main(String[] args) {
         String logo = " ____        _        \n"

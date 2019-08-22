@@ -1,4 +1,4 @@
-class Event extends Task {
+public class Event extends Task {
 
     /**
      * Constructor for an Event type class that takes in a task description.
@@ -8,7 +8,7 @@ class Event extends Task {
      *     description does not contain the appropriate separator " /at " that separates description and date/time of
      *     the event.
      */
-    Event(String taskString) throws DukeException {
+    public Event(String taskString) throws DukeException {
         super("[E]");
 
         if (taskString.equals("")) {

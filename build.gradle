@@ -10,8 +10,8 @@ checkstyle {
 }
 
 javadoc {
-    source = sourceSets.main.allJava
-    classpath = configurations.compile
+    source += sourceSets.main.allJava
+    classpath += configurations.compile
 }
 
 shadowJar {

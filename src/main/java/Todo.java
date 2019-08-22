@@ -1,4 +1,4 @@
-class Todo extends Task {
+public class Todo extends Task {
 
     /**
      * Constructor for a Todo type class that takes in a task description.
@@ -6,7 +6,7 @@ class Todo extends Task {
      * @param taskString Task description for Todo task.
      * @throws DukeException Exception that is thrown in the case where the description is empty.
      */
-    Todo(String taskString) throws DukeException {
+    public Todo(String taskString) throws DukeException {
         super("[T]");
         if (taskString.equals("")) {
             throw new DukeException("The description of a todo cannot be empty.");

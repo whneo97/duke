@@ -1,4 +1,4 @@
-class Deadline extends Task {
+public class Deadline extends Task {
 
     /**
      * Constructor for an Deadline type class that takes in a task description.
@@ -8,7 +8,7 @@ class Deadline extends Task {
      *     description does not contain the appropriate separator " /by " that separates description and date/time of
      *     the deadline.
      */
-    Deadline(String taskString) throws DukeException {
+    public Deadline(String taskString) throws DukeException {
         super("[D]");
 
         if (taskString.equals("")) {
