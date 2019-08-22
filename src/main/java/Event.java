@@ -1,4 +1,13 @@
-class Event extends Task{
+class Event extends Task {
+
+    /**
+     * Constructor for an Event type class that takes in a task description.
+     * Event task that is created will automatically be added to the tasklist.
+     * @param taskString Event description for Event task.
+     * @throws DukeException Exception that is thrown in the case where the description is empty, or if the
+     *     description does not contain the appropriate separator " /at " that separates description and date/time of
+     *     the event.
+     */
     Event(String taskString) throws DukeException {
         super("[E]");
 

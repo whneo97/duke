@@ -1,4 +1,13 @@
-class Deadline extends Task{
+class Deadline extends Task {
+
+    /**
+     * Constructor for an Deadline type class that takes in a task description.
+     * Deadline task that is created will automatically be added to the tasklist.
+     * @param taskString Deadline description for Deadline task.
+     * @throws DukeException Exception that is thrown in the case where the description is empty, or if the
+     *     description does not contain the appropriate separator " /by " that separates description and date/time of
+     *     the deadline.
+     */
     Deadline(String taskString) throws DukeException {
         super("[D]");
 

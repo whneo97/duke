@@ -4,6 +4,13 @@ import java.util.Scanner;
 
 public class Duke {
 
+    /** Main method for interactive Duke program that interacts with user depending on user input.
+     * User may add tasks - todo, deadline, event -, list all tasks, mark tasks as done, delete tasks and
+     * exit the program. The program validates each line of command the user keys in and takes the first word
+     * to be the command corresponding to each function in the interface, ensuring that commands are not empty, and
+     * that commands are within the scope known to the program. If user input is invalid, the program throws a
+     * DukeException and awaits the next user input. Program terminates when user enters "bye"
+     */
     public static void main(String[] args) {
         String logo = " ____        _        \n"
                 + "|  _ \\ _   _| | _____ \n"
@@ -13,7 +20,7 @@ public class Duke {
         //System.out.println("Hello from\n" + logo);
 
         System.out.println(logo + "\nHello! I'm Duke\n"
-        + "What can I do for you?");
+            + "What can I do for you?");
 
         Scanner sc = new Scanner(System.in);
 
@@ -27,6 +34,7 @@ public class Duke {
                 }
 
                 if (command.equals("bye")) {
+                    Task.ensureEmptyTaskString(taskString);
                     System.out.println("Bye. Hope to see you again soon!");
                     break;
                 } else if (command.equals("done")) {
@@ -34,7 +42,7 @@ public class Duke {
                     Task.setDone(n - 1);
                 } else if (command.equals("delete")) {
                     int n = Task.getValidatedListIndex(taskString);
-                    Task.deleteTask(n- 1);
+                    Task.deleteTask(n - 1);
                 } else if (command.equals("list")) {
                     Task.ensureEmptyTaskString(taskString);
                     Task.printTaskList();

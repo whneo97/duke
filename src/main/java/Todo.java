@@ -1,4 +1,11 @@
-class Todo extends Task{
+class Todo extends Task {
+
+    /**
+     * Constructor for a Todo type class that takes in a task description.
+     * Todo task that is created will automatically be added to the tasklist.
+     * @param taskString Task description for Todo task.
+     * @throws DukeException Exception that is thrown in the case where the description is empty.
+     */
     Todo(String taskString) throws DukeException {
         super("[T]");
         if (taskString.equals("")) {
