@@ -6,7 +6,14 @@ public class Task {
     String taskString;
     String isDone = "[ ]";
     String type = null;
-    String dateAndTime = "";
+
+    int day;
+    int month;
+    int year;
+    int hour = -1;
+    int minute = -1;
+    int hourEnd = -1;
+    int minuteEnd = -1;
 
     /**
      * Constructor for Task that takes in the type of task intended to be created.
@@ -138,6 +145,36 @@ public class Task {
         return Task.tasklist;
     }
 
+    public String getTaskString() {
+        return taskString;
+    }
+
+    public String getIsDone() {
+        return isDone;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getDateAndTime() {
+        String day = String.format("%02d", this.day);
+        String month = String.format("%02d", this.month);
+        String year = String.format("%02d", this.year);
+        String hour = String.format("%02d", this.hour);
+        String minute = String.format("%02d", this.minute);
+
+        if (this.hour == -1) {
+            return day + "/" + month + "/" + year;
+        } else if (this.hourEnd == -1){
+            return day + "/" + month + "/" + year + " " + hour + minute;
+        } else {
+            String hourEnd = String.format("%02d", this.hourEnd);
+            String minuteEnd = String.format("%02d", this.minuteEnd);
+            return day + "/" + month + "/" + year + " " + hour + minute + "-" + hourEnd + minuteEnd;
+        }
+    }
+
     /**
      * Deletes a task at index n of the tasklist.
      * @param n A number from 0 to size of tasklist representing the index of the element in the tasklist
@@ -159,4 +196,5 @@ public class Task {
     public String toString() {
         return type + isDone + " " + this.taskString;
     }
+
 }
