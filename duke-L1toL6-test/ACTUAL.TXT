@@ -6,93 +6,68 @@
 
 Hello! I'm Duke
 What can I do for you?
-1.[E][ ] project meeting 31/07/2019 2000-2359
-2.[D][+] return book Sunday
-3.[E][+] project meeting Mon 2-4pm
-4.[T][ ] hello 
-5.[T][ ] buy bread 
-6.[D][ ] return book Sunday
-7.[E][ ] project meeting Mon 2-4pm
-8.[T][ ] hello 
 OOPS!!! I'm sorry, but I don't know what that means :-(
 Got it. I've added this task:
-  [T][ ] buy bread 
-Now you have 9 tasks in the list
+  [T][ ] buy bread
+Now you have 1 task in the list
 Got it. I've added this task:
-  [T][ ] buy milk 
-Now you have 10 tasks in the list
+  [T][ ] buy milk
+Now you have 2 tasks in the list
 OOPS!!! Please separate event description and date/time by " /at ". 
 Note that date/time of an event cannot be empty.
+OOPS!!! Please ensure date/time format is either in 'DD/MM/YYYY' or 'DD/MM/YYYY HHMM'
+(24 hr clock) format
 Got it. I've added this task:
-  [D][ ] return book Sunday (by: Sunday)
-Now you have 11 tasks in the list
-OOPS!!! Please separate event description and date/time by " /at ". 
-Note that date/time of an event cannot be empty.
+  [D][ ] return book (by: 14/12/2019)
+Now you have 3 tasks in the list
 Got it. I've added this task:
-  [E][ ] project meeting Mon 2-4pm (at: Mon 2-4pm)
-Now you have 12 tasks in the list
-OOPS!!! Please separate deadline description and date/time by " /by ". 
-Note that date/time of a deadline cannot be empty.
+  [E][ ] project meeting (at: 31/12/2019 2015-2359)
+Now you have 4 tasks in the list
+Got it. I've added this task:
+  [D][ ] project meeting (by: 12/08/2019 1400)
+Now you have 5 tasks in the list
 OOPS!!! The description of a deadline cannot be empty.
 OOPS!!! The description of an event cannot be empty.
 OOPS!!! The description of a todo cannot be empty.
-1.[E][ ] project meeting 31/07/2019 2000-2359
-2.[D][+] return book Sunday
-3.[E][+] project meeting Mon 2-4pm
-4.[T][ ] hello 
-5.[T][ ] buy bread 
-6.[D][ ] return book Sunday
-7.[E][ ] project meeting Mon 2-4pm
-8.[T][ ] hello 
-9.[T][ ] buy bread 
-10.[T][ ] buy milk 
-11.[D][ ] return book Sunday (by: Sunday)
-12.[E][ ] project meeting Mon 2-4pm (at: Mon 2-4pm)
+1.[T][ ] buy bread
+2.[T][ ] buy milk
+3.[D][ ] return book (by: 14/12/2019)
+4.[E][ ] project meeting (at: 31/12/2019 2015-2359)
+5.[D][ ] project meeting (by: 12/08/2019 1400)
 OOPS!!! There cannot be any additional characters after this command (other than trailing spaces).
 Nice! I've marked this task as done:
-  [T][+] hello 
+  [E][+] project meeting (at: 31/12/2019 2015-2359)
 OOPS!!! Please enter a valid numerical value from 1 to the tasklist's size after the intended command (separated by a space).
-There are currently 12 tasks in the list.
+There are currently 5 tasks in the list.
 Try entering "list" to view the full list of tasks.
 OOPS!!! Please enter a valid numerical value from 1 to the tasklist's size after the intended command (separated by a space).
-There are currently 12 tasks in the list.
+There are currently 5 tasks in the list.
 Try entering "list" to view the full list of tasks.
-Nice! I've marked this task as done:
-  [T][+] buy milk 
+OOPS!!! Please enter a valid numerical value from 1 to the tasklist's size after the intended command (separated by a space).
+There are currently 5 tasks in the list.
+Try entering "list" to view the full list of tasks.
+OOPS!!! Please enter a valid numerical value from 1 to the tasklist's size after the intended command (separated by a space).
+There are currently 5 tasks in the list.
+Try entering "list" to view the full list of tasks.
 Noted. I've removed this task:
-[E][ ] project meeting Mon 2-4pm
-Now you have 11 tasks in the list.
-Noted. I've removed this task:
-[D][+] return book Sunday
-Now you have 10 tasks in the list.
+[T][ ] buy milk
+Now you have 4 tasks in the list.
 OOPS!!! Please enter a valid numerical value from 1 to the tasklist's size after the intended command (separated by a space).
-There are currently 10 tasks in the list.
+There are currently 4 tasks in the list.
 Try entering "list" to view the full list of tasks.
 OOPS!!! Please enter a valid numerical value from 1 to the tasklist's size after the intended command (separated by a space).
-There are currently 10 tasks in the list.
+There are currently 4 tasks in the list.
 Try entering "list" to view the full list of tasks.
-1.[E][ ] project meeting 31/07/2019 2000-2359
-2.[E][+] project meeting Mon 2-4pm
-3.[T][+] hello 
-4.[T][ ] buy bread 
-5.[D][ ] return book Sunday
-6.[T][ ] hello 
-7.[T][ ] buy bread 
-8.[T][+] buy milk 
-9.[D][ ] return book Sunday (by: Sunday)
-10.[E][ ] project meeting Mon 2-4pm (at: Mon 2-4pm)
+1.[T][ ] buy bread
+2.[D][ ] return book (by: 14/12/2019)
+3.[E][+] project meeting (at: 31/12/2019 2015-2359)
+4.[D][ ] project meeting (by: 12/08/2019 1400)
 Got it. I've added this task:
-  [T][ ] hello 
-Now you have 11 tasks in the list
-1.[E][ ] project meeting 31/07/2019 2000-2359
-2.[E][+] project meeting Mon 2-4pm
-3.[T][+] hello 
-4.[T][ ] buy bread 
-5.[D][ ] return book Sunday
-6.[T][ ] hello 
-7.[T][ ] buy bread 
-8.[T][+] buy milk 
-9.[D][ ] return book Sunday (by: Sunday)
-10.[E][ ] project meeting Mon 2-4pm (at: Mon 2-4pm)
-11.[T][ ] hello 
+  [T][ ] hello
+Now you have 5 tasks in the list
+1.[T][ ] buy bread
+2.[D][ ] return book (by: 14/12/2019)
+3.[E][+] project meeting (at: 31/12/2019 2015-2359)
+4.[D][ ] project meeting (by: 12/08/2019 1400)
+5.[T][ ] hello
 Bye. Hope to see you again soon!

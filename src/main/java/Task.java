@@ -6,7 +6,14 @@ public class Task {
     String taskString;
     String isDone = "[ ]";
     String type = null;
-    String dateAndTime = "";
+
+    int day = -1;
+    int month = -1;
+    int year = -1;
+    int hour = -1;
+    int minute = -1;
+    int hourEnd = -1;
+    int minuteEnd = -1;
 
     /**
      * Constructor for Task that takes in the type of task intended to be created.
@@ -150,10 +157,6 @@ public class Task {
         return type;
     }
 
-    public String getDateAndTime() {
-        return dateAndTime;
-    }
-
     public void setIsDone(String isDone) {
         this.isDone = isDone;
     }
@@ -162,8 +165,50 @@ public class Task {
         this.taskString = taskString;
     }
 
-    public void setDateAndTime(String dateAndTime) {
-        this.dateAndTime = dateAndTime;
+    public void setDay(int day) {
+        this.day = day;
+    }
+
+    public void setMonth(int month) {
+        this.month = month;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public void setHour(int hour) {
+        this.hour = hour;
+    }
+
+    public void setMinute(int minute) {
+        this.minute = minute;
+    }
+
+    public void setHourEnd(int hourEnd) {
+        this.hourEnd = hourEnd;
+    }
+
+    public void setMinuteEnd(int minuteEnd) {
+        this.minuteEnd = minuteEnd;
+    }
+
+    public String getDateAndTime() {
+        String day = String.format("%02d", this.day);
+        String month = String.format("%02d", this.month);
+        String year = String.format("%02d", this.year);
+        String hour = String.format("%02d", this.hour);
+        String minute = String.format("%02d", this.minute);
+
+        if (this.hour == -1) {
+            return day + "/" + month + "/" + year;
+        } else if (this.hourEnd == -1){
+            return day + "/" + month + "/" + year + " " + hour + minute;
+        } else {
+            String hourEnd = String.format("%02d", this.hourEnd);
+            String minuteEnd = String.format("%02d", this.minuteEnd);
+            return day + "/" + month + "/" + year + " " + hour + minute + "-" + hourEnd + minuteEnd;
+        }
     }
 
     /**
@@ -187,4 +232,5 @@ public class Task {
     public String toString() {
         return type + isDone + " " + this.taskString;
     }
+
 }

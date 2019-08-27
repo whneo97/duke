@@ -1,10 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 import java.io.FileWriter;
+import java.util.Scanner;
 
 public class Duke {
 
@@ -18,7 +15,7 @@ public class Duke {
                 String dateAndTime = task.getDateAndTime();
                 String out = "";
 
-                if (!dateAndTime.equals("")) {
+                if (task.day != -1) {
                     out = type + " | " + isDone + " | " + taskString + " | " + dateAndTime + "\n";
                 } else {
                     out = type + " | " + isDone + " | " + taskString + "\n";
@@ -39,9 +36,33 @@ public class Duke {
             String type = arr[0].trim();
             String isDone = arr[1].trim().equals("1") ? "[+]" : "[ ]";
             String taskString = arr[2].trim();
-            String dateAndTime = "";
+            int day = 0;
+            int month = 0;
+            int year = 0;
+            int hour = -1;
+            int minute = -1;
+            int hourEnd = -1;
+            int minuteEnd = -1;
             if (type.equals("E") || type.equals("D")) {
-                dateAndTime = arr[3].trim();
+
+                String[] dateTimeArr = arr[3].trim().split(" ");
+                String[] dateArr = dateTimeArr[0].split("/");
+                day = Integer.parseInt(dateArr[0]);
+                month = Integer.parseInt(dateArr[1]);
+                year = Integer.parseInt(dateArr[2]);
+
+                if (type.equals("E")) {
+                    String[] timeArr = dateTimeArr[1].split("-");
+                    String timeStart = timeArr[0];
+                    String timeEnd = timeArr[1];
+                    hour = Integer.parseInt(timeStart.substring(0, 2));
+                    minute = Integer.parseInt(timeStart.substring(2, 4));
+                    hourEnd = Integer.parseInt(timeEnd.substring(0, 2));
+                    minuteEnd = Integer.parseInt(timeEnd.substring(2, 4));
+                } else if (dateTimeArr.length == 2) {
+                    hour = Integer.parseInt(dateTimeArr[1].substring(0, 2));
+                    minute = Integer.parseInt(dateTimeArr[1].substring(2, 4));
+                }
             }
             Task task = new Task("[" + type + "]");
             if (type.equals("T")) {
@@ -54,7 +75,13 @@ public class Duke {
 
             task.setIsDone(isDone);
             task.setTaskString(taskString);
-            task.setDateAndTime(dateAndTime);
+            task.setDay(day);
+            task.setMonth(month);
+            task.setYear(year);
+            task.setHour(hour);
+            task.setMinute(minute);
+            task.setHourEnd(hourEnd);
+            task.setMinuteEnd(minuteEnd);
 
             Task.getTaskList().add(task);
         }
