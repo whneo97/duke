@@ -14,14 +14,19 @@ public class Event extends Task {
         if (taskString.equals("")) {
             throw new DukeException("The description of an event cannot be empty.");
         } else if (!taskString.contains("/at ")) {
-            throw new DukeException("Please separate event description and date/time by \" /at \".");
+            throw new DukeException("Please separate event description and date/time by \" /at \". \n" +
+                    "Note that date/time of an event cannot be empty.");
         }
+
+        String[] arr = taskString.split(" /at ");
+        if (arr.length < 2) {
+            throw new DukeException("The description of an event cannot be empty.");
+        }
+        this.taskString = arr[0];
+        this.dateAndTime = arr[1];
 
         Task.tasklist.add(this);
 
-        String[] arr = taskString.split(" /at ");
-        this.taskString = arr[0];
-        this.dateAndTime = arr[1];
         this.printAdded();
     }
 

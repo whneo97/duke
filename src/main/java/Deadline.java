@@ -11,17 +11,22 @@ public class Deadline extends Task {
     public Deadline(String taskString) throws DukeException {
         super("[D]");
 
-        if (taskString.equals("")) {
+        if (taskString.equals("") || taskString.equals("/by")) {
             throw new DukeException("The description of a deadline cannot be empty.");
         } else if (!taskString.contains("/by ")) {
-            throw new DukeException("Please separate deadline description and date/time by \" /by \".");
+            throw new DukeException("Please separate deadline description and date/time by \" /by \". \n" +
+                    "Note that date/time of a deadline cannot be empty.");
         }
+
+        String[] arr = taskString.split(" /by ");
+        if (arr.length < 2) {
+            throw new DukeException("The description of a deadline cannot be empty.");
+        }
+        this.taskString = arr[0];
+        this.dateAndTime = arr[1];
 
         Task.tasklist.add(this);
 
-        String[] arr = taskString.split(" /by ");
-        this.taskString = arr[0];
-        this.dateAndTime = arr[1];
         this.printAdded();
     }
 

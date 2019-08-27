@@ -138,6 +138,22 @@ public class Task {
         return Task.tasklist;
     }
 
+    public String getTaskString() {
+        return taskString;
+    }
+
+    public String getIsDone() {
+        return isDone;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getDateAndTime() {
+        return dateAndTime;
+    }
+
     /**
      * Deletes a task at index n of the tasklist.
      * @param n A number from 0 to size of tasklist representing the index of the element in the tasklist
@@ -159,4 +175,5 @@ public class Task {
     public String toString() {
         return type + isDone + " " + this.taskString;
     }
+
 }

@@ -1,8 +1,31 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.io.FileWriter;
 
 public class Duke {
+
+    public static void save(){
+        try{
+            FileWriter fileWriter = new FileWriter("/Users/whneo97/OneDrive/UNI/CS/Y2S1/CS2103/duke/data/duke.txt");
+            for (Task task : Task.tasklist) {
+                char type = task.getType().charAt(1);
+                char isDone = task.getIsDone().charAt(1) == '+' ? '1' : '0';
+                String taskString = task.getTaskString();
+                String dateAndTime = task.getDateAndTime();
+                String out = "";
+
+                if (!dateAndTime.equals("")) {
+                    out = type + " | " + isDone + " | " + taskString + " | " + dateAndTime + "\n";
+                } else {
+                    out = type + " | " + isDone + " | " + taskString + "\n";
+                }
+
+                fileWriter.append(out);
+            }
+            fileWriter.close();
+        } catch (Exception e) { System.out.println(e); }
+    }
 
     /** Main method for interactive Duke program that interacts with user depending on user input.
      * User may add tasks - todo, deadline, event -, list all tasks, mark tasks as done, delete tasks and
@@ -41,9 +64,11 @@ public class Duke {
                 } else if (command.equals("done")) {
                     int n = Task.getValidatedListIndex(taskString);
                     Task.setDone(n - 1);
+                    save();
                 } else if (command.equals("delete")) {
                     int n = Task.getValidatedListIndex(taskString);
                     Task.deleteTask(n - 1);
+                    save();
                 } else if (command.equals("list")) {
                     Task.ensureEmptyTaskString(taskString);
                     Task.printTaskList();
@@ -61,6 +86,7 @@ public class Duke {
                             throw new DukeException("I'm sorry, but I don't know what that means :-(");
                         }
                     }
+                    save();
                 }
             } catch (DukeException dukeExc) {
                 System.out.println("OOPS!!! " + dukeExc.getMessage());
