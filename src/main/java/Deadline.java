@@ -30,6 +30,10 @@ public class Deadline extends Task {
         this.printAdded();
     }
 
+    public Deadline() {
+        super("[D]");
+    }
+
     @Override
     public String toString() {
         return super.toString() + " (by: " + this.dateAndTime + ")";

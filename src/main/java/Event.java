@@ -30,6 +30,10 @@ public class Event extends Task {
         this.printAdded();
     }
 
+    public Event() {
+        super("[E]");
+    }
+
     @Override
     public String toString() {
         return super.toString() + " (at: " + this.dateAndTime + ")";

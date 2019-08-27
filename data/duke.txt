@@ -1,0 +1,12 @@
+E | 0 | project meeting | 31/07/2019 2000-2359
+E | 1 | project meeting | Mon 2-4pm
+T | 1 | hello
+T | 0 | buy bread
+D | 0 | return book | Sunday
+T | 0 | hello
+T | 0 | buy bread
+T | 1 | buy milk
+D | 0 | return book | Sunday
+E | 0 | project meeting | Mon 2-4pm
+T | 0 | hello
+T | 0 | byebye
