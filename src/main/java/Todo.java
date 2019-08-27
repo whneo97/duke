@@ -17,4 +17,8 @@ public class Todo extends Task {
         this.taskString = taskString;
         this.printAdded();
     }
+
+    public Todo() {
+        super("[T]");
+    }
 }
