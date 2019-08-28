@@ -48,4 +48,7 @@ public class Ui {
 
     public void showTaskList(TaskList tasks) { System.out.println(tasks); }
 
+    public void showExitMessage() {
+        System.out.println("Bye. Hope to see you again soon!");
+    }
 }

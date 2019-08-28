@@ -22,6 +22,9 @@ public class Parser {
     public static Command parse(String fullCommand) throws DukeException {
         Scanner sc = new Scanner(fullCommand.trim());
 
+        if (!sc.hasNext()) {
+            Validation.ensureNonEmptyCommand("");
+        }
         String command = sc.next();
         String taskString = "";
         if (sc.hasNextLine()) {
