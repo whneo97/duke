@@ -6,68 +6,236 @@
 
 Hello! I'm Duke
 What can I do for you?
+____________________________________________________________
+1.deadline[ ] return book (by: 15/12/2019 2359)
+2.deadline[ ] return book (by: 15/12/2019)
+3.deadline[ ] buy cake (by: 14/12/2019)
+4.event[ ] project meeting (at: 31/12/2019 2015-2359)
+5.deadline[ ] project meeting (by: 12/08/2019 1400)
+6.todo[ ] hello
+7.todo[ ] buy bread
+8.todo[ ] buy milk
+9.deadline[ ] return book (by: 15/12/2019 2345)
+10.deadline[ ] return book (by: 15/12/2019 2359)
+11.deadline[ ] return book (by: 15/12/2019 0000)
+12.deadline[ ] return book (by: 15/12/2019)
+13.deadline[ ] buy cake (by: 14/12/2019)
+14.event[ ] project meeting (at: 31/12/2019 2015-2359)
+15.deadline[ ] project meeting (by: 12/08/2019 1400)
+16.todo[ ] hello
+____________________________________________________________
+____________________________________________________________
 OOPS!!! I'm sorry, but I don't know what that means :-(
+____________________________________________________________
+____________________________________________________________
 Got it. I've added this task:
-  [T][ ] buy bread
-Now you have 1 task in the list
+  todo[ ] buy bread
+Now you have 17 tasks in the list
+____________________________________________________________
+____________________________________________________________
 Got it. I've added this task:
-  [T][ ] buy milk
-Now you have 2 tasks in the list
-OOPS!!! Please separate event description and date/time by " /at ". 
+  todo[ ] buy milk
+Now you have 18 tasks in the list
+____________________________________________________________
+____________________________________________________________
+OOPS!!! Please separate deadline description and date/time by " /at ". 
 Note that date/time of an event cannot be empty.
-OOPS!!! Please ensure date/time format is either in 'DD/MM/YYYY' or 'DD/MM/YYYY HHMM'
-(24 hr clock) format
+____________________________________________________________
+____________________________________________________________
+OOPS!!! Please separate deadline description and date/time by " /by ". 
+Note that date/time of a deadline cannot be empty.
+____________________________________________________________
+____________________________________________________________
+OOPS!!! There cannot be more than 12 months in a year.
+____________________________________________________________
+____________________________________________________________
 Got it. I've added this task:
-  [D][ ] return book (by: 14/12/2019)
-Now you have 3 tasks in the list
+  deadline[ ] return book (by: 15/12/2019 2345)
+Now you have 19 tasks in the list
+____________________________________________________________
+____________________________________________________________
 Got it. I've added this task:
-  [E][ ] project meeting (at: 31/12/2019 2015-2359)
-Now you have 4 tasks in the list
+  deadline[ ] return book (by: 15/12/2019 2359)
+Now you have 20 tasks in the list
+____________________________________________________________
+____________________________________________________________
 Got it. I've added this task:
-  [D][ ] project meeting (by: 12/08/2019 1400)
-Now you have 5 tasks in the list
-OOPS!!! The description of a deadline cannot be empty.
+  deadline[ ] return book (by: 15/12/2019 0000)
+Now you have 21 tasks in the list
+____________________________________________________________
+____________________________________________________________
+OOPS!!! Please check that minutes is not more than 59.
+____________________________________________________________
+____________________________________________________________
+OOPS!!! Please check that hours is not more than 23.
+____________________________________________________________
+____________________________________________________________
+OOPS!!! Calendar day must start from 1
+____________________________________________________________
+____________________________________________________________
+OOPS!!! Please ensure date format is in DD/MM/YYYY
+____________________________________________________________
+____________________________________________________________
+OOPS!!! Please ensure date format is in DD/MM/YYYY
+____________________________________________________________
+____________________________________________________________
+Got it. I've added this task:
+  deadline[ ] return book (by: 15/12/2019)
+Now you have 22 tasks in the list
+____________________________________________________________
+____________________________________________________________
+Got it. I've added this task:
+  deadline[ ] buy cake (by: 14/12/2019)
+Now you have 23 tasks in the list
+____________________________________________________________
+____________________________________________________________
+Got it. I've added this task:
+  event[ ] project meeting (at: 31/12/2019 2015-2359)
+Now you have 24 tasks in the list
+____________________________________________________________
+____________________________________________________________
+Got it. I've added this task:
+  deadline[ ] project meeting (by: 12/08/2019 1400)
+Now you have 25 tasks in the list
+____________________________________________________________
+____________________________________________________________
+OOPS!!! The description of an deadline cannot be empty.
+____________________________________________________________
+____________________________________________________________
 OOPS!!! The description of an event cannot be empty.
+____________________________________________________________
+____________________________________________________________
+OOPS!!! The description of a deadline cannot be empty.
+____________________________________________________________
+____________________________________________________________
+OOPS!!! The description of an event cannot be empty.
+____________________________________________________________
+____________________________________________________________
 OOPS!!! The description of a todo cannot be empty.
-1.[T][ ] buy bread
-2.[T][ ] buy milk
-3.[D][ ] return book (by: 14/12/2019)
-4.[E][ ] project meeting (at: 31/12/2019 2015-2359)
-5.[D][ ] project meeting (by: 12/08/2019 1400)
-OOPS!!! There cannot be any additional characters after this command (other than trailing spaces).
+____________________________________________________________
+____________________________________________________________
+1.deadline[ ] return book (by: 15/12/2019 2359)
+2.deadline[ ] return book (by: 15/12/2019)
+3.deadline[ ] buy cake (by: 14/12/2019)
+4.event[ ] project meeting (at: 31/12/2019 2015-2359)
+5.deadline[ ] project meeting (by: 12/08/2019 1400)
+6.todo[ ] hello
+7.todo[ ] buy bread
+8.todo[ ] buy milk
+9.deadline[ ] return book (by: 15/12/2019 2345)
+10.deadline[ ] return book (by: 15/12/2019 2359)
+11.deadline[ ] return book (by: 15/12/2019 0000)
+12.deadline[ ] return book (by: 15/12/2019)
+13.deadline[ ] buy cake (by: 14/12/2019)
+14.event[ ] project meeting (at: 31/12/2019 2015-2359)
+15.deadline[ ] project meeting (by: 12/08/2019 1400)
+16.todo[ ] hello
+17.todo[ ] buy bread
+18.todo[ ] buy milk
+19.deadline[ ] return book (by: 15/12/2019 2345)
+20.deadline[ ] return book (by: 15/12/2019 2359)
+21.deadline[ ] return book (by: 15/12/2019 0000)
+22.deadline[ ] return book (by: 15/12/2019)
+23.deadline[ ] buy cake (by: 14/12/2019)
+24.event[ ] project meeting (at: 31/12/2019 2015-2359)
+25.deadline[ ] project meeting (by: 12/08/2019 1400)
+____________________________________________________________
+____________________________________________________________
+OOPS!!! There cannot be any additional characters after the "list" command (other than trailing spaces).
+____________________________________________________________
+____________________________________________________________
 Nice! I've marked this task as done:
-  [E][+] project meeting (at: 31/12/2019 2015-2359)
-OOPS!!! Please enter a valid numerical value from 1 to the tasklist's size after the intended command (separated by a space).
-There are currently 5 tasks in the list.
+  deadline[+] buy cake (by: 14/12/2019)
+____________________________________________________________
+____________________________________________________________
+OOPS!!! Please enter a valid numerical value from 1 to the taskList's size after the intended command (separated by a space).
+There are currently 25 tasks in the list.
 Try entering "list" to view the full list of tasks.
-OOPS!!! Please enter a valid numerical value from 1 to the tasklist's size after the intended command (separated by a space).
-There are currently 5 tasks in the list.
+____________________________________________________________
+____________________________________________________________
+OOPS!!! Please enter a valid numerical value from 1 to the taskList's size after the intended command (separated by a space).
+There are currently 25 tasks in the list.
 Try entering "list" to view the full list of tasks.
-OOPS!!! Please enter a valid numerical value from 1 to the tasklist's size after the intended command (separated by a space).
-There are currently 5 tasks in the list.
-Try entering "list" to view the full list of tasks.
-OOPS!!! Please enter a valid numerical value from 1 to the tasklist's size after the intended command (separated by a space).
-There are currently 5 tasks in the list.
-Try entering "list" to view the full list of tasks.
+____________________________________________________________
+____________________________________________________________
+Nice! I've marked this task as done:
+  deadline[+] return book (by: 15/12/2019 2359)
+____________________________________________________________
+____________________________________________________________
 Noted. I've removed this task:
-[T][ ] buy milk
-Now you have 4 tasks in the list.
-OOPS!!! Please enter a valid numerical value from 1 to the tasklist's size after the intended command (separated by a space).
-There are currently 4 tasks in the list.
+deadline[ ] return book (by: 15/12/2019 2359)
+Now you have 24 tasks in the list.
+____________________________________________________________
+____________________________________________________________
+Noted. I've removed this task:
+deadline[+] buy cake (by: 14/12/2019)
+Now you have 23 tasks in the list.
+____________________________________________________________
+____________________________________________________________
+OOPS!!! Please enter a valid numerical value from 1 to the taskList's size after the intended command (separated by a space).
+There are currently 23 tasks in the list.
 Try entering "list" to view the full list of tasks.
-OOPS!!! Please enter a valid numerical value from 1 to the tasklist's size after the intended command (separated by a space).
-There are currently 4 tasks in the list.
+____________________________________________________________
+____________________________________________________________
+OOPS!!! Please enter a valid numerical value from 1 to the taskList's size after the intended command (separated by a space).
+There are currently 23 tasks in the list.
 Try entering "list" to view the full list of tasks.
-1.[T][ ] buy bread
-2.[D][ ] return book (by: 14/12/2019)
-3.[E][+] project meeting (at: 31/12/2019 2015-2359)
-4.[D][ ] project meeting (by: 12/08/2019 1400)
+____________________________________________________________
+____________________________________________________________
+1.deadline[ ] return book (by: 15/12/2019)
+2.event[ ] project meeting (at: 31/12/2019 2015-2359)
+3.deadline[ ] project meeting (by: 12/08/2019 1400)
+4.todo[ ] hello
+5.todo[ ] buy bread
+6.todo[ ] buy milk
+7.deadline[ ] return book (by: 15/12/2019 2345)
+8.deadline[ ] return book (by: 15/12/2019 2359)
+9.deadline[ ] return book (by: 15/12/2019 0000)
+10.deadline[ ] return book (by: 15/12/2019)
+11.deadline[ ] buy cake (by: 14/12/2019)
+12.event[ ] project meeting (at: 31/12/2019 2015-2359)
+13.deadline[ ] project meeting (by: 12/08/2019 1400)
+14.todo[ ] hello
+15.todo[ ] buy bread
+16.todo[ ] buy milk
+17.deadline[ ] return book (by: 15/12/2019 2345)
+18.deadline[+] return book (by: 15/12/2019 2359)
+19.deadline[ ] return book (by: 15/12/2019 0000)
+20.deadline[ ] return book (by: 15/12/2019)
+21.deadline[ ] buy cake (by: 14/12/2019)
+22.event[ ] project meeting (at: 31/12/2019 2015-2359)
+23.deadline[ ] project meeting (by: 12/08/2019 1400)
+____________________________________________________________
+____________________________________________________________
 Got it. I've added this task:
-  [T][ ] hello
-Now you have 5 tasks in the list
-1.[T][ ] buy bread
-2.[D][ ] return book (by: 14/12/2019)
-3.[E][+] project meeting (at: 31/12/2019 2015-2359)
-4.[D][ ] project meeting (by: 12/08/2019 1400)
-5.[T][ ] hello
-Bye. Hope to see you again soon!
+  todo[ ] hello
+Now you have 24 tasks in the list
+____________________________________________________________
+____________________________________________________________
+1.deadline[ ] return book (by: 15/12/2019)
+2.event[ ] project meeting (at: 31/12/2019 2015-2359)
+3.deadline[ ] project meeting (by: 12/08/2019 1400)
+4.todo[ ] hello
+5.todo[ ] buy bread
+6.todo[ ] buy milk
+7.deadline[ ] return book (by: 15/12/2019 2345)
+8.deadline[ ] return book (by: 15/12/2019 2359)
+9.deadline[ ] return book (by: 15/12/2019 0000)
+10.deadline[ ] return book (by: 15/12/2019)
+11.deadline[ ] buy cake (by: 14/12/2019)
+12.event[ ] project meeting (at: 31/12/2019 2015-2359)
+13.deadline[ ] project meeting (by: 12/08/2019 1400)
+14.todo[ ] hello
+15.todo[ ] buy bread
+16.todo[ ] buy milk
+17.deadline[ ] return book (by: 15/12/2019 2345)
+18.deadline[+] return book (by: 15/12/2019 2359)
+19.deadline[ ] return book (by: 15/12/2019 0000)
+20.deadline[ ] return book (by: 15/12/2019)
+21.deadline[ ] buy cake (by: 14/12/2019)
+22.event[ ] project meeting (at: 31/12/2019 2015-2359)
+23.deadline[ ] project meeting (by: 12/08/2019 1400)
+24.todo[ ] hello
+____________________________________________________________
+____________________________________________________________
+____________________________________________________________

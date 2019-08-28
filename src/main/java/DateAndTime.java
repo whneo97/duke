@@ -1,0 +1,34 @@
+public class DateAndTime {
+
+    Date date;
+    Time timeStart;
+    Time timeEnd;
+
+    DateAndTime() {
+    }
+
+    DateAndTime(Date date) {
+        this.date = date;
+    }
+
+    DateAndTime(Date date, Time timeEnd) {
+        this(date);
+        this.timeEnd = timeEnd;
+    }
+
+    DateAndTime(Date date, Time timeStart, Time timeEnd) {
+        this(date, timeEnd);
+        this.timeStart = timeStart;
+    }
+
+    @Override
+    public String toString() {
+        if (timeEnd == null) {
+            return "" + date;
+        } else if (this.timeStart == null){
+            return "" + date + " " + timeEnd;
+        } else {
+            return "" + date + " " + timeStart + "-" + timeEnd;
+        }
+    }
+}
