@@ -1,3 +1,7 @@
+package duke.task;
+
+import duke.storage.Storage;
+
 import java.util.ArrayList;
 
 public class TaskList {
@@ -39,6 +43,4 @@ public class TaskList {
         }
         return out.trim();
     }
-
-
 }

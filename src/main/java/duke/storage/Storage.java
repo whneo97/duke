@@ -1,3 +1,10 @@
+package duke.storage;
+
+import duke.dateandtime.DateAndTime;
+import duke.exceptions.DukeException;
+import duke.parser.Parser;
+import duke.task.Task;
+import duke.task.TaskList;
 import org.w3c.dom.xpath.XPathResult;
 
 import java.io.File;
@@ -41,7 +48,7 @@ public class Storage {
                 DateAndTime dateAndTime = task.getDateAndTime();
                 String out = "";
 
-                if (task.dateAndTime != null) {
+                if (task.getDateAndTime() != null) {
                     out = type + " | " + isDone + " | " + taskString + " | " + dateAndTime + "\n";
                 } else {
                     out = type + " | " + isDone + " | " + taskString + "\n";
@@ -56,6 +63,10 @@ public class Storage {
 
     public File getFile() {
         return file;
+    }
+
+    public String getFilePath() {
+        return filePath;
     }
 
     public ArrayList<Task> getTaskList() {

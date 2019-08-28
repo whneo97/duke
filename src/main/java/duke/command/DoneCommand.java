@@ -1,3 +1,12 @@
+package duke.command;
+
+import duke.exceptions.DukeException;
+import duke.storage.Storage;
+import duke.task.Task;
+import duke.task.TaskList;
+import duke.ui.Ui;
+import duke.validation.Validation;
+
 public class DoneCommand extends Command {
 
     String taskString;

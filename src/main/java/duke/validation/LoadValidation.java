@@ -1,3 +1,7 @@
+package duke.validation;
+
+import duke.exceptions.DukeException;
+
 public class LoadValidation extends Validation {
     public static String getValidatedTaskType(String type) throws DukeException {
         if (!(type.equals("T") || type.equals("D") || type.equals("E"))) {

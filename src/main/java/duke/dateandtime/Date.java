@@ -1,15 +1,17 @@
+package duke.dateandtime;
+
 public class Date {
     int day;
     int month;
     int year;
 
-    Date(int day, int month, int year) {
+    public Date(int day, int month, int year) {
         this.day = day;
         this.month = month;
         this.year = year;
     }
 
-    static String getMonth(int month) {
+    public static String getMonth(int month) {
         return month == 1 ? "January"
                 : month == 2 ? "February"
                 : month == 3 ? "March"

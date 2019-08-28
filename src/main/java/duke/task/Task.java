@@ -1,8 +1,12 @@
+package duke.task;
+
+import duke.dateandtime.DateAndTime;
+
 import java.util.ArrayList;
 
 public class Task {
 
-    enum Type {
+    public enum Type {
         TODO, DEADLINE, EVENT;
     }
 

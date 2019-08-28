@@ -1,5 +1,19 @@
+package duke.parser;
+
+import duke.command.*;
+import duke.dateandtime.DateAndTime;
+import duke.exceptions.DukeException;
+import duke.storage.Storage;
+import duke.task.Deadline;
+import duke.task.Event;
+import duke.task.Task;
+import duke.task.Todo;
+import duke.validation.DeadlineValidation;
+import duke.validation.EventValidation;
+import duke.validation.LoadValidation;
+import duke.validation.Validation;
+
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -55,7 +69,7 @@ public class Parser {
 
     public static ArrayList<Task> parse(Storage storage) throws DukeException {
         try {
-            File file = new File(storage.filePath);
+            File file = new File(storage.getFilePath());
             Scanner sc = new Scanner(file);
             ArrayList<Task> taskList = new ArrayList<>(100);
             while (sc.hasNextLine()) {

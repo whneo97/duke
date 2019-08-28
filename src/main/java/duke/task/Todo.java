@@ -1,3 +1,5 @@
+package duke.task;
+
 public class Todo extends Task {
     /**
      * Constructor for a Todo type class that takes in a task description.

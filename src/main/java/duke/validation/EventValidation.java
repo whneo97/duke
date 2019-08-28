@@ -1,3 +1,10 @@
+package duke.validation;
+
+import duke.dateandtime.Date;
+import duke.dateandtime.DateAndTime;
+import duke.dateandtime.Time;
+import duke.exceptions.DukeException;
+
 public class EventValidation extends Validation {
 
     public static String[] getValidatedDescriptionAndDateTime(String taskString) throws DukeException {

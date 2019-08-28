@@ -1,3 +1,5 @@
+package duke.dateandtime;
+
 public class DateAndTime {
 
     Date date;
@@ -7,16 +9,16 @@ public class DateAndTime {
     DateAndTime() {
     }
 
-    DateAndTime(Date date) {
+    public DateAndTime(Date date) {
         this.date = date;
     }
 
-    DateAndTime(Date date, Time timeEnd) {
+    public DateAndTime(Date date, Time timeEnd) {
         this(date);
         this.timeEnd = timeEnd;
     }
 
-    DateAndTime(Date date, Time timeStart, Time timeEnd) {
+    public DateAndTime(Date date, Time timeStart, Time timeEnd) {
         this(date, timeEnd);
         this.timeStart = timeStart;
     }
