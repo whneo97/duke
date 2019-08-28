@@ -10,10 +10,10 @@ public class Event extends Task {
 //     */
 
     public Event(String taskString, DateAndTime dateAndTime) {
-        super("event", taskString, dateAndTime);
+        super(Type.EVENT, taskString, dateAndTime);
     }
 
-    public Event(String taskString, DateAndTime dateAndTime, String isDone) {
+    public Event(String taskString, DateAndTime dateAndTime, boolean isDone) {
         this(taskString, dateAndTime);
         this.isDone = isDone;
     }

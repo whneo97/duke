@@ -7,10 +7,10 @@ public class Todo extends Task {
      */
 
     public Todo(String taskString) {
-        super("todo", taskString, null);
+        super(Type.TODO, taskString, null);
     }
 
-    public Todo(String taskString, String isDone) {
+    public Todo(String taskString, boolean isDone) {
         this(taskString);
         this.isDone = isDone;
     }

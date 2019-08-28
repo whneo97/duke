@@ -10,7 +10,7 @@ public class DoneCommand extends Command {
     public void execute(TaskList tasks, Ui ui, Storage storage) throws DukeException {
         int i = Validation.getValidatedListIndex(tasks, taskString);
         Task task = tasks.get(i);
-        task.setIsDone("[+]");
+        task.setIsDone(true);
         storage.save(tasks);
         ui.showDoneMessage(task.doneMessage(task));
     }

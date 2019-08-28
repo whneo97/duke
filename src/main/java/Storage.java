@@ -35,8 +35,8 @@ public class Storage {
             FileWriter fileWriter = new FileWriter(filePath);
             for (int i = 0; i < tasks.size(); i++) {
                 Task task = tasks.get(i);
-                char type = task.getType().toUpperCase().charAt(0);
-                char isDone = task.getIsDone().charAt(1) == '+' ? '1' : '0';
+                char type = task.getType().toString().charAt(0);
+                char isDone = task.getIsDone() == true ? '1' : '0';
                 String taskString = task.getTaskString();
                 DateAndTime dateAndTime = task.getDateAndTime();
                 String out = "";

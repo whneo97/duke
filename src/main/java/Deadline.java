@@ -10,10 +10,10 @@ public class Deadline extends Task {
 //     */
 
     public Deadline(String taskString, DateAndTime dateAndTime) {
-        super("deadline", taskString, dateAndTime);
+        super(Type.DEADLINE, taskString, dateAndTime);
     }
 
-    public Deadline(String taskString, DateAndTime dateAndTime, String isDone) {
+    public Deadline(String taskString, DateAndTime dateAndTime, boolean isDone) {
         this(taskString, dateAndTime);
         this.isDone = isDone;
     }

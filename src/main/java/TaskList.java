@@ -27,24 +27,6 @@ public class TaskList {
     }
 
     /**
-     * Deletes a task at index n of the taskList.
-     * @param n A number from 0 to size of taskList representing the index of the element in the taskList
-     *          at position n.
-     */
-
-    /**
-     * Sets the element at index n of the taskList to have a state of done.
-     * @param n A number from 0 to size of taskList representing the index of the element in the taskList
-     *          at position n.
-     */
-    public void setDone(int n) {
-        Task task = taskList.get(n);
-        task.isDone = "[+]";
-        System.out.println("Nice! I've marked this task as done:");
-        System.out.println("  " + task);
-    }
-
-    /**
      * Prints out all elements in the taskList as a list, numbered from 1 to n, where n is the size of the taskList.
      */
     @Override

@@ -2,9 +2,13 @@ import java.util.ArrayList;
 
 public class Task {
 
+    enum Type {
+        TODO, DEADLINE, EVENT;
+    }
+
     String taskString;
-    String isDone = "[ ]";
-    String type;
+    boolean isDone = false;
+    Type type;
     DateAndTime dateAndTime;
 
     /**
@@ -16,7 +20,7 @@ public class Task {
      * @param type Type of task (either todo, deadline or event)
      */
     //
-    public Task(String type, String taskString, DateAndTime dateAndTime) {
+    public Task(Type type, String taskString, DateAndTime dateAndTime) {
         this.type = type;
         this.taskString = taskString;
         this.dateAndTime = dateAndTime;
@@ -56,11 +60,11 @@ public class Task {
         return taskString;
     }
 
-    public String getIsDone() {
+    public boolean getIsDone() {
         return isDone;
     }
 
-    public String getType() {
+    public Type getType() {
         return type;
     }
 
@@ -68,7 +72,7 @@ public class Task {
         return dateAndTime;
     }
 
-    public void setIsDone(String isDone) {
+    public void setIsDone(boolean isDone) {
         this.isDone = isDone;
     }
 
@@ -80,6 +84,7 @@ public class Task {
 
     @Override
     public String toString() {
-        return type + isDone + " " + this.taskString;
+        String doneString = isDone == true ? "[+]" : "[ ]";
+        return "[" + type.toString().charAt(0) + "]" + doneString + " " + this.taskString;
     }
 }

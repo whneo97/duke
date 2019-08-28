@@ -62,7 +62,7 @@ public class Parser {
                 String[] arr = sc.nextLine().split(" \\| ");
                 String type = LoadValidation.getValidatedTaskType(arr[0].trim());
                 LoadValidation.ensureValidTokens(type, arr);
-                String isDone = LoadValidation.getValidatedDoneStatus(arr[1].trim()) == 1 ? "[+]" : "[ ]";
+                boolean isDone = LoadValidation.getValidatedDoneStatus(arr[1].trim()) == 1 ? true : false;
                 String taskString = arr[2].trim();
                 DateAndTime dateAndTime = null;
                 Validation.ensureNonEmptyTaskString(type, taskString);
