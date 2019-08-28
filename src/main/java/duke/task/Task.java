@@ -2,8 +2,6 @@ package duke.task;
 
 import duke.dateandtime.DateAndTime;
 
-import java.util.ArrayList;
-
 public class Task {
 
     public enum Type {
@@ -38,9 +36,9 @@ public class Task {
         String s = "Got it. I've added this task:\n  " + this + "\n" +
                 "Now you have " + tasks.size();
         if (tasks.size() == 1) {
-            s += " task in the list";
+            s += " task in the list.";
         }  else {
-            s += " tasks in the list";
+            s += " tasks in the list.";
         }
         return s;
     }

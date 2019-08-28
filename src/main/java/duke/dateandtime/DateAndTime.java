@@ -6,7 +6,7 @@ public class DateAndTime {
     Time timeStart;
     Time timeEnd;
 
-    DateAndTime() {
+    public DateAndTime() {
     }
 
     public DateAndTime(Date date) {
