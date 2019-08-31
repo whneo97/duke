@@ -4,7 +4,7 @@
 | |_| | |_| |   <  __/
 |____/ \__,_|_|\_\___|
 
-Hello! I'm Duke
+Hello! I'm seedu.duke.Duke
 What can I do for you?
 ____________________________________________________________
 1.[T][ ] buy milk

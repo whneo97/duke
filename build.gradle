@@ -41,7 +41,6 @@ repositories {
 }
 
 application {
-    // Change this to your main class.
-    //mainClassName = "seedu.duke.Duke"
-    mainClassName = "Duke"
+// Change this to your main class.
+    mainClassName = "seedu.duke.Duke"
 }
