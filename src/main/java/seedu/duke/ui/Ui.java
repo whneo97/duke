@@ -95,6 +95,15 @@ public class Ui {
     }
 
     /**
+     * Displays to the user the message that a search on a TaskList has been completed, followed by search results.
+     * @param searchResults TaskList containing list of search results based on keyword from user input.
+     */
+    public void showSearchResults(TaskList searchResults) {
+        System.out.println("Here are the matching tasks in your list:");
+        System.out.println(searchResults);
+    }
+
+    /**
      * Displays to the user the String representation of a TaskList.
      * Presumably called by the toString method of the TaskList class.
      * @param tasks TaskList to be displayed as its String representation.

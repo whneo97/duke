@@ -43,6 +43,30 @@ public class DateAndTime {
     }
 
     /**
+     * Returns a Date object stored as an attribute of this DateAndTime instance.
+     * @return Date object representing the date stored in this DateAndTime instance.
+     */
+    public Date getDate() {
+        return date;
+    }
+
+    /**
+     * Returns a Time object (starting time) stored as an attribute of this DateAndTime instance.
+     * @return Time object representing the starting Time stored in this DateAndTime instance.
+     */
+    public Time getTimeStart() {
+        return timeStart;
+    }
+
+    /**
+     * Returns a Time object (ending time) stored as an attribute of this DateAndTime instance.
+     * @return Time object representing the ending Time stored in this DateAndTime instance.
+     */
+    public Time getTimeEnd() {
+        return timeEnd;
+    }
+
+    /**
      * Returns the String representation of a DateAndTime instance.
      * @return String representation of a DateAndTime instance, with Time followed by Date.
      */

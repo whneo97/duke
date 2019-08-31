@@ -8,6 +8,7 @@ import seedu.duke.ui.Ui;
  * Defines a Command object that lists out all Tasks in the TaskList to the user.
  */
 public class ListCommand extends Command {
+
     /** Executes a ListCommand object using information stored in instance attributes.
      * Displays a message that shows the String representation of the given TaskList when called.
      * @param tasks TaskList that was being used by a client of this command.
@@ -19,4 +20,5 @@ public class ListCommand extends Command {
     public void execute(TaskList tasks, Ui ui, Storage storage) {
         ui.showTaskList(tasks);
     }
+
 }

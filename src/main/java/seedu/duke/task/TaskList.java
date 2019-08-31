@@ -65,6 +65,38 @@ public class TaskList {
     }
 
     /**
+     * Returns a TaskList with search results for this TaskList.
+     * @param taskString Keywords to be used to search this TaskList for relevant Tasks.
+     * @return TaskList containing keywords searched for in the given taskString.
+     */
+    public TaskList find(String taskString) {
+        TaskList searchResults = new TaskList();
+        for (int i = 0; i < taskList.size(); i++) {
+            Task task = taskList.get(i);
+            if (task.getTaskString().contains(taskString)
+                    || taskString.contains(task.getTaskString())) {
+                searchResults.add(task);
+            } else if (task.getIsDone() == true && taskString.equals("done")) {
+                searchResults.add(task);
+            } else if (task.getIsDone() == false && (taskString.equals("undone")
+                    || taskString.contains("not done"))) {
+                searchResults.add(task);
+            } else if (task.getType().toString().toLowerCase().contains(taskString.toLowerCase())
+                    || taskString.toLowerCase().contains(task.getType().toString().toLowerCase())) {
+                searchResults.add(task);
+            } else if (task.getDateAndTime() != null
+                    && task.getDateAndTime().toString().contains(taskString)
+                    || taskString.contains(task.getTaskString())) {
+                searchResults.add(task);
+            } else if ((task.getType().toString().equals("EVENT") && taskString.equals("at"))
+                    || (task.getType().toString().equals("DEADLINE") && taskString.equals("by"))) {
+                searchResults.add(task);
+            }
+        }
+        return searchResults;
+    }
+
+    /**
      * Returns the String representation of a TaskList instance.
      * Formats elements in the TaskList as a list, numbered from 1 to n, where n is the size of the taskList.
      * @return String representation of a TaskList instance.
