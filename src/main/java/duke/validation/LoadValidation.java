@@ -1,7 +1,12 @@
-package duke.validation;
+package seedu.duke.validation;
 
-import duke.exceptions.DukeException;
+import seedu.duke.exceptions.DukeException;
 
+/**
+ * Defines a LoadValidation class containing static methods.
+ * Validates strings parsed from the file pointed to by the file path of a Storage object.
+ * Inherits methods from Validation class.
+ */
 public class LoadValidation extends Validation {
     public static String getValidatedTaskType(String type) throws DukeException {
         if (!(type.equals("T") || type.equals("D") || type.equals("E"))) {
@@ -11,6 +16,12 @@ public class LoadValidation extends Validation {
         }
     }
 
+    /**
+     * Returns either 1 or 0, representing whether a Task has been marked as done (completed).
+     * @param doneStatus String of either "0" or "1", with the latter representing that a Task has been marked as done.
+     * @return An integer 1 or 0, representing the state of whether a Task has been marked as done in the storage file.
+     * @throws DukeException If doneStatus is anything other than the String "0" or "1".
+     */
     public static int getValidatedDoneStatus(String doneStatus) throws DukeException {
         try {
             int res = Integer.parseInt(doneStatus);
@@ -23,7 +34,13 @@ public class LoadValidation extends Validation {
         }
     }
 
-    public static void ensureValidTokens(String type, String[] arr) throws DukeException {
+    /**
+     * Ensures that there are valid number of tokens in a line of text in the Storage file representing a Task.
+     * @param type String representation of Task type in the Storage file, denoted by a single letter.
+     * @param arr An array containing words from a line of text separated by spaces, with elements representing tokens.
+     * @throws DukeException If the number of tokens fails to correspond to that of it's Task type in the line of text.
+     */
+    public static void ensureValidNumberOfTokens(String type, String[] arr) throws DukeException {
         if ((type.equals("D") || type.equals("E")) && arr.length != 4) {
             throw new DukeException("Incorrect Number of Tokens in Load File");
         } else if (type.equals("T") && arr.length != 3){

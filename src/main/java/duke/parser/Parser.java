@@ -1,24 +1,38 @@
-package duke.parser;
+package seedu.duke.parser;
 
-import duke.command.*;
-import duke.dateandtime.DateAndTime;
-import duke.exceptions.DukeException;
-import duke.storage.Storage;
-import duke.task.Deadline;
-import duke.task.Event;
-import duke.task.Task;
-import duke.task.Todo;
-import duke.validation.DeadlineValidation;
-import duke.validation.EventValidation;
-import duke.validation.LoadValidation;
-import duke.validation.Validation;
+import seedu.duke.command.AddCommand;
+import seedu.duke.command.Command;
+import seedu.duke.command.DeleteCommand;
+import seedu.duke.command.DoneCommand;
+import seedu.duke.command.ExitCommand;
+import seedu.duke.command.ListCommand;
+import seedu.duke.dateandtime.DateAndTime;
+import seedu.duke.exceptions.DukeException;
+import seedu.duke.storage.Storage;
+import seedu.duke.task.Deadline;
+import seedu.duke.task.Event;
+import seedu.duke.task.TaskList;
+import seedu.duke.task.Todo;
+import seedu.duke.validation.DeadlineValidation;
+import seedu.duke.validation.EventValidation;
+import seedu.duke.validation.LoadValidation;
+import seedu.duke.validation.Validation;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Defines a Parse object.
+ * Contains methods to parse contents in storage files and user input.
+ */
 public class Parser {
 
+    /**
+     * Returns a Command object given a full line of text.
+     * @param fullCommand Line of instructions presumably from user input.
+     * @return Command object based on information extracted from full command given.
+     * @throws DukeException If full command taken in is invalid and cannot be used to return any Command.
+     */
     public static Command parse(String fullCommand) throws DukeException {
         Scanner sc = new Scanner(fullCommand.trim());
 
@@ -70,15 +84,23 @@ public class Parser {
         }
     }
 
-    public static ArrayList<Task> parse(Storage storage) throws DukeException {
+    /**
+     * Returns a TaskList of Tasks given a Storage containing the storage-format String representation of a TaskList.
+     * Creates Tasks based on tokens from the Storage and adds them to the TaskList to be returned
+     * @param storage Storage containing the storage-format String representation of a TaskList to be parsed.
+     * @return TaskList of Tasks extracted from the given Storage.
+     * @throws DukeException If there are invalid tokens in the Storage that cannot be converted to Tasks or
+     *                       adding the Tasks into the TaskList is unsuccessful.
+     */
+    public static TaskList parse(Storage storage) throws DukeException {
         try {
             File file = new File(storage.getFilePath());
             Scanner sc = new Scanner(file);
-            ArrayList<Task> taskList = new ArrayList<>(100);
+            TaskList taskList = new TaskList();
             while (sc.hasNextLine()) {
                 String[] arr = sc.nextLine().split(" \\| ");
                 String type = LoadValidation.getValidatedTaskType(arr[0].trim());
-                LoadValidation.ensureValidTokens(type, arr);
+                LoadValidation.ensureValidNumberOfTokens(type, arr);
                 boolean isDone = LoadValidation.getValidatedDoneStatus(arr[1].trim()) == 1 ? true : false;
                 String taskString = arr[2].trim();
                 DateAndTime dateAndTime = null;
