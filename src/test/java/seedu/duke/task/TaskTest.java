@@ -12,8 +12,8 @@ public class TaskTest {
     @Test
     public void dummyAddedMessage() {
         dummyTasks.add(dummyTask);
-        String s = "Got it. I've added this task:\n  [T][ ] dummyTaskString\n" +
-                "Now you have 1 task in the list.";
+        String s = "Got it. I've added this task:\n  [T][ ] dummyTaskString\n"
+                + "Now you have 1 task in the list.";
         assertEquals(s, dummyTask.addedMessage(dummyTasks));
     }
 
@@ -21,8 +21,8 @@ public class TaskTest {
     public void dummyDeletedMessage() {
         dummyTasks.add(dummyTask);
         dummyTasks.remove(dummyTask);
-        String s = "Noted. I've removed this task:\n[T][ ] dummyTaskString\n" +
-                "Now you have 0 tasks in the list.";
+        String s = "Noted. I've removed this task:\n[T][ ] dummyTaskString\n"
+                + "Now you have 0 tasks in the list.";
         assertEquals(s, dummyTask.deletedMessage(dummyTasks));
     }
 

@@ -10,8 +10,8 @@ public class EventValidationTest {
 
     @Test
     public void dummyGetValidatedDescriptionAndDateTimeString() throws DukeException {
-        String[] arr = EventValidation.getValidatedDescriptionAndDateTime("dummyTaskString /at " +
-                        "03/01/2017 1400-1600");
+        String[] arr = EventValidation.getValidatedDescriptionAndDateTime("dummyTaskString /at "
+                + "03/01/2017 1400-1600");
         assertEquals("dummyTaskString", arr[0]);
         assertEquals("03/01/2017 1400-1600", arr[1]);
     }

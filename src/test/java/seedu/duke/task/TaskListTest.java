@@ -36,10 +36,11 @@ public class TaskListTest {
         assertEquals(1, dummyTasks.size());
     }
 
+    @Test
     public void dummyToString() {
         dummyTasks.add(dummyTask);
         dummyTasks.add(dummyTask2);
-        assertEquals("1. [T][ ] dummyTaskString\n2. [T][ ] dummyTaskString2", dummyTasks.toString());
+        assertEquals("1.[T][ ] dummyTaskString\n2.[T][ ] dummyTaskString2", dummyTasks.toString());
     }
 
 }
