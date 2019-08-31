@@ -23,6 +23,18 @@ public class DateAndTime {
         this.timeStart = timeStart;
     }
 
+    public Date getDate() {
+        return date;
+    }
+
+    public Time getTimeStart() {
+        return timeStart;
+    }
+
+    public Time getTimeEnd() {
+        return timeEnd;
+    }
+
     @Override
     public String toString() {
         if (timeEnd == null) {

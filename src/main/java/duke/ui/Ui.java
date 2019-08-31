@@ -51,4 +51,8 @@ public class Ui {
     public void showExitMessage() {
         System.out.println("Bye. Hope to see you again soon!");
     }
+
+    public void showSearchMessage() {
+        System.out.println("Here are the matching tasks in your list:");
+    }
 }
