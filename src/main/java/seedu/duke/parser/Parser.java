@@ -72,6 +72,9 @@ public class Parser {
             DateAndTime dateAndTime = EventValidation.getValidatedDateAndTime(dateTimeString);
 
             return new AddCommand("event", taskString, dateAndTime);
+        } else if (command.equals("find")) {
+            Validation.ensureNonEmptyTaskString(command, taskString);
+            return new FindCommand(taskString);
         } else if (command.equals("done")) {
             Validation.ensureNonEmptyTaskString(command, taskString);
             return new DoneCommand(taskString);
