@@ -19,6 +19,7 @@ public class EventValidation extends Validation {
      * @return String array of two elements containing task description, date, start and end time respectively.
      * @throws DukeException If the format of the String entered is invalid.
      */
+
     public static String[] getValidatedDescriptionAndDateTime(String descriptionAndDateTimeString)
             throws DukeException {
         if (!descriptionAndDateTimeString.contains("/at ")) {
@@ -27,6 +28,7 @@ public class EventValidation extends Validation {
         }
 
         String[] arr = descriptionAndDateTimeString.split(" /at ");
+        
         if (arr.length < 2) {
             throw new DukeException("The description of an event cannot be empty.");
         }

@@ -20,12 +20,14 @@ public class DeadlineValidation extends Validation {
      */
     public static String[] getValidatedDescriptionAndDateTime(String descriptionAndDateTimeString)
             throws DukeException {
+
         if (!descriptionAndDateTimeString.contains("/by ")) {
             throw new DukeException("Please separate deadline description and date/time by \" /by \". \n"
                     + "Note that date/time of a deadline cannot be empty.");
         }
 
         String[] arr = descriptionAndDateTimeString.split(" /by ");
+        
         if (arr.length < 2) {
             throw new DukeException("The description of an deadline cannot be empty.");
         }
