@@ -1,28 +1,46 @@
-package duke.validation;
+package seedu.duke.validation;
 
-import duke.dateandtime.Date;
-import duke.dateandtime.DateAndTime;
-import duke.dateandtime.Time;
-import duke.exceptions.DukeException;
+import seedu.duke.dateandtime.Date;
+import seedu.duke.dateandtime.DateAndTime;
+import seedu.duke.dateandtime.Time;
+import seedu.duke.exceptions.DukeException;
 
+/**
+ * Defines an EventValidation class containing static methods.
+ * Validates strings parsed to create an Event.
+ * Inherits methods from Validation class.
+ */
 public class EventValidation extends Validation {
 
-    public static String[] getValidatedDescriptionAndDateTime(String taskString) throws DukeException {
-        if (!taskString.contains("/at ")) {
-            throw new DukeException("Please separate deadline description and date/time by \" /at \". \n" +
-                    "Note that date/time of an event cannot be empty.");
+    /**
+     * Returns a String array of two elements containing task description, date, start and end time respectively.
+     * @param DescriptionAndDateTimeString String in the form [task description] [" /at "] [start time] ["-"]
+     *                                     ["end time].
+     * @return String array of two elements containing task description, date, start and end time respectively.
+     * @throws DukeException If the format of the String entered is invalid.
+     */
+    public static String[] getValidatedDescriptionAndDateTime(String DescriptionAndDateTimeString)
+            throws DukeException {
+        if (!DescriptionAndDateTimeString.contains("/at ")) {
+            throw new DukeException("Please separate deadline description and date/time by \" /at \". \n"
+                    + "Note that date/time of an event cannot be empty.");
         }
 
-        String[] arr = taskString.split(" /at ");
+        String[] arr = DescriptionAndDateTimeString.split(" /at ");
         if (arr.length < 2) {
             throw new DukeException("The description of an event cannot be empty.");
         }
-        taskString = arr[0];
         return new String[]{arr[0], arr[1]};
     }
 
-    public static DateAndTime getValidatedDateAndTime(String s) throws DukeException {
-        String[] dateTimeArr = s.split(" ");
+    /**
+     * Returns a String array of three elements containing date, start time and end time respectively.
+     * @param dateAndTimeString String in the form of [date] [start time] [end time].
+     * @return String array of three elements containing date, start time and end time respectively.
+     * @throws DukeException If the format of the String entered is invalid.
+     */
+    public static DateAndTime getValidatedDateAndTime(String dateAndTimeString) throws DukeException {
+        String[] dateTimeArr = dateAndTimeString.split(" ");
         if (dateTimeArr.length != 2) {
             throw new DukeException("Please ensure date format is in DD/MM/YYYY HHMM-HHMM format (24 hours).");
         }

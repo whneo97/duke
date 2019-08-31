@@ -1,13 +1,9 @@
-package seedu.duke.exceptions;
+package duke.exceptions;
 
-/**
- * Defines a DukeException object that extends the Exception class.
- */
 public class DukeException extends Exception {
 
     /**
-     * Creates an instance of DukeException that stores the error message.
-     * Takes in and stores the display message for users.
+     * DukeException constructor that takes in the display message for users.
      * @param message Message that indicates to users details regarding the exception.
      */
     public DukeException(String message) {
@@ -15,8 +11,7 @@ public class DukeException extends Exception {
     }
 
     /**
-     * Creates an instance of DukeException that stores both the error message and cause.
-     * Takes in and stores the display message and a Throwable cause for users.
+     * DukeException constructor that takes in the display message and a Throwable cause for users.
      * @param message Message that indicates to users details regarding the exception.
      * @param cause Throwable cause that chains this exception to the exception (or other Throwable)
      *              that gave rise to it.

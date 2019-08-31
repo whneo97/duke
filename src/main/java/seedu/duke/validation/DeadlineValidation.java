@@ -1,28 +1,45 @@
-package duke.validation;
+package seedu.duke.validation;
 
-import duke.dateandtime.Date;
-import duke.dateandtime.DateAndTime;
-import duke.dateandtime.Time;
-import duke.exceptions.DukeException;
+import seedu.duke.dateandtime.Date;
+import seedu.duke.dateandtime.DateAndTime;
+import seedu.duke.dateandtime.Time;
+import seedu.duke.exceptions.DukeException;
 
+/**
+ * Defines a DeadlineValidation class containing static methods.
+ * Validates Strings parsed to create a Deadline.
+ * Inherits methods from Validation class.
+ */
 public class DeadlineValidation extends Validation {
-    public static String[] getValidatedDescriptionAndDateTime(String taskString) throws DukeException {
-        if (!taskString.contains("/by ")) {
-            throw new DukeException("Please separate deadline description and date/time by \" /by \". \n" +
-                    "Note that date/time of a deadline cannot be empty.");
+
+    /**
+     * Returns a String array of two elements containing task description and date / time respectively.
+     * @param DescriptionAndDateTimeString String in the form [task description] [" /by "] [date and optional time].
+     * @return String array of two elements containing task description and date / time respectively.
+     * @throws DukeException If the format of the String entered is invalid.
+     */
+    public static String[] getValidatedDescriptionAndDateTime(String DescriptionAndDateTimeString) throws DukeException {
+        if (!DescriptionAndDateTimeString.contains("/by ")) {
+            throw new DukeException("Please separate deadline description and date/time by \" /by \". \n"
+                    + "Note that date/time of a deadline cannot be empty.");
         }
 
-        String[] arr = taskString.split(" /by ");
+        String[] arr = DescriptionAndDateTimeString.split(" /by ");
         if (arr.length < 2) {
             throw new DukeException("The description of an deadline cannot be empty.");
         }
-        taskString = arr[0];
-
+        
         return new String[]{arr[0], arr[1]};
     }
-    
-    public static DateAndTime getValidatedDateAndTime(String s) throws DukeException {
-        String[] dateTimeArr = s.split(" ");
+
+    /**
+     * Returns a String array of two elements containing date and time respectively.
+     * @param dateAndTimeString String in the form of either [date] or [date] [time].
+     * @return String array of two elements containing task description and date / time respectively.
+     * @throws DukeException If the format of the String entered is invalid.
+     */
+    public static DateAndTime getValidatedDateAndTime(String dateAndTimeString) throws DukeException {
+        String[] dateTimeArr = dateAndTimeString.split(" ");
         if (dateTimeArr.length > 2) {
             throw new DukeException("Please ensure date format is either in DD/MM/YYYY format or " 
                     + "DD/MM/YYYY HHMM format (24 hours).");

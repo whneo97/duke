@@ -1,24 +1,19 @@
-package seedu.duke.validation;
+package duke.validation;
 
-import seedu.duke.dateandtime.Date;
-import seedu.duke.dateandtime.Time;
-import seedu.duke.exceptions.DukeException;
-import seedu.duke.task.TaskList;
+import duke.dateandtime.Date;
+import duke.dateandtime.Time;
+import duke.exceptions.DukeException;
+import duke.task.TaskList;
 
-/**
- * Defines a Validation class containing static methods.
- * Validates strings parsed for general purposes
- * Includes validation for commands, dates, times and lists.
- */
 public class Validation {
 
     /**
-     * Ensures a command not meant to trailing strings following it does not have any.
-     * Trailing spaces will be automatically removed by the program.
-     * @param command String representation of a single-word command.
-     * @param taskString Description of a task, following a single-word command.
-     * @throws DukeException If taskString taken in is non-empty.
+     * Method that ensures a command that is not meant to have additional strings following behind it does not have
+     * additional strings following it (eg. list 7)
+     * @param taskString Description of a task, following a command
+     * @throws DukeException Exception that is thrown if taskString taken in is non-empty
      */
+
     public static void ensureEmptyTaskString(String command, String taskString) throws DukeException {
         if (!taskString.equals("")) {
             throw new DukeException("There cannot be any additional characters after the \"" + command + "\" command"
@@ -26,12 +21,12 @@ public class Validation {
         }
     }
 
-    /**
-     * Ensures a command or task requiring trailing string(s) following it has it / them.
-     * @param task Task or single-word command that requires a following description.
-     * @param taskString Description of a task, following a single-word command.
-     * @throws DukeException If taskString taken in is empty.
-     */
+    public static void ensureNonEmptyCommand(String command) throws DukeException {
+        if (command.equals("")) {
+            throw new DukeException("Command cannot be empty.");
+        }
+    }
+
     public static void ensureNonEmptyTaskString(String task, String taskString) throws DukeException {
         if (taskString.equals("")) {
             if (task.equals("delete") || task.equals("done")) {
@@ -45,26 +40,6 @@ public class Validation {
         }
     }
 
-    /**
-     * Ensures that a user does not enter an empty line of command.
-     * @param command String representation of a single-word command to the program.
-     * @throws DukeException If user inputs an empty line of command.
-     */
-    public static void ensureNonEmptyCommand(String command) throws DukeException {
-        if (command.equals("")) {
-            throw new DukeException("Command cannot be empty.");
-        }
-    }
-
-    /**
-     * Returns a validated Date object.
-     * Ensures that input String is in valid DD/MM/YYYY format.
-     * Ensures there are at most 12 months in a year.
-     * Ensures the day of the month in the year entered is valid.
-     * @param date String representation of a date in DD/MM/YYYY format.
-     * @return Validated Date object containing the day, month, year of the date parameter.
-     * @throws DukeException If the date entered is invalid.
-     */
     public static Date getValidatedDate(String date) throws DukeException {
         if (date.length() != 10) {
             throw new DukeException("Please ensure date format is in DD/MM/YYYY");
@@ -113,25 +88,15 @@ public class Validation {
             }
         } else {
             if (isLeapYear && day > 29) {
-                throw new DukeException("There cannot be more than 29 days in " + Date.getMonth(month) + " "
-                        + year + ".");
+                throw new DukeException("There cannot be more than 29 days in " + Date.getMonth(month) + " " + year);
             } else if (!isLeapYear && day > 28) {
-                throw new DukeException("There cannot be more than 28 days in " + Date.getMonth(month) + " "
-                        + year + ".");
+                throw new DukeException("There cannot be more than 28 days in " + Date.getMonth(month) + " " + year);
             }
         }
 
         return new Date(day, month, year);
     }
 
-    /**
-     * Returns a validated Time object.
-     * Ensures that input String is in valid HHMM format.
-     * Ensures hours is not more than 23 and minutes is not more than 59.
-     * @param time String representation of a time in HHMM format.
-     * @return Validated Time object containing the day, month, year of the time parameter.
-     * @throws DukeException If the time entered is invalid.
-     */
     public static Time getValidatedTime(String time) throws DukeException {
         if (time.length() != 4) {
             throw new DukeException("Please ensure time format is in HHMM format (24 hours).");
@@ -159,21 +124,22 @@ public class Validation {
     }
 
     /**
-     * Returns a validated index for the given list.
-     * Takes in a string and ensures that it is a valid positive integer within the range of the given TaskList 
-     * (numbered from 1 to n in a TaskList of size n).
-     * Ensures that any n that is returned will be able to access the TaskList without encountering a general
-     * number format exception that will cause the program to terminate in the event that the index is invalid or
-     * out of bounds.
-     * Post-condition: A client of this method may use the returned value to access tasks in the TaskList 
-     * if the String representing the index of the item in the taskList is valid.
-     * @param tasks TaskList of which the validated index is to be returned.
-     * @param k String that represents the ith element of the TaskList (k ranges from 1 to n).
-     * @return An integer value i that can be used to access the item in the taskList (i ranges from 0 to n - 1).
-     * @throws DukeException If k is less than 0, more than the size of the list or cannot be parsed as an integer.
+     * Takes in a string and ensures that it is a valid positive integer that is within the range of the taskList
+     * (numbered from 0 to n - 1 if there are items in the taskList, where n is the size of the taskList).
+     * Post-condition: A client of this method may use it to access tasks in the taskList if the string representing
+     * the index of the item in the taskList is valid, or otherwise user will be prompted to re-enter the command and
+     * number.
+     * @param s String that represents index of item in taskList.
+     * @return An int that is to be used to access the item in the taskList. This ensures that any n that is returned
+     *     will be able to access the taskList and that the program can continue running without encountering a general
+     *     number format exception that will cause the program to terminate in the event that the index is invalid or
+     *     out of bounds
+     * @throws DukeException Exception that is thrown if the numeric value of the string taken in does not correspond
+     *     to a valid integer that can be used to access any task in the taskList. A valid number should start from 0
+     *     and not equal or exceed the size of the current taskList.
      */
-    public static int getValidatedListIndex(TaskList tasks, String k) throws DukeException {
-        if (k.equals("")) {
+    public static int getValidatedListIndex(TaskList tasks, String s) throws DukeException {
+        if (s.equals("")) {
             throw new DukeException("Please enter a valid numerical value after the intended command"
                     + " (separated by a space).\n" + "The number cannot be empty for this command.");
         }
@@ -181,7 +147,7 @@ public class Validation {
         int n = 0;
 
         try {
-            n = Integer.parseInt(k);
+            n = Integer.parseInt(s);
             if (n <= 0 || n > tasks.size()) {
                 throw new NumberFormatException();
             }
