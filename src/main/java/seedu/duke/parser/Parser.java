@@ -79,8 +79,8 @@ public class Parser {
             Validation.ensureNonEmptyTaskString(command, taskString);
             return new DeleteCommand(taskString);
         } else {
-             Validation.ensureNonEmptyCommand(command);
-             throw new DukeException("I'm sorry, but I don't know what that means :-(");
+            Validation.ensureNonEmptyCommand(command);
+            throw new DukeException("I'm sorry, but I don't know what that means :-(");
         }
     }
 

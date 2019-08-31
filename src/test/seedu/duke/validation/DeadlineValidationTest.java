@@ -1,9 +1,8 @@
-package validation;
+package seedu.duke.validation;
 
-import duke.dateandtime.DateAndTime;
-import duke.exceptions.DukeException;
-import duke.validation.DeadlineValidation;
 import org.junit.jupiter.api.Test;
+import seedu.duke.dateandtime.DateAndTime;
+import seedu.duke.exceptions.DukeException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

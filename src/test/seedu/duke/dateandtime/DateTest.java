@@ -1,5 +1,6 @@
-package duke.dateandtime;
+package seedu.duke.dateandtime;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -8,7 +9,7 @@ public class DateTest {
 
     @Test
     public void dummyGetMonth() {
-        assertEquals("February", Date.getMonth(2));
+        Assertions.assertEquals("February", Date.getMonth(2));
     }
 
     @Test

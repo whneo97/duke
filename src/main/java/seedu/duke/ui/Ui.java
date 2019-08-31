@@ -83,7 +83,7 @@ public class Ui {
      */
     public void showDeletedMessage(String deletedMessage) {
         System.out.println(deletedMessage);
-    };
+    }
 
     /**
      * Displays to the user that a Task has been marked as done (completed).
@@ -92,7 +92,7 @@ public class Ui {
      */
     public void showDoneMessage(String doneMessage) {
         System.out.println(doneMessage);
-    };
+    }
 
     /**
      * Displays to the user the String representation of a TaskList.

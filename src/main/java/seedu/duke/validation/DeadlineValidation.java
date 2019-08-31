@@ -14,17 +14,18 @@ public class DeadlineValidation extends Validation {
 
     /**
      * Returns a String array of two elements containing task description and date / time respectively.
-     * @param DescriptionAndDateTimeString String in the form [task description] [" /by "] [date and optional time].
+     * @param descriptionAndDateTimeString String in the form [task description] [" /by "] [date and optional time].
      * @return String array of two elements containing task description and date / time respectively.
      * @throws DukeException If the format of the String entered is invalid.
      */
-    public static String[] getValidatedDescriptionAndDateTime(String DescriptionAndDateTimeString) throws DukeException {
-        if (!DescriptionAndDateTimeString.contains("/by ")) {
+    public static String[] getValidatedDescriptionAndDateTime(String descriptionAndDateTimeString)
+            throws DukeException {
+        if (!descriptionAndDateTimeString.contains("/by ")) {
             throw new DukeException("Please separate deadline description and date/time by \" /by \". \n"
                     + "Note that date/time of a deadline cannot be empty.");
         }
 
-        String[] arr = DescriptionAndDateTimeString.split(" /by ");
+        String[] arr = descriptionAndDateTimeString.split(" /by ");
         if (arr.length < 2) {
             throw new DukeException("The description of an deadline cannot be empty.");
         }

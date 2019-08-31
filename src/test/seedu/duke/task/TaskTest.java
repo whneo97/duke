@@ -1,35 +1,36 @@
-package task;
+package seedu.duke.task;
 
-import duke.task.Task;
-import duke.task.TaskList;
-import duke.task.Todo;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TaskTest {
 
-    Task dummyTask = new Todo("dummyTaskString");
-    TaskList dummytasks = new TaskList();
+    private Task dummyTask = new Todo("dummyTaskString");
+    private TaskList dummyTasks = new TaskList();
 
     @Test
     public void dummyAddedMessage() {
+        dummyTasks.add(dummyTask);
         String s = "Got it. I've added this task:\n  [T][ ] dummyTaskString\n" +
-                "Now you have 0 tasks in the list.";
-        assertEquals(s, dummyTask.addedMessage(dummytasks));
+                "Now you have 1 task in the list.";
+        assertEquals(s, dummyTask.addedMessage(dummyTasks));
     }
 
     @Test
     public void dummyDeletedMessage() {
+        dummyTasks.add(dummyTask);
+        dummyTasks.remove(dummyTask);
         String s = "Noted. I've removed this task:\n[T][ ] dummyTaskString\n" +
                 "Now you have 0 tasks in the list.";
-        assertEquals(s, dummyTask.deletedMessage(dummytasks));
+        assertEquals(s, dummyTask.deletedMessage(dummyTasks));
     }
 
     @Test
     public void dummyDoneMessage() {
-        String s = "Nice! I've marked this task as done:\n  [T][ ] dummyTaskString";
-        assertEquals(s, dummyTask.doneMessage(dummyTask));
+        dummyTask.setIsDone(true);
+        String s = "Nice! I've marked this task as done:\n  [T][+] dummyTaskString";
+        assertEquals(s, dummyTask.doneMessage());
     }
 
     @Test
@@ -39,7 +40,8 @@ public class TaskTest {
 
     @Test
     public void dummyGetIsDone() {
-        assertEquals(false, dummyTask.getIsDone());
+        dummyTask.setIsDone(true);
+        assertEquals(true, dummyTask.getIsDone());
     }
 
     @Test

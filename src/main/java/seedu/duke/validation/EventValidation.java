@@ -14,19 +14,19 @@ public class EventValidation extends Validation {
 
     /**
      * Returns a String array of two elements containing task description, date, start and end time respectively.
-     * @param DescriptionAndDateTimeString String in the form [task description] [" /at "] [start time] ["-"]
+     * @param descriptionAndDateTimeString String in the form [task description] [" /at "] [start time] ["-"]
      *                                     ["end time].
      * @return String array of two elements containing task description, date, start and end time respectively.
      * @throws DukeException If the format of the String entered is invalid.
      */
-    public static String[] getValidatedDescriptionAndDateTime(String DescriptionAndDateTimeString)
+    public static String[] getValidatedDescriptionAndDateTime(String descriptionAndDateTimeString)
             throws DukeException {
-        if (!DescriptionAndDateTimeString.contains("/at ")) {
+        if (!descriptionAndDateTimeString.contains("/at ")) {
             throw new DukeException("Please separate deadline description and date/time by \" /at \". \n"
                     + "Note that date/time of an event cannot be empty.");
         }
 
-        String[] arr = DescriptionAndDateTimeString.split(" /at ");
+        String[] arr = descriptionAndDateTimeString.split(" /at ");
         if (arr.length < 2) {
             throw new DukeException("The description of an event cannot be empty.");
         }

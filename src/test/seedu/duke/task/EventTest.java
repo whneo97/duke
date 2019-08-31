@@ -1,19 +1,18 @@
-package task;
+package seedu.duke.task;
 
-import duke.dateandtime.Date;
-import duke.dateandtime.DateAndTime;
-import duke.dateandtime.Time;
-import duke.task.Event;
 import org.junit.jupiter.api.Test;
+import seedu.duke.dateandtime.Date;
+import seedu.duke.dateandtime.DateAndTime;
+import seedu.duke.dateandtime.Time;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class EventTest {
 
-    Event dummyEvent = new Event("dummyString",
-            new DateAndTime(new Date(7, 5, 2031), new Time(12, 32), new Time(15, 13)));
-
-    Event dummyEvent2 = new Event("dummyString",
+    private Event dummyEvent = new Event("dummyString",
+            new DateAndTime(new Date(7, 5, 2031), new Time(12, 32),
+                    new Time(15, 13)));
+    private Event dummyEvent2 = new Event("dummyString",
             new DateAndTime(new Date(3, 12, 2064),
                     new Time(12, 34), new Time(23, 54)), true);
 

@@ -77,7 +77,7 @@ public class Storage {
      * @throws DukeException If writing to the original file at this Storage's file path is unsuccessful.
      */
     public void save(TaskList tasks) throws DukeException {
-        try{
+        try {
             File dir = new File(dirPath);
             boolean directoryIsCreated = dir.mkdir();
 
@@ -106,9 +106,7 @@ public class Storage {
                 throw new DukeException("Original storage directory no longer exists!\n"
                         + "Don't worry, we have restored a new one in it's place in the same location and "
                         + "performed the required operation.");
-            }
-
-            if (fileIsCreated) {
+            } else if (fileIsCreated) {
                 throw new DukeException("Original storage file no longer exists!\n"
                         + "Don't worry, we have restored a new one in it's place in the same location and "
                         + "performed the required operation.");
@@ -129,7 +127,7 @@ public class Storage {
     }
 
     /**
-     * Returns the TaskList stored in this instance of Storage
+     * Returns the TaskList stored in this instance of Storage.
      * @return This Storage's taskList attribute.
      */
     public TaskList getTaskList() {

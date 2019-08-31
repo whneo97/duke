@@ -8,6 +8,13 @@ import seedu.duke.exceptions.DukeException;
  * Inherits methods from Validation class.
  */
 public class LoadValidation extends Validation {
+
+    /**
+     * Returns a validated Type of Task represented by a single-character String.
+     * @param type Type of task represented by a single-character String.
+     * @return Validated Type of Task based on given type of Task.
+     * @throws DukeException If input type of Task is invalid or does not correspond to any known Type of Task.
+     */
     public static String getValidatedTaskType(String type) throws DukeException {
         if (!(type.equals("T") || type.equals("D") || type.equals("E"))) {
             throw new DukeException("Incorrect Type in Load File");
@@ -43,7 +50,7 @@ public class LoadValidation extends Validation {
     public static void ensureValidNumberOfTokens(String type, String[] arr) throws DukeException {
         if ((type.equals("D") || type.equals("E")) && arr.length != 4) {
             throw new DukeException("Incorrect Number of Tokens in Load File");
-        } else if (type.equals("T") && arr.length != 3){
+        } else if (type.equals("T") && arr.length != 3) {
             throw new DukeException("Incorrect Number of Tokens in Load File");
         }
     }

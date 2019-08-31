@@ -38,8 +38,8 @@ public class Task {
      * @return String indicating that this Task instance has been added to the given TaskList.
      */
     public String addedMessage(TaskList tasks) {
-        String s = "Got it. I've added this task:\n  " + this + "\n" +
-                "Now you have " + tasks.size();
+        String s = "Got it. I've added this task:\n  " + this + "\n"
+                + "Now you have " + tasks.size();
         if (tasks.size() == 1) {
             s += " task in the list.";
         }  else {

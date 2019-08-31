@@ -41,6 +41,7 @@ public class DateAndTime {
         this(date, timeEnd);
         this.timeStart = timeStart;
     }
+
     /**
      * Returns the String representation of a DateAndTime instance.
      * @return String representation of a DateAndTime instance, with Time followed by Date.
@@ -49,7 +50,7 @@ public class DateAndTime {
     public String toString() {
         if (timeEnd == null) {
             return "" + date;
-        } else if (this.timeStart == null){
+        } else if (this.timeStart == null) {
             return "" + date + " " + timeEnd;
         } else {
             return "" + date + " " + timeStart + "-" + timeEnd;

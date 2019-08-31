@@ -1,8 +1,8 @@
-package validation;
+package seedu.duke.validation;
 
-import duke.exceptions.DukeException;
-import duke.validation.LoadValidation;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import seedu.duke.exceptions.DukeException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -10,7 +10,7 @@ public class LoadValidationTest {
 
     @Test
     public void dummyGetValidatedTaskType() throws DukeException {
-        assertEquals("T", LoadValidation.getValidatedTaskType("T"));
+        Assertions.assertEquals("T", LoadValidation.getValidatedTaskType("T"));
     }
 
     @Test

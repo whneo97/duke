@@ -1,15 +1,13 @@
-package task;
+package seedu.duke.task;
 
-import duke.task.Todo;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TodoTest {
 
-    Todo dummyTodo = new Todo("dummyString");
-
-    Todo dummyTodo2 = new Todo("dummyString2", true);
+    private Todo dummyTodo = new Todo("dummyString");
+    private Todo dummyTodo2 = new Todo("dummyString2", true);
 
     @Test
     public void dummyToString() {

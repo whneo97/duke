@@ -36,8 +36,8 @@ public class Validation {
         if (taskString.equals("")) {
             if (task.equals("delete") || task.equals("done")) {
                 throw new DukeException("The index for a " + task + " command cannot be empty.");
-            } else if (task.charAt(0) == 'a' || task.charAt(0) == 'e' || task.charAt(0) == 'i' ||
-                    task.charAt(0) == 'o' || task.charAt(0) == 'u') {
+            } else if (task.charAt(0) == 'a' || task.charAt(0) == 'e' || task.charAt(0) == 'i'
+                    || task.charAt(0) == 'o' || task.charAt(0) == 'u') {
                 throw new DukeException("The description of an " + task + " cannot be empty.");
             } else {
                 throw new DukeException("The description of a " + task + " cannot be empty.");

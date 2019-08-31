@@ -1,10 +1,10 @@
-package validation;
+package seedu.duke.validation;
 
-import duke.dateandtime.Date;
-import duke.dateandtime.Time;
-import duke.exceptions.DukeException;
-import duke.validation.Validation;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import seedu.duke.dateandtime.Date;
+import seedu.duke.dateandtime.Time;
+import seedu.duke.exceptions.DukeException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -12,7 +12,7 @@ public class ValidationTest {
 
     @Test
     public void dummyGetValidatedDate() throws DukeException {
-        assertEquals((new Date(13, 9, 2018)).toString(),
+        Assertions.assertEquals((new Date(13, 9, 2018)).toString(),
                 Validation.getValidatedDate("13/09/2018").toString());
     }
 
