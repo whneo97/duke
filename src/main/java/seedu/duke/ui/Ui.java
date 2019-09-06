@@ -11,6 +11,8 @@ import java.util.Scanner;
 public class Ui {
 
     private Scanner sc;
+    private String input;
+    private String output;
 
     /**
      * Creates an instance of Ui.
@@ -23,7 +25,7 @@ public class Ui {
     /**
      * Displays the welcome message to the user.
      */
-    public void showWelcome() {
+    public static String showWelcome() {
         String logo = " ____        _        \n"
                 + "|  _ \\ _   _| | _____ \n"
                 + "| | | | | | | |/ / _ \\\n"
@@ -31,8 +33,8 @@ public class Ui {
                 + "|____/ \\__,_|_|\\_\\___|\n";
         //System.out.println("Hello from\n" + logo);
 
-        System.out.println(logo + "\nHello! I'm Duke\n"
-                + "What can I do for you?");
+        return logo + "\nHello! I'm Duke\n"
+                + "What can I do for you?";
     }
 
     /**
@@ -40,14 +42,15 @@ public class Ui {
      * @return Next line of text obtained from user input via Scanner stored in sc attribute.
      */
     public String readCommand() {
-        return sc.nextLine();
+        input = sc.nextLine();
+        return input;
     }
 
     /**
      * Displays the separator line between program inputs / outputs to the user.
      */
     public void showLine() {
-        System.out.println("____________________________________________________________");
+        output = "____________________________________________________________";
     }
 
     /**
@@ -55,7 +58,7 @@ public class Ui {
      * Pre-condition: An error is thrown to the client that calls this method, specifically when loading a file.
      */
     public void showLoadingError() {
-        System.out.println("Error loading specified file.");
+        output = "Error loading specified file.";
     }
 
     /**
@@ -64,7 +67,7 @@ public class Ui {
      * @param message Error message from Exception that is thrown to a client that calls this method.
      */
     public void showError(String message) {
-        System.out.println("OOPS!!! " + message);
+        output = "OOPS!!! " + message;
     }
 
     /**
@@ -73,7 +76,7 @@ public class Ui {
      * @param addedMessage Message to indicate to the user that a Task has been added to a TaskList.
      */
     public void showAddedMessage(String addedMessage) {
-        System.out.println(addedMessage);
+        output = addedMessage;
     }
 
     /**
@@ -82,7 +85,7 @@ public class Ui {
      * @param deletedMessage Message to indicate to the user that a Task has been removed from a TaskList.
      */
     public void showDeletedMessage(String deletedMessage) {
-        System.out.println(deletedMessage);
+        output = deletedMessage;
     }
 
     /**
@@ -91,7 +94,7 @@ public class Ui {
      * @param doneMessage Message to indicate to the user that a Task has been marked as done.
      */
     public void showDoneMessage(String doneMessage) {
-        System.out.println(doneMessage);
+        output = doneMessage;
     }
 
     /**
@@ -99,8 +102,8 @@ public class Ui {
      * @param searchResults TaskList containing list of search results based on keyword from user input.
      */
     public void showSearchResults(TaskList searchResults) {
-        System.out.println("Here are the matching tasks in your list:");
-        System.out.println(searchResults);
+        output = "Here are the matching tasks in your list:\n"
+                + searchResults;
     }
 
     /**
@@ -109,13 +112,22 @@ public class Ui {
      * @param tasks TaskList to be displayed as its String representation.
      */
     public void showTaskList(TaskList tasks) {
-        System.out.println(tasks);
+        output = tasks.toString();
     }
 
     /**
      * Displays to the user an exit message before the program receives a command to be terminated.
      */
     public void showExitMessage() {
-        System.out.println("Bye. Hope to see you again soon!");
+        output = "Bye. Hope to see you again soon!";
     }
+
+    public String getInput() {
+        return this.input;
+    }
+
+    public String getOutput() {
+        return this.output;
+    }
+
 }
