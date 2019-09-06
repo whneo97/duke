@@ -1,23 +1,14 @@
 D | 0 | buy cake | 14/12/2019
-E | 1 | project meeting | 31/12/2019 2015-2359
-D | 1 | project meeting | 12/08/2019 1400
-T | 1 | hello
 T | 0 | hello world
 T | 1 | hello
-E | 1 | hello world | 12/12/2019 1400-2300
 T | 0 | buy bread
-T | 0 | buy milk
-D | 0 | return book | 15/12/2019 2345
-D | 0 | return book | 15/12/2019 2359
 D | 0 | return book | 15/12/2019 0000
 D | 1 | buy cake | 14/12/2019
-E | 1 | project meeting | 31/12/2019 2015-2359
-D | 1 | project meeting | 12/08/2019 1400
 E | 0 | attend lecture | 22/12/2019 1400-1500
 E | 0 | attend lecture | 22/12/2019 1400-1500
 T | 1 | 4
 T | 1 | hello
-E | 0 | event1 | 15/12/2019 2200-2300
+E | 1 | event1 | 15/12/2019 2200-2300
 T | 1 | hello
 D | 0 | newdeadline | 15/12/2019
 T | 0 | hello

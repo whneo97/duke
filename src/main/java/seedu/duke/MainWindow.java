@@ -27,8 +27,10 @@ public class MainWindow extends AnchorPane {
 
     private seedu.duke.Duke duke;
 
-    private Image userImage = new Image(this.getClass().getResourceAsStream("/images/DaUser.png"));
-    private Image dukeImage = new Image(this.getClass().getResourceAsStream("/images/DaDuke.png"));
+    //Icon made by Smashicons (https://www.flaticon.com/authors/smashicons) from www.flaticon.com
+    private Image userImage = new Image(this.getClass().getResourceAsStream("/images/User.png"));
+    //Icon made by Freepik (https://www.flaticon.com/authors/freepik) from www.flaticon.com
+    private Image dukeImage = new Image(this.getClass().getResourceAsStream("/images/Duke.png"));
 
     @FXML
     public void initialize() {
@@ -55,7 +57,7 @@ public class MainWindow extends AnchorPane {
         );
         userInput.clear();
         if (duke.getIsExit()) {
-            PauseTransition delay = new PauseTransition(Duration.seconds(1));
+            PauseTransition delay = new PauseTransition(Duration.seconds(0.9));
             delay.setOnFinished( event -> Platform.exit());
             delay.play();
         }
