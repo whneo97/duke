@@ -6,9 +6,9 @@ D | 0 | return book | 15/12/2019 0000
 D | 1 | buy cake | 14/12/2019
 E | 0 | attend lecture | 22/12/2019 1400-1500
 E | 0 | attend lecture | 22/12/2019 1400-1500
-T | 1 | 4
-T | 1 | hello
 E | 1 | event1 | 15/12/2019 2200-2300
 T | 1 | hello
-D | 0 | newdeadline | 15/12/2019
-T | 0 | hello
+D | 1 | newdeadline | 15/12/2019
+E | 0 | myevent | 15/12/2019 2000-2100
+D | 0 | homework | 12/12/2918
+T | 0 | myTodo
