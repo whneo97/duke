@@ -28,7 +28,7 @@ public class HelpCommand extends Command {
     private static final String LISTHELP = "list: Lists all task in the tasklist stored.\n"
             + "Requires input to be in the format \'list\'.";
     private static final String FINDHELP = "find: Finds tasks in the tasklist given keywords.\n"
-            + "Requires input to be in the format \'find\' [keyword].\n"
+            + "Requires input to be in the format \'find [keyword]\'.\n"
             + "Keywords could be name of tasks, substrings of it, type of tasks, date in DD/MM/YYYY format, "
             + "time in HHMM format, or whether or not the task is done in the form \'done\', \'not done\', "
             +  "or \'undone\'.\n"
