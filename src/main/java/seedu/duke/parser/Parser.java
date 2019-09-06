@@ -6,6 +6,7 @@ import seedu.duke.command.DeleteCommand;
 import seedu.duke.command.DoneCommand;
 import seedu.duke.command.ExitCommand;
 import seedu.duke.command.FindCommand;
+import seedu.duke.command.HelpCommand;
 import seedu.duke.command.ListCommand;
 import seedu.duke.dateandtime.DateAndTime;
 import seedu.duke.exceptions.DukeException;
@@ -82,6 +83,8 @@ public class Parser {
         } else if (command.equals("delete")) {
             Validation.ensureNonEmptyTaskString(command, taskString);
             return new DeleteCommand(taskString);
+        } else if (command.equals("help")) {
+            return new HelpCommand(taskString);
         } else {
             Validation.ensureNonEmptyCommand(command);
             throw new DukeException("I'm sorry, but I don't know what that means :-(");

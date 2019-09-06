@@ -68,7 +68,9 @@ public class Ui {
      * @param message Error message from Exception that is thrown to a client that calls this method.
      */
     public void showError(String message) {
-        output = "OOPS!!! " + message;
+        output = "OOPS!!! " + message + "\n\n"
+                + "Input \'help [command1] [command2] etc.\' for usage information for requested commands or "
+                + "simply input \'help\' for the full list of commands known to this program.";
     }
 
     /**
@@ -118,6 +120,14 @@ public class Ui {
     }
 
     /**
+     * Stores a message to be displayed to the user the String representations of all definitions of commands requested.
+     * @param helpDefinitions Definitions and usage of the commands to be displayed to the user.
+     */
+    public void showHelpMessage(String helpDefinitions) {
+        output = helpDefinitions;
+    }
+
+    /**
      * Stores a messsage to be displayed to the user an exit message.
      * This message is displayed before the program terminates.
      */
@@ -140,5 +150,4 @@ public class Ui {
     public String getOutput() {
         return this.output;
     }
-
 }
