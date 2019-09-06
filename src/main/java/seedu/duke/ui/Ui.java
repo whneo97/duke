@@ -63,6 +63,15 @@ public class Ui {
     }
 
     /**
+     * Stores a notification message to be displayed to the user with the given message.
+     * Pre-condition: A notification is to be displayed to client that calls this method.
+     * @param message Notification message that is to be displayed to a client that calls this method.
+     */
+    public void showNotification(String message) {
+        output += "\n\nNotification: " + message;
+    }
+
+    /**
      * Stores an error message to be displayed to the user with the given message.
      * Pre-condition: An error is thrown to the client that calls this method.
      * @param message Error message from Exception that is thrown to a client that calls this method.
