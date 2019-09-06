@@ -19,3 +19,5 @@ T | 1 | hello world
 E | 0 | attend lecture | 22/12/2019 1400-1500
 E | 0 | attend lecture | 22/12/2019 1400-1500
 T | 1 | 4
+T | 0 | hello
+E | 0 | event1 | 15/12/2019 2200-2300
