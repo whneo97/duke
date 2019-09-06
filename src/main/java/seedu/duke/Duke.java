@@ -18,6 +18,10 @@ public class Duke {
     private Ui ui;
     private boolean isExit;
 
+    /**
+     * Creates an instance of Duke with a default location of storage files.
+     * Files are stored in a text file, inside the current folder where Duke is currently being run.
+     */
     public Duke() {
         this(System.getProperty("user.dir") + "/data/duke.txt");
     }
@@ -38,28 +42,11 @@ public class Duke {
     }
 
     /**
-     * Runs the Duke program.
-     * Shows welcome message, waits for user input and performs necessary commands until an exit command is received.
+     * Runs an iteration of the Duke program.
+     * Performs the necessary input command given an input.
+     * @param input String representation of input from the user.
      */
-//    public void run() {
-//        ui.showWelcome();
-//        boolean isExit = false;
-//        while (!isExit) {
-//            try {
-//                String fullCommand = ui.readCommand();
-//                ui.showLine(); // show the divider line ("_______")
-//                Command c = Parser.parse(fullCommand);
-//                c.execute(tasks, ui, storage);
-//                isExit = c.isExit();
-//            } catch (DukeException e) {
-//                ui.showError(e.getMessage());
-//            } finally {
-//                ui.showLine();
-//            }
-//        }
-//    }
-
-    public void run(String input) {
+    private void run(String input) {
         try {
             String fullCommand = input;
             Command c = Parser.parse(fullCommand);
@@ -71,27 +58,29 @@ public class Duke {
     }
 
     /**
-     * You should have your own function to generate a response to user input.
-     * Replace this stub with your completed method.
+     * Returns the response of Duke after calling it's run method.
+     * @param input String representation of input from the user.
+     * @return The response of Duke obtained from it's Ui after calling the run method of DUke.
      */
     public String getResponse(String input) {
         run(input);
         return ui.getOutput();
     }
 
+    /**
+     * Returns the Ui attribute of this instance of Duke.
+     * @return Ui instance employed by this Duke object.
+     */
     public Ui getUi() {
         return ui;
     }
 
+    /**
+     * Returns whether Duke has been called to exit after the most recent command.
+     *
+     * @return A boolean tha denotes whether or not Duke has been called to terminate by user command.
+     */
     public boolean getIsExit() {
         return isExit;
     }
-
-    /**
-     * Calls the run method of the Duke program.
-     * @param args Array of Strings required as arguments for this main method.
-     */
-//    public static void main(String[] args) {
-//        new Duke().run("");
-//    }
 }

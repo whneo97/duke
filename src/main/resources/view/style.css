@@ -28,7 +28,6 @@
     -fx-border-color: transparent;
 }
 
-/* The main scrollbar CSS class of ListView */
 .scrollables .scroll-bar:horizontal ,
 .scrollables  .scroll-bar:vertical{
     -fx-background-color:transparent;
