@@ -78,7 +78,8 @@ public class DialogBox extends HBox {
      */
     public static DialogBox getUserDialog(String text, Image img) {
         var db = new DialogBox(text, img);
-//        db.dialog.setTextFill(Color.rgb(150, 255, 160));
+        //Colour Experimentation
+        //db.dialog.setTextFill(Color.rgb(150, 255, 160));
         return db;
     }
 
@@ -90,9 +91,10 @@ public class DialogBox extends HBox {
      */
     public static DialogBox getDukeDialog(String text, Image img) {
         var db = new DialogBox(text, img);
-        if (!text.equals(Ui.showLogo())) {
-//            db.dialog.setTextFill(Color.rgb(255, 255, 180));
-        }
+        //Colour Experimentation:
+        //if (!text.equals(Ui.showLogo())) {
+        //db.dialog.setTextFill(Color.rgb(255, 255, 180));
+        //}
         db.flip();
         return db;
     }
