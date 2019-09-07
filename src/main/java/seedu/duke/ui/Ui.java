@@ -13,6 +13,11 @@ public class Ui {
     private Scanner sc;
     private String input;
     private String output;
+    private static String logo = " ____        _        \n"
+            + "|  _ \\ _   _| | _____ \n"
+            + "| | | | | | | |/ / _ \\\n"
+            + "| |_| | |_| |   <  __/\n"
+            + "|____/ \\__,_|_|\\_\\___|\n";
 
     /**
      * Creates an instance of Ui.
@@ -23,18 +28,19 @@ public class Ui {
     }
 
     /**
+     * Returns a String that displays the Duke Logo to the user.
+     * @return String representation of Duke Logo to be displayed to the user.
+     */
+    public static String showLogo() {
+        return logo;
+    }
+
+    /**
      * Returns a String that displays the welcome message to the user.
-     * @return String representation of welcome message to be displayed to the user.
+     * @return String representation of the welcome message to be displayed to the user.
      */
     public static String showWelcome() {
-        String logo = " ____        _        \n"
-                + "|  _ \\ _   _| | _____ \n"
-                + "| | | | | | | |/ / _ \\\n"
-                + "| |_| | |_| |   <  __/\n"
-                + "|____/ \\__,_|_|\\_\\___|\n";
-        //System.out.println("Hello from\n" + logo);
-
-        return logo + "\nHello! I'm Duke\n"
+        return "\nHello! I'm Duke\n"
                 + "What can I do for you?";
     }
 
@@ -63,12 +69,23 @@ public class Ui {
     }
 
     /**
+     * Stores a notification message to be displayed to the user with the given message.
+     * Pre-condition: A notification is to be displayed to client that calls this method.
+     * @param message Notification message that is to be displayed to a client that calls this method.
+     */
+    public void showNotification(String message) {
+        output += "\n\nNotification: " + message;
+    }
+
+    /**
      * Stores an error message to be displayed to the user with the given message.
      * Pre-condition: An error is thrown to the client that calls this method.
      * @param message Error message from Exception that is thrown to a client that calls this method.
      */
     public void showError(String message) {
-        output = "OOPS!!! " + message;
+        output = "OOPS!!! " + message + "\n\n"
+                + "Input \'help [command1] [command2] etc.\' for usage information for requested commands or "
+                + "simply input \'help\' for the full list of commands known to this program.";
     }
 
     /**
@@ -118,6 +135,14 @@ public class Ui {
     }
 
     /**
+     * Stores a message to be displayed to the user the String representations of all definitions of commands requested.
+     * @param helpDefinitions Definitions and usage of the commands to be displayed to the user.
+     */
+    public void showHelpMessage(String helpDefinitions) {
+        output = helpDefinitions;
+    }
+
+    /**
      * Stores a messsage to be displayed to the user an exit message.
      * This message is displayed before the program terminates.
      */
@@ -140,5 +165,4 @@ public class Ui {
     public String getOutput() {
         return this.output;
     }
-
 }

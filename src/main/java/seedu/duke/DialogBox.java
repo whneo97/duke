@@ -4,12 +4,18 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
+import javafx.scene.effect.Glow;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
+import seedu.duke.ui.Ui;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -39,6 +45,16 @@ public class DialogBox extends HBox {
             e.printStackTrace();
         }
 
+        if (text.equals(Ui.showLogo())) {
+            dialog.setFont(Font.font("Courier", FontWeight.BOLD, 16));
+            dialog.setTextFill(Color.YELLOW);
+            Glow glow = new Glow();
+            glow.setLevel(15);
+            dialog.setEffect(glow);
+        } else {
+            dialog.setFont(Font.font("Calibri", 16));
+            dialog.setTextFill(Color.WHITE);
+        }
         dialog.setText(text);
         displayPicture.setImage(img);
     }
@@ -51,6 +67,7 @@ public class DialogBox extends HBox {
         Collections.reverse(tmp);
         getChildren().setAll(tmp);
         setAlignment(Pos.TOP_LEFT);
+        dialog.setPadding(new Insets(0,0,0,7));
     }
 
     /**
@@ -60,7 +77,9 @@ public class DialogBox extends HBox {
      * @return DialogBox object representing the User's part of the dialog.
      */
     public static DialogBox getUserDialog(String text, Image img) {
-        return new DialogBox(text, img);
+        var db = new DialogBox(text, img);
+//        db.dialog.setTextFill(Color.rgb(150, 255, 160));
+        return db;
     }
 
     /**
@@ -71,6 +90,9 @@ public class DialogBox extends HBox {
      */
     public static DialogBox getDukeDialog(String text, Image img) {
         var db = new DialogBox(text, img);
+        if (!text.equals(Ui.showLogo())) {
+//            db.dialog.setTextFill(Color.rgb(255, 255, 180));
+        }
         db.flip();
         return db;
     }

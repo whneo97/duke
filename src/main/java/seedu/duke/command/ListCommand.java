@@ -9,7 +9,7 @@ import seedu.duke.ui.Ui;
  */
 public class ListCommand extends Command {
 
-    /** Executes a ListCommand object using information stored in instance attributes.
+    /** Executes a ListCommand object.
      * Displays a message that shows the String representation of the given TaskList when called.
      * @param tasks TaskList that was being used by a client of this command.
      * @param ui Ui with methods that are called to display a message showing the String representation of the
