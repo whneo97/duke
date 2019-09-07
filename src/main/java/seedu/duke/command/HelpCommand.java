@@ -25,7 +25,7 @@ public class HelpCommand extends Command {
             + "Requires input to be in the format \'done [number representing task in tasklist]\'.";
     private static final String DELETEHELP = "delete: Deletes a task from the tasklist.\n"
             + "Requires input to be in the format \'delete [number representing task in tasklist]\'.";
-    private static final String LISTHELP = "list: Lists all task in the tasklist stored.\n"
+    private static final String LISTHELP = "list: Lists all tasks in the tasklist stored.\n"
             + "Requires input to be in the format \'list\'.";
     private static final String FINDHELP = "find: Finds tasks in the tasklist given keywords.\n"
             + "Requires input to be in the format \'find [keyword]\'.\n"
@@ -33,6 +33,8 @@ public class HelpCommand extends Command {
             + "time in HHMM format, or whether or not the task is done in the form \'done\', \'not done\', "
             +  "or \'undone\'.\n"
             + "Keywords are not case-sensitive.";
+    private static final String BYEHELP = "bye: Instructs the program to exit.\n"
+            + "Requires input to be in the format \'bye\'.";
     private static final String HELPHELP = "help: Shows a list of specified commands or all known commands so far.\n"
             + "Requires input to be in the format \'help\' or \'help [command1] [command2] etc.\'.";
     private static final String UNKNOWN = "Unknown command.";
@@ -73,6 +75,8 @@ public class HelpCommand extends Command {
                 out += LISTHELP;
             } else if (requestedCommand.equals("find")) {
                 out += FINDHELP;
+            } else if (requestedCommand.equals("bye")) {
+                out += BYEHELP;
             } else if (requestedCommand.equals("help")) {
                 out += HELPHELP;
             } else {
@@ -94,7 +98,7 @@ public class HelpCommand extends Command {
         String helpDefinitions = "";
         if (taskString.equals("")) {
             helpDefinitions = getHelpDefinitions("todo", "deadline", "event", "done", "delete",
-                    "list", "find", "help");
+                    "list", "find", "bye", "help");
         } else {
             helpDefinitions = getHelpDefinitions(taskString.split(" ")) + "\n\n" + FURTHERPROMPT;
         }
