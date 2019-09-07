@@ -11,4 +11,4 @@ T | 1 | hello
 D | 1 | newdeadline | 15/12/2019
 D | 0 | homework | 12/12/2918
 T | 1 | myTodo
-T | 0 | hello
+T | 1 | myTodo

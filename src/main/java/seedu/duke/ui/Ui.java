@@ -13,6 +13,11 @@ public class Ui {
     private Scanner sc;
     private String input;
     private String output;
+    private static String logo = " ____        _        \n"
+            + "|  _ \\ _   _| | _____ \n"
+            + "| | | | | | | |/ / _ \\\n"
+            + "| |_| | |_| |   <  __/\n"
+            + "|____/ \\__,_|_|\\_\\___|\n";
 
     /**
      * Creates an instance of Ui.
@@ -23,18 +28,19 @@ public class Ui {
     }
 
     /**
+     * Returns a String that displays the Duke Logo to the user.
+     * @return String representation of Duke Logo to be displayed to the user.
+     */
+    public static String showLogo() {
+        return logo;
+    }
+
+    /**
      * Returns a String that displays the welcome message to the user.
-     * @return String representation of welcome message to be displayed to the user.
+     * @return String representation of the welcome message to be displayed to the user.
      */
     public static String showWelcome() {
-        String logo = " ____        _        \n"
-                + "|  _ \\ _   _| | _____ \n"
-                + "| | | | | | | |/ / _ \\\n"
-                + "| |_| | |_| |   <  __/\n"
-                + "|____/ \\__,_|_|\\_\\___|\n";
-        //System.out.println("Hello from\n" + logo);
-
-        return logo + "\nHello! I'm Duke\n"
+        return "\nHello! I'm Duke\n"
                 + "What can I do for you?";
     }
 

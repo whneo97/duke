@@ -1,3 +1,5 @@
+/* Background photo by Andy Holmes via https://unsplash.com/photos/LUpDjlJv4_c */
+
 #anchorPane{
     -fx-background-image: url("../images/Space_modified.jpg");
     -fx-background-size: cover;
