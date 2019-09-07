@@ -49,7 +49,7 @@ public class DialogBox extends HBox {
             dialog.setFont(Font.font("Courier", FontWeight.BOLD, 16));
             dialog.setTextFill(Color.YELLOW);
             Glow glow = new Glow();
-            glow.setLevel(10);
+            glow.setLevel(15);
             dialog.setEffect(glow);
         } else {
             dialog.setFont(Font.font("Calibri", 16));
@@ -77,7 +77,9 @@ public class DialogBox extends HBox {
      * @return DialogBox object representing the User's part of the dialog.
      */
     public static DialogBox getUserDialog(String text, Image img) {
-        return new DialogBox(text, img);
+        var db = new DialogBox(text, img);
+//        db.dialog.setTextFill(Color.rgb(150, 255, 160));
+        return db;
     }
 
     /**
@@ -88,6 +90,9 @@ public class DialogBox extends HBox {
      */
     public static DialogBox getDukeDialog(String text, Image img) {
         var db = new DialogBox(text, img);
+        if (!text.equals(Ui.showLogo())) {
+//            db.dialog.setTextFill(Color.rgb(255, 255, 180));
+        }
         db.flip();
         return db;
     }
