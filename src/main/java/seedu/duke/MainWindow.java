@@ -27,23 +27,36 @@ public class MainWindow extends AnchorPane {
 
     private seedu.duke.Duke duke;
 
-    private Image userImage = new Image(this.getClass().getResourceAsStream("/images/DaUser.png"));
-    private Image dukeImage = new Image(this.getClass().getResourceAsStream("/images/DaDuke.png"));
+    //Icon made by Smashicons (https://www.flaticon.com/authors/smashicons) from www.flaticon.com
+    private Image userImage = new Image(this.getClass().getResourceAsStream("/images/User.png"));
+    //Icon made by Freepik (https://www.flaticon.com/authors/freepik) from www.flaticon.com
+    private Image dukeImage = new Image(this.getClass().getResourceAsStream("/images/Duke.png"));
 
+    /**
+     * Initialises the program.
+     * Binds height of the dialog container to the scrollPane.
+     * Displays to the user the welcome message of Duke.
+     */
     @FXML
     public void initialize() {
         scrollPane.vvalueProperty().bind(dialogContainer.heightProperty());
         dialogContainer.getChildren().addAll(
+                DialogBox.getDukeDialog(Ui.showLogo(), dukeImage),
                 DialogBox.getDukeDialog(Ui.showWelcome(), dukeImage));
     }
 
+    /**
+     * Sets the Duke instance to be the version of Duke program to be run.
+     * @param d A version of Duke to be run from this instance of MainWindow.
+     */
     public void setDuke(seedu.duke.Duke d) {
         duke = d;
     }
 
     /**
-     * Creates two dialog boxes, one echoing user input and the other containing seedu.duke.Duke's reply and then appends them to
-     * the dialog container. Clears the user input after processing.
+     * Creates two dialog boxes, one echoing user input and the other containing seedu.duke.Duke's reply.
+     * Appends the two dialog boxes to the dialog container.
+     * Clears the user input after processing.
      */
     @FXML
     private void handleUserInput() throws InterruptedException {
@@ -55,8 +68,8 @@ public class MainWindow extends AnchorPane {
         );
         userInput.clear();
         if (duke.getIsExit()) {
-            PauseTransition delay = new PauseTransition(Duration.seconds(1));
-            delay.setOnFinished( event -> Platform.exit());
+            PauseTransition delay = new PauseTransition(Duration.seconds(0.9));
+            delay.setOnFinished(event -> Platform.exit());
             delay.play();
         }
     }

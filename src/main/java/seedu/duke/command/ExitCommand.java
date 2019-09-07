@@ -9,7 +9,7 @@ import seedu.duke.ui.Ui;
  */
 public class ExitCommand extends Command {
 
-    /** Executes an ExitCommand object using information stored in instance attributes.
+    /** Executes an ExitCommand object.
      * Displays a message indicating exiting of the program before the program exits.
      * @param tasks TaskList that was being used by a client of this command.
      * @param ui Ui with methods that are called to display a message before the program exits.
