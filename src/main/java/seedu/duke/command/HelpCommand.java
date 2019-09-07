@@ -19,7 +19,7 @@ public class HelpCommand extends Command {
             + "Requires input to be in the format \'deadline [task] /by [DD/MM/YYYY]\', "
             + "or \'deadline [task] /by [DD/MM/YYYY] [HHMM]\', where dates and times (24-hour clock) are valid.";
     private static final String EVENTHELP = "event: Adds an event into the tasklist.\n"
-            + "Requires input to be in the format \'deadline [task] /at [DD/MM/YYYY] [HHMM]\', "
+            + "Requires input to be in the format \'event [task] /at [DD/MM/YYYY] [HHMM]\', "
             + "where dates and times (24-hour clock) are valid.";
     private static final String DONEHELP = "done: Marks a task in the tasklist as done.\n"
             + "Requires input to be in the format \'done [number representing task in tasklist]\'.";
