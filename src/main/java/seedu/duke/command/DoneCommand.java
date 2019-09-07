@@ -40,8 +40,8 @@ public class DoneCommand extends Command {
             int i = Validation.getValidatedListIndex(tasks, taskString);
             Task task = tasks.get(i);
             task.setIsDone(true);
-            storage.save(tasks);
             ui.showDoneMessage(task.doneMessage());
+            storage.save(tasks, ui);
         } catch (DukeException ex) {
             throw ex;
         } catch (Exception ex) {

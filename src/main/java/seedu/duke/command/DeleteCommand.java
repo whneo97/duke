@@ -40,8 +40,8 @@ public class DeleteCommand extends Command {
             int i = Validation.getValidatedListIndex(tasks, taskString);
             Task task = tasks.get(i);
             tasks.remove(task);
-            storage.save(tasks);
             ui.showDeletedMessage(task.deletedMessage(tasks));
+            storage.save(tasks, ui);
         } catch (DukeException ex) {
             throw ex;
         } catch (Exception ex) {

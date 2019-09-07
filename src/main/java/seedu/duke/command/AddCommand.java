@@ -53,19 +53,17 @@ public class AddCommand extends Command {
             if (command.equals("todo")) {
                 Todo todo = new Todo(taskString);
                 tasks.add(todo);
-                storage.save(tasks);
                 ui.showAddedMessage(todo.addedMessage(tasks));
             } else if (command.equals("deadline")) {
                 Deadline deadline = new Deadline(taskString, dateAndTime);
                 tasks.add(deadline);
-                storage.save(tasks);
                 ui.showAddedMessage(deadline.addedMessage(tasks));
             } else if (command.equals("event")) {
                 Event event = new Event(taskString, dateAndTime);
                 tasks.add(event);
-                storage.save(tasks);
                 ui.showAddedMessage(event.addedMessage(tasks));
             }
+            storage.save(tasks, ui);
         } catch (DukeException ex) {
             throw ex;
         } catch (Exception ex) {

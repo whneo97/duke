@@ -5,6 +5,7 @@ import seedu.duke.exceptions.DukeException;
 import seedu.duke.parser.Parser;
 import seedu.duke.task.Task;
 import seedu.duke.task.TaskList;
+import seedu.duke.ui.Ui;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -74,9 +75,10 @@ public class Storage {
     /**
      * Saves given TaskList to the file located at this Storage's file path.
      * @param tasks TaskList of Tasks, presumably stored in current memory.
+     * @param ui Ui instance used by a client that calls this method.
      * @throws DukeException If writing to the original file at this Storage's file path is unsuccessful.
      */
-    public void save(TaskList tasks) throws DukeException {
+    public void save(TaskList tasks, Ui ui) throws DukeException {
         try {
             File dir = new File(dirPath);
             boolean directoryIsCreated = dir.mkdir();
@@ -103,16 +105,14 @@ public class Storage {
             fileWriter.close();
 
             if (directoryIsCreated) {
-                throw new DukeException("Original storage directory no longer exists!\n"
-                        + "Don't worry, we have restored a new one in it's place in the same location and "
-                        + "performed the required operation.");
+                ui.showNotification("Original storage directory no longer exists!\n"
+                        + "BUT don't worry! We have restored a new one in it's place in the same location and "
+                        + "performed the required operation. :)");
             } else if (fileIsCreated) {
-                throw new DukeException("Original storage file no longer exists!\n"
-                        + "Don't worry, we have restored a new one in it's place in the same location and "
-                        + "performed the required operation.");
+                ui.showNotification("Original storage file no longer exists!\n"
+                        + "BUT don't worry! We have restored a new one in it's place in the same location and "
+                        + "performed the required operation. :)");
             }
-        } catch (DukeException ex) {
-            throw ex;
         } catch (Exception ex) {
             throw new DukeException("Critical Error: Saving Unsuccessful.");
         }

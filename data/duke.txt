@@ -9,5 +9,8 @@ E | 0 | attend lecture | 22/12/2019 1400-1500
 E | 1 | event1 | 15/12/2019 2200-2300
 T | 1 | hello
 D | 1 | newdeadline | 15/12/2019
-D | 0 | homework | 12/12/2918
-T | 0 | myTodo
+D | 1 | homework | 12/12/2918
+T | 1 | myTodo
+T | 1 | hello
+E | 0 | thisEvent | 23/12/2019 1400-1500
+D | 0 | thisDeadline | 14/12/2019
