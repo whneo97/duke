@@ -131,7 +131,8 @@ public class Ui {
      * @param tasks TaskList to be displayed as its String representation.
      */
     public void showTaskList(TaskList tasks) {
-        output = tasks.toString();
+        output = "Here are the tasks in your list:\n"
+                + tasks.toString();
     }
 
     /**
