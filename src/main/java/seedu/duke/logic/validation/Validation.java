@@ -97,9 +97,9 @@ public class Validation {
             throw new DukeException("Please ensure date format is in DD/MM/YYYY");
         }
 
-        if (year % 4 == 0) {
+        if (year % 4 == 0 && year % 100 != 0) {
             isLeapYear = true;
-        } else if (year % 100 == 0 && year % 400 == 0) {
+        } else if (year % 400 == 0) {
             isLeapYear = true;
         }
 

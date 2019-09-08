@@ -14,3 +14,7 @@ T | 1 | myTodo
 T | 1 | hello
 E | 0 | thisEvent | 23/12/2019 1400-1500
 D | 0 | thisDeadline | 14/12/2019
+D | 0 | thisDeadline | 29/02/2400
+D | 0 | thisDeadline | 29/02/2020
+D | 0 | thisDeadline | 29/02/2020
+D | 0 | thisDeadline | 29/02/2400
