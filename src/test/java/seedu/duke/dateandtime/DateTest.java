@@ -2,6 +2,7 @@ package seedu.duke.dateandtime;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import seedu.duke.model.dateandtime.Date;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

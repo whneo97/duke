@@ -30,7 +30,7 @@ As a developer, you write a _build file_ that describes the project. A build fil
    git checkout master
    git merge gradle
    ```
-1. Open the `build.gradle` file in an editor. Update the following code block to point to the main class (i.e., the one containing the `main` method) of your application. The code below assumes your main class is `seedu.seedu.duke.Duke`
+1. Open the `build.gradle` file in an editor. Update the following code block to point to the main class (i.e., the one containing the `main` method) of your application. The code below assumes your main class is `seedu.seedu.duke.model.Duke`
    ```groovy
    application {
        mainClassName = seedu
@@ -146,7 +146,7 @@ By convention, java tests belong in `src/test/java` folder. Create a new `test/j
 src
 ├─main
 │  └─java
-│     └─seedu/duke/seedu.duke.Duke.java
+│     └─seedu/duke/seedu.duke.model.Duke.java
 └─test
     └─java
         └─seedu/duke/DukeTest.java

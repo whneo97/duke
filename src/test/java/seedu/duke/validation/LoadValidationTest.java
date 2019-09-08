@@ -2,7 +2,8 @@ package seedu.duke.validation;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import seedu.duke.exceptions.DukeException;
+import seedu.duke.commons.exceptions.DukeException;
+import seedu.duke.logic.validation.LoadValidation;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

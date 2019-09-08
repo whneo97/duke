@@ -1,9 +1,10 @@
 package seedu.duke.task;
 
 import org.junit.jupiter.api.Test;
-import seedu.duke.dateandtime.Date;
-import seedu.duke.dateandtime.DateAndTime;
-import seedu.duke.dateandtime.Time;
+import seedu.duke.model.dateandtime.Date;
+import seedu.duke.model.dateandtime.DateAndTime;
+import seedu.duke.model.dateandtime.Time;
+import seedu.duke.model.task.Deadline;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

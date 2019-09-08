@@ -5,15 +5,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import seedu.duke.model.Duke;
+import seedu.duke.ui.MainWindow;
 
 import java.io.IOException;
 
 /**
- * A GUI for seedu.duke.Duke using FXML.
+ * A GUI for seedu.duke.model.Duke using FXML.
  */
 public class Main extends Application {
 
-    private seedu.duke.Duke duke = new seedu.duke.Duke();
+    private Duke duke = new Duke();
 
     /**
      * Start method called to start the Duke program by building the necessary JavaFx components.

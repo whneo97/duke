@@ -1,10 +1,10 @@
 package seedu.duke.storage;
 
-import seedu.duke.dateandtime.DateAndTime;
-import seedu.duke.exceptions.DukeException;
-import seedu.duke.parser.Parser;
-import seedu.duke.task.Task;
-import seedu.duke.task.TaskList;
+import seedu.duke.model.dateandtime.DateAndTime;
+import seedu.duke.commons.exceptions.DukeException;
+import seedu.duke.logic.parser.Parser;
+import seedu.duke.model.task.Task;
+import seedu.duke.model.task.TaskList;
 import seedu.duke.ui.Ui;
 
 import java.io.File;
