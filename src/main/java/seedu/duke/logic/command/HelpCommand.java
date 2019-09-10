@@ -21,10 +21,15 @@ public class HelpCommand extends Command {
     private static final String EVENTHELP = "event: Adds an event into the tasklist.\n"
             + "Requires input to be in the format \'event [task] /at [DD/MM/YYYY] [HHMM]\', "
             + "where dates and times (24-hour clock) are valid.";
-    private static final String DONEHELP = "done: Marks a task in the tasklist as done.\n"
-            + "Requires input to be in the format \'done [number representing task in tasklist]\'.";
-    private static final String DELETEHELP = "delete: Deletes a task from the tasklist.\n"
-            + "Requires input to be in the format \'delete [number representing task in tasklist]\'.";
+    private static final String DONEHELP = "done: Marks a task or multiple tasks in the tasklist as done.\n"
+            + "Requires input to be in the format \'done [number representing task in tasklist]\' or \n"
+            + "\'done [range1, range2, range3, ...]\'. eg. done 2-4, 6, 8-9";
+    private static final String UNDONEHELP = "done: Marks a task or multiple tasks in the tasklist as undone.\n"
+            + "Requires input to be in the format \'done [number representing task in tasklist]\' or \n"
+            + "\'undone [range1, range2, range3, ...]\'. eg. undone 2-4, 6, 8-9";
+    private static final String DELETEHELP = "delete: Deletes a task or multiple tasks from the tasklist.\n"
+            + "Requires input to be in the format \'delete [number representing task in tasklist]\' or \n"
+            + "\'delete [range1, range2, range3, ...]\'. eg. delete 2-4, 6, 8-9";
     private static final String LISTHELP = "list: Lists all tasks in the tasklist stored.\n"
             + "Requires input to be in the format \'list\'.";
     private static final String FINDHELP = "find: Finds tasks in the tasklist given keywords.\n"
@@ -69,6 +74,8 @@ public class HelpCommand extends Command {
                 out += EVENTHELP;
             } else if (requestedCommand.equals("done")) {
                 out += DONEHELP;
+            } else if (requestedCommand.equals("undone")) {
+                out += UNDONEHELP;
             } else if (requestedCommand.equals("delete")) {
                 out += DELETEHELP;
             } else if (requestedCommand.equals("list")) {
@@ -97,8 +104,8 @@ public class HelpCommand extends Command {
     public void execute(TaskList tasks, Ui ui, Storage storage) {
         String helpDefinitions = "";
         if (taskString.equals("")) {
-            helpDefinitions = getHelpDefinitions("todo", "deadline", "event", "done", "delete",
-                    "list", "find", "bye", "help");
+            helpDefinitions = getHelpDefinitions("todo", "deadline", "event", "done", "undone",
+                    "delete", "list", "find", "bye", "help");
         } else {
             helpDefinitions = getHelpDefinitions(taskString.split(" ")) + "\n\n" + FURTHERPROMPT;
         }

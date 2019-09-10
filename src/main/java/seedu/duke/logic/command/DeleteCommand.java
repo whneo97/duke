@@ -1,11 +1,12 @@
 package seedu.duke.logic.command;
 
 import seedu.duke.commons.exceptions.DukeException;
-import seedu.duke.storage.Storage;
-import seedu.duke.model.task.Task;
-import seedu.duke.model.task.TaskList;
-import seedu.duke.ui.Ui;
 import seedu.duke.logic.validation.Validation;
+import seedu.duke.model.task.TaskList;
+import seedu.duke.storage.Storage;
+import seedu.duke.ui.Ui;
+
+import java.util.ArrayList;
 
 /**
  * Defines a Command object that removes Tasks from the TaskList.
@@ -25,7 +26,7 @@ public class DeleteCommand extends Command {
     }
 
     /** Executes a DeleteCommand object using information stored in instance attributes.
-     * Modifies a given TaskList by delete the task defined by its attributes to it.
+     * Modifies a given TaskList by deleting the task(s) defined by its attributes to it.
      * Saves the updated TaskList to the given Storage.
      * Displays a message indicating successful removal after removal process has been completed.
      * @param tasks TaskList to which a given task is to be removed by this command.
@@ -37,25 +38,17 @@ public class DeleteCommand extends Command {
     @Override
     public void execute(TaskList tasks, Ui ui, Storage storage) throws DukeException {
         try {
-            int i = Validation.getValidatedListIndex(tasks, taskString);
-            Task task = tasks.get(i);
-            int sizeBefore = tasks.size();
-            tasks.remove(task);
-            int sizeAfter = tasks.size();
-            assert sizeAfter != sizeBefore : "Task was called to be removed from TaskList but "
-                    + "size of TaskList remained unchanged.";
-            assert sizeAfter == sizeBefore - 1 : "One item was meant to be removed from the TaskList "
-                    + "but the difference in sizes of the lists before and after is not 1.";
-            String deletedMessage = task.deletedMessage(tasks);
+            ArrayList<ArrayList<Integer>> rangeList = Validation.getValidatedListRange(tasks, taskString);
+            String deletedMessage = tasks.removeRanges(rangeList);
             ui.showDeletedMessage(deletedMessage);
-            assert ui.getOutput().equals(deletedMessage) : "Task was deleted from a TaskList "
+            assert ui.getOutput().equals(deletedMessage) : "Task(s) was/ were deleted from a TaskList "
                     + "but output does not tally with deleted message.";
             assert isExit() == false : "A Delete command is exhibiting behaviour that instructs the program to exit.";
             storage.save(tasks, ui);
         } catch (DukeException ex) {
             throw ex;
         } catch (Exception ex) {
-            throw new DukeException("Execution of command unsuccessful.");
+            throw new DukeException("Execution of command unsuccessful." + ex.getMessage());
         }
     }
 }

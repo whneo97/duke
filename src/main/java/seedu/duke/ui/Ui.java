@@ -118,6 +118,15 @@ public class Ui {
     }
 
     /**
+     * Stores a message to be displayed to the user that a Task has been marked as undone (yet to complete).
+     * Presumably called by the Task class when a client marks it as undone.
+     * @param undoneMessage Message to indicate to the user that a Task has been marked as undone.
+     */
+    public void showUndoneMessage(String undoneMessage) {
+        output = undoneMessage;
+    }
+
+    /**
      * Stores a message to the be displayed to the user the message that a search on a TaskList has been completed.
      * Completed message is followed by search results.
      * @param searchResults TaskList containing list of search results based on keyword from user input.

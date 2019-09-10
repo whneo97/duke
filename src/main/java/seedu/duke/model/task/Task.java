@@ -13,6 +13,7 @@ public class Task {
 
     private String taskString;
     private boolean isDone = false;
+    private boolean markedAsDelete = false;
     private Type type;
     private DateAndTime dateAndTime;
 
@@ -110,6 +111,22 @@ public class Task {
      */
     public DateAndTime getDateAndTime() {
         return dateAndTime;
+    }
+
+    /**
+     * Returns the boolean of whether this Task instance is to be marked as delete.
+     * @return True or false boolean on whether this Task instance is to be marked as delete.
+     */
+    public boolean getMarkedAsDelete() {
+        return markedAsDelete;
+    }
+
+    /**
+     * Sets this instance of task to be marked as deleted.
+     * Post-requisite: The Duke program will delete all tasks that have been marked to be deleted.
+     */
+    public void markAsDelete() {
+        markedAsDelete = true;
     }
 
     /**
