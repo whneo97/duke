@@ -32,6 +32,22 @@ public class Task {
     }
 
     /**
+     * Creates an entirely new Task object copy with the same attributes as that of the Task taken in as argument.
+     * @param task Task with attributes to be copied over to this instance of Task.
+     */
+    public Task(Task task) {
+        this.taskString = task.taskString;
+        DateAndTime dateAndTime = task.getDateAndTime();
+        if (dateAndTime != null) {
+            this.dateAndTime = new DateAndTime(dateAndTime.getDate(), dateAndTime.getTimeStart(),
+                    dateAndTime.getTimeEnd());
+        }
+        this.type = task.type;
+        this.isDone = task.isDone;
+        this.markedAsDelete = task.markedAsDelete;
+    }
+
+    /**
      * Returns a String that indicates that this Task instance has been added to the given TaskList.
      * Indicates also the updated number of tasks in the given TaskList
      * Pre-condition: This Task has indeed been added to the given TaskList.

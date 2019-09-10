@@ -22,17 +22,14 @@ public class TaskListHistory {
             curr++;
             listOfTaskLists.set(curr, copy);
         }
-        System.out.println(curr);
     }
 
     public TaskList undo() throws CannotUndoException {
         if (curr <= 0) {
-            System.out.println(curr);
             throw new CannotUndoException("Cannot undo. There are no older versions of the TaskList stored in "
                     + "memory.");
         } else {
             curr--;
-            System.out.println(curr);
             return new TaskList(listOfTaskLists.get(curr));
         }
     }

@@ -44,7 +44,7 @@ public class Parser {
         if (!sc.hasNext()) {
             Validation.ensureNonEmptyCommand("");
         }
-        String command = sc.next();
+        String command = sc.next().toLowerCase();
         String taskString = "";
         if (sc.hasNextLine()) {
             taskString = sc.nextLine().trim();

@@ -19,7 +19,7 @@ public class TaskList {
         this();
         TaskList sourceList = storage.getTaskList();
         for (int i = 0; i < sourceList.size(); i++) {
-            this.taskList.add(sourceList.get(i));
+            this.taskList.add(new Task(sourceList.get(i)));
         }
         assert sourceList.size() == this.size() : "Size of TaskList copied from Storage differs from "
                 + "size of original TaskList in Storage.";
@@ -40,7 +40,7 @@ public class TaskList {
     public TaskList(TaskList taskList) {
         this();
         for (int i = 0; i < taskList.size(); i++) {
-            this.add(taskList.get(i));
+            this.add(new Task(taskList.get(i)));
         }
         assert taskList.size() == this.size();
     }
