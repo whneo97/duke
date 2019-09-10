@@ -15,7 +15,8 @@ public class LoadValidation extends Validation {
      * Returns a validated Type of Task represented by a single-character String.
      * @param type Type of task represented by a single-character String.
      * @return Validated Type of Task based on given type of Task.
-     * @throws InvalidTaskTypeException If input type of Task is invalid or does not correspond to any known Type of Task.
+     * @throws InvalidTaskTypeException If input type of Task is invalid or does not correspond to any
+     *                                  known Type of Task.
      */
     public static String getValidatedTaskType(String type) throws InvalidTaskTypeException {
         if (!(type.equals("T") || type.equals("D") || type.equals("E"))) {
@@ -51,8 +52,10 @@ public class LoadValidation extends Validation {
     /**
      * Ensures that there are valid number of tokens in a line of text in the Storage file representing a Task.
      * @param type String representation of Task type in the Storage file, denoted by a single letter.
-     * @param arr An array containing words from a line of text separated by spaces, with elements representing tokens.
-     * @throws InvalidTokenNumberException If the number of tokens fails to correspond to that of it's Task type in the line of text.
+     * @param arr An array containing words from a line of text separated by spaces, with elements
+     *            representing tokens.
+     * @throws InvalidTokenNumberException If the number of tokens fails to correspond to that of it's Task type
+     *                                     in the line of text.
      */
     public static void ensureValidNumberOfTokens(String type, String[] arr) throws InvalidTokenNumberException {
         if ((type.equals("D") || type.equals("E")) && arr.length != 4) {

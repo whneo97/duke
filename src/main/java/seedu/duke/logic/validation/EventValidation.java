@@ -36,7 +36,8 @@ public class EventValidation extends Validation {
     public static DateAndTime getValidatedDateAndTime(String dateAndTimeString) throws InvalidDateAndTimeException {
         String[] dateTimeArr = dateAndTimeString.split(" ");
         if (dateTimeArr.length != 2) {
-            throw new InvalidDateAndTimeException("Please ensure date format is in DD/MM/YYYY HHMM-HHMM format (24 hours).");
+            throw new InvalidDateAndTimeException("Please ensure date format is in DD/MM/YYYY HHMM-HHMM "
+                    + "format (24 hours).");
         }
         Date date = getValidatedDate(dateTimeArr[0]);
         String[] timeArr = dateTimeArr[1].split("-");
