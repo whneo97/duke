@@ -80,7 +80,6 @@ public class Duke {
                     || c instanceof DeleteCommand) {
                 taskListHistory.add(tasks);
             }
-            System.out.println(taskListHistory);
             isExit = c.isExit();
         } catch (DukeException e) {
             ui.showError(e.getMessage());

@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class TaskListHistory {
     private int curr = -1;
+    private int size;
     private ArrayList<TaskList> listOfTaskLists;
 
     public TaskListHistory() {
@@ -21,7 +22,9 @@ public class TaskListHistory {
         } else {
             curr++;
             listOfTaskLists.set(curr, copy);
+
         }
+        size = curr + 1;
     }
 
     public TaskList undo() throws CannotUndoException {
@@ -35,9 +38,9 @@ public class TaskListHistory {
     }
 
     public TaskList redo() throws CannotRedoException {
-        if (curr == listOfTaskLists.size() - 1) {
+        if (curr == size - 1) {
             throw new CannotRedoException("Cannot redo. There are no newer versions of the TaskList stored in "
-                    + "memory");
+                    + "memory.");
         } else {
             curr++;
             return new TaskList(listOfTaskLists.get(curr));

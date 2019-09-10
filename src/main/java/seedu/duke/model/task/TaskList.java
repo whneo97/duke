@@ -138,6 +138,8 @@ public class TaskList {
      *         Indicates to client successful deletion and lists out elements that have been deleted.
      */
     public String removeRanges(ArrayList<ArrayList<Integer>> rangeList) {
+        int prevSize = this.size();
+
         for (ArrayList<Integer> range : rangeList) {
             for (int i = range.get(1); i >= range.get(0); i--) {
                 this.get(i).markAsDelete();
@@ -162,7 +164,7 @@ public class TaskList {
 
         String s = "";
 
-        if (deletedTasks.size() == this.size()) {
+        if (deletedTasks.size() == prevSize) {
             return "Noted. I've removed all tasks in the task list.";
         } else if (deletedTasks.size() > 1) {
             s = "Noted. I've removed these tasks:\n" + deletedTasks + "\n";

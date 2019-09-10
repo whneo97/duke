@@ -1,6 +1,4 @@
 T | 0 | asdf
-T | 0 | werjk
-T | 0 | sdfjk
-T | 0 | asdfj
-T | 0 | sdfjk
-T | 0 | asdfj
+T | 0 | sdf
+T | 0 | sdl
+T | 0 | dsfh
