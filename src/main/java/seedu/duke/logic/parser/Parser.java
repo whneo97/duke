@@ -72,7 +72,7 @@ public class Parser {
             DateAndTime dateAndTime = DeadlineValidation.getValidatedDateAndTime(dateTimeString);
             assert !taskString.equals("") : "Task Description for a Task is empty in Parser but "
                     + "no exception was thrown.";
-            assert dateAndTime.getDate() != null: "Deadline has no Date in Parser but no exception was thrown.";
+            assert dateAndTime.getDate() != null : "Deadline has no Date in Parser but no exception was thrown.";
 
             return new AddCommand("deadline", taskString, dateAndTime);
         } else if (command.equals("event")) {
@@ -83,10 +83,10 @@ public class Parser {
 
             DateAndTime dateAndTime = EventValidation.getValidatedDateAndTime(dateTimeString);
             assert !taskString.equals("") : "Task Description is empty in Parser but no exception was thrown.";
-            assert dateAndTime.getDate() != null: "Event has no Date in Parser but no exception was thrown.";
-            assert dateAndTime.getTimeStart() != null: "Event has no start time in Parser but "
+            assert dateAndTime.getDate() != null : "Event has no Date in Parser but no exception was thrown.";
+            assert dateAndTime.getTimeStart() != null : "Event has no start time in Parser but "
                     + "no exception was thrown.";
-            assert dateAndTime.getTimeEnd() != null: "Event has no end time in Parser but "
+            assert dateAndTime.getTimeEnd() != null : "Event has no end time in Parser but "
                     + "no exception was thrown.";
 
             return new AddCommand("event", taskString, dateAndTime);

@@ -19,6 +19,8 @@ public class Validation {
     /**
      * Returns a String array of two elements containing task description, date, start and end time respectively.
      * @param descriptionAndDateTimeString String in the form [task description] [split token] [date and time]
+     * @param splitToken String representing the token that is meant to split the given line of
+     *                   descriptionAndDateTimeString into description and date/ time.
      * @return String array of two elements containing task description, date and time respectively.
      * @throws InvalidTaskDescriptionException If the format of the String entered is invalid.
      */
@@ -28,7 +30,8 @@ public class Validation {
         assert !splitToken.equals("") : "A split between description and date/time was requested "
                 + "but the split token to be used was empty.";
         if (!descriptionAndDateTimeString.contains(splitToken)) {
-            throw new InvalidTaskDescriptionException("Please separate deadline description and date/time by \"" + splitToken + "\". \n"
+            throw new InvalidTaskDescriptionException("Please separate deadline description and date/time by \""
+                    + splitToken + "\". \n"
                     + "Note that date/time of an event cannot be empty.");
         }
 
@@ -51,7 +54,8 @@ public class Validation {
      */
     public static void ensureEmptyTaskString(String command, String taskString) throws InvalidTaskDescriptionException {
         if (!taskString.equals("")) {
-            throw new InvalidTaskDescriptionException("There cannot be any additional characters after the \"" + command + "\" command"
+            throw new InvalidTaskDescriptionException("There cannot be any additional characters after the \""
+                    + command + "\" command"
                     + " (other than trailing spaces).");
         }
         assert taskString.equals("") : "Exception meant to be thrown for non-empty task description "
@@ -219,7 +223,8 @@ public class Validation {
      * @param tasks TaskList of which the validated index is to be returned.
      * @param k String that represents the ith element of the TaskList (k ranges from 1 to n).
      * @return An integer value i that can be used to access the item in the taskList (i ranges from 0 to n - 1).
-     * @throws InvalidListIndexException If k is less than 0, more than the size of the list or cannot be parsed as an integer.
+     * @throws InvalidListIndexException If k is less than 0, more than the size of the list or
+     *                                   cannot be parsed as an integer.
      */
     public static int getValidatedListIndex(TaskList tasks, String k) throws InvalidListIndexException {
         if (k.equals("")) {
