@@ -48,7 +48,7 @@ public class Duke {
      * Performs the necessary input command given an input.
      * @param input String representation of input from the user.
      */
-    private void run(String input) throws DukeException{
+    private void run(String input) {
         try {
             String fullCommand = input;
             Command c = Parser.parse(fullCommand);
@@ -66,9 +66,9 @@ public class Duke {
     /**
      * Returns the response of Duke after calling it's run method.
      * @param input String representation of input from the user.
-     * @return The response of Duke obtained from it's Ui after calling the run method of DUke.
+     * @return The response of Duke obtained from it's Ui after calling the run method of Duke.
      */
-    public String getResponse(String input) throws DukeException {
+    public String getResponse(String input) {
         assert input != null : "User input is null.";
         assert input instanceof String : "User input is not a String.";
         run(input);
