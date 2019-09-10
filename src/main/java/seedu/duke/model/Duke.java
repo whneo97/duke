@@ -1,10 +1,10 @@
 package seedu.duke.model;
 
-import seedu.duke.logic.command.Command;
 import seedu.duke.commons.exceptions.DukeException;
+import seedu.duke.logic.command.Command;
 import seedu.duke.logic.parser.Parser;
-import seedu.duke.storage.Storage;
 import seedu.duke.model.task.TaskList;
+import seedu.duke.storage.Storage;
 import seedu.duke.ui.Ui;
 
 /**
@@ -38,6 +38,8 @@ public class Duke {
         } catch (DukeException e) {
             ui.showLoadingError();
             tasks = new TaskList();
+        } finally {
+            assert tasks != null : "Duke TaskList is not initialised.";
         }
     }
 
@@ -46,10 +48,14 @@ public class Duke {
      * Performs the necessary input command given an input.
      * @param input String representation of input from the user.
      */
-    private void run(String input) {
+    private void run(String input) throws DukeException{
         try {
             String fullCommand = input;
             Command c = Parser.parse(fullCommand);
+            assert c != null : "Command object to be executed is null.";
+            assert tasks != null : "TaskList of this Duke instance is null.";
+            assert ui != null : "Ui of this Duke instance is null.";
+            assert storage != null : "Storage of this Duke instance is null.";
             c.execute(tasks, ui, storage);
             isExit = c.isExit();
         } catch (DukeException e) {
@@ -62,9 +68,12 @@ public class Duke {
      * @param input String representation of input from the user.
      * @return The response of Duke obtained from it's Ui after calling the run method of DUke.
      */
-    public String getResponse(String input) {
+    public String getResponse(String input) throws DukeException {
+        assert input != null : "User input is null.";
+        assert input instanceof String : "User input is not a String.";
         run(input);
         return ui.getOutput();
+
     }
 
     /**
@@ -72,6 +81,7 @@ public class Duke {
      * @return Ui instance employed by this Duke object.
      */
     public Ui getUi() {
+        assert ui != null : "Ui of this Duke instance is null.";
         return ui;
     }
 

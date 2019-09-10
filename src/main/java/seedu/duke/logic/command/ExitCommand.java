@@ -18,6 +18,7 @@ public class ExitCommand extends Command {
     @Override
     public void execute(TaskList tasks, Ui ui, Storage storage) {
         ui.showExitMessage();
+        assert isExit() == true : "An exit command is not instructing the program to exit.";
     }
 
     /**

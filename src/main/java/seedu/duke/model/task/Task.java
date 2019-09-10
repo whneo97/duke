@@ -45,6 +45,8 @@ public class Task {
         }  else {
             s += " tasks in the list.";
         }
+        assert tasks.size() > 0 : "Task is claimed to have been added to TaskList but TaskList contains less than "
+                + "1 item.";
         return s;
     }
 
@@ -80,6 +82,7 @@ public class Task {
      * @return Task description of this Task stored in the taskString attribute.
      */
     public String getTaskString() {
+        assert taskString != null : "Task does not have a task description";
         return taskString;
     }
 
@@ -116,6 +119,8 @@ public class Task {
      */
     public void setIsDone(boolean isDone) {
         this.isDone = isDone;
+        assert this.isDone == isDone : "State of whether Task has been completed was intended to be set "
+                + "but was not set by system.";
     }
 
     /**
@@ -126,6 +131,7 @@ public class Task {
      */
     @Override
     public String toString() {
+        assert taskString != null : "Task does not have a task description";
         String doneString = isDone == true ? "[+]" : "[ ]";
         return "[" + type.toString().charAt(0) + "]" + doneString + " " + this.taskString;
     }

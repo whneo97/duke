@@ -32,6 +32,7 @@ public class Ui {
      * @return String representation of Duke Logo to be displayed to the user.
      */
     public static String showLogo() {
+        assert !logo.equals("") : "Logo to be displayed to user is an empty String.";
         return logo;
     }
 
@@ -40,6 +41,7 @@ public class Ui {
      * @return String representation of the welcome message to be displayed to the user.
      */
     public static String showWelcome() {
+        assert !logo.equals("") : "Welcome message to be displayed to user is an empty String.";
         return "\nHello! I'm Duke\n"
                 + "What can I do for you?";
     }
@@ -164,6 +166,7 @@ public class Ui {
      * @return Current output stored in this instance of Ui.
      */
     public String getOutput() {
+        assert !this.output.equals("") : "Output displayed to user is empty";
         return this.output;
     }
 }

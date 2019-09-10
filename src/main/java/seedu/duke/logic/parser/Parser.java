@@ -1,5 +1,7 @@
 package seedu.duke.logic.parser;
 
+import seedu.duke.commons.exceptions.commandexceptions.InvalidCommandException;
+import seedu.duke.commons.exceptions.loadexceptions.FileNotFoundException;
 import seedu.duke.logic.command.AddCommand;
 import seedu.duke.logic.command.Command;
 import seedu.duke.logic.command.DeleteCommand;
@@ -49,12 +51,17 @@ public class Parser {
 
         if (command.equals("bye")) {
             Validation.ensureEmptyTaskString(command, taskString);
+            assert taskString.equals("") : "Command is empty in Parser but no exception was thrown.";
             return new ExitCommand();
         } else if (command.equals("list")) {
             Validation.ensureEmptyTaskString(command, taskString);
+            assert taskString.equals("") : "Description for command not meant to have any description is non-empty "
+                    + "in Parser but no exception was thrown.";
             return new ListCommand();
         } else if (command.equals("todo")) {
             Validation.ensureNonEmptyTaskString(command, taskString);
+            assert !taskString.equals("") : "Task Description for a Task is empty in Parser but "
+                    + "no exception was thrown.";
             return new AddCommand("todo", taskString, null);
         } else if (command.equals("deadline")) {
             Validation.ensureNonEmptyTaskString(command, taskString);
@@ -63,6 +70,9 @@ public class Parser {
             String dateTimeString = descriptionAndDateTime[1];
 
             DateAndTime dateAndTime = DeadlineValidation.getValidatedDateAndTime(dateTimeString);
+            assert !taskString.equals("") : "Task Description for a Task is empty in Parser but "
+                    + "no exception was thrown.";
+            assert dateAndTime.getDate() != null: "Deadline has no Date in Parser but no exception was thrown.";
 
             return new AddCommand("deadline", taskString, dateAndTime);
         } else if (command.equals("event")) {
@@ -72,23 +82,34 @@ public class Parser {
             String dateTimeString = descriptionAndDateTime[1];
 
             DateAndTime dateAndTime = EventValidation.getValidatedDateAndTime(dateTimeString);
+            assert !taskString.equals("") : "Task Description is empty in Parser but no exception was thrown.";
+            assert dateAndTime.getDate() != null: "Event has no Date in Parser but no exception was thrown.";
+            assert dateAndTime.getTimeStart() != null: "Event has no start time in Parser but "
+                    + "no exception was thrown.";
+            assert dateAndTime.getTimeEnd() != null: "Event has no end time in Parser but "
+                    + "no exception was thrown.";
 
             return new AddCommand("event", taskString, dateAndTime);
         } else if (command.equals("find")) {
             Validation.ensureNonEmptyTaskString(command, taskString);
+            assert !taskString.equals("") : "Index for find command is empty in Parser but no exception was thrown.";
             return new FindCommand(taskString);
         } else if (command.equals("done")) {
             Validation.ensureNonEmptyTaskString(command, taskString);
+            assert !taskString.equals("") : "Index for done command is empty in Parser but no exception was thrown.";
             return new DoneCommand(taskString);
         } else if (command.equals("delete")) {
             Validation.ensureNonEmptyTaskString(command, taskString);
+            assert !taskString.equals("") : "Index for delete command is empty in Parser but no exception was thrown.";
             return new DeleteCommand(taskString);
         } else if (command.equals("help")) {
             return new HelpCommand(taskString);
         } else {
             Validation.ensureNonEmptyCommand(command);
-            throw new DukeException("I'm sorry, but I don't know what that means :-(");
+            assert !command.equals("") : "Command is empty in Parser but no exception was thrown.";
+            throw new InvalidCommandException("I'm sorry, but I don't know what that means :-(");
         }
+
     }
 
     /**
@@ -107,16 +128,26 @@ public class Parser {
             while (sc.hasNextLine()) {
                 String[] arr = sc.nextLine().split(" \\| ");
                 String type = LoadValidation.getValidatedTaskType(arr[0].trim());
+                assert type.equals("T") || type.equals("D") || type.equals("E")
+                        : "Exception meant to be thrown for wrong Task type "
+                        + "but exception was not thrown.";
                 LoadValidation.ensureValidNumberOfTokens(type, arr);
+                assert arr.length == 3 || arr.length == 4 : "Exception meant to be thrown for invalid number of tokens "
+                        + "but exception was not thrown.";
                 boolean isDone = LoadValidation.getValidatedDoneStatus(arr[1].trim()) == 1 ? true : false;
                 String taskString = arr[2].trim();
                 DateAndTime dateAndTime = null;
                 Validation.ensureNonEmptyTaskString(type, taskString);
+                assert !taskString.equals("") : "Task Description is empty in Parser but no exception was thrown.";
                 if (type.equals("E")) {
                     dateAndTime = EventValidation.getValidatedDateAndTime(arr[3]);
+                    assert dateAndTime != null : "DateAndTime of Task parsed in Parser is invalid "
+                            + "but no exception was thrown.";
                     taskList.add(new Event(taskString, dateAndTime, isDone));
                 } else if (type.equals("D")) {
                     dateAndTime = DeadlineValidation.getValidatedDateAndTime(arr[3]);
+                    assert dateAndTime != null : "DateAndTime of Task parsed in Parser is invalid "
+                            + "but no exception was thrown.";
                     taskList.add(new Deadline(taskString, dateAndTime, isDone));
                 } else {
                     taskList.add(new Todo(taskString, isDone));
@@ -125,7 +156,7 @@ public class Parser {
             return taskList;
         } catch (Exception ex) {
             ex.printStackTrace();
-            throw new DukeException("We cannot find your file.");
+            throw new FileNotFoundException("We cannot find your file.");
         }
     }
 }

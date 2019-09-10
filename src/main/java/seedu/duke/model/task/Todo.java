@@ -12,6 +12,9 @@ public class Todo extends Task {
      */
     public Todo(String taskString) {
         super(Type.TODO, taskString, null);
+        assert taskString != null : "Task does not have a task description";
+        assert this.getDateAndTime() == null : "Task of type Todo has a DateAndTime attribute that "
+                + "violates the intended properties of a Todo object.";
     }
 
     /**
@@ -22,6 +25,10 @@ public class Todo extends Task {
      */
     public Todo(String taskString, boolean isDone) {
         this(taskString);
+        assert taskString != null : "Task does not have a task description";
         this.setIsDone(isDone);
+        assert this.getIsDone() == isDone : "Done status of Task differs from status intended to be set.";
+        assert this.getDateAndTime() == null : "Task of type Todo has a DateAndTime attribute that "
+                + "violates the intended properties of a Todo object.";
     }
 }

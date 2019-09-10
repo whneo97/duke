@@ -17,6 +17,8 @@ public class FindCommand extends Command {
      * @param taskString String representation of search description.
      */
     public FindCommand(String taskString) {
+        assert !taskString.equals("") : "Keywords for search are empty but no exception is thrown "
+                + "when creating a FindCommand object.";
         this.taskString = taskString;
     }
 
@@ -29,7 +31,9 @@ public class FindCommand extends Command {
      */
     @Override
     public void execute(TaskList tasks, Ui ui, Storage storage) {
-        ui.showSearchResults(tasks.find(taskString));
+        TaskList searchResults = tasks.find(taskString);
+        assert searchResults != null : "TaskList returned by search results is null.";
+        ui.showSearchResults(searchResults);
     }
 
 }

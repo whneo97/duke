@@ -1,8 +1,8 @@
-D | 0 | buy cake | 14/12/2019
+D | 1 | buy cake | 14/12/2019
 T | 0 | hello world
 T | 1 | hello
 T | 0 | buy bread
-D | 0 | return book | 15/12/2019 0000
+D | 1 | return book | 15/12/2019 0000
 D | 1 | buy cake | 14/12/2019
 E | 0 | attend lecture | 22/12/2019 1400-1500
 E | 0 | attend lecture | 22/12/2019 1400-1500
@@ -12,9 +12,15 @@ D | 1 | newdeadline | 15/12/2019
 D | 1 | homework | 12/12/2918
 T | 1 | myTodo
 T | 1 | hello
-E | 0 | thisEvent | 23/12/2019 1400-1500
 D | 0 | thisDeadline | 14/12/2019
-D | 0 | thisDeadline | 29/02/2400
+D | 1 | thisDeadline | 29/02/2400
 D | 0 | thisDeadline | 29/02/2020
-D | 0 | thisDeadline | 29/02/2020
-D | 0 | thisDeadline | 29/02/2400
+E | 0 | thisEvent | 14/12/2019 2200-2300
+E | 1 | thisEvent | 23/12/2019 2300-0000
+E | 0 | thisEvent | 21/12/2019 2200-2300
+D | 1 | t | 21/12/2918 2300
+T | 0 | event
+T | 1 | hello
+T | 0 | add
+E | 0 | this | 23/12/2300 2300-0000
+D | 0 | 12/12/2019 | 12/12/2019

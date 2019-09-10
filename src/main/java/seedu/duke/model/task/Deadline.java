@@ -16,6 +16,8 @@ public class Deadline extends Task {
      */
     public Deadline(String taskString, DateAndTime dateAndTime) {
         super(Type.DEADLINE, taskString, dateAndTime);
+        assert dateAndTime != null : "Deadline instance created does not contain "
+                + "DateAndTime attribute";
     }
 
     /**
@@ -28,7 +30,10 @@ public class Deadline extends Task {
      */
     public Deadline(String taskString, DateAndTime dateAndTime, boolean isDone) {
         this(taskString, dateAndTime);
+        assert dateAndTime != null : "Deadline instance created does not contain "
+                + "DateAndTime attribute";
         this.setIsDone(isDone);
+        assert this.getIsDone() == isDone : "Done status of Task differs from status intended to be set.";
     }
 
     /**
@@ -37,6 +42,8 @@ public class Deadline extends Task {
      */
     @Override
     public String toString() {
+        assert this.getDateAndTime() != null : "String representation of Deadline instance returned does not contain "
+                + "DateAndTime attribute";
         return super.toString() + " (by: " + this.getDateAndTime() + ")";
     }
 }

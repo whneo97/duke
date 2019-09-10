@@ -24,6 +24,8 @@ public class Time {
      */
     @Override
     public String toString() {
+        assert hour >= 0 && hour < 24 : "Hour of Time object is out of range.";
+        assert hour >= 0 && hour <= 59 : "Minute of Time object is out of range.";
         return String.format("%02d", hour) + String.format("%02d", minute);
     }
 }

@@ -21,6 +21,8 @@ public class TaskList {
         for (int i = 0; i < sourceList.size(); i++) {
             this.taskList.add(sourceList.get(i));
         }
+        assert sourceList.size() == this.size() : "Size of TaskList copied from Storage differs from "
+                + "size of original TaskList in Storage.";
     }
 
     /**
@@ -36,7 +38,13 @@ public class TaskList {
      * @param task Task to be added to this TaskList.
      */
     public void add(Task task) {
+        int sizeBefore = taskList.size();
         taskList.add(task);
+        int sizeAfter = taskList.size();
+        assert sizeAfter != sizeBefore : "Task was called to be added to TaskList but "
+                + "size of TaskList remained unchanged.";
+        assert sizeAfter == sizeBefore + 1 : "One item was meant to be added to the TaskList "
+                + "but the difference in sizes of the lists before and after is not 1.";
     }
 
     /**
@@ -44,7 +52,13 @@ public class TaskList {
      * @param task Task to be removed from this TaskList.
      */
     public void remove(Task task) {
+        int sizeBefore = taskList.size();
         taskList.remove(task);
+        int sizeAfter = taskList.size();
+        assert sizeAfter != sizeBefore : "Task was called to be removed from TaskList but "
+                + "size of TaskList remained unchanged.";
+        assert sizeAfter == sizeBefore - 1 : "One item was meant to be removed from the TaskList "
+                + "but the difference in sizes of the lists before and after is not 1.";
     }
 
     /**
@@ -52,7 +66,9 @@ public class TaskList {
      * @return An integer representing the number of Tasks in this TaskList.
      */
     public int size() {
-        return taskList.size();
+        int res = taskList.size();
+        assert res >= 0 : "TaskList size returned is less than zero.";
+        return res;
     }
 
     /**
@@ -61,7 +77,9 @@ public class TaskList {
      * @return Task at given index of this TaskList.
      */
     public Task get(int i) {
-        return taskList.get(i);
+        Task task = taskList.get(i);
+        assert task != null && task instanceof Task : "Invalid Task returned from TaskList.";
+        return task;
     }
 
     /**
@@ -131,6 +149,7 @@ public class TaskList {
             out += count + "." + task + "\n";
             count++;
         }
+        assert count - 1 == taskList.size() : "TaskList numbering does not match size of TaskList";
         return out.trim();
     }
 }

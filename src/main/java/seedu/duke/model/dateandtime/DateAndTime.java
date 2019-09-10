@@ -72,6 +72,7 @@ public class DateAndTime {
      */
     @Override
     public String toString() {
+        assert date != null : "DateAndTime object is empty.";
         if (timeEnd == null) {
             return "" + date;
         } else if (this.timeStart == null) {

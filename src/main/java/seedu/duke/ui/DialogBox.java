@@ -37,6 +37,7 @@ public class DialogBox extends HBox {
     private DialogBox(String text, Image img) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(MainWindow.class.getResource("/view/DialogBox.fxml"));
+            assert fxmlLoader != null : "fxmlLoader for DialogBox is null";
             fxmlLoader.setController(this);
             fxmlLoader.setRoot(this);
             fxmlLoader.load();
@@ -76,6 +77,7 @@ public class DialogBox extends HBox {
      * @return DialogBox object representing the User's part of the dialog.
      */
     public static DialogBox getUserDialog(String text, Image img) {
+        assert img != null : "Duke profile image is null.";
         var db = new DialogBox(text, img);
         //Colour Experimentation
         //db.dialog.setTextFill(Color.rgb(150, 255, 160));
@@ -89,6 +91,7 @@ public class DialogBox extends HBox {
      * @return DialogBox object representing Duke's part of the dialog.
      */
     public static DialogBox getDukeDialog(String text, Image img) {
+        assert img != null : "User profile image is null.";
         var db = new DialogBox(text, img);
         //Colour Experimentation:
         //if (!text.equals(Ui.showLogo())) {

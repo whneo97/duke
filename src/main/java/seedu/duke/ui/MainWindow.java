@@ -10,6 +10,7 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
+import seedu.duke.commons.exceptions.DukeException;
 import seedu.duke.model.Duke;
 
 /**
@@ -59,9 +60,11 @@ public class MainWindow extends AnchorPane {
      * Clears the user input after processing.
      */
     @FXML
-    private void handleUserInput() throws InterruptedException {
+    private void handleUserInput() throws InterruptedException, DukeException {
         String input = userInput.getText();
         String response = duke.getResponse(input);
+        assert userImage != null : "User profile image is null.";
+        assert dukeImage != null : "Duke profile image is null.";
         dialogContainer.getChildren().addAll(
                 DialogBox.getUserDialog(input, userImage),
                 DialogBox.getDukeDialog(response, dukeImage)

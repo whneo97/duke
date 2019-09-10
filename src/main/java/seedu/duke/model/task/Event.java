@@ -15,6 +15,8 @@ public class Event extends Task {
      */
     public Event(String taskString, DateAndTime dateAndTime) {
         super(Type.EVENT, taskString, dateAndTime);
+        assert dateAndTime != null : "Event instance created does not contain "
+                + "DateAndTime attribute";
     }
 
     /**
@@ -26,7 +28,10 @@ public class Event extends Task {
      */
     public Event(String taskString, DateAndTime dateAndTime, boolean isDone) {
         this(taskString, dateAndTime);
+        assert dateAndTime != null : "Event instance created does not contain "
+                + "DateAndTime attribute";
         this.setIsDone(isDone);
+        assert this.getIsDone() == isDone : "Done status of Task differs from status intended to be set.";
     }
 
     /**
@@ -35,6 +40,8 @@ public class Event extends Task {
      */
     @Override
     public String toString() {
+        assert this.getDateAndTime() != null : "String representation of Event instance returned does not contain "
+                + "DateAndTime attribute";
         return super.toString() + " (at: " + this.getDateAndTime() + ")";
     }
 }

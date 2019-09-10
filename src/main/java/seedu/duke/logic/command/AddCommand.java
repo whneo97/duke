@@ -1,12 +1,13 @@
 package seedu.duke.logic.command;
 
-import seedu.duke.model.dateandtime.DateAndTime;
 import seedu.duke.commons.exceptions.DukeException;
-import seedu.duke.storage.Storage;
+import seedu.duke.model.dateandtime.DateAndTime;
 import seedu.duke.model.task.Deadline;
 import seedu.duke.model.task.Event;
+import seedu.duke.model.task.Task;
 import seedu.duke.model.task.TaskList;
 import seedu.duke.model.task.Todo;
+import seedu.duke.storage.Storage;
 import seedu.duke.ui.Ui;
 
 /**
@@ -32,6 +33,8 @@ public class AddCommand extends Command {
      *                    If the task does not require any date or time, null may be passed in as an argument.
      */
     public AddCommand(String command, String taskString, DateAndTime dateAndTime) {
+        assert !command.equals("") : "String attribute storing command of an Add command created is empty.";
+        assert !taskString.equals("") : "Task description of an Add command created is empty.";
         this.command = command;
         this.taskString = taskString;
         this.dateAndTime = dateAndTime;
@@ -50,19 +53,26 @@ public class AddCommand extends Command {
     @Override
     public void execute(TaskList tasks, Ui ui, Storage storage) throws DukeException {
         try {
+            Task task = null;
             if (command.equals("todo")) {
-                Todo todo = new Todo(taskString);
-                tasks.add(todo);
-                ui.showAddedMessage(todo.addedMessage(tasks));
+                task = new Todo(taskString);
             } else if (command.equals("deadline")) {
-                Deadline deadline = new Deadline(taskString, dateAndTime);
-                tasks.add(deadline);
-                ui.showAddedMessage(deadline.addedMessage(tasks));
+                task = new Deadline(taskString, dateAndTime);
             } else if (command.equals("event")) {
-                Event event = new Event(taskString, dateAndTime);
-                tasks.add(event);
-                ui.showAddedMessage(event.addedMessage(tasks));
+                task = new Event(taskString, dateAndTime);
             }
+            int sizeBefore = tasks.size();
+            tasks.add(task);
+            int sizeAfter = tasks.size();
+            assert sizeAfter != sizeBefore : "Task was called to be added to TaskList but "
+                    + "size of TaskList remained unchanged.";
+            assert sizeAfter == sizeBefore + 1 : "One item was meant to be added to the TaskList "
+                    + "but the difference in sizes of the lists before and after is not 1.";
+            String addedMessage = task.addedMessage(tasks);
+            ui.showAddedMessage(addedMessage);
+            assert ui.getOutput().equals(addedMessage) : "Task was added to a TaskList "
+                    + "but output does not tally with added message.";
+            assert isExit() == false : "An Add command is exhibiting behaviour that instructs the program to exit.";
             storage.save(tasks, ui);
         } catch (DukeException ex) {
             throw ex;

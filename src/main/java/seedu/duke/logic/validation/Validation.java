@@ -1,8 +1,12 @@
 package seedu.duke.logic.validation;
 
+import seedu.duke.commons.exceptions.commandexceptions.EmptyCommandException;
+import seedu.duke.commons.exceptions.dateandtimeexceptions.InvalidDateException;
+import seedu.duke.commons.exceptions.listexceptions.InvalidListIndexException;
+import seedu.duke.commons.exceptions.commandexceptions.InvalidTaskDescriptionException;
+import seedu.duke.commons.exceptions.dateandtimeexceptions.InvalidTimeException;
 import seedu.duke.model.dateandtime.Date;
 import seedu.duke.model.dateandtime.Time;
-import seedu.duke.commons.exceptions.DukeException;
 import seedu.duke.model.task.TaskList;
 
 /**
@@ -13,47 +17,79 @@ import seedu.duke.model.task.TaskList;
 public class Validation {
 
     /**
+     * Returns a String array of two elements containing task description, date, start and end time respectively.
+     * @param descriptionAndDateTimeString String in the form [task description] [split token] [date and time]
+     * @return String array of two elements containing task description, date and time respectively.
+     * @throws InvalidTaskDescriptionException If the format of the String entered is invalid.
+     */
+
+    public static String[] getValidatedDescriptionAndDateTime(String descriptionAndDateTimeString, String splitToken)
+            throws InvalidTaskDescriptionException {
+        assert !splitToken.equals("") : "A split between description and date/time was requested "
+                + "but the split token to be used was empty.";
+        if (!descriptionAndDateTimeString.contains(splitToken)) {
+            throw new InvalidTaskDescriptionException("Please separate deadline description and date/time by \"" + splitToken + "\". \n"
+                    + "Note that date/time of an event cannot be empty.");
+        }
+
+        String[] arr = descriptionAndDateTimeString.split(splitToken);
+
+        if (arr.length < 2) {
+            throw new InvalidTaskDescriptionException("The description of an event cannot be empty.");
+        }
+        assert arr.length == 2 : "Invalid length of description and date/ time String "
+                + "but exception was not thrown.";
+        return new String[]{arr[0], arr[1]};
+    }
+
+    /**
      * Ensures a command not meant to trailing strings following it does not have any.
      * Trailing spaces will be automatically removed by the program.
      * @param command String representation of a single-word command.
      * @param taskString Description of a task, following a single-word command.
-     * @throws DukeException If taskString taken in is non-empty.
+     * @throws InvalidTaskDescriptionException If taskString taken in is non-empty.
      */
-    public static void ensureEmptyTaskString(String command, String taskString) throws DukeException {
+    public static void ensureEmptyTaskString(String command, String taskString) throws InvalidTaskDescriptionException {
         if (!taskString.equals("")) {
-            throw new DukeException("There cannot be any additional characters after the \"" + command + "\" command"
+            throw new InvalidTaskDescriptionException("There cannot be any additional characters after the \"" + command + "\" command"
                     + " (other than trailing spaces).");
         }
+        assert taskString.equals("") : "Exception meant to be thrown for non-empty task description "
+                + "but an exception was not thrown";
     }
 
     /**
      * Ensures a command or task requiring trailing string(s) following it has it / them.
      * @param task Task or single-word command that requires a following description.
      * @param taskString Description of a task, following a single-word command.
-     * @throws DukeException If taskString taken in is empty.
+     * @throws InvalidTaskDescriptionException If taskString taken in is empty.
      */
-    public static void ensureNonEmptyTaskString(String task, String taskString) throws DukeException {
+    public static void ensureNonEmptyTaskString(String task, String taskString) throws InvalidTaskDescriptionException {
         if (taskString.equals("")) {
             if (task.equals("delete") || task.equals("done")) {
-                throw new DukeException("The index for a " + task + " command cannot be empty.");
+                throw new InvalidTaskDescriptionException("The index for a " + task + " command cannot be empty.");
             } else if (task.charAt(0) == 'a' || task.charAt(0) == 'e' || task.charAt(0) == 'i'
                     || task.charAt(0) == 'o' || task.charAt(0) == 'u') {
-                throw new DukeException("The description of an " + task + " cannot be empty.");
+                throw new InvalidTaskDescriptionException("The description of an " + task + " cannot be empty.");
             } else {
-                throw new DukeException("The description of a " + task + " cannot be empty.");
+                throw new InvalidTaskDescriptionException("The description of a " + task + " cannot be empty.");
             }
         }
+        assert !taskString.equals("") : "Exception meant to be thrown for empty task description "
+                + "but an exception was not thrown";
     }
 
     /**
      * Ensures that a user does not enter an empty line of command.
      * @param command String representation of a single-word command to the program.
-     * @throws DukeException If user inputs an empty line of command.
+     * @throws EmptyCommandException If user inputs an empty line of command.
      */
-    public static void ensureNonEmptyCommand(String command) throws DukeException {
+    public static void ensureNonEmptyCommand(String command) throws EmptyCommandException {
         if (command.equals("")) {
-            throw new DukeException("Command cannot be empty.");
+            throw new EmptyCommandException("Command cannot be empty.");
         }
+        assert !command.equals("") : "Exception meant to be thrown for empty command "
+                + "but an exception was not thrown";
     }
 
     /**
@@ -63,16 +99,16 @@ public class Validation {
      * Ensures the day of the month in the year entered is valid.
      * @param date String representation of a date in DD/MM/YYYY format.
      * @return Validated Date object containing the day, month, year of the date parameter.
-     * @throws DukeException If the date entered is invalid.
+     * @throws InvalidDateException If the date entered is invalid.
      */
-    public static Date getValidatedDate(String date) throws DukeException {
+    public static Date getValidatedDate(String date) throws InvalidDateException {
         if (date.length() != 10) {
-            throw new DukeException("Please ensure date format is in DD/MM/YYYY");
+            throw new InvalidDateException("Please ensure date format is in DD/MM/YYYY");
         }
 
         String[] dateArr = date.split("/");
         if (dateArr.length != 3) {
-            throw new DukeException("Please ensure date format is in DD/MM/YYYY");
+            throw new InvalidDateException("Please ensure date format is in DD/MM/YYYY");
         }
 
         int day = 0;
@@ -85,16 +121,16 @@ public class Validation {
             month = Integer.parseInt(dateArr[1]);
             year = Integer.parseInt(dateArr[2]);
             if (day < 1) {
-                throw new DukeException("Calendar day must start from 1");
+                throw new InvalidDateException("Calendar day must start from 1");
             } else if (month < 1) {
-                throw new DukeException("Calendar month must start from 1");
+                throw new InvalidDateException("Calendar month must start from 1");
             } else if (year < 0) {
-                throw new DukeException("Calendar year must start from 0");
+                throw new InvalidDateException("Calendar year must start from 0");
             } else if (month > 12) {
-                throw new DukeException("There cannot be more than 12 months in a year.");
+                throw new InvalidDateException("There cannot be more than 12 months in a year.");
             }
         } catch (NumberFormatException ex) {
-            throw new DukeException("Please ensure date format is in DD/MM/YYYY");
+            throw new InvalidDateException("Please ensure date format is in DD/MM/YYYY");
         }
 
         if (year % 4 == 0 && year % 100 != 0) {
@@ -105,21 +141,28 @@ public class Validation {
 
         if ((month <= 7 && month % 2 != 0) || (month > 7 && month % 2 == 0)) {
             if (day > 31) {
-                throw new DukeException("There cannot be more than 31 days in " + Date.getMonth(month));
+                throw new InvalidDateException("There cannot be more than 31 days in " + Date.getMonth(month));
             }
         } else if (month != 2) {
             if (day > 30) {
-                throw new DukeException("There cannot be more than 30 days in " + Date.getMonth(month));
+                throw new InvalidDateException("There cannot be more than 30 days in " + Date.getMonth(month));
             }
         } else {
             if (isLeapYear && day > 29) {
-                throw new DukeException("There cannot be more than 29 days in " + Date.getMonth(month) + " "
+                throw new InvalidDateException("There cannot be more than 29 days in " + Date.getMonth(month) + " "
                         + year + ".");
             } else if (!isLeapYear && day > 28) {
-                throw new DukeException("There cannot be more than 28 days in " + Date.getMonth(month) + " "
+                throw new InvalidDateException("There cannot be more than 28 days in " + Date.getMonth(month) + " "
                         + year + ".");
             }
         }
+
+        assert day >= 1 && day <= 31 : "Day in Date object to be created is out of range "
+                + "but no exception was thrown.";
+        assert month >= 1 && month <= 12 : "Month in Date object to be created is out of range "
+                + "but no exception was thrown.";
+        assert year >= 0 : "Year in Date object to be created is out of range "
+                + "but no exception was thrown.";
 
         return new Date(day, month, year);
     }
@@ -130,11 +173,11 @@ public class Validation {
      * Ensures hours is not more than 23 and minutes is not more than 59.
      * @param time String representation of a time in HHMM format.
      * @return Validated Time object containing the day, month, year of the time parameter.
-     * @throws DukeException If the time entered is invalid.
+     * @throws InvalidTimeException If the time entered is invalid.
      */
-    public static Time getValidatedTime(String time) throws DukeException {
+    public static Time getValidatedTime(String time) throws InvalidTimeException {
         if (time.length() != 4) {
-            throw new DukeException("Please ensure time format is in HHMM format (24 hours).");
+            throw new InvalidTimeException("Please ensure time format is in HHMM format (24 hours).");
         }
 
         int hour = 0;
@@ -147,14 +190,20 @@ public class Validation {
                 throw new NumberFormatException();
             }
         } catch (NumberFormatException ex) {
-            throw new DukeException("Please ensure time format is in HHMM format (24 hours).");
+            throw new InvalidTimeException("Please ensure time format is in HHMM format (24 hours).");
         }
 
         if (hour > 23) {
-            throw new DukeException("Please check that hours is not more than 23.");
+            throw new InvalidTimeException("Please check that hours is not more than 23.");
         } else if (minute > 59) {
-            throw new DukeException("Please check that minutes is not more than 59.");
+            throw new InvalidTimeException("Please check that minutes is not more than 59.");
         }
+
+        assert hour >= 0 && hour < 24 : "Hour of Time object to be created is out of range "
+                + "but no exception was thrown.";
+        assert hour >= 0 && hour <= 59 : "Minute of Time object to be created is out of range "
+                + "but no exception was thrown.";
+
         return new Time(hour, minute);
     }
 
@@ -170,11 +219,11 @@ public class Validation {
      * @param tasks TaskList of which the validated index is to be returned.
      * @param k String that represents the ith element of the TaskList (k ranges from 1 to n).
      * @return An integer value i that can be used to access the item in the taskList (i ranges from 0 to n - 1).
-     * @throws DukeException If k is less than 0, more than the size of the list or cannot be parsed as an integer.
+     * @throws InvalidListIndexException If k is less than 0, more than the size of the list or cannot be parsed as an integer.
      */
-    public static int getValidatedListIndex(TaskList tasks, String k) throws DukeException {
+    public static int getValidatedListIndex(TaskList tasks, String k) throws InvalidListIndexException {
         if (k.equals("")) {
-            throw new DukeException("Please enter a valid numerical value after the intended command"
+            throw new InvalidListIndexException("Please enter a valid numerical value after the intended command"
                     + " (separated by a space).\n" + "The number cannot be empty for this command.");
         }
 
@@ -185,19 +234,26 @@ public class Validation {
             if (n <= 0 || n > tasks.size()) {
                 throw new NumberFormatException();
             }
+            try {
+                tasks.get(n - 1);
+            } catch (Exception e) {
+                assert false : "Duke exception was to be thrown to handle invalid list index but "
+                        + "was not thrown. Instead, " + e.getClass().getCanonicalName() + " was thrown.";
+            }
             return n - 1;
         } catch (NumberFormatException ex) {
             if (tasks.size() == 1) {
-                throw new DukeException("Please enter a valid numerical value from 1 to the taskList's size"
+                throw new InvalidListIndexException("Please enter a valid numerical value from 1 to the taskList's size"
                         + " after the intended command (separated by a space).\n"
                         + "There is currently 1 task in the list.\n"
                         + "Try entering \"list\" to view the full list of tasks.");
             } else {
-                throw new DukeException("Please enter a valid numerical value from 1 to the taskList's size"
+                throw new InvalidListIndexException("Please enter a valid numerical value from 1 to the taskList's size"
                         + " after the intended command (separated by a space).\n"
                         + "There are currently " + tasks.size() + " tasks in the list.\n"
                         + "Try entering \"list\" to view the full list of tasks.");
             }
         }
+
     }
 }

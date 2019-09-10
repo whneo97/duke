@@ -39,8 +39,18 @@ public class DeleteCommand extends Command {
         try {
             int i = Validation.getValidatedListIndex(tasks, taskString);
             Task task = tasks.get(i);
+            int sizeBefore = tasks.size();
             tasks.remove(task);
-            ui.showDeletedMessage(task.deletedMessage(tasks));
+            int sizeAfter = tasks.size();
+            assert sizeAfter != sizeBefore : "Task was called to be removed from TaskList but "
+                    + "size of TaskList remained unchanged.";
+            assert sizeAfter == sizeBefore - 1 : "One item was meant to be removed from the TaskList "
+                    + "but the difference in sizes of the lists before and after is not 1.";
+            String deletedMessage = task.deletedMessage(tasks);
+            ui.showDeletedMessage(deletedMessage);
+            assert ui.getOutput().equals(deletedMessage) : "Task was deleted from a TaskList "
+                    + "but output does not tally with deleted message.";
+            assert isExit() == false : "A Delete command is exhibiting behaviour that instructs the program to exit.";
             storage.save(tasks, ui);
         } catch (DukeException ex) {
             throw ex;

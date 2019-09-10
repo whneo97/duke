@@ -1,8 +1,10 @@
 package seedu.duke.storage;
 
-import seedu.duke.model.dateandtime.DateAndTime;
 import seedu.duke.commons.exceptions.DukeException;
+import seedu.duke.commons.exceptions.loadexceptions.LoadException;
+import seedu.duke.commons.exceptions.storageexceptions.SavingUnsuccessfulException;
 import seedu.duke.logic.parser.Parser;
+import seedu.duke.model.dateandtime.DateAndTime;
 import seedu.duke.model.task.Task;
 import seedu.duke.model.task.TaskList;
 import seedu.duke.ui.Ui;
@@ -45,7 +47,10 @@ public class Storage {
                 break;
             }
         }
-        return filePath.substring(0, index);
+        String res = filePath.substring(0, index);
+
+        assert res != null && !res.equals("") : "Directory returned by filepath is empty.";
+        return res;
     }
 
     /**
@@ -65,10 +70,11 @@ public class Storage {
             } else {
                 this.taskList = Parser.parse(this);
             }
+            assert this.taskList != null : "Storage load method did not create any TaskList";
             return this;
-        } catch (IOException ex) {
+        } catch (IOException | DukeException ex) {
             ex.printStackTrace();
-            throw new DukeException("Error loading specified file.");
+            throw new LoadException("Error loading specified file.");
         }
     }
 
@@ -114,7 +120,7 @@ public class Storage {
                         + "performed the required operation. :)");
             }
         } catch (Exception ex) {
-            throw new DukeException("Critical Error: Saving Unsuccessful.");
+            throw new SavingUnsuccessfulException("Critical Error: Saving Unsuccessful.");
         }
     }
 
@@ -123,6 +129,7 @@ public class Storage {
      * @return This Storage's filePath attribute.
      */
     public String getFilePath() {
+        assert filePath != null && !filePath.equals("") : "File path returned by Storage object is empty.";
         return filePath;
     }
 
@@ -131,6 +138,7 @@ public class Storage {
      * @return This Storage's taskList attribute.
      */
     public TaskList getTaskList() {
+        assert taskList != null : "TaskList returned by Storage object is empty.";
         return taskList;
     }
 }

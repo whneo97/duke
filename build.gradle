@@ -33,6 +33,7 @@ dependencies {
 
 run{
     standardInput = System.in
+    enableAssertions = true
 }
 
 test {

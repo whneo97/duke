@@ -26,6 +26,7 @@ public class Date {
      * @return String representation of the month (eg. January) converted from its numerical representation.
      */
     public static String getMonth(int month) {
+        assert month >= 1 && month <= 12 : "Month for which String representation is requested is out of range.";
         return month == 1
                 ? "January"
                 : month == 2
@@ -58,6 +59,10 @@ public class Date {
      * @return String representation of a Date instance in DD/MM/YYYY format.
      */
     public String toString() {
+        assert day >= 1 && day <= 31 : "Day in Date object is out of range.";
+        assert month >= 1 && month <= 12 : "Month in Date object is out of range.";
+        assert year >= 0 : "Year in Date object is out of range.";
+
         return String.format("%02d", day)
                 + "/" + String.format("%02d", month)
                 + "/" + String.format("%02d", year);

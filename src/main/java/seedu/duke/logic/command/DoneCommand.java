@@ -40,7 +40,13 @@ public class DoneCommand extends Command {
             int i = Validation.getValidatedListIndex(tasks, taskString);
             Task task = tasks.get(i);
             task.setIsDone(true);
-            ui.showDoneMessage(task.doneMessage());
+            assert task.getIsDone() == true : "Task is set as Done but an immediate query to determine it's "
+                    + "done status shows otherwise.";
+            String doneMessage = task.doneMessage();
+            ui.showDoneMessage(doneMessage);
+            assert ui.getOutput().equals(doneMessage) : "Task was marked as done "
+                    + "but output does not tally with done message.";
+            assert isExit() == false : "A Done command is exhibiting behaviour that instructs the program to exit.";
             storage.save(tasks, ui);
         } catch (DukeException ex) {
             throw ex;

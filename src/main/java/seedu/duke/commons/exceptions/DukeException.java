@@ -2,6 +2,7 @@ package seedu.duke.commons.exceptions;
 
 /**
  * Defines a DukeException object that extends the Exception class.
+ * Signals an exception occurred that is relevant for this Duke program.
  */
 public class DukeException extends Exception {
 
