@@ -34,6 +34,18 @@ public class TaskList {
     }
 
     /**
+     * Creates a copy of an existing TaskList.
+     * @param taskList TaskList with contents to be copied into this TaskList.
+     */
+    public TaskList(TaskList taskList) {
+        this();
+        for (int i = 0; i < taskList.size(); i++) {
+            this.add(taskList.get(i));
+        }
+        assert taskList.size() == this.size();
+    }
+
+    /**
      * Removes the given Task from this TaskList.
      * @param task Task to be removed from this TaskList.
      */
@@ -151,8 +163,8 @@ public class TaskList {
         String s = "";
 
         if (deletedTasks.size() == this.size()) {
-            return "Noted. I've removed all tasks in the list.";
-        } if (deletedTasks.size() > 1) {
+            return "Noted. I've removed all tasks in the task list.";
+        } else if (deletedTasks.size() > 1) {
             s = "Noted. I've removed these tasks:\n" + deletedTasks + "\n";
         } else {
             s = "Noted. I've removed this task:\n"

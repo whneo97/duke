@@ -178,4 +178,28 @@ public class Ui {
         assert !this.output.equals("") : "Output displayed to user is empty";
         return this.output;
     }
+
+    /**
+     * Stores a message to display to the user that the tasklist is currently empty.
+     */
+    public void showEmptyTaskListMessage() {
+        output = "You currently have no tasks in the task list!\n\nYou may add a Todo, Deadline or Event to the "
+                + "tasklist. Input \'help\' to find out more.";
+    }
+
+    /**
+     * Stores a message to display to the user that execution of the undo command is successful.
+     */
+    public void showUndoMessage() {
+        output = "Undo successful. Task list has been reverted to the version before the most recent operation "
+                + "was executed.";
+    }
+
+    /**
+     * Stores a message to display to the user that execution of the redo command is successful.
+     */
+    public void showRedoMessage() {
+        output = "Redo successful. Task list has been reverted to the version before the most recent undo operation "
+                + "was executed.";
+    }
 }

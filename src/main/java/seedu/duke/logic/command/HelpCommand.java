@@ -10,7 +10,6 @@ import seedu.duke.ui.Ui;
  */
 public class HelpCommand extends Command {
 
-
     // A list of constant definitions and usage instructions for all commands known to the program that may be of
     // help to a user who requests for these definitions.
     private static final String TODOHELP = "todo: Adds a todo into the tasklist.\n"

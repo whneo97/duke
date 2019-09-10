@@ -1,9 +1,16 @@
 package seedu.duke.model;
 
 import seedu.duke.commons.exceptions.DukeException;
+import seedu.duke.logic.command.AddCommand;
 import seedu.duke.logic.command.Command;
+import seedu.duke.logic.command.DeleteCommand;
+import seedu.duke.logic.command.DoneCommand;
+import seedu.duke.logic.command.RedoCommand;
+import seedu.duke.logic.command.UndoCommand;
+import seedu.duke.logic.command.UndoneCommand;
 import seedu.duke.logic.parser.Parser;
 import seedu.duke.model.task.TaskList;
+import seedu.duke.model.task.TaskListHistory;
 import seedu.duke.storage.Storage;
 import seedu.duke.ui.Ui;
 
@@ -15,6 +22,7 @@ public class Duke {
 
     private Storage storage;
     private TaskList tasks;
+    private TaskListHistory taskListHistory;
     private Ui ui;
     private boolean isExit;
 
@@ -33,6 +41,7 @@ public class Duke {
     public Duke(String filePath) {
         ui = new Ui();
         storage = new Storage(filePath);
+        taskListHistory = new TaskListHistory();
         try {
             tasks = new TaskList(storage.load());
         } catch (DukeException e) {
@@ -40,6 +49,7 @@ public class Duke {
             tasks = new TaskList();
         } finally {
             assert tasks != null : "Duke TaskList is not initialised.";
+            taskListHistory.add(tasks);
         }
     }
 
@@ -51,12 +61,26 @@ public class Duke {
     private void run(String input) {
         try {
             String fullCommand = input;
-            Command c = Parser.parse(fullCommand);
-            assert c != null : "Command object to be executed is null.";
-            assert tasks != null : "TaskList of this Duke instance is null.";
-            assert ui != null : "Ui of this Duke instance is null.";
-            assert storage != null : "Storage of this Duke instance is null.";
+            Command c;
+            if (fullCommand.toLowerCase().equals("undo")) {
+                c = new UndoCommand(this);
+            } else if (fullCommand.toLowerCase().equals("redo")) {
+                c = new RedoCommand(this);
+            } else {
+                c = Parser.parse(fullCommand);
+                assert c != null : "Command object to be executed is null.";
+                assert tasks != null : "TaskList of this Duke instance is null.";
+                assert ui != null : "Ui of this Duke instance is null.";
+                assert storage != null : "Storage of this Duke instance is null.";
+            }
             c.execute(tasks, ui, storage);
+            if (c instanceof AddCommand
+                    || c instanceof DoneCommand
+                    || c instanceof UndoneCommand
+                    || c instanceof DeleteCommand) {
+                taskListHistory.add(tasks);
+            }
+            System.out.println(taskListHistory);
             isExit = c.isExit();
         } catch (DukeException e) {
             ui.showError(e.getMessage());
@@ -86,11 +110,28 @@ public class Duke {
     }
 
     /**
+     * Returns a TaskListHistory object stored in this instance of Duke.
+     * @return A TaskListHistory object stored in this instance of Duke that contains the timeline of all captured
+     *         TaskLists through different operations.
+     */
+    public TaskListHistory getTaskListHistory() {
+        return taskListHistory;
+    }
+
+    /**
      * Returns whether Duke has been called to exit after the most recent command.
-     *
      * @return A boolean tha denotes whether or not Duke has been called to terminate by user command.
      */
     public boolean getIsExit() {
         return isExit;
     }
+
+    /**
+     * Sets the TaskList stored in this instance of Duke to be the given one in the TaskList parameter.
+     * @param tasks TaskList to replace the current TaskList stored in this instance of Duke.
+     */
+    public void setTaskList(TaskList tasks) {
+        this.tasks = tasks;
+    }
+
 }
