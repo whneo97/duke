@@ -1,5 +1,6 @@
 package seedu.duke.logic.parser;
 
+import seedu.duke.commons.exceptions.DukeException;
 import seedu.duke.commons.exceptions.commandexceptions.InvalidCommandException;
 import seedu.duke.commons.exceptions.loadexceptions.FileNotFoundException;
 import seedu.duke.logic.command.AddCommand;
@@ -10,17 +11,17 @@ import seedu.duke.logic.command.ExitCommand;
 import seedu.duke.logic.command.FindCommand;
 import seedu.duke.logic.command.HelpCommand;
 import seedu.duke.logic.command.ListCommand;
-import seedu.duke.model.dateandtime.DateAndTime;
-import seedu.duke.commons.exceptions.DukeException;
-import seedu.duke.storage.Storage;
-import seedu.duke.model.task.Deadline;
-import seedu.duke.model.task.Event;
-import seedu.duke.model.task.TaskList;
-import seedu.duke.model.task.Todo;
+import seedu.duke.logic.command.UndoneCommand;
 import seedu.duke.logic.validation.DeadlineValidation;
 import seedu.duke.logic.validation.EventValidation;
 import seedu.duke.logic.validation.LoadValidation;
 import seedu.duke.logic.validation.Validation;
+import seedu.duke.model.dateandtime.DateAndTime;
+import seedu.duke.model.task.Deadline;
+import seedu.duke.model.task.Event;
+import seedu.duke.model.task.TaskList;
+import seedu.duke.model.task.Todo;
+import seedu.duke.storage.Storage;
 
 import java.io.File;
 import java.util.Scanner;
@@ -98,6 +99,10 @@ public class Parser {
             Validation.ensureNonEmptyTaskString(command, taskString);
             assert !taskString.equals("") : "Index for done command is empty in Parser but no exception was thrown.";
             return new DoneCommand(taskString);
+        } else if (command.equals("undone")) {
+            Validation.ensureNonEmptyTaskString(command, taskString);
+            assert !taskString.equals("") : "Index for undone command is empty in Parser but no exception was thrown.";
+            return new UndoneCommand(taskString);
         } else if (command.equals("delete")) {
             Validation.ensureNonEmptyTaskString(command, taskString);
             assert !taskString.equals("") : "Index for delete command is empty in Parser but no exception was thrown.";

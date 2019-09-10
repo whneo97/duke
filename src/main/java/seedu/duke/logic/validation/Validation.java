@@ -1,13 +1,16 @@
 package seedu.duke.logic.validation;
 
 import seedu.duke.commons.exceptions.commandexceptions.EmptyCommandException;
-import seedu.duke.commons.exceptions.dateandtimeexceptions.InvalidDateException;
-import seedu.duke.commons.exceptions.listexceptions.InvalidListIndexException;
 import seedu.duke.commons.exceptions.commandexceptions.InvalidTaskDescriptionException;
+import seedu.duke.commons.exceptions.dateandtimeexceptions.InvalidDateException;
 import seedu.duke.commons.exceptions.dateandtimeexceptions.InvalidTimeException;
+import seedu.duke.commons.exceptions.listexceptions.InvalidListIndexException;
+import seedu.duke.commons.exceptions.listexceptions.InvalidListRangeException;
 import seedu.duke.model.dateandtime.Date;
 import seedu.duke.model.dateandtime.Time;
 import seedu.duke.model.task.TaskList;
+
+import java.util.ArrayList;
 
 /**
  * Defines a Validation class containing static methods.
@@ -209,6 +212,51 @@ public class Validation {
                 + "but no exception was thrown.";
 
         return new Time(hour, minute);
+    }
+
+    /**
+     * Returns an ArrayList of ranges represented by ArrayLists of size 2 denoting start and end indexes of a TaskList.
+     * @param tasks TaskList of which the validated range is to be returned.
+     * @param rangeList String representation of a range in the format of ranges separated by commas.
+     *                  eg. "3-4, 5-6, 9, 10-11".
+     * @return An ArrayList of ranges represented by ArrayLists of size 2 denoting start and end indexes of a TaskList.
+     * @throws InvalidListIndexException If the TaskList range given is invalid. eg. "3-5-1"
+     */
+    public static ArrayList<ArrayList<Integer>> getValidatedListRange(TaskList tasks, String rangeList) throws InvalidListIndexException {
+        String[] ranges = rangeList.split(",");
+        ArrayList<ArrayList<Integer>> outputRange = new ArrayList<>();
+
+        for (String range : ranges) {
+            String[] rangeArray = range.trim().split("-");
+            ArrayList<Integer> intRange = new ArrayList<>(2);
+
+            if (rangeArray.length > 2) {
+                throw new InvalidListRangeException("Please ensure ranges of numbers are separated by "
+                        + "commas, and each range contains at most one dash.");
+            } else if (rangeArray.length == 1) {
+                int index = getValidatedListIndex(tasks, rangeArray[0]);
+                for (int i = 0; i < 2; i++) {
+                    intRange.add(index);
+                }
+            } else {
+                int startIndex = getValidatedListIndex(tasks, rangeArray[0]);
+                int endIndex = getValidatedListIndex(tasks,rangeArray[1]);
+                if (startIndex > endIndex) {
+                    throw new InvalidListRangeException("The starting number of a list range cannot be more than "
+                            + "the ending number.");
+                }
+                assert startIndex <= endIndex : "Starting index of the list is more than the ending index, "
+                        + "but no exception was thrown.";
+                intRange.add(startIndex);
+                intRange.add(endIndex);
+            }
+            assert intRange.size() == 2 : "ArrayList containing range of numbers has more or less than the "
+                    + "required number of two elements (representing start and end index.";
+
+            outputRange.add(intRange);
+        }
+
+        return outputRange;
     }
 
     /**

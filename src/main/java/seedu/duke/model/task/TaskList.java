@@ -34,6 +34,20 @@ public class TaskList {
     }
 
     /**
+     * Removes the given Task from this TaskList.
+     * @param task Task to be removed from this TaskList.
+     */
+    public void remove(Task task) {
+        int sizeBefore = taskList.size();
+        taskList.remove(task);
+        int sizeAfter = taskList.size();
+        assert sizeAfter != sizeBefore : "Task was called to be removed from TaskList but "
+                + "size of TaskList remained unchanged.";
+        assert sizeAfter == sizeBefore - 1 : "One item was meant to be removed from the TaskList "
+                + "but the difference in sizes of the lists before and after is not 1.";
+    }
+
+    /**
      * Adds the given Task to this TaskList.
      * @param task Task to be added to this TaskList.
      */
@@ -48,17 +62,106 @@ public class TaskList {
     }
 
     /**
-     * Removes the given Task from this TaskList.
-     * @param task Task to be removed from this TaskList.
+     * Returns a done message after multiple Task(s) are marked as done in this TaskList.
+     * @param rangeList ArrayList of ranges, represented by ArrayLists containing two elements each.
+     *                  First element represents starting index while second element represents ending index
+     *                  (both inclusive).
+     * @return A deleted message after multiple Task(s) are marked as done from this TaskList.
+     *         Indicates to client successful deletion and lists out elements that have been deleted.
      */
-    public void remove(Task task) {
-        int sizeBefore = taskList.size();
-        taskList.remove(task);
-        int sizeAfter = taskList.size();
-        assert sizeAfter != sizeBefore : "Task was called to be removed from TaskList but "
-                + "size of TaskList remained unchanged.";
-        assert sizeAfter == sizeBefore - 1 : "One item was meant to be removed from the TaskList "
-                + "but the difference in sizes of the lists before and after is not 1.";
+    public String markAsDone(ArrayList<ArrayList<Integer>> rangeList) {
+        TaskList doneTasks = new TaskList();
+
+        for (ArrayList<Integer> range : rangeList) {
+            for (int i = range.get(0); i <= range.get(1); i++) {
+                Task task = get(i);
+                task.setIsDone(true);
+                doneTasks.add(task);
+            }
+        }
+
+        if (doneTasks.size() > 1) {
+            return "Nice! I've marked these tasks as done:\n" + this + "\n";
+
+        } else {
+            return "Nice! I've marked this task as done:\n" + this.get(0);
+        }
+    }
+
+    /**
+     * Returns a done message after multiple Task(s) are marked as done in this TaskList.
+     * @param rangeList ArrayList of ranges, represented by ArrayLists containing two elements each.
+     *                  First element represents starting index while second element represents ending index
+     *                  (both inclusive).
+     * @return A deleted message after multiple Task(s) are marked as done from this TaskList.
+     *         Indicates to client successful deletion and lists out elements that have been deleted.
+     */
+    public String markAsUnDone(ArrayList<ArrayList<Integer>> rangeList) {
+        TaskList doneTasks = new TaskList();
+
+        for (ArrayList<Integer> range : rangeList) {
+            for (int i = range.get(0); i <= range.get(1); i++) {
+                Task task = get(i);
+                task.setIsDone(false);
+                doneTasks.add(task);
+            }
+        }
+
+        if (doneTasks.size() > 1) {
+            return "Nice! I've marked these tasks as undone:\n" + this;
+
+        } else {
+            return "Nice! I've marked this task as undone:\n" + this.get(0);
+        }
+    }
+
+    /**
+     * Returns a deleted message after multiple Task(s) are deleted from this TaskList.
+     * @param rangeList ArrayList of ranges, represented by ArrayLists containing two elements each.
+     *                  First element represents starting index while second element represents ending index
+     *                  (both inclusive).
+     * @return A deleted message after multiple Task(s) are deleted from this TaskList.
+     *         Indicates to client successful deletion and lists out elements that have been deleted.
+     */
+    public String removeRanges(ArrayList<ArrayList<Integer>> rangeList) {
+        for (ArrayList<Integer> range : rangeList) {
+            for (int i = range.get(1); i >= range.get(0); i--) {
+                this.get(i).markAsDelete();
+            }
+        }
+
+        TaskList deletedTasks = new TaskList();
+
+        for (int i = this.size() - 1; i >= 0; i--) {
+            Task task = this.get(i);
+            if (task.getMarkedAsDelete() == true) {
+                deletedTasks.add(task);
+                int sizeBefore = this.size();
+                this.remove(task);
+                int sizeAfter = this.size();
+                assert sizeAfter != sizeBefore : "Task was called to be removed from TaskList but "
+                        + "size of TaskList remained unchanged.";
+                assert sizeAfter == sizeBefore - 1 : "One item was meant to be removed from the TaskList "
+                        + "but the difference in sizes of the lists before and after is not 1.";
+            }
+        }
+
+        String s = "";
+
+        if (deletedTasks.size() > 1) {
+            s = "Noted. I've removed these tasks:\n" + deletedTasks + "\n";
+        } else {
+            s = "Noted. I've removed this task:\n"
+                    + deletedTasks.get(0) + "\n";
+        }
+
+        if (size() == 1) {
+            s += "Now you have 1 task in the list.";
+        } else {
+            s += "Now you have " + this.size() + " tasks in the list.";
+        }
+
+        return s;
     }
 
     /**
