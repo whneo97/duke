@@ -7,6 +7,7 @@ import seedu.duke.storage.Storage;
 import seedu.duke.ui.Ui;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Defines a Command object that removes Tasks from the TaskList.
@@ -38,7 +39,15 @@ public class DeleteCommand extends Command {
     @Override
     public void execute(TaskList tasks, Ui ui, Storage storage) throws DukeException {
         try {
-            ArrayList<ArrayList<Integer>> rangeList = Validation.getValidatedListRange(tasks, taskString);
+
+            ArrayList<ArrayList<Integer>> rangeList;
+            if (taskString.equals("all")) {
+                ArrayList<Integer> all = new ArrayList<>(List.of(0, tasks.size() -1));
+                rangeList = new ArrayList<>(List.of(all));
+            } else {
+                rangeList = Validation.getValidatedListRange(tasks, taskString);
+            }
+
             String deletedMessage = tasks.removeRanges(rangeList);
             ui.showDeletedMessage(deletedMessage);
             assert ui.getOutput().equals(deletedMessage) : "Task(s) was/ were deleted from a TaskList "

@@ -23,13 +23,16 @@ public class HelpCommand extends Command {
             + "where dates and times (24-hour clock) are valid.";
     private static final String DONEHELP = "done: Marks a task or multiple tasks in the tasklist as done.\n"
             + "Requires input to be in the format \'done [number representing task in tasklist]\' or \n"
-            + "\'done [range1, range2, range3, ...]\'. eg. done 2-4, 6, 8-9";
+            + "\'done [range1, range2, range3, ...]\'. eg. done 2-4, 6, 8-9\n"
+            + "or \'done all\' to mark all tasks as done.";
     private static final String UNDONEHELP = "done: Marks a task or multiple tasks in the tasklist as undone.\n"
             + "Requires input to be in the format \'done [number representing task in tasklist]\' or \n"
-            + "\'undone [range1, range2, range3, ...]\'. eg. undone 2-4, 6, 8-9";
+            + "\'undone [range1, range2, range3, ...]\'. eg. undone 2-4, 6, 8-9\n"
+            + " or \'undone all\' to mark all tasks as undone.";
     private static final String DELETEHELP = "delete: Deletes a task or multiple tasks from the tasklist.\n"
             + "Requires input to be in the format \'delete [number representing task in tasklist]\' or \n"
-            + "\'delete [range1, range2, range3, ...]\'. eg. delete 2-4, 6, 8-9";
+            + "\'delete [range1, range2, range3, ...]\'. eg. delete 2-4, 6, 8-9\n"
+            + " or \'delete all\' to remove all tasks.";
     private static final String LISTHELP = "list: Lists all tasks in the tasklist stored.\n"
             + "Requires input to be in the format \'list\'.";
     private static final String FINDHELP = "find: Finds tasks in the tasklist given keywords.\n"

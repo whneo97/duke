@@ -80,9 +80,10 @@ public class TaskList {
             }
         }
 
-        if (doneTasks.size() > 1) {
+        if (doneTasks.size() == this.size()) {
+            return "Nice! I've marked all tasks as done.";
+        } else if (doneTasks.size() > 1) {
             return "Nice! I've marked these tasks as done:\n" + this + "\n";
-
         } else {
             return "Nice! I've marked this task as done:\n" + this.get(0);
         }
@@ -107,9 +108,10 @@ public class TaskList {
             }
         }
 
-        if (doneTasks.size() > 1) {
+        if (doneTasks.size() == this.size()) {
+            return "Nice! I've marked all tasks as undone.";
+        } else if (doneTasks.size() > 1) {
             return "Nice! I've marked these tasks as undone:\n" + this;
-
         } else {
             return "Nice! I've marked this task as undone:\n" + this.get(0);
         }
@@ -148,7 +150,9 @@ public class TaskList {
 
         String s = "";
 
-        if (deletedTasks.size() > 1) {
+        if (deletedTasks.size() == this.size()) {
+            return "Noted. I've removed all tasks in the list.";
+        } if (deletedTasks.size() > 1) {
             s = "Noted. I've removed these tasks:\n" + deletedTasks + "\n";
         } else {
             s = "Noted. I've removed this task:\n"
