@@ -138,11 +138,21 @@ public class Ui {
 
     /**
      * Stores a message to be displayed to the user the String representation of a TaskList.
-     * Presumably called by the toString method of the TaskList class.
+     * Presumably called along with the toString method of the TaskList class.
      * @param tasks TaskList to be displayed as its String representation.
      */
     public void showTaskList(TaskList tasks) {
         output = "Here are the tasks in your list:\n"
+                + tasks.toString();
+    }
+
+    /**
+     * Stores a message to be displayed to the user the String representation of a TaskList that has just been sorted.
+     * Presumably called along with the toString method of the TaskList class after a TaskList has been sorted.
+     * @param tasks TaskList to be displayed as its String representation.
+     */
+    public void showSortedTaskList(TaskList tasks) {
+        output = "Sorting successful! Here are the tasks in your list:\n"
                 + tasks.toString();
     }
 
@@ -202,4 +212,5 @@ public class Ui {
         output = "Redo successful. Task list has been reverted to the version before the most recent undo operation "
                 + "was executed.";
     }
+
 }

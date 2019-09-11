@@ -22,6 +22,7 @@ public class RedoCommand extends Command {
      * Stores to attributes of RedoCommand relevant information required to create an RedoCommand.
      * Attribute is a reference to instance of Duke for which to perform redo operation.
      * @param duke Duke instance for which to perform redo operation.
+     * @throws DukeException If initialisation of the Duke instance as an attribute is unsuccessful.
      */
     public RedoCommand(Duke duke) throws DukeException {
         this.duke = duke;
@@ -39,6 +40,7 @@ public class RedoCommand extends Command {
      */
     @Override
     public void execute(TaskList tasks, Ui ui, Storage storage) throws DukeException {
+        assert tasks != null : "TaskList that is to be displayed is null.";
         try {
             tasks = this.duke.getTaskListHistory().redo();
             this.duke.setTaskList(tasks);

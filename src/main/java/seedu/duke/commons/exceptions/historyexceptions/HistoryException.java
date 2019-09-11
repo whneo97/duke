@@ -6,7 +6,6 @@ import seedu.duke.commons.exceptions.DukeException;
  * Defines a public class HistoryException extends DukeException {
  object that extends the DukeException class.
  * Signals an error when a client of the Duke program is attempting to traverse through the timeline of TaskLists.
- * TaskList a client is attempting to access.
  */
 public class HistoryException extends DukeException {
 

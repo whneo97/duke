@@ -5,15 +5,27 @@ import seedu.duke.commons.exceptions.historyexceptions.CannotUndoException;
 
 import java.util.ArrayList;
 
+/**
+ * Defines a TaskList history object that stores all created instances of TaskLists in memory.
+ * Saves all TaskList until program exits.
+ */
 public class TaskListHistory {
     private int curr = -1;
     private int size;
     private ArrayList<TaskList> listOfTaskLists;
 
+    /**
+     * Creates a TaskListHistory instance.
+     * Initialises an empty list of TaskLists that will be used to store TaskLists.
+     */
     public TaskListHistory() {
         this.listOfTaskLists = new ArrayList<>();
     }
 
+    /**
+     * Adds a TaskList to TaskListHistory.
+     * @param taskList TaskList that is to be added to this TaskListHistory object.
+     */
     public void add(TaskList taskList) {
         TaskList copy = new TaskList(taskList);
         if (curr == listOfTaskLists.size() - 1) {
@@ -27,6 +39,12 @@ public class TaskListHistory {
         size = curr + 1;
     }
 
+    /**
+     * Returns the previous version oft the TaskList from the list of stored TaskLists.
+     * @return Next older TaskList from the list of saved TaskLists.
+     * @throws CannotUndoException If there are no older versions of TaskLists stored in TaskList history
+     *                             to be returned.
+     */
     public TaskList undo() throws CannotUndoException {
         if (curr <= 0) {
             throw new CannotUndoException("Cannot undo. There are no older versions of the TaskList stored in "
@@ -37,6 +55,12 @@ public class TaskListHistory {
         }
     }
 
+    /**
+     * Returns the next newer version oft the TaskList from the list of stored TaskList before it was reverted.
+     * @return Next most recent TaskList from the list of saved TaskLists.
+     * @throws CannotRedoException If there are no newer versions of TaskLists stored in TaskList history
+     *                             to be returned.
+     */
     public TaskList redo() throws CannotRedoException {
         if (curr == size - 1) {
             throw new CannotRedoException("Cannot redo. There are no newer versions of the TaskList stored in "
@@ -47,9 +71,14 @@ public class TaskListHistory {
         }
     }
 
+    /**
+     * Returns String representation of TaskListHistory.
+     * Displays all tasks stored in the the saved list of Tasks and the current version of TaskList being used.
+     * @return String representation of list of all Tasks stored in TaskListHistory.
+     */
     @Override
     public String toString() {
-        String s = "TASKLIST HISTORY START-------------------------";
+        String s = "-------------------------TASKLIST HISTORY START-------------------------";
         int n = 1;
         for (TaskList taskList : listOfTaskLists) {
             s += "\nTASKLIST NUMBER " + n + "\n";
@@ -59,7 +88,7 @@ public class TaskListHistory {
             s += taskList;
             n++;
         }
-        s += "\nTASKLIST HISTORY END----------------------------";
+        s += "\n-------------------------TASKLIST HISTORY END----------------------------";
         return s;
     }
 

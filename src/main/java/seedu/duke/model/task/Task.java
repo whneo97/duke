@@ -2,6 +2,8 @@ package seedu.duke.model.task;
 
 import seedu.duke.model.dateandtime.DateAndTime;
 
+import java.util.Comparator;
+
 /**
  * Defines a Task object that represents a task.
  */
@@ -12,10 +14,46 @@ public class Task {
     }
 
     private String taskString;
-    private boolean isDone = false;
-    private boolean markedAsDelete = false;
     private Type type;
     private DateAndTime dateAndTime;
+
+    private boolean isDone = false;
+    private boolean markedAsDelete = false;
+
+    private static int count;
+    private int id;
+
+    // Comparators used to compare Task objects based on different criteria.
+    private static Comparator<Task> stringComparator = Comparator.comparing((Task x) -> x.taskString);
+    private static Comparator<Task> revStringComparator = stringComparator.reversed();
+    private static Comparator<Task> dateAndTimeComparator = (Task x, Task y)
+        -> x.dateAndTime == null && y.dateAndTime == null ? 0
+        : x.dateAndTime == null ? 1
+        : y.dateAndTime == null ? -1
+        : x.dateAndTime.compareTo(y.dateAndTime) > 0 ? 1
+        : x.dateAndTime.compareTo(y.dateAndTime) < 0 ? -1
+        : x.dateAndTime.compareTo(y.dateAndTime) == 0 ? stringComparator.compare(x, y) : 0;
+    private static Comparator<Task> revDateAndTimeComparator = (Task x, Task y)
+        -> x.dateAndTime == null && y.dateAndTime == null ? 0
+        : x.dateAndTime == null ? -1
+        : y.dateAndTime == null ? 1
+        : x.dateAndTime.compareTo(y.dateAndTime) > 0 ? -1
+        : x.dateAndTime.compareTo(y.dateAndTime) < 0 ? 1
+        : x.dateAndTime.compareTo(y.dateAndTime) == 0 ? stringComparator.compare(x, y) : 0;
+    private static Comparator<Task> doneComparator = (Task x, Task y)
+        -> x.isDone && y.isDone ? stringComparator.compare(x, y) : x.isDone ? -1 : 0;
+    private static Comparator<Task> undoneComparator = (Task x, Task y)
+        -> x.isDone && y.isDone ? stringComparator.compare(x, y) : !x.isDone ? -1 : 0;
+    private static Comparator<Task> idComparator = Comparator.comparingInt((Task x) -> x.id);
+    private static Comparator<Task> revIdComparator = idComparator.reversed();
+    private static Comparator<Task> typeComparator = (Task x, Task y)
+        -> x.type.toString().compareTo(y.type.toString()) == 0
+        ? stringComparator.compare(x, y)
+        : x.type.toString().compareTo(y.type.toString());
+    private static Comparator<Task> revTypeComparator = (Task x, Task y)
+        -> x.type.toString().compareTo(y.type.toString()) == 0
+        ? stringComparator.compare(x, y)
+        : y.type.toString().compareTo(x.type.toString());
 
     /**
      * Creates a Task object with a task description, type and date / time if any.
@@ -29,22 +67,32 @@ public class Task {
         this.type = type;
         this.taskString = taskString;
         this.dateAndTime = dateAndTime;
+        Task.count++;
+        this.id = Task.count;
     }
 
     /**
-     * Creates an entirely new Task object copy with the same attributes as that of the Task taken in as argument.
-     * @param task Task with attributes to be copied over to this instance of Task.
+     * Returns an entirely new Task object copy with the same attributes as that of this Task.
+     * @return Copy of this Task.
      */
-    public Task(Task task) {
-        this.taskString = task.taskString;
-        DateAndTime dateAndTime = task.getDateAndTime();
+    public Task copy() {
+        DateAndTime dateAndTime = this.getDateAndTime();
         if (dateAndTime != null) {
             this.dateAndTime = new DateAndTime(dateAndTime.getDate(), dateAndTime.getTimeStart(),
                     dateAndTime.getTimeEnd());
         }
-        this.type = task.type;
-        this.isDone = task.isDone;
-        this.markedAsDelete = task.markedAsDelete;
+        Task copy;
+        if (this instanceof Todo) {
+            copy = new Todo(this.taskString);
+        } else if (this instanceof Event) {
+            copy = new Event(this.taskString, dateAndTime);
+        } else {
+            copy = new Deadline(this.taskString, dateAndTime);
+        }
+        copy.id = this.id;
+        copy.isDone = this.isDone;
+        copy.markedAsDelete = this.markedAsDelete;
+        return copy;
     }
 
     /**
@@ -154,6 +202,88 @@ public class Task {
         this.isDone = isDone;
         assert this.isDone == isDone : "State of whether Task has been completed was intended to be set "
                 + "but was not set by system.";
+    }
+
+    /**
+     * Returns a comparator that compares tasks based on the tasks' DateAndTime attribute.
+     * @return A DateAndTime Comparator of this class.
+     */
+    public static Comparator<Task> getDateAndTimeComparator() {
+        return dateAndTimeComparator;
+    }
+
+    /**
+     * Returns a reversed comparator that compares tasks based on the tasks' DateAndTime attribute.
+     * @return A reversed DateAndTime Comparator of this class (latest date first).
+     */
+    public static Comparator<Task> getRevDateAndTimeComparator() {
+        return revDateAndTimeComparator;
+    }
+
+
+    /**
+     * Returns a comparator that compares tasks based on their done status. (done tasks sorted first.)
+     * @return A done status comparator of this class that arranges done tasks first.
+     */
+    public static Comparator<Task> getDoneComparator() {
+        return doneComparator;
+    }
+
+    /**
+     * Returns a comparator that compares tasks based on their done status. (undone tasks sorted first.)
+     * @return A done status comparator of this class that arranges undone tasks first.
+     */
+    public static Comparator<Task> getUndoneComparator() {
+        return undoneComparator;
+    }
+
+    /**
+     * Returns a comparator that compares tasks based on the order which they are created.
+     * @return An id comparator of this class that arranges tasks in order of their id.
+     */
+    public static Comparator<Task> getIdComparator() {
+        return idComparator;
+    }
+
+    /**
+     * Returns a reversed comparator that compares tasks based in reverse order which they are created.
+     * @return A reversed id comparator of this class that arranges tasks in reverse order of their id.
+     */
+    public static Comparator<Task> getRevIdComparator() {
+        return revIdComparator;
+    }
+
+
+    /**
+     * Returns a comparator that compares tasks based on their type, in alphabetical order.
+     * @return A Type comparator of this class that arranges tasks in order of their type.
+     */
+    public static Comparator<Task> getTypeComparator() {
+        return typeComparator;
+    }
+
+    /**
+     * Returns a reversed comparator that compares tasks based on their type, in reverse alphabetical order.
+     * @return A reversed Type comparator of this class that arranges tasks in reverse order of their type.
+     */
+    public static Comparator<Task> getRevTypeComparator() {
+        return revTypeComparator;
+    }
+
+    /**
+     * Returns a comparator that compares tasks based on the tasks' descriptions.
+     * @return A task description comparator of this class.
+     */
+    public static Comparator<Task> getStringComparator() {
+        return stringComparator;
+    }
+
+    /**
+     * Returns a reversed comparator that compares tasks based on the tasks' descriptions.
+     * @return A task description comparator of this class (reverse alphabetical order).
+     */
+    public static Comparator<Task> getRevStringComparator() {
+        return revStringComparator;
     }
 
     /**

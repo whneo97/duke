@@ -20,6 +20,7 @@ public class UndoCommand extends Command {
      * Stores to attributes of UndoCommand relevant information required to create an UndoCommand.
      * Attribute is a reference to instance of Duke for which to perform undo operation.
      * @param duke Duke instance for which to perform undo operation.
+     * @throws DukeException If initialisation of the Duke instance as an attribute is unsuccessful.
      */
     public UndoCommand(Duke duke) throws DukeException {
         this.duke = duke;
@@ -37,6 +38,7 @@ public class UndoCommand extends Command {
      */
     @Override
     public void execute(TaskList tasks, Ui ui, Storage storage) throws DukeException {
+        assert tasks != null : "TaskList that is to be displayed is null.";
         try {
             tasks = this.duke.getTaskListHistory().undo();
             this.duke.setTaskList(tasks);

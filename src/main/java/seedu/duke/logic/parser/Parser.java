@@ -11,6 +11,7 @@ import seedu.duke.logic.command.ExitCommand;
 import seedu.duke.logic.command.FindCommand;
 import seedu.duke.logic.command.HelpCommand;
 import seedu.duke.logic.command.ListCommand;
+import seedu.duke.logic.command.SortCommand;
 import seedu.duke.logic.command.UndoneCommand;
 import seedu.duke.logic.validation.DeadlineValidation;
 import seedu.duke.logic.validation.EventValidation;
@@ -107,6 +108,10 @@ public class Parser {
             Validation.ensureNonEmptyTaskString(command, taskString);
             assert !taskString.equals("") : "Index for delete command is empty in Parser but no exception was thrown.";
             return new DeleteCommand(taskString);
+        } else if (command.equals("sort")) {
+            Validation.ensureNonEmptyTaskString(command, taskString);
+            assert !taskString.equals("") : "Index for delete command is empty in Parser but no exception was thrown.";
+            return new SortCommand(taskString);
         } else if (command.equals("help")) {
             return new HelpCommand(taskString);
         } else {

@@ -1,4 +1,24 @@
-T | 0 | asdf
-T | 0 | sdf
-T | 0 | sdl
-T | 0 | dsfh
+T | 1 | buy bread
+T | 1 | buy bread
+D | 1 | buy cake | 14/12/2019
+D | 1 | buy cake | 14/12/2019
+D | 1 | buy cake | 14/12/2019
+D | 1 | buy cake | 14/12/2019
+D | 0 | buy cake | 14/12/2019
+D | 0 | buy cake | 14/12/2019
+D | 0 | buy cake | 14/12/2019
+E | 1 | event1 | 15/12/2019 2200-2300
+E | 1 | event1 | 15/12/2019 2200-2300
+T | 1 | hello
+T | 1 | hello
+T | 1 | hello
+T | 1 | hello
+T | 0 | hello
+T | 0 | hello
+D | 1 | homework | 12/12/2918
+D | 1 | homework | 12/12/2918
+D | 0 | homework | 12/12/2918
+E | 0 | myEvent | 12/12/2019 1200-1300
+D | 1 | return book | 15/12/2019 0000
+D | 1 | return book | 15/12/2019 0000
+D | 0 | return book | 15/12/2019 0000

@@ -4,7 +4,7 @@ package seedu.duke.model.dateandtime;
  * Defines a DateAndTime object.
  * Consists of different combination of Date and Time objects.
  */
-public class DateAndTime {
+public class DateAndTime implements Comparable<DateAndTime> {
 
     private Date date;
     private Time timeStart;
@@ -64,6 +64,34 @@ public class DateAndTime {
      */
     public Time getTimeEnd() {
         return timeEnd;
+    }
+
+    @Override
+    public int compareTo(DateAndTime other) {
+        if (this.date.compareTo(other.date) < 0) {
+            return -1;
+        } else if (this.date.compareTo(other.date) > 0) {
+            return 1;
+        } else if (this.timeStart != null && other.timeStart != null) {
+            return this.timeStart.compareTo(other.timeStart);
+        } else if (this.timeStart == null && other.timeStart != null) {
+            if (this.timeEnd != null) {
+                return this.timeEnd.compareTo(other.timeStart);
+            }
+        } else if (this.timeStart != null && other.timeStart == null) {
+            return -1;
+        } else if (this.timeStart == null && this.timeEnd == null) {
+            if (this.timeEnd != null && other.timeEnd != null) {
+                if (this.timeEnd.compareTo(other.timeEnd) < 1) {
+                    return -1;
+                } else if (this.timeEnd.compareTo(other.timeEnd) > 1) {
+                    return 1;
+                }
+            } else if (this.timeEnd == null && other.timeEnd != null) {
+                return 1;
+            }
+        }
+        return 0;
     }
 
     /**

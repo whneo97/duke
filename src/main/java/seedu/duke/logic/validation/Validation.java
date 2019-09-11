@@ -222,7 +222,8 @@ public class Validation {
      * @return An ArrayList of ranges represented by ArrayLists of size 2 denoting start and end indexes of a TaskList.
      * @throws InvalidListIndexException If the TaskList range given is invalid. eg. "3-5-1"
      */
-    public static ArrayList<ArrayList<Integer>> getValidatedListRange(TaskList tasks, String rangeList) throws InvalidListIndexException {
+    public static ArrayList<ArrayList<Integer>> getValidatedListRange(TaskList tasks, String rangeList)
+            throws InvalidListIndexException {
         String[] ranges = rangeList.split(",");
         ArrayList<ArrayList<Integer>> outputRange = new ArrayList<>();
 

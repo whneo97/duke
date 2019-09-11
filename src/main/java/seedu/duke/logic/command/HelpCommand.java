@@ -40,6 +40,24 @@ public class HelpCommand extends Command {
             + "time in HHMM format, or whether or not the task is done in the form \'done\', \'not done\', "
             +  "or \'undone\'.\n"
             + "Keywords are not case-sensitive.";
+    private static final String UNDOHELP = "undo: Reverts the tasklist to the version before the most recent command "
+            + "was executed.\n" + "Requires input to be in th format \'undo\'.";
+    private static final String REDOHELP = "undo: Reverts the tasklist to the version before the most recent undo "
+            + "command was executed.\n" + "Requires input to be in th format \'redo\'.";
+    private static final String SORTHELP = "sort: Sorts the list (and saves it) based on the criteria requested for by "
+            + "the user.\n" + "Requires input to be in th format \'sort [criteria]\'.\n"
+            + "Criteria include: \n"
+            + "- description: Sorts the list of tasks by order of task descriptions in alphabetical order.\n"
+            + "- revdescription: Sorts the list of tasks by order of task descriptions in "
+            + "reversed alphabetical order.\n"
+            + "- type: Sorts the list of tasks by order of type of task in alphabetical order.\n"
+            + "- revtype: Sorts the list of tasks by order of type of task in reversed alphabetical order.\n"
+            + "- date: Sorts the list of tasks by order of date from soonest to latest.\n"
+            + "- revdate: Sorts the list of tasks by order of date from latest to soonest.\n"
+            + "- id: Sorts the list of tasks by order of creation from earliest to latest.\n"
+            + "- revid: Sorts the list of tasks by order of creation from latest to earliest.\n"
+            + "- done: Sorts the list of tasks by order of done status with done tasks arranged first.\n"
+            + "- undone: Sorts the list of tasks by order of done status with undone tasks arranged first.";
     private static final String BYEHELP = "bye: Instructs the program to exit.\n"
             + "Requires input to be in the format \'bye\'.";
     private static final String HELPHELP = "help: Shows a list of specified commands or all known commands so far.\n"
@@ -84,6 +102,12 @@ public class HelpCommand extends Command {
                 out += LISTHELP;
             } else if (requestedCommand.equals("find")) {
                 out += FINDHELP;
+            } else if (requestedCommand.equals("undo")) {
+                out += UNDOHELP;
+            } else if (requestedCommand.equals("redo")) {
+                out += REDOHELP;
+            } else if (requestedCommand.equals("sort")) {
+                out += SORTHELP;
             } else if (requestedCommand.equals("bye")) {
                 out += BYEHELP;
             } else if (requestedCommand.equals("help")) {
@@ -107,7 +131,7 @@ public class HelpCommand extends Command {
         String helpDefinitions = "";
         if (taskString.equals("")) {
             helpDefinitions = getHelpDefinitions("todo", "deadline", "event", "done", "undone",
-                    "delete", "list", "find", "bye", "help");
+                    "delete", "list", "find", "undo", "redo", "sort", "bye", "help");
         } else {
             helpDefinitions = getHelpDefinitions(taskString.split(" ")) + "\n\n" + FURTHERPROMPT;
         }

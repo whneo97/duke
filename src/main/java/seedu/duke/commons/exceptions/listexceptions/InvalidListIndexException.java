@@ -5,7 +5,6 @@ import seedu.duke.commons.exceptions.DukeException;
 /**
  * Defines a InvalidListIndexException object that extends the DukeException class.
  * Signals that a given list index is in the wrong format, or given list index exceeds the size of the list.
- * TaskList a client is attempting to access.
  */
 public class InvalidListIndexException extends DukeException {
 

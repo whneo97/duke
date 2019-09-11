@@ -4,7 +4,7 @@ package seedu.duke.model.dateandtime;
  * Defines a Time object containing hour and minute as attributes.
  *
  */
-public class Time {
+public class Time implements Comparable<Time> {
     private int hour;
     private int minute;
 
@@ -16,6 +16,21 @@ public class Time {
     public Time(int hour, int minute) {
         this.hour = hour;
         this.minute = minute;
+    }
+
+    @Override
+    public int compareTo(Time other) {
+        if (this.hour < other.hour) {
+            return -1;
+        } else if (this.hour > other.hour) {
+            return 1;
+        } else if (this.minute < other.minute) {
+            return -1;
+        } else if (this.minute > other.minute) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 
     /**

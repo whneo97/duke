@@ -6,6 +6,7 @@ import seedu.duke.logic.command.Command;
 import seedu.duke.logic.command.DeleteCommand;
 import seedu.duke.logic.command.DoneCommand;
 import seedu.duke.logic.command.RedoCommand;
+import seedu.duke.logic.command.SortCommand;
 import seedu.duke.logic.command.UndoCommand;
 import seedu.duke.logic.command.UndoneCommand;
 import seedu.duke.logic.parser.Parser;
@@ -56,6 +57,7 @@ public class Duke {
     /**
      * Runs an iteration of the Duke program.
      * Performs the necessary input command given an input.
+     * Stores modified Tasks to a history of TaskLists for undo and redo functions.
      * @param input String representation of input from the user.
      */
     private void run(String input) {
@@ -77,7 +79,8 @@ public class Duke {
             if (c instanceof AddCommand
                     || c instanceof DoneCommand
                     || c instanceof UndoneCommand
-                    || c instanceof DeleteCommand) {
+                    || c instanceof DeleteCommand
+                    || c instanceof SortCommand) {
                 taskListHistory.add(tasks);
             }
             isExit = c.isExit();

@@ -1,5 +1,7 @@
 package seedu.duke.model.task;
 
+import seedu.duke.commons.exceptions.listexceptions.InvalidSortCriteriaException;
+import seedu.duke.model.dateandtime.DateAndTime;
 import seedu.duke.storage.Storage;
 
 import java.util.ArrayList;
@@ -19,7 +21,7 @@ public class TaskList {
         this();
         TaskList sourceList = storage.getTaskList();
         for (int i = 0; i < sourceList.size(); i++) {
-            this.taskList.add(new Task(sourceList.get(i)));
+            this.taskList.add(sourceList.get(i).copy());
         }
         assert sourceList.size() == this.size() : "Size of TaskList copied from Storage differs from "
                 + "size of original TaskList in Storage.";
@@ -40,7 +42,7 @@ public class TaskList {
     public TaskList(TaskList taskList) {
         this();
         for (int i = 0; i < taskList.size(); i++) {
-            this.add(new Task(taskList.get(i)));
+            this.add(taskList.get(i).copy());
         }
         assert taskList.size() == this.size();
     }
@@ -258,6 +260,38 @@ public class TaskList {
     }
 
     /**
+     * Sorts this TaskList of Tasks based on the given criteria by a client that calls this method.
+     * @param criteria Client's request on the order criteria by which to sort the Tasks in this TaskList by.
+     * @throws InvalidSortCriteriaException If Duke does not understand the criteria it is given to sort
+     *                                      this TaskList.
+     */
+    public void sort(String criteria) throws InvalidSortCriteriaException {
+        if (criteria.equals("description")) {
+            taskList.sort(Task.getStringComparator());
+        } else if (criteria.equals("revdescription")) {
+            taskList.sort(Task.getRevStringComparator());
+        } else if (criteria.equals("date")) {
+            taskList.sort(Task.getDateAndTimeComparator());
+        } else if (criteria.equals("revdate")) {
+            taskList.sort(Task.getRevDateAndTimeComparator());
+        } else if (criteria.equals("done")) {
+            taskList.sort(Task.getDoneComparator());
+        } else if (criteria.equals("undone")) {
+            taskList.sort(Task.getUndoneComparator());
+        } else if (criteria.equals("id")) {
+            taskList.sort(Task.getIdComparator());
+        } else if (criteria.equals("revid")) {
+            taskList.sort(Task.getRevIdComparator());
+        } else if (criteria.equals("type")) {
+            taskList.sort(Task.getTypeComparator());
+        } else if (criteria.equals("revtype")) {
+            taskList.sort(Task.getRevTypeComparator());
+        } else {
+            throw new InvalidSortCriteriaException("Sort criteria not found.");
+        }
+    }
+
+    /**
      * Returns the String representation of a TaskList instance.
      * Formats elements in the TaskList as a list, numbered from 1 to n, where n is the size of the taskList.
      * @return String representation of a TaskList instance.
@@ -272,5 +306,29 @@ public class TaskList {
         }
         assert count - 1 == taskList.size() : "TaskList numbering does not match size of TaskList";
         return out.trim();
+    }
+
+    /**
+     * Returns whether or not a Task with given attributes already exists in the TaskList.
+     * @param command Type of Task belonging to the Task for which client intends to find duplicates for.
+     * @param taskString Task description of given Task for which client intends to find duplicates for.
+     * @param dateAndTime Date and / or Time of given Task for which client intends to find duplicates for.
+     * @return A boolean on whether or not a Task with given attributes already exists in the TaskList.
+     */
+    public boolean hasExistingTask(String command, String taskString, DateAndTime dateAndTime) {
+        for (int i = 0; i < this.size(); i++) {
+            Task task = this.get(i);
+            if (command.equals(task.getType().toString().toLowerCase())
+                    && task.getTaskString().equals(taskString)) {
+                if (task.getDateAndTime() != null && dateAndTime != null) {
+                    if (task.getDateAndTime().compareTo(dateAndTime) == 0) {
+                        return true;
+                    }
+                } else if (task.getDateAndTime() == null && dateAndTime == null) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

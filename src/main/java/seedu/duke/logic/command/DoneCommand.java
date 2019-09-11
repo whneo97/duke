@@ -41,7 +41,7 @@ public class DoneCommand extends Command {
         try {
             ArrayList<ArrayList<Integer>> rangeList;
             if (taskString.equals("all")) {
-                ArrayList<Integer> all = new ArrayList<>(List.of(0, tasks.size() -1));
+                ArrayList<Integer> all = new ArrayList<>(List.of(0, tasks.size() - 1));
                 rangeList = new ArrayList<>(List.of(all));
             } else {
                 rangeList = Validation.getValidatedListRange(tasks, taskString);

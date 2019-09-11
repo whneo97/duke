@@ -3,7 +3,7 @@ package seedu.duke.model.dateandtime;
 /**
  * Defines a Date object containing a day, month and year attribute.
  */
-public class Date {
+public class Date implements Comparable<Date> {
     private int day;
     private int month;
     private int year;
@@ -52,6 +52,25 @@ public class Date {
                 : month == 12
                 ? "December"
                 : "";
+    }
+
+    @Override
+    public int compareTo(Date other) {
+        if (this.year < other.year) {
+            return -1;
+        } else if (this.year > other.year) {
+            return 1;
+        } else if (this.month < other.month) {
+            return -1;
+        } else if (this.month > other.month) {
+            return 1;
+        } else if (this.day < other.day) {
+            return -1;
+        } else if (this.day > other.day) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 
     /**

@@ -1,6 +1,7 @@
 package seedu.duke.logic.command;
 
 import seedu.duke.commons.exceptions.DukeException;
+import seedu.duke.commons.exceptions.listexceptions.DuplicateTaskException;
 import seedu.duke.model.dateandtime.DateAndTime;
 import seedu.duke.model.task.Deadline;
 import seedu.duke.model.task.Event;
@@ -54,6 +55,9 @@ public class AddCommand extends Command {
     public void execute(TaskList tasks, Ui ui, Storage storage) throws DukeException {
         try {
             Task task = null;
+            if (tasks.hasExistingTask(command, taskString, dateAndTime)) {
+                throw new DuplicateTaskException("The same task already exists in the list!");
+            }
             if (command.equals("todo")) {
                 task = new Todo(taskString);
             } else if (command.equals("deadline")) {
@@ -61,6 +65,7 @@ public class AddCommand extends Command {
             } else if (command.equals("event")) {
                 task = new Event(taskString, dateAndTime);
             }
+
             int sizeBefore = tasks.size();
             tasks.add(task);
             int sizeAfter = tasks.size();
