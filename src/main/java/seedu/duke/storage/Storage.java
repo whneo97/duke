@@ -22,6 +22,10 @@ public class Storage {
     private String filePath;
     private String dirPath;
     private TaskList taskList;
+    private static final char DIRSEPARATOR = System.getProperty("os.name").startsWith("Windows")
+            ? '\\'
+            : '/';
+
 
     /**
      * Creates a Storage object given a file path.
@@ -40,7 +44,6 @@ public class Storage {
      */
     public static String getDirAsString(String filePath) {
         int index = 0;
-        final char DIRSEPARATOR = System.getProperty("os.name").startsWith("Windows") ? '\\' : '/';
         for (int i = filePath.length() - 2; i >= 0; i--) {
             if (filePath.charAt(i) == DIRSEPARATOR) {
                 index = i;
