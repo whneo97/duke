@@ -29,18 +29,26 @@ public class DialogBox extends HBox {
     @FXML
     private ImageView displayPicture;
 
-    private void setDialogFont(String resourcePath, int fontSize) {
-        InputStream fontStream = MainWindow.class.getResourceAsStream(resourcePath);
+
+    /**
+     * Returns a Font to be set for this dialog box.
+     * @param resourcePath String representation of path containing the font file
+     *                     as accessed from javafx nodes.
+     * @param fontSize Size of font for the text in dialog to be displayed.
+     * @return A Font-type object representing the font to be set for text in the dialog box.
+     */
+    private Font getDialogFont(String resourcePath, int fontSize) {
+        InputStream fontStream = DialogBox.class.getResourceAsStream(resourcePath);
+        Font font = null;
         if (fontStream != null) {
             try {
-                Font bgFont = Font.loadFont(fontStream, fontSize);
+                font = Font.loadFont(fontStream, fontSize);
                 fontStream.close();
-                dialog.setFont(bgFont);
-            } catch (IOException ex){
+            } catch (IOException ex) {
                 ex.printStackTrace();
             }
         }
-        dialog.setMinSize(Label.USE_PREF_SIZE, Label.USE_PREF_SIZE);
+        return font;
     }
 
     /**
@@ -49,6 +57,10 @@ public class DialogBox extends HBox {
      * @param img An avatar representing the party who sent the given input message.
      */
     private DialogBox(String text, Image img) {
+
+        Font calibri = getDialogFont("/view/Calibri.ttf", 16);
+        Font courier = getDialogFont("/view/Courier.ttf", 17);
+
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(MainWindow.class.getResource("/view/DialogBox.fxml"));
             assert fxmlLoader != null : "fxmlLoader for DialogBox is null";
@@ -60,17 +72,22 @@ public class DialogBox extends HBox {
         }
 
         if (text.equals(Ui.showLogo())) {
-            setDialogFont("/view/Courier.ttf", 16);
-//            dialog.setFont(Font.font("Courier", FontWeight.BOLD, 16));
+            if (courier != null) {
+                dialog.setFont(courier);
+            }
             dialog.setTextFill(Color.YELLOW);
             Glow glow = new Glow();
             glow.setLevel(15);
             dialog.setEffect(glow);
+            dialog.setMinHeight(95);
+
         } else {
-            setDialogFont("/view/Calibri.ttf", 16);
-//            dialog.setFont(Font.font("Calibri", 16));
+            if (calibri != null) {
+                dialog.setFont(calibri);
+            }
             dialog.setTextFill(Color.WHITE);
         }
+
         dialog.setText(text);
         displayPicture.setImage(img);
     }
