@@ -40,9 +40,9 @@ public class Storage {
      */
     public static String getDirAsString(String filePath) {
         int index = 0;
-        char dirSeparator = System.getProperty("os.name").startsWith("Windows") ? '\\' : '/';
+        final char DIRSEPARATOR = System.getProperty("os.name").startsWith("Windows") ? '\\' : '/';
         for (int i = filePath.length() - 2; i >= 0; i--) {
-            if (filePath.charAt(i) == dirSeparator) {
+            if (filePath.charAt(i) == DIRSEPARATOR) {
                 index = i;
                 break;
             }
