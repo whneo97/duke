@@ -29,7 +29,6 @@ public class DialogBox extends HBox {
     @FXML
     private ImageView displayPicture;
 
-
     /**
      * Returns a Font to be set for this dialog box.
      * @param resourcePath String representation of path containing the font file
