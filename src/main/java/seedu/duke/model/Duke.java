@@ -32,7 +32,9 @@ public class Duke {
      * Files are stored in a text file, inside the current folder where Duke is currently being run.
      */
     public Duke() {
-        this(System.getProperty("user.dir") + "/data/duke.txt");
+        this(System.getProperty("user.dir")
+                + (System.getProperty("os.name").startsWith("Windows") ? "\\data\\duke.txt"
+                : "/data/duke.txt"));
     }
 
     /**
