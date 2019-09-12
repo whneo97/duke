@@ -112,7 +112,7 @@ public class HelpCommand extends Command {
     private String getHelpDefinitions(String...requestedCommandList) {
         String out = "";
         for (String requestedCommand : requestedCommandList) {
-            if (requestedCommand.equals("todo")) {
+            if (requestedCommand.equals("todo")){
                 out += TODOHELP;
             } else if (requestedCommand.equals("deadline")) {
                 out += DEADLINEHELP;
