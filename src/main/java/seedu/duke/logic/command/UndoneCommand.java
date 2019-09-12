@@ -47,7 +47,7 @@ public class UndoneCommand extends Command {
                 rangeList = Validation.getValidatedListRange(tasks, taskString);
             }
 
-            String undoneMessage = tasks.markAsUnDone(rangeList);
+            String undoneMessage = tasks.markAsUndone(rangeList);
             ui.showUndoneMessage(undoneMessage);
             assert ui.getOutput().equals(undoneMessage) : "Task was marked as undone "
                     + "but output does not tally with undone message.";

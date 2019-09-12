@@ -76,12 +76,13 @@ public class TaskList {
     }
 
     /**
-     * Returns a done message after multiple Task(s) are marked as done in this TaskList.
+     * Returns a done message after a / multiple Task(s) have been marked as done in this TaskList.
      * @param rangeList ArrayList of ranges, represented by ArrayLists containing two elements each.
      *                  First element represents starting index while second element represents ending index
      *                  (both inclusive).
-     * @return A deleted message after multiple Task(s) are marked as done from this TaskList.
-     *         Indicates to client successful deletion and lists out elements that have been deleted.
+     * @return A done message after a / multiple Task(s) have been marked as done from this TaskList.
+     *         Indicates to client successful marking of Task(s) as done and lists out
+     *         all Task(s) that have been marked as done.
      */
     public String markAsDone(ArrayList<ArrayList<Integer>> rangeList) {
         TaskList doneTasks = new TaskList();
@@ -97,47 +98,49 @@ public class TaskList {
         if (doneTasks.size() == this.size()) {
             return "Nice! I've marked all tasks as done.";
         } else if (doneTasks.size() > 1) {
-            return "Nice! I've marked these tasks as done:\n" + this + "\n";
+            return "Nice! I've marked these tasks as done:\n" + doneTasks + "\n";
         } else {
-            return "Nice! I've marked this task as done:\n" + this.get(0);
+            return "Nice! I've marked this task as done:\n" + doneTasks.get(0);
         }
     }
 
     /**
-     * Returns a done message after multiple Task(s) are marked as done in this TaskList.
+     * Returns an undone message after a / multiple Task(s) have been marked as undone in this TaskList.
      * @param rangeList ArrayList of ranges, represented by ArrayLists containing two elements each.
      *                  First element represents starting index while second element represents ending index
      *                  (both inclusive).
-     * @return A deleted message after multiple Task(s) are marked as done from this TaskList.
-     *         Indicates to client successful deletion and lists out elements that have been deleted.
+     * @return An undone message after a / multiple Task(s) have been marked as undone from this TaskList.
+     *         Indicates to client successful marking of Task(s) as undone and lists out
+     *         all Tasks(s) that have been marked as undone.
      */
-    public String markAsUnDone(ArrayList<ArrayList<Integer>> rangeList) {
-        TaskList doneTasks = new TaskList();
+    public String markAsUndone(ArrayList<ArrayList<Integer>> rangeList) {
+        TaskList undoneTasks = new TaskList();
 
         for (ArrayList<Integer> range : rangeList) {
             for (int i = range.get(0); i <= range.get(1); i++) {
                 Task task = get(i);
                 task.setIsDone(false);
-                doneTasks.add(task);
+                undoneTasks.add(task);
             }
         }
 
-        if (doneTasks.size() == this.size()) {
+        if (undoneTasks.size() == this.size()) {
             return "Nice! I've marked all tasks as undone.";
-        } else if (doneTasks.size() > 1) {
-            return "Nice! I've marked these tasks as undone:\n" + this;
+        } else if (undoneTasks.size() > 1) {
+            return "Nice! I've marked these tasks as undone:\n" + undoneTasks;
         } else {
-            return "Nice! I've marked this task as undone:\n" + this.get(0);
+            return "Nice! I've marked this task as undone:\n" + undoneTasks.get(0);
         }
     }
 
     /**
-     * Returns a deleted message after multiple Task(s) are deleted from this TaskList.
+     * Returns a deleted message after a / multiple Task(s) have been deleted from this TaskList.
      * @param rangeList ArrayList of ranges, represented by ArrayLists containing two elements each.
      *                  First element represents starting index while second element represents ending index
      *                  (both inclusive).
-     * @return A deleted message after multiple Task(s) are deleted from this TaskList.
-     *         Indicates to client successful deletion and lists out elements that have been deleted.
+     * @return A deleted message after a / multiple Task(s) have been deleted from this TaskList.
+     *         Indicates to client successful deletion and lists out all Task(s)
+     *         that have been deleted.
      */
     public String removeRanges(ArrayList<ArrayList<Integer>> rangeList) {
         int prevSize = this.size();
