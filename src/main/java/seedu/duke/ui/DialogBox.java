@@ -14,9 +14,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Collections;
 
 /**
@@ -28,6 +28,20 @@ public class DialogBox extends HBox {
     private Label dialog;
     @FXML
     private ImageView displayPicture;
+
+    private void setDialogFont(String resourcePath, int fontSize) {
+        InputStream fontStream = MainWindow.class.getResourceAsStream(resourcePath);
+        if (fontStream != null) {
+            try {
+                Font bgFont = Font.loadFont(fontStream, fontSize);
+                fontStream.close();
+                dialog.setFont(bgFont);
+            } catch (IOException ex){
+                ex.printStackTrace();
+            }
+        }
+        dialog.setMinSize(Label.USE_PREF_SIZE, Label.USE_PREF_SIZE);
+    }
 
     /**
      * Creates an instance of DialogBox that stores a String and an Image.
@@ -46,13 +60,15 @@ public class DialogBox extends HBox {
         }
 
         if (text.equals(Ui.showLogo())) {
-            dialog.setFont(Font.font("Courier", FontWeight.BOLD, 16));
+            setDialogFont("/view/Courier.ttf", 16);
+//            dialog.setFont(Font.font("Courier", FontWeight.BOLD, 16));
             dialog.setTextFill(Color.YELLOW);
             Glow glow = new Glow();
             glow.setLevel(15);
             dialog.setEffect(glow);
         } else {
-            dialog.setFont(Font.font("Calibri", 16));
+            setDialogFont("/view/Calibri.ttf", 16);
+//            dialog.setFont(Font.font("Calibri", 16));
             dialog.setTextFill(Color.WHITE);
         }
         dialog.setText(text);
