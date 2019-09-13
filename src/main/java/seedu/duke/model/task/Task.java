@@ -295,15 +295,8 @@ public class Task {
      * @return Randomly generated task of random type, task description and date/ time.
      */
     public static Task generateRandomTask() {
-        Random rand = new Random();
-
-        int randType = rand.nextInt(3);
-        Type type = randType == 0 ? Type.TODO : randType == 1
-                ? Type.EVENT : Type.DEADLINE;
-
 
         // Generates Task description id from random alphabets, numerical digits and spaces.
-        int randIdSize = 5 + rand.nextInt(10);
         String id = "";
         char[] randCharBox = new char[62];
 
@@ -319,7 +312,10 @@ public class Task {
             randCharBox[k] = (char) (k + 61);
         }
 
+        Random rand = new Random();
+
         int lastIndexOfSpace = 0;
+        int randIdSize = 5 + rand.nextInt(10);
 
         for (int i = 0; i < randIdSize; i++) {
             if (i > lastIndexOfSpace + 3) {
@@ -355,6 +351,10 @@ public class Task {
         Time randStartTime = new Time(randHour, randMin);
         Time randEndTime = new Time(randHour, randMin);
 
+        int randType = rand.nextInt(3);
+        Type type = randType == 0 ? Type.TODO : randType == 1
+                ? Type.EVENT : Type.DEADLINE;
+
         Task task;
         if (type == Type.TODO) {
             task = new Todo(taskString, randIsDone);
@@ -364,8 +364,7 @@ public class Task {
                     : new DateAndTime(randDate, randEndTime);
             task = new Deadline(taskString, randDateAndTime, randIsDone);
         } else {
-            DateAndTime randDateAndTime = new DateAndTime
-                    (randDate, randStartTime, randEndTime);
+            DateAndTime randDateAndTime = new DateAndTime(randDate, randStartTime, randEndTime);
             task = new Event(taskString, randDateAndTime, randIsDone);
         }
 
