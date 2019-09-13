@@ -86,7 +86,7 @@ public class Ui {
      */
     public void showError(String message) {
         output = "OOPS!!! " + message + "\n\n"
-                + "Input \'help [command1] [command2] etc.\' for usage information for requested commands or "
+                + "Input \'help [command1] [command2] etc.\' for usage information of requested commands or "
                 + "simply input \'help\' for the full list of commands known to this program.";
     }
 
@@ -153,7 +153,8 @@ public class Ui {
      */
     public void showRandomTaskList(TaskList tasks) {
         output = "Here are your randomly-generated list of Tasks:\n" + tasks
-                + "\n\n" + "To revert back to the previous TaskList, you may use the \'undo\' command.";
+                + "\n\n" + "To revert back to the previous version of the TaskList, use the \'undo\' command or input "
+                + "\'help\' for more information on all commands known to Duke.";
     }
 
     /**
@@ -210,17 +211,57 @@ public class Ui {
     /**
      * Stores a message to display to the user that execution of the undo command is successful.
      */
-    public void showUndoMessage() {
-        output = "Undo successful. Task list has been reverted to the version before the most recent operation "
-                + "was executed.";
+    public void showUndoMessage(int iterations) {
+        String numberOfVersions = iterations == 1 ? "1 version" : iterations + " versions";
+        output = "Undo successful. Current task list is now " + numberOfVersions
+                + " older than the one before undo was executed.\n\n"
+                + "Input \'list\' to see the version of the tasklist we have retrieved and saved for you.";
+    }
+
+    /**
+     * Stores a message to display to the user that undo cannot be performed as many times as requested.
+     * The earliest version of the TaskList stored in memory is retrieved instead.
+     * @param iterations Number of times undo was performed on the TaskList.
+     */
+    public void showMaxUndoMessageReached(int iterations) {
+        String numOfUndosPerformed = iterations == 1
+                ? "once"
+                : iterations == 2
+                ? "twice"
+                : iterations == 3
+                ? "thrice"
+                : "" + iterations + " times";
+        output = "We couldn't undo as many times as you requested. However we have performed undo "
+                + numOfUndosPerformed + " to revert to the earliest version of the TaskList stored in memory.\n\n"
+                + "Input \'list\' to see the version of the tasklist we have retrieved and saved for you.";
     }
 
     /**
      * Stores a message to display to the user that execution of the redo command is successful.
+     * @param iterations Number of times redo was performed on the TaskList.
      */
-    public void showRedoMessage() {
-        output = "Redo successful. Task list has been reverted to the version before the most recent undo operation "
-                + "was executed.";
+    public void showRedoMessage(int iterations) {
+        String numberOfVersions = iterations == 1 ? "1 version" : iterations + " versions";
+        output = "Redo successful. Current task list is now " + numberOfVersions
+                + " newer than the one before redo was executed.\n\n"
+                + "Input \'list\' to see the version of the tasklist we have retrieved and saved for you.";
     }
 
+    /**
+     * Stores a message to display to the user that redo cannot be performed as many times as requested.
+     * The latest version of the TaskList stored in memory is retrieved instead.
+     * @param iterations Number of times redo was performed on the TaskList.
+     */
+    public void showMaxRedoMessageReached(int iterations) {
+        String numOfRedosPerformed = iterations == 1
+                ? "once"
+                : iterations == 2
+                ? "twice"
+                : iterations == 3
+                ? "thrice"
+                : "" + iterations + " times";
+        output = "We couldn't redo as many times as you requested. However we have performed redo "
+                + numOfRedosPerformed + " to revert to the latest version of the TaskList stored in memory.\n\n"
+                + "Input \'list\' to see the version of the tasklist we have retrieved and saved for you.";
+    }
 }
