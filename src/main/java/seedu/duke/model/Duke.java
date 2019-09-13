@@ -132,4 +132,12 @@ public class Duke {
         this.tasks = tasks;
     }
 
+    /**
+     * Resets TaskListHistory to contain only the current TaskList.
+     * WARNING: This action CANNOT be undone.
+     */
+    public void resetTaskListHistory() {
+        this.taskListHistory = new TaskListHistory();
+        taskListHistory.add(tasks);
+    }
 }

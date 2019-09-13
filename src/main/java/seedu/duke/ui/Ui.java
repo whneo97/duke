@@ -293,4 +293,26 @@ public class Ui {
     public void showAboutMessage() {
         output = Ui.aboutMessage();
     }
+
+    /**
+     * Stores a message to display to the user a confirmation method to clear Task history used for undo and redo
+     * operations.
+     */
+    public void showClearCacheConfirmationRequest() {
+        output = "Are you sure you want to remove all task history?\n\n"
+                + "WARNING: THIS ACTION CANNOT BE UNDONE. Once executed, all versions other than the current version "
+                + "of the tasklist will be deleted and the undo / redo command will no longer be able to retrieve "
+                + "them even within this same session.\n\nTo confirm clearing of cache, type \"CoNfiRMtOclEaR\" with "
+                + "the same lettering cases. Otherwise, input any other character or string of text to cancel this "
+                + "operation.";
+    }
+
+    /**
+     * Stores a message to display to the user that all TaskLists in TaskList history except for the current one
+     * has been cleared.
+     */
+    public void showClearCacheConfirmation() {
+        output = "All versions of task lists in the undo / redo timeline except for the current task has been "
+                + "removed as requested.";
+    }
 }

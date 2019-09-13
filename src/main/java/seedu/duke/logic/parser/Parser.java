@@ -5,6 +5,7 @@ import seedu.duke.commons.exceptions.commandexceptions.InvalidCommandException;
 import seedu.duke.commons.exceptions.loadexceptions.FileNotFoundException;
 import seedu.duke.logic.command.AboutCommand;
 import seedu.duke.logic.command.AddCommand;
+import seedu.duke.logic.command.ClearCacheCommand;
 import seedu.duke.logic.command.Command;
 import seedu.duke.logic.command.DeleteCommand;
 import seedu.duke.logic.command.DoneCommand;
@@ -51,7 +52,10 @@ public class Parser {
         if (!sc.hasNext()) {
             Validation.ensureNonEmptyCommand("");
         }
-        String command = sc.next().toLowerCase();
+        String command = sc.next();
+        if (!command.equals(ClearCacheCommand.getRequiredKey())) {
+            command = command.toLowerCase();
+        }
         String taskString = "";
         if (sc.hasNextLine()) {
             taskString = sc.nextLine().trim();
@@ -137,6 +141,10 @@ public class Parser {
             return new RedoCommand(duke,numberOfTimes);
         } else if (command.equals("about")) {
             return new AboutCommand();
+        } else if (command.equals("clearcache")) {
+            return new ClearCacheCommand(duke, "");
+        } else if(ClearCacheCommand.getClearCommandRequested()) {
+            return new ClearCacheCommand(duke, command);
         } else {
             Validation.ensureNonEmptyCommand(command);
             assert !command.equals("") : "Command is empty in Parser but no exception was thrown.";
