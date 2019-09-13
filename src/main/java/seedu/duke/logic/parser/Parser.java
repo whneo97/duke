@@ -143,7 +143,7 @@ public class Parser {
             return new AboutCommand();
         } else if (command.equals("clearcache")) {
             return new ClearCacheCommand(duke, "");
-        } else if(ClearCacheCommand.getClearCommandRequested()) {
+        } else if (ClearCacheCommand.getClearCommandRequested()) {
             return new ClearCacheCommand(duke, command);
         } else {
             Validation.ensureNonEmptyCommand(command);

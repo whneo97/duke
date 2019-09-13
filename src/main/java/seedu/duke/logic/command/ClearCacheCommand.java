@@ -25,6 +25,8 @@ public class ClearCacheCommand extends Command {
      * Stores to attributes of ClearCacheCommand relevant information required to create a ClearCacheCommand.
      * Attribute is a reference to instance of Duke for which to perform clear cache operation(s).
      * @param duke Duke instance for which to perform clear cache operation.
+     * @param userKey Key that a client of this class inputs to confirm on whether or not the ClearCacheCommand
+     *                should proceed.
      * @throws DukeException If initialisation of the Duke instance as an attribute is unsuccessful.
      */
     public ClearCacheCommand(Duke duke, String userKey) throws DukeException {
@@ -52,10 +54,10 @@ public class ClearCacheCommand extends Command {
                 duke.resetTaskListHistory();
                 clearCommandRequested = false;
                 ui.showClearCacheConfirmation();
-            } else if (clearCommandRequested){
+            } else if (clearCommandRequested) {
                 clearCommandRequested = false;
-                throw new InvalidClearCacheKeyException("Input key to clear cache is invalid. Clearing of cache is" +
-                        " not initialised and the process has been aborted.");
+                throw new InvalidClearCacheKeyException("Input key to clear cache is invalid. Clearing of cache is"
+                        + " not initialised and the process has been aborted.");
             } else {
                 throw new InvalidCommandException("I'm sorry, but I don't know what that means :-(");
             }

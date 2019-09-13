@@ -107,8 +107,8 @@ public class HelpCommand extends Command {
             + "Requires input to be in the format \'clearcache\'. "
             + "The program will thereafter prompt for user to confirm by keying in \'CoNfiRMtOclEaR\' before "
             + "proceeding. This operation may be useful if the size of the timeline happens to get too large and "
-            + "slows down other operational procedures. The key will not be recognised on it's own without first " +
-            " entering \'clearcache\'. The process is aborted if input right after \'clearcache\' does not match the "
+            + "slows down other operational procedures. The key will not be recognised on it's own without first "
+            + " entering \'clearcache\'. The process is aborted if input right after \'clearcache\' does not match the "
             + "required key and the user will have to enter \'clearcache\' again if he/ she intends to re-initiate "
             + "the process.\n"
             + "eg. clearcache\n"
