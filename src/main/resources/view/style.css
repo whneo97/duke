@@ -1,7 +1,7 @@
 /* Background photo by Andy Holmes via https://unsplash.com/photos/LUpDjlJv4_c (with minor edits) */
 
 #anchorPane{
-    -fx-background-image: url("../images/Space_modified.jpg");
+    -fx-background-image: url("../images/SpaceModified.jpg");
     -fx-background-size: cover;
     -fx-background-position: center center;
 }

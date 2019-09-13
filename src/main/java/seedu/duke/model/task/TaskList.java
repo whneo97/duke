@@ -295,23 +295,6 @@ public class TaskList {
     }
 
     /**
-     * Returns the String representation of a TaskList instance.
-     * Formats elements in the TaskList as a list, numbered from 1 to n, where n is the size of the taskList.
-     * @return String representation of a TaskList instance.
-     */
-    @Override
-    public String toString() {
-        String out = "";
-        int count = 1;
-        for (Task task : taskList) {
-            out += count + "." + task + "\n";
-            count++;
-        }
-        assert count - 1 == taskList.size() : "TaskList numbering does not match size of TaskList";
-        return out.trim();
-    }
-
-    /**
      * Returns whether or not a Task with given attributes already exists in the TaskList.
      * @param command Type of Task belonging to the Task for which client intends to find duplicates for.
      * @param taskString Task description of given Task for which client intends to find duplicates for.
@@ -333,6 +316,23 @@ public class TaskList {
             }
         }
         return false;
+    }
+
+    /**
+     * Returns the String representation of a TaskList instance.
+     * Formats elements in the TaskList as a list, numbered from 1 to n, where n is the size of the taskList.
+     * @return String representation of a TaskList instance.
+     */
+    @Override
+    public String toString() {
+        String out = "";
+        int count = 1;
+        for (Task task : taskList) {
+            out += count + "." + task + "\n";
+            count++;
+        }
+        assert count - 1 == taskList.size() : "TaskList numbering does not match size of TaskList";
+        return out.trim();
     }
 
 }

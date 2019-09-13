@@ -98,6 +98,9 @@ public class HelpCommand extends Command {
             + "Requires input to be in the format \'help\' or \'help [command1] [command2] etc.\'.\n"
             + "eg. help\n"
             + "eg. help todo sort unknown undo bye ";
+    private static final String ABOUTHELP = "about: Shows information about the developer and this Duke program.\n"
+            + "Requires input to be in the format \'about\'.\n"
+            + "eg. about";
     private static final String UNKNOWN = "Unknown command.";
     private static final String ADDITIONALINFO = "Note that all commands are NOT case sensitive.";
     private static final String FURTHERPROMPT = "Can't find what you're looking for?\nInput \'help\' "
@@ -148,6 +151,8 @@ public class HelpCommand extends Command {
                 out += SORTHELP;
             } else if (requestedCommand.equals("random")) {
                 out += RANDOMHELP;
+            } else if (requestedCommand.equals("about")) {
+                out += ABOUTHELP;
             } else if (requestedCommand.equals("bye")) {
                 out += BYEHELP;
             } else if (requestedCommand.equals("help")) {
@@ -171,7 +176,7 @@ public class HelpCommand extends Command {
         String helpDefinitions;
         if (taskString.equals("")) {
             helpDefinitions = getHelpDefinitions("todo", "deadline", "event", "done", "undone",
-                    "delete", "list", "find", "undo", "redo", "sort", "random", "bye", "help")
+                    "delete", "list", "find", "undo", "redo", "sort", "random", "about", "bye", "help")
                     + "\n\n"
                     + ADDITIONALINFO;
         } else {
