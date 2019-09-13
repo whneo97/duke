@@ -1,8 +1,11 @@
 package seedu.duke.model.task;
 
+import seedu.duke.model.dateandtime.Date;
 import seedu.duke.model.dateandtime.DateAndTime;
+import seedu.duke.model.dateandtime.Time;
 
 import java.util.Comparator;
+import java.util.Random;
 
 /**
  * Defines a Task object that represents a task.
@@ -27,23 +30,23 @@ public class Task {
     private static Comparator<Task> stringComparator = Comparator.comparing((Task x) -> x.taskString);
     private static Comparator<Task> revStringComparator = stringComparator.reversed();
     private static Comparator<Task> dateAndTimeComparator = (Task x, Task y)
-        -> x.dateAndTime == null && y.dateAndTime == null ? 0
+        -> x.dateAndTime == null && y.dateAndTime == null ? stringComparator.compare(x, y)
         : x.dateAndTime == null ? 1
         : y.dateAndTime == null ? -1
         : x.dateAndTime.compareTo(y.dateAndTime) > 0 ? 1
         : x.dateAndTime.compareTo(y.dateAndTime) < 0 ? -1
-        : x.dateAndTime.compareTo(y.dateAndTime) == 0 ? stringComparator.compare(x, y) : 0;
+        : stringComparator.compare(x, y);
     private static Comparator<Task> revDateAndTimeComparator = (Task x, Task y)
-        -> x.dateAndTime == null && y.dateAndTime == null ? 0
+        -> x.dateAndTime == null && y.dateAndTime == null ? stringComparator.compare(x, y)
         : x.dateAndTime == null ? -1
         : y.dateAndTime == null ? 1
         : x.dateAndTime.compareTo(y.dateAndTime) > 0 ? -1
         : x.dateAndTime.compareTo(y.dateAndTime) < 0 ? 1
-        : x.dateAndTime.compareTo(y.dateAndTime) == 0 ? stringComparator.compare(x, y) : 0;
+        : stringComparator.compare(x, y);
     private static Comparator<Task> doneComparator = (Task x, Task y)
-        -> x.isDone && y.isDone ? stringComparator.compare(x, y) : x.isDone ? -1 : 0;
+        -> x.isDone && !y.isDone ? -1 : y.isDone && !x.isDone ? 1 : stringComparator.compare(x, y);
     private static Comparator<Task> undoneComparator = (Task x, Task y)
-        -> x.isDone && y.isDone ? stringComparator.compare(x, y) : !x.isDone ? -1 : 0;
+        -> y.isDone && !x.isDone ? -1 : x.isDone && !y.isDone ? 1 : stringComparator.compare(x, y);
     private static Comparator<Task> idComparator = Comparator.comparingInt((Task x) -> x.id);
     private static Comparator<Task> revIdComparator = idComparator.reversed();
     private static Comparator<Task> typeComparator = (Task x, Task y)
@@ -284,6 +287,88 @@ public class Task {
      */
     public static Comparator<Task> getRevStringComparator() {
         return revStringComparator;
+    }
+
+    /**
+     * Generates a random Task with random attributes.
+     * Each random Task has a randomly generated integer ID in its description.
+     * @return Randomly generated task of random type, task description and date/ time.
+     */
+    public static Task generateRandomTask() {
+
+        // Generates Task description id from random alphabets, numerical digits and spaces.
+        String id = "";
+        char[] randCharBox = new char[62];
+
+        for (int i = 0; i < 26; i++) {
+            randCharBox[i] = (char) (i + 65);
+        }
+
+        for (int j = 26; j < 36; j++) {
+            randCharBox[j] = (char) (j + 22);
+        }
+
+        for (int k = 36; k < 62; k++) {
+            randCharBox[k] = (char) (k + 61);
+        }
+
+        Random rand = new Random();
+
+        int lastIndexOfSpace = 0;
+        int randIdSize = 5 + rand.nextInt(10);
+
+        for (int i = 0; i < randIdSize; i++) {
+            if (i > lastIndexOfSpace + 3) {
+                boolean generateSpace = rand.nextBoolean();
+                if (generateSpace == true) {
+                    id += " ";
+                    lastIndexOfSpace = i;
+                    continue;
+                }
+            }
+            id += randCharBox[rand.nextInt(61)];
+        }
+
+        boolean randIsDone = rand.nextBoolean();
+
+        String taskString = "rand " + " " + id;
+
+        // Randomly generates whether date of Deadline is DD/MM/YYYY format or DD/MM/YYYY HHMM format.
+        int randDateFormat = rand.nextInt(2);
+
+        int randYear = rand.nextInt(10000);
+        int randMonth = 1 + rand.nextInt(12);
+        int numOfDays = randMonth == 2
+                ? (Date.isLeapYear(randYear) ? 29 : 28)
+                : (randMonth <= 7 && randMonth % 2 != 0) || (randMonth > 7 && randMonth % 2 == 0)
+                ? 31
+                : 30;
+        int randDay = 1 + rand.nextInt(numOfDays);
+        int randHour = rand.nextInt(24);
+        int randMin = rand.nextInt(60);
+
+        Date randDate = new Date(randDay, randMonth, randYear);
+        Time randStartTime = new Time(randHour, randMin);
+        Time randEndTime = new Time(randHour, randMin);
+
+        int randType = rand.nextInt(3);
+        Type type = randType == 0 ? Type.TODO : randType == 1
+                ? Type.EVENT : Type.DEADLINE;
+
+        Task task;
+        if (type == Type.TODO) {
+            task = new Todo(taskString, randIsDone);
+        } else if (type == Type.DEADLINE) {
+            DateAndTime randDateAndTime = randDateFormat == 0
+                    ? new DateAndTime(randDate)
+                    : new DateAndTime(randDate, randEndTime);
+            task = new Deadline(taskString, randDateAndTime, randIsDone);
+        } else {
+            DateAndTime randDateAndTime = new DateAndTime(randDate, randStartTime, randEndTime);
+            task = new Event(taskString, randDateAndTime, randIsDone);
+        }
+
+        return task;
     }
 
     /**

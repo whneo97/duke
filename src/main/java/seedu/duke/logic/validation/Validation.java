@@ -6,6 +6,7 @@ import seedu.duke.commons.exceptions.dateandtimeexceptions.InvalidDateException;
 import seedu.duke.commons.exceptions.dateandtimeexceptions.InvalidTimeException;
 import seedu.duke.commons.exceptions.listexceptions.InvalidListIndexException;
 import seedu.duke.commons.exceptions.listexceptions.InvalidListRangeException;
+import seedu.duke.commons.exceptions.listexceptions.InvalidTaskListSizeException;
 import seedu.duke.model.dateandtime.Date;
 import seedu.duke.model.dateandtime.Time;
 import seedu.duke.model.task.TaskList;
@@ -73,7 +74,7 @@ public class Validation {
      */
     public static void ensureNonEmptyTaskString(String task, String taskString) throws InvalidTaskDescriptionException {
         if (taskString.equals("")) {
-            if (task.equals("delete") || task.equals("done")) {
+            if (task.equals("delete") || task.equals("done") || task.equals("random")) {
                 throw new InvalidTaskDescriptionException("The index for a " + task + " command cannot be empty.");
             } else if (task.charAt(0) == 'a' || task.charAt(0) == 'e' || task.charAt(0) == 'i'
                     || task.charAt(0) == 'o' || task.charAt(0) == 'u') {
@@ -100,6 +101,32 @@ public class Validation {
     }
 
     /**
+     * Returns a validated natural number from a String.
+     * @param taskString String to be converted to a positive non-zero integer.
+     * @return A validated natural number converted from the given String.
+     * @throws InvalidTaskListSizeException If the numeric representation of the given String is not a natural number.
+     */
+    public static int getValidatedNaturalNumber(String taskString) throws InvalidTaskListSizeException {
+        if (taskString.equals("")) {
+            throw new InvalidTaskListSizeException("Please enter a valid numerical value after the intended command"
+                    + " (separated by a space).\n" + "The number cannot be empty for this command.");
+        }
+
+        int n = 0;
+
+        try {
+            n = Integer.parseInt(taskString);
+            if (n <= 0) {
+                throw new NumberFormatException();
+            } else {
+                return n;
+            }
+        } catch (NumberFormatException ex) {
+            throw new InvalidTaskListSizeException("Size of the tasklist to be generated must be a natural number.");
+        }
+    }
+
+    /**
      * Returns a validated Date object.
      * Ensures that input String is in valid DD/MM/YYYY format.
      * Ensures there are at most 12 months in a year.
@@ -121,7 +148,6 @@ public class Validation {
         int day = 0;
         int month = 0;
         int year = 0;
-        boolean isLeapYear = false;
 
         try {
             day = Integer.parseInt(dateArr[0]);
@@ -140,12 +166,6 @@ public class Validation {
             throw new InvalidDateException("Please ensure date format is in DD/MM/YYYY");
         }
 
-        if (year % 4 == 0 && year % 100 != 0) {
-            isLeapYear = true;
-        } else if (year % 400 == 0) {
-            isLeapYear = true;
-        }
-
         if ((month <= 7 && month % 2 != 0) || (month > 7 && month % 2 == 0)) {
             if (day > 31) {
                 throw new InvalidDateException("There cannot be more than 31 days in " + Date.getMonth(month));
@@ -155,10 +175,10 @@ public class Validation {
                 throw new InvalidDateException("There cannot be more than 30 days in " + Date.getMonth(month));
             }
         } else {
-            if (isLeapYear && day > 29) {
+            if (Date.isLeapYear(year) && day > 29) {
                 throw new InvalidDateException("There cannot be more than 29 days in " + Date.getMonth(month) + " "
                         + year + ".");
-            } else if (!isLeapYear && day > 28) {
+            } else if (!Date.isLeapYear(year) && day > 28) {
                 throw new InvalidDateException("There cannot be more than 28 days in " + Date.getMonth(month) + " "
                         + year + ".");
             }

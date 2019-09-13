@@ -147,6 +147,16 @@ public class Ui {
     }
 
     /**
+     * Stores a message to be displayed to the user the String representation of a randomly generated TaskList.
+     * Presumably called along with the toString method of the TaskList class.
+     * @param tasks Randomly generated TaskList to be displayed as its String representation.
+     */
+    public void showRandomTaskList(TaskList tasks) {
+        output = "Here are your randomly-generated list of Tasks:\n" + tasks
+                + "\n\n" + "To revert back to the previous TaskList, you may use the \'undo\' command.";
+    }
+
+    /**
      * Stores a message to be displayed to the user the String representation of a TaskList that has just been sorted.
      * Presumably called along with the toString method of the TaskList class after a TaskList has been sorted.
      * @param tasks TaskList to be displayed as its String representation.
@@ -154,6 +164,14 @@ public class Ui {
     public void showSortedTaskList(TaskList tasks) {
         output = "Sorting successful! Here are the tasks in your list:\n"
                 + tasks.toString();
+    }
+
+    /**
+     * Stores a message to display to the user that the tasklist is currently empty.
+     */
+    public void showEmptyTaskListMessage() {
+        output = "You currently have no tasks in the task list!\n\nYou may add a Todo, Deadline or Event to the "
+                + "tasklist. Input \'help\' to find out more.";
     }
 
     /**
@@ -187,14 +205,6 @@ public class Ui {
     public String getOutput() {
         assert !this.output.equals("") : "Output displayed to user is empty";
         return this.output;
-    }
-
-    /**
-     * Stores a message to display to the user that the tasklist is currently empty.
-     */
-    public void showEmptyTaskListMessage() {
-        output = "You currently have no tasks in the task list!\n\nYou may add a Todo, Deadline or Event to the "
-                + "tasklist. Input \'help\' to find out more.";
     }
 
     /**
