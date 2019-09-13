@@ -54,6 +54,21 @@ public class Date implements Comparable<Date> {
                 : "";
     }
 
+    /**
+     * Returns whether a given year is a leap year.
+     * @param year Integer year between 0-9999.
+     * @return A boolean of whether or not the given year is a leap year.
+     */
+    public static boolean isLeapYear(int year) {
+        if (year % 4 == 0 && year % 100 != 0) {
+            return true;
+        } else if (year % 400 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     @Override
     public int compareTo(Date other) {
         if (this.year < other.year) {
@@ -84,7 +99,7 @@ public class Date implements Comparable<Date> {
 
         return String.format("%02d", day)
                 + "/" + String.format("%02d", month)
-                + "/" + String.format("%02d", year);
+                + "/" + String.format("%04d", year);
     }
 
 }

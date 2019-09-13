@@ -1,8 +1,10 @@
 package seedu.duke.logic.command;
 
-import seedu.duke.storage.Storage;
 import seedu.duke.model.task.TaskList;
+import seedu.duke.storage.Storage;
 import seedu.duke.ui.Ui;
+
+import java.util.Arrays;
 
 /**
  * Defines a Command object that lists out command definitions specified.
@@ -29,7 +31,7 @@ public class HelpCommand extends Command {
             + "\'done [range1, range2, range3, ...] or \'done all\' to mark all tasks as done.\n"
             + "eg. done 2-4, 6, 8-9\n"
             + "eg. done all";
-    private static final String UNDONEHELP = "done: Marks a task or multiple tasks in the tasklist as undone.\n"
+    private static final String UNDONEHELP = "undone: Marks a task or multiple tasks in the tasklist as undone.\n"
             + "Requires input to be in the format \'done [number representing task in tasklist]\' or \n"
             + "\'undone [range1, range2, range3, ...]\' or \'undone all\' to mark all tasks as undone.\n"
             + "eg. undone 2-4, 6, 8-9\n"
@@ -80,6 +82,11 @@ public class HelpCommand extends Command {
             + "eg. sort revid\n"
             + "eg. sort undone\n"
             + "eg. sort type";
+    private static final String RANDOMHELP = "random: Generates a random list of tasks.\n"
+            + "Requires input to be in the format \'random [size of random list]\'."
+            + "Note: This command OVERRIDES the existing list. An overriden list, however, may be retrieved "
+            + "using the \'undo\' command.\n"
+            + "eg. random 1000";
     private static final String BYEHELP = "bye: Instructs the program to exit.\n"
             + "Requires input to be in the format \'bye\'.\n"
             + "eg. bye";
@@ -111,6 +118,7 @@ public class HelpCommand extends Command {
      */
     private String getHelpDefinitions(String...requestedCommandList) {
         String out = "";
+        Arrays.sort(requestedCommandList);
         for (String requestedCommand : requestedCommandList) {
             if (requestedCommand.equals("todo")) {
                 out += TODOHELP;
@@ -134,6 +142,8 @@ public class HelpCommand extends Command {
                 out += REDOHELP;
             } else if (requestedCommand.equals("sort")) {
                 out += SORTHELP;
+            } else if (requestedCommand.equals("random")) {
+                out += RANDOMHELP;
             } else if (requestedCommand.equals("bye")) {
                 out += BYEHELP;
             } else if (requestedCommand.equals("help")) {
@@ -154,10 +164,12 @@ public class HelpCommand extends Command {
      */
     @Override
     public void execute(TaskList tasks, Ui ui, Storage storage) {
-        String helpDefinitions = "";
+        String helpDefinitions;
         if (taskString.equals("")) {
             helpDefinitions = getHelpDefinitions("todo", "deadline", "event", "done", "undone",
-                    "delete", "list", "find", "undo", "redo", "sort", "bye", "help") + "\n\n" + ADDITIONALINFO;
+                    "delete", "list", "find", "undo", "redo", "sort", "random", "bye", "help")
+                    + "\n\n"
+                    + ADDITIONALINFO;
         } else {
             helpDefinitions = getHelpDefinitions(taskString.split(" ")) + "\n\n"
                     + ADDITIONALINFO + "\n\n" + FURTHERPROMPT;

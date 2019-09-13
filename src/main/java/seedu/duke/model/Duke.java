@@ -5,6 +5,7 @@ import seedu.duke.logic.command.AddCommand;
 import seedu.duke.logic.command.Command;
 import seedu.duke.logic.command.DeleteCommand;
 import seedu.duke.logic.command.DoneCommand;
+import seedu.duke.logic.command.RandomCommand;
 import seedu.duke.logic.command.RedoCommand;
 import seedu.duke.logic.command.SortCommand;
 import seedu.duke.logic.command.UndoCommand;
@@ -82,7 +83,8 @@ public class Duke {
                     || c instanceof DoneCommand
                     || c instanceof UndoneCommand
                     || c instanceof DeleteCommand
-                    || c instanceof SortCommand) {
+                    || c instanceof SortCommand
+                    || c instanceof RandomCommand) {
                 taskListHistory.add(tasks);
             }
             isExit = c.isExit();
