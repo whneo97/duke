@@ -344,12 +344,14 @@ public class Task {
                 ? 31
                 : 30;
         int randDay = 1 + rand.nextInt(numOfDays);
-        int randHour = rand.nextInt(24);
-        int randMin = rand.nextInt(60);
+        int randStartHour = rand.nextInt(24);
+        int randStartMin = rand.nextInt(60);
+        int randEndHour = rand.nextInt(24);
+        int randEndMin = rand.nextInt(60);
 
         Date randDate = new Date(randDay, randMonth, randYear);
-        Time randStartTime = new Time(randHour, randMin);
-        Time randEndTime = new Time(randHour, randMin);
+        Time randStartTime = new Time(randStartHour, randStartMin);
+        Time randEndTime = new Time(randEndHour, randEndMin);
 
         int randType = rand.nextInt(3);
         Type type = randType == 0 ? Type.TODO : randType == 1

@@ -32,6 +32,8 @@ public class MainWindow extends AnchorPane {
     private Image userImage = new Image(this.getClass().getResourceAsStream("/images/User.png"));
     //Icon made by Freepik (https://www.flaticon.com/authors/freepik) from www.flaticon.com
     private Image dukeImage = new Image(this.getClass().getResourceAsStream("/images/Duke.png"));
+    private Image developerImage = new Image(this.getClass().getResourceAsStream("/images/Developer.png"));
+    private Image exceptionImage = new Image(this.getClass().getResourceAsStream("/images/Oops.png"));
 
     /**
      * Initialises the program.
@@ -65,9 +67,20 @@ public class MainWindow extends AnchorPane {
         String response = duke.getResponse(input);
         assert userImage != null : "User profile image is null.";
         assert dukeImage != null : "Duke profile image is null.";
+
+        Image outputImage = dukeImage;
+
+        if (Ui.aboutMessage().equals(response)) {
+            assert dukeImage != null : "Developer profile image is null.";
+            outputImage = developerImage;
+        } else if (response.startsWith("OOPS!")) {
+            assert dukeImage != null : "Exception duke image is null.";
+            outputImage = exceptionImage;
+        }
+
         dialogContainer.getChildren().addAll(
                 DialogBox.getUserDialog(input, userImage),
-                DialogBox.getDukeDialog(response, dukeImage)
+                DialogBox.getDukeDialog(response, outputImage)
         );
         userInput.clear();
         if (duke.getIsExit()) {
