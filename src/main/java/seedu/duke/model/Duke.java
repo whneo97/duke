@@ -6,9 +6,7 @@ import seedu.duke.logic.command.Command;
 import seedu.duke.logic.command.DeleteCommand;
 import seedu.duke.logic.command.DoneCommand;
 import seedu.duke.logic.command.RandomCommand;
-import seedu.duke.logic.command.RedoCommand;
 import seedu.duke.logic.command.SortCommand;
-import seedu.duke.logic.command.UndoCommand;
 import seedu.duke.logic.command.UndoneCommand;
 import seedu.duke.logic.parser.Parser;
 import seedu.duke.model.task.TaskList;
@@ -67,17 +65,11 @@ public class Duke {
         try {
             String fullCommand = input;
             Command c;
-            if (fullCommand.toLowerCase().equals("undo")) {
-                c = new UndoCommand(this);
-            } else if (fullCommand.toLowerCase().equals("redo")) {
-                c = new RedoCommand(this);
-            } else {
-                c = Parser.parse(fullCommand);
-                assert c != null : "Command object to be executed is null.";
-                assert tasks != null : "TaskList of this Duke instance is null.";
-                assert ui != null : "Ui of this Duke instance is null.";
-                assert storage != null : "Storage of this Duke instance is null.";
-            }
+            c = Parser.parse(fullCommand, this);
+            assert c != null : "Command object to be executed is null.";
+            assert tasks != null : "TaskList of this Duke instance is null.";
+            assert ui != null : "Ui of this Duke instance is null.";
+            assert storage != null : "Storage of this Duke instance is null.";
             c.execute(tasks, ui, storage);
             if (c instanceof AddCommand
                     || c instanceof DoneCommand

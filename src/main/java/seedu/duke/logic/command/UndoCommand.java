@@ -1,6 +1,7 @@
 package seedu.duke.logic.command;
 
 import seedu.duke.commons.exceptions.DukeException;
+import seedu.duke.commons.exceptions.historyexceptions.CannotUndoException;
 import seedu.duke.model.Duke;
 import seedu.duke.model.task.TaskList;
 import seedu.duke.storage.Storage;
@@ -14,16 +15,18 @@ import seedu.duke.ui.Ui;
 public class UndoCommand extends Command {
 
     private Duke duke;
-
+    private int iterations;
 
     /** Creates an instance of UndoCommand.
      * Stores to attributes of UndoCommand relevant information required to create an UndoCommand.
-     * Attribute is a reference to instance of Duke for which to perform undo operation.
-     * @param duke Duke instance for which to perform undo operation.
+     * Attribute is a reference to instance of Duke for which to perform undo operation(s).
+     * @param duke Duke instance for which to perform undo operation(s).
+     * @param iterations Number of times to perform undo.
      * @throws DukeException If initialisation of the Duke instance as an attribute is unsuccessful.
      */
-    public UndoCommand(Duke duke) throws DukeException {
+    public UndoCommand(Duke duke, int iterations) throws DukeException {
         this.duke = duke;
+        this.iterations = iterations;
     }
 
     /** Executes an UndoCommand object using information stored in instance attributes.
@@ -39,11 +42,25 @@ public class UndoCommand extends Command {
     @Override
     public void execute(TaskList tasks, Ui ui, Storage storage) throws DukeException {
         assert tasks != null : "TaskList that is to be displayed is null.";
+        TaskList resTasks = tasks;
         try {
-            tasks = this.duke.getTaskListHistory().undo();
+            for (int i = 0; i < iterations; i++) {
+                try {
+                    resTasks = this.duke.getTaskListHistory().undo();
+                } catch (CannotUndoException ex) {
+                    if (i > 0) {
+                        this.duke.setTaskList(tasks);
+                        ui.showMaxUndoMessageReached(i);
+                        storage.save(resTasks, ui);
+                        return;
+                    } else {
+                        throw ex;
+                    }
+                }
+            }
             this.duke.setTaskList(tasks);
-            ui.showUndoMessage();
-            storage.save(tasks, ui);
+            ui.showUndoMessage(iterations);
+            storage.save(resTasks, ui);
         } catch (DukeException ex) {
             throw ex;
         } catch (Exception ex) {

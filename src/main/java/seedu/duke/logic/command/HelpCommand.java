@@ -58,11 +58,15 @@ public class HelpCommand extends Command {
             + "eg. find undone\n"
             + "eg. find not done";
     private static final String UNDOHELP = "undo: Reverts the tasklist to the version before the most recent command "
-            + "was executed.\n" + "Requires input to be in the format \'undo\'.\n"
-            + "eg. undo";
+            + "was executed.\n" + "Requires input to be in the format \'undo\' (performs undo once) or "
+            + "\'undo [number of times to undo]\'.\n"
+            + "eg. undo\n"
+            + "eg. undo 5";
     private static final String REDOHELP = "redo: Reverts the tasklist to the version before the most recent undo "
-            + "command was executed.\n" + "Requires input to be in the format \'redo\'.\n"
-            + "eg. redo";
+            + "command was executed.\n" + "Requires input to be in the format \'redo\' (performs redo once) or "
+            + "\'redo [number of times to redo]\'.\n"
+            + "eg. redo\n"
+            + "eg. redo 5";
     private static final String SORTHELP = "sort: Sorts the list (and saves it) based on the criteria requested for by "
             + "the user.\n" + "Requires input to be in the format \'sort [criteria]\'.\n"
             + "Criteria include: \n"

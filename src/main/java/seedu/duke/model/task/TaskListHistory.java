@@ -72,6 +72,23 @@ public class TaskListHistory {
     }
 
     /**
+     * Returns the index of the current active copy of the TaskList.
+     * Index ranges from 0 to the size of TaskListHistory - 1.
+     * @return Index of current active copy of TaskList in TaskListHistory.
+     */
+    public int getCurrIndex() {
+        return this.curr;
+    }
+
+    /**
+     * Returns the size of TaskListHistory.
+     * @return Number of stored TaskLists in TaskListHistory.
+     */
+    public int getSize() {
+        return this.size;
+    }
+
+    /**
      * Returns String representation of TaskListHistory.
      * Displays all tasks stored in the the saved list of Tasks and the current version of TaskList being used.
      * @return String representation of list of all Tasks stored in TaskListHistory.

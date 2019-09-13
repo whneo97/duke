@@ -12,12 +12,15 @@ import seedu.duke.logic.command.FindCommand;
 import seedu.duke.logic.command.HelpCommand;
 import seedu.duke.logic.command.ListCommand;
 import seedu.duke.logic.command.RandomCommand;
+import seedu.duke.logic.command.RedoCommand;
 import seedu.duke.logic.command.SortCommand;
+import seedu.duke.logic.command.UndoCommand;
 import seedu.duke.logic.command.UndoneCommand;
 import seedu.duke.logic.validation.DeadlineValidation;
 import seedu.duke.logic.validation.EventValidation;
 import seedu.duke.logic.validation.LoadValidation;
 import seedu.duke.logic.validation.Validation;
+import seedu.duke.model.Duke;
 import seedu.duke.model.dateandtime.DateAndTime;
 import seedu.duke.model.task.Deadline;
 import seedu.duke.model.task.Event;
@@ -37,10 +40,11 @@ public class Parser {
     /**
      * Returns a Command object given a full line of text.
      * @param fullCommand Line of instructions presumably from user input.
+     * @param duke Instance of Duke which calls this method and contains the relevant attribute for TaskList history.
      * @return Command object based on information extracted from full command given.
      * @throws DukeException If full command taken in is invalid and cannot be used to return any Command.
      */
-    public static Command parse(String fullCommand) throws DukeException {
+    public static Command parse(String fullCommand, Duke duke) throws DukeException {
         Scanner sc = new Scanner(fullCommand.trim());
 
         if (!sc.hasNext()) {
@@ -115,11 +119,21 @@ public class Parser {
             return new SortCommand(taskString);
         } else if (command.equals("random")) {
             Validation.ensureNonEmptyTaskString(command, taskString);
-            int size = Validation.getValidatedNaturalNumber(taskString);
+            int size = Validation.getValidatedNaturalNumber(taskString, false);
             assert !taskString.equals("") : "Index for delete command is empty in Parser but no exception was thrown.";
             return new RandomCommand(size);
         } else if (command.equals("help")) {
             return new HelpCommand(taskString);
+        } else if (command.equals("undo")) {
+            int numberOfTimes = taskString.toLowerCase().equals("all")
+                    ? duke.getTaskListHistory().getCurrIndex()
+                    : Validation.getValidatedNaturalNumber(taskString, true);
+            return new UndoCommand(duke, numberOfTimes);
+        } else if (command.equals("redo")) {
+            int numberOfTimes = taskString.toLowerCase().equals("all")
+                    ? duke.getTaskListHistory().getSize() - duke.getTaskListHistory().getCurrIndex() - 1
+                    : Validation.getValidatedNaturalNumber(taskString, true);
+            return new RedoCommand(duke,numberOfTimes);
         } else {
             Validation.ensureNonEmptyCommand(command);
             assert !command.equals("") : "Command is empty in Parser but no exception was thrown.";

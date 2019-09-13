@@ -6,7 +6,7 @@ import seedu.duke.commons.exceptions.dateandtimeexceptions.InvalidDateException;
 import seedu.duke.commons.exceptions.dateandtimeexceptions.InvalidTimeException;
 import seedu.duke.commons.exceptions.listexceptions.InvalidListIndexException;
 import seedu.duke.commons.exceptions.listexceptions.InvalidListRangeException;
-import seedu.duke.commons.exceptions.listexceptions.InvalidTaskListSizeException;
+import seedu.duke.commons.exceptions.listexceptions.InvalidNumberFormatException;
 import seedu.duke.model.dateandtime.Date;
 import seedu.duke.model.dateandtime.Time;
 import seedu.duke.model.task.TaskList;
@@ -103,13 +103,20 @@ public class Validation {
     /**
      * Returns a validated natural number from a String.
      * @param taskString String to be converted to a positive non-zero integer.
+     * @param canBeEmpty Denotes whether the String taken in is allowed to be empty, in which case a value of
+     *                   1 will be returned.
      * @return A validated natural number converted from the given String.
-     * @throws InvalidTaskListSizeException If the numeric representation of the given String is not a natural number.
+     * @throws InvalidNumberFormatException If the numeric representation of the given String is not a natural number.
      */
-    public static int getValidatedNaturalNumber(String taskString) throws InvalidTaskListSizeException {
+    public static int getValidatedNaturalNumber(String taskString, boolean canBeEmpty)
+            throws InvalidNumberFormatException {
         if (taskString.equals("")) {
-            throw new InvalidTaskListSizeException("Please enter a valid numerical value after the intended command"
-                    + " (separated by a space).\n" + "The number cannot be empty for this command.");
+            if (!canBeEmpty) {
+                throw new InvalidNumberFormatException("Please enter only a valid natural number after the intended " 
+                        + "command (separated by a space).");
+            } else {
+                return 1;
+            }
         }
 
         int n = 0;
@@ -122,7 +129,8 @@ public class Validation {
                 return n;
             }
         } catch (NumberFormatException ex) {
-            throw new InvalidTaskListSizeException("Size of the tasklist to be generated must be a natural number.");
+            throw new InvalidNumberFormatException("Please enter only a valid natural number after the intended "
+                    + " command (separated by a space).");
         }
     }
 

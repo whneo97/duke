@@ -1,6 +1,7 @@
 package seedu.duke.logic.command;
 
 import seedu.duke.commons.exceptions.DukeException;
+import seedu.duke.commons.exceptions.historyexceptions.CannotRedoException;
 import seedu.duke.model.Duke;
 import seedu.duke.model.task.TaskList;
 import seedu.duke.storage.Storage;
@@ -16,16 +17,18 @@ import seedu.duke.ui.Ui;
 public class RedoCommand extends Command {
 
     private Duke duke;
-
+    private int iterations;
 
     /** Creates an instance of RedoCommand.
      * Stores to attributes of RedoCommand relevant information required to create an RedoCommand.
-     * Attribute is a reference to instance of Duke for which to perform redo operation.
-     * @param duke Duke instance for which to perform redo operation.
+     * Attribute is a reference to instance of Duke for which to perform redo operation(s).
+     * @param duke Duke instance for which to perform redo operation(s).
+     * @param iterations Number of times to perform undo.
      * @throws DukeException If initialisation of the Duke instance as an attribute is unsuccessful.
      */
-    public RedoCommand(Duke duke) throws DukeException {
+    public RedoCommand(Duke duke, int iterations) throws DukeException {
         this.duke = duke;
+        this.iterations = iterations;
     }
 
     /** Executes an RedoCommand object using information stored in instance attributes.
@@ -41,10 +44,24 @@ public class RedoCommand extends Command {
     @Override
     public void execute(TaskList tasks, Ui ui, Storage storage) throws DukeException {
         assert tasks != null : "TaskList that is to be displayed is null.";
+        TaskList resTasks = tasks;
         try {
-            tasks = this.duke.getTaskListHistory().redo();
+            for (int i = 0; i < iterations; i++) {
+                try {
+                    resTasks = this.duke.getTaskListHistory().redo();
+                } catch (CannotRedoException ex) {
+                    if (i > 0) {
+                        this.duke.setTaskList(tasks);
+                        ui.showMaxRedoMessageReached(i);
+                        storage.save(resTasks, ui);
+                        return;
+                    } else {
+                        throw ex;
+                    }
+                }
+            }
             this.duke.setTaskList(tasks);
-            ui.showRedoMessage();
+            ui.showRedoMessage(iterations);
             storage.save(tasks, ui);
         } catch (DukeException ex) {
             throw ex;

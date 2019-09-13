@@ -40,7 +40,7 @@ public class DoneCommand extends Command {
     public void execute(TaskList tasks, Ui ui, Storage storage) throws DukeException {
         try {
             ArrayList<ArrayList<Integer>> rangeList;
-            if (taskString.equals("all")) {
+            if (taskString.toLowerCase().equals("all")) {
                 ArrayList<Integer> all = new ArrayList<>(List.of(0, tasks.size() - 1));
                 rangeList = new ArrayList<>(List.of(all));
             } else {
