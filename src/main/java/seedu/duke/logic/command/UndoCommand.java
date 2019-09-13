@@ -58,7 +58,7 @@ public class UndoCommand extends Command {
                     }
                 }
             }
-            this.duke.setTaskList(tasks);
+            this.duke.setTaskList(resTasks);
             ui.showUndoMessage(iterations);
             storage.save(resTasks, ui);
         } catch (DukeException ex) {

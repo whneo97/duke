@@ -1,1000 +1,1000 @@
-T | 0 | rand  eCWNUI 
-D | 1 | rand  IiQniS pi | 29/05/9607
-T | 0 | rand  yMtJ8 
-D | 1 | rand  ZNXRt xR3F B3a | 06/02/8281 0102
-D | 1 | rand  fNtq1 | 15/02/2978 1045
-E | 1 | rand  VgpCk ZX9 6sm | 06/05/1406 0944-0716
-T | 1 | rand  E6VoJVXFm
-D | 1 | rand  4XRX YrUFfe K | 19/03/0784 1105
-T | 0 | rand  qKxF rAc 
-E | 1 | rand  puUS tueL fyW  | 15/08/2381 0610-2228
-E | 1 | rand  NnphxV | 25/12/1500 2109-0409
-D | 0 | rand  ta4Yu Xjm txj | 22/11/6724 1504
-E | 0 | rand  javG waNE Sc3 | 10/04/8990 1124-1829
-T | 1 | rand  hw1a IP64W2Q 
-E | 0 | rand  LKaE 6bq  | 14/08/1623 0435-0912
-D | 1 | rand  UZNQ NEqRDPE  | 06/01/6882
-T | 1 | rand  CU2e Mof 3ia n
-D | 0 | rand  u4r9Rt 8wg PWy | 05/10/4425
-E | 1 | rand  Nid4gS6 NV | 01/10/4034 1328-0328
-E | 0 | rand  YjVa Nsp NEB  | 17/09/4446 1020-1957
-E | 1 | rand  3NFX KG6 OvB | 15/02/0253 1105-0526
-D | 1 | rand  6ocF 81Gh LNZ | 07/03/3727 2330
-E | 1 | rand  UgsjQb hsq | 07/02/8595 0533-1558
-T | 1 | rand  6WUXf 4mFR 
-E | 0 | rand  N0Tx5x Xmw VwW | 21/09/6223 0302-0440
-E | 1 | rand  s9YD NeeP TA02 | 13/10/9491 1951-1617
-E | 1 | rand  ukyo6 b | 26/03/0015 1811-0236
-E | 0 | rand  febi4 dp | 09/12/7302 0319-0936
-E | 0 | rand  M0Mv6 | 30/12/2266 2038-0059
-E | 1 | rand  3QMg y67 | 10/07/1680 0117-2245
-D | 0 | rand  WKKy a1C 8O5 | 17/04/2647
-E | 0 | rand  ch9lT s | 27/10/9220 2203-2327
-D | 1 | rand  ShL3iBF | 25/06/1267
-D | 0 | rand  JWNgR uU9 s | 22/12/8332
-E | 0 | rand  nB9x5 ZCU gItv | 17/02/4023 0147-0853
-E | 1 | rand  6lks fLN | 25/07/7320 1629-1658
-E | 0 | rand  14s6 3vi qNX A | 19/11/3965 0418-1308
-D | 1 | rand  W76Hu | 22/01/0826
-E | 1 | rand  TXMG rauJ | 19/04/9011 1818-1431
-D | 0 | rand  X19j Rwm7oZKs | 13/03/4881
-E | 0 | rand  PdPU5C  | 06/03/0775 2244-2005
-D | 1 | rand  QnsK  | 07/10/1134 2303
-D | 1 | rand  h6KB 9rh0  | 02/03/5335
-E | 0 | rand  fFNx5w X00MZ  | 01/09/0038 0508-0730
-E | 0 | rand  pQVc 37S 7T | 15/06/9086 0502-0201
-D | 1 | rand  1jaH BDL9 | 19/10/7554 1635
-T | 0 | rand  sUOU3ac w1
-E | 0 | rand  KfUSi B0NS oH | 07/02/2353 0456-2244
-D | 1 | rand  H6K9 nPg C3x | 10/03/3698
-T | 0 | rand  C9Vk k
-D | 0 | rand  076X N5s tPtP | 28/12/2531
-D | 0 | rand  AJM98 | 24/11/2919 2347
-T | 0 | rand  C4pd n
-D | 0 | rand  IO2y 3odgA  | 18/04/8586
-E | 1 | rand  0qJH q | 27/04/4809 1106-2246
-E | 0 | rand  541yI Ts | 02/02/4083 0515-2042
-T | 1 | rand  qVEI 
-E | 1 | rand  sh4y GJ | 06/07/8756 1813-0654
-D | 1 | rand  FVtV rcmXQU | 14/12/7778 2138
-T | 1 | rand  Jd3nT KRkw
-E | 0 | rand  AkQ4Fn5  | 04/01/6261 0811-0518
-T | 0 | rand  0AkcL
-T | 1 | rand  InDW frux 
-D | 1 | rand  ROVF  | 30/04/8232
-E | 1 | rand  O7P4 AxI 4GE | 31/03/9992 1311-0632
-E | 1 | rand  jAI2w Ilh c7R  | 09/04/7976 1357-1446
-E | 1 | rand  XTsj  | 11/11/7064 0219-1307
-T | 0 | rand  IiL6 
-E | 0 | rand  lSQh 6Erx iAw | 13/06/7186 0647-0513
-E | 1 | rand  s0tI eT | 28/11/6917 2250-0445
-D | 1 | rand  kd63 e4f oqZ | 06/12/0356
-E | 1 | rand  3L03 Rv | 12/01/2459 1330-1753
-E | 0 | rand  X21s eGL | 08/02/3821 0543-2144
-T | 0 | rand  Ujdw0Q 1Lh 
-E | 0 | rand  ThvKAeg | 07/05/2140 1745-0039
-E | 1 | rand  C5EnO dJ1 | 17/02/8036 0903-2210
-D | 1 | rand  WNB1 dm | 25/12/0942
-D | 0 | rand  dIVh TU | 04/11/9454
-T | 1 | rand  pgZ9 vJq 
-T | 1 | rand  T9tH 1v
-E | 1 | rand  jCO0 TWM  | 22/03/4481 0635-1345
-E | 0 | rand  H0hG2 | 20/08/0823 1040-1157
-T | 1 | rand  62tVr 68J 
-T | 1 | rand  AIhVr h
-D | 1 | rand  btH5S VE | 19/05/0343
-E | 1 | rand  0Gr5G6 ofPmVP | 01/08/8287 2111-2349
-E | 0 | rand  GFsk 8t8 bZn | 04/03/4823 1036-0859
-T | 1 | rand  rqCC ki0 9Ah
-D | 0 | rand  vCl1A | 04/12/8741 0141
-D | 1 | rand  R7WOf | 24/05/2829
-E | 0 | rand  1fl4Z iQWi5  | 23/12/3528 0628-1400
-T | 0 | rand  L16m SBGik 
-E | 0 | rand  AmHNZ N739 | 12/11/8255 0059-0759
-E | 1 | rand  CRhVtC5n | 11/10/8629 1224-1808
-T | 1 | rand  bBOmH S
-D | 1 | rand  GhW3 xdkp | 04/02/1630
-T | 0 | rand  4wjeN i
-T | 0 | rand  1xQpuW
-E | 1 | rand  VjKS Gih cx9A | 02/09/9772 0538-2325
-E | 1 | rand  4aspR  | 12/04/2247 1206-1731
-E | 0 | rand  6m4a mQ | 10/10/1520 1815-1612
-E | 0 | rand  puDK2 VP | 02/01/8113 1130-0606
-T | 1 | rand  W83rl 3c
-D | 1 | rand  XtxXR Ykf  | 25/11/4475
-T | 0 | rand  ged1R EnD
-T | 1 | rand  UkXUE CwdG
-T | 1 | rand  4UMj y2L 
-D | 1 | rand  XJxC uQG DYuVQ | 17/12/5592
-E | 1 | rand  NG02X y9G | 17/11/3054 1008-0218
-E | 1 | rand  Rr77f KmB L | 31/01/6355 0656-2329
-D | 1 | rand  B82B HQ3x  | 30/03/3595
-D | 0 | rand  cSS9 pNQ | 15/02/6074
-D | 0 | rand  wajE5 | 07/11/2574 0845
-D | 1 | rand  Vuxk lDCS cq4C | 04/01/4274 1141
-D | 0 | rand  srtLR na2 | 02/03/7051
-E | 1 | rand  xsk1  | 28/01/1130 1931-0939
-T | 0 | rand  ZUuAk W40 t
-D | 0 | rand  CkiGtu oEyas  | 22/01/8156
-E | 0 | rand  LeLq wdT 3cx | 22/09/0789 2106-1613
-D | 1 | rand  yR6n iDX 9n | 29/05/8559
-E | 0 | rand  1UEaquc cs | 17/12/5845 0321-1847
-E | 0 | rand  v9C8 EyD  | 15/01/6744 0619-2006
-E | 1 | rand  5n9v 7 | 03/12/2538 1339-1311
-E | 0 | rand  j0PAt | 15/10/2199 0855-1230
-T | 0 | rand  UmgJe UB
-D | 1 | rand  yUrKj | 17/11/3691 1254
-T | 0 | rand  TAWehUb2 QP
-T | 1 | rand  Gg2ur4 
-E | 0 | rand  xphHV Q2 | 27/01/2294 0003-0514
-T | 0 | rand  KZke WqhM d
-D | 0 | rand  Emfux Pcm pLL  | 27/01/5786 0105
-D | 0 | rand  j4O8 Rh | 28/09/1790
-T | 0 | rand  FDnU5i C
-E | 1 | rand  XiSK ob | 01/12/9162 0433-2249
-T | 1 | rand  n9TvJ 7C
-E | 1 | rand  0sEo k3S1 XpFV | 02/02/4871 1557-2254
-D | 0 | rand  WwSVG | 12/11/2565 0358
-T | 0 | rand  aKgC y4h v
-D | 0 | rand  1PDg DeQ Z | 04/03/1648 0108
-D | 0 | rand  brp8 EJh sBy | 01/02/1292 1101
-T | 1 | rand  7hhcr
-D | 1 | rand  SGNe 77X X | 17/10/4673
-D | 0 | rand  0MDUss QYZ t | 16/07/3110 0734
-T | 1 | rand  hMrL JFS Gb
-D | 1 | rand  4tfS yjbKmp6 7 | 28/11/5971
-T | 1 | rand  KvVMA C2p
-T | 1 | rand  uqCc jvJ yk1
-T | 0 | rand  uM4c w12
-D | 0 | rand  Nprc EaQM 0lL  | 15/09/0344 0451
-E | 0 | rand  NpG2 IhD  | 03/05/9339 2056-1523
-T | 0 | rand  RvIJ 96d 2H0 X
-E | 0 | rand  Whvc j | 15/08/8237 0644-2053
-T | 1 | rand  fsv5 9
-T | 1 | rand  US8Z Hyn pPp
-D | 0 | rand  m3Gj 39Kp jQV | 14/02/9462
-D | 1 | rand  yLqC nTO tj | 13/10/0899 1100
-T | 1 | rand  kScRB p8I amX
-T | 1 | rand  wNx3sK6k i0f
-T | 1 | rand  SqMn dmK ddi
-E | 0 | rand  TIvX Ihn C | 29/07/3872 1124-2300
-E | 0 | rand  JV1Wt Fy | 28/06/9307 0016-1306
-D | 0 | rand  hfqU  | 18/03/1665
-E | 0 | rand  iHnw W55c | 19/10/6473 1955-0740
-E | 1 | rand  7q3Uq YU | 09/11/0784 1027-0344
-E | 1 | rand  F71HUu N | 22/09/4251 0800-2234
-E | 1 | rand  6nVI n | 20/06/4259 0527-2313
-D | 0 | rand  r3cGSNL XPub | 03/12/3970
-T | 0 | rand  w3SG HGBx aUA
-E | 0 | rand  luXTo Cj6R RA | 07/03/6902 0712-0846
-D | 1 | rand  7v1T tLR js8c | 08/01/3252 0451
-D | 0 | rand  Jux2 5YOTB 7pn | 15/03/2579
-T | 0 | rand  lIRM bfn Klp 
-D | 1 | rand  XI61 WoQni  | 12/05/3250
-D | 0 | rand  pU7ocY6J | 23/10/8515
-D | 0 | rand  0L9b u | 01/12/3824 0910
-E | 0 | rand  fjT1 kr | 20/06/3374 1930-0615
-E | 0 | rand  1EZ1hygvR CDR8 | 27/01/2492 1600-0252
-D | 1 | rand  f435 nJa T | 18/05/5109 0220
-T | 0 | rand  3Zmnbr
-T | 1 | rand  3hB5 61Idq 
-D | 0 | rand  9Xc3W ncO u | 05/01/2119 0717
-E | 0 | rand  DXUXfJ  | 01/02/8041 1824-2135
-T | 1 | rand  PZ8SGi be9b I
-D | 0 | rand  qqvS nl | 28/03/6365
-D | 0 | rand  gUqP  | 10/09/3655 0907
-T | 1 | rand  0khy3 Qcl pLf 
-T | 0 | rand  cG8x 1clG
-E | 1 | rand  bLF4 ycg 1Sg | 23/11/8922 1803-0101
-D | 0 | rand  e2fyD i3dB1 | 22/07/1311 0600
-D | 1 | rand  AaKY 8qn R8k | 09/05/5549
-D | 0 | rand  f0fL2 ysvYA sm | 17/05/6841
-T | 0 | rand  Lb5I JPZ 0c8 
-D | 0 | rand  MM0j  | 09/06/6531 1418
-T | 0 | rand  sOs36g 00P7
-D | 1 | rand  mJdSd PaQ 8Pv | 13/12/2331 0644
-T | 0 | rand  mOZRm1sR aACK 
-T | 1 | rand  kG62 d
-D | 1 | rand  woDW Uo | 21/09/3098
-T | 1 | rand  Dh4PH 
-T | 1 | rand  PV4O IP
-D | 1 | rand  XW33 AZNY b | 19/07/5046 0835
-E | 0 | rand  uCJlsuh  | 29/01/7593 0121-1121
-T | 0 | rand  mJFij 1TN
-D | 0 | rand  xOls  | 24/09/9881 1358
-D | 1 | rand  64Xb  | 19/12/0901
-D | 0 | rand  e5JjTY9 Li | 22/11/5179
-E | 0 | rand  AfB0J v0F  | 02/04/9453 0216-1059
-T | 0 | rand  2fvoB muGJ0
-E | 1 | rand  8Cgs s3arj | 30/08/7608 0735-1617
-D | 1 | rand  UOUn4h TSF | 19/05/4414 0936
-E | 1 | rand  QVYk ug5 x | 01/03/8421 0309-0654
-D | 0 | rand  N3l9 Tfy NYY | 16/12/6769
-D | 0 | rand  D9DD iAs | 03/10/3914
-E | 0 | rand  j3LZCCI rOp | 10/07/4183 0814-0955
-D | 0 | rand  OiKtxn9 14E | 04/05/1581 0342
-D | 0 | rand  DRso p6AGv | 03/10/0230
-D | 0 | rand  hSya HFO4Q  | 26/04/3823
-D | 1 | rand  oLj3E 0VG J | 17/11/4134
-D | 1 | rand  jX2l IVN aBx | 28/09/4402
-D | 1 | rand  2HEA61 LBA v | 23/01/5306
-D | 1 | rand  p8F77 Fec G4 | 17/08/7154 1053
-E | 1 | rand  HvFaP VBJ tp | 08/04/0393 0127-2041
-T | 1 | rand  cFKqtN EpG
-D | 1 | rand  vAjA pg1 9tj | 23/05/8037
-E | 0 | rand  PBtkE6 ocB nmg | 19/04/0864 1840-1615
-D | 0 | rand  YwVa u | 09/04/3124 1017
-T | 0 | rand  84df Jss
-E | 0 | rand  6U4I ZTq | 24/07/4302 2218-1701
-D | 1 | rand  llML yAlq Mr5 | 19/11/0934 2031
-E | 1 | rand  WbxSd p9 | 30/09/7710 2206-0115
-E | 1 | rand  kBHe GPFg so | 12/02/1856 1458-1925
-T | 1 | rand  v0dGSX qB
-E | 0 | rand  iA5q vIn | 01/11/1014 0023-2037
-D | 1 | rand  c91uq | 16/02/3708 0203
-D | 0 | rand  nKEv 19O ygfe | 13/03/3265 1534
-D | 1 | rand  FjyV  | 27/03/9748 0714
-E | 1 | rand  P2ZP  | 31/10/6003 0030-0222
-D | 0 | rand  PMAO 8YIp6 R | 25/01/4578 1331
-E | 1 | rand  uPIt 8Bm MpJC | 22/04/9446 1157-1810
-D | 0 | rand  ZUTi0 f | 11/11/9323 0755
-D | 0 | rand  8dxd l | 23/08/2186
-D | 1 | rand  mNvJ 2Is4A | 18/11/7972 1849
-D | 1 | rand  CMea mdSS | 04/05/2512
-D | 0 | rand  USj6qL r90 tw0 | 28/07/5478 1141
-E | 0 | rand  L3Ev npy | 23/01/8041 1347-0648
-D | 1 | rand  qqb4 K54 | 21/03/5008
-D | 0 | rand  NqgJYUE O9rlS  | 18/08/3114
-E | 0 | rand  fScJ Ccl | 17/12/9846 1303-0720
-E | 0 | rand  xtuh9 y | 08/02/1563 0517-1906
-T | 1 | rand  nQax 4vn
-E | 1 | rand  qfCn 3od2 | 29/03/3416 0621-1635
-D | 1 | rand  wket E684 | 24/08/9229 0030
-E | 0 | rand  o8jlQ iWm tp | 13/10/0061 1459-1131
-T | 0 | rand  jZvx lDgu N9L
-E | 1 | rand  dsO04  | 01/07/8584 1135-0212
-T | 1 | rand  gNPNC3
-E | 0 | rand  QhgF X3f 0Gdb | 25/08/3796 1544-2316
-E | 0 | rand  PukFk  | 04/01/9935 1047-1751
-E | 0 | rand  vjJmn x | 30/05/3159 0215-1253
-E | 1 | rand  m1e2B  | 10/09/2769 1144-0040
-E | 1 | rand  QC0O qkT9 | 20/08/0120 0700-1352
-E | 0 | rand  V5xD8vg | 08/10/4791 1445-0705
-E | 0 | rand  CEvf YuR | 02/09/7074 0418-0509
-D | 1 | rand  g4hp  | 05/09/8991
-T | 0 | rand  cN80 
-T | 0 | rand  Wjtwc
-D | 1 | rand  KjR8Z | 30/07/3481
-T | 0 | rand  dyIG64A yD
-T | 0 | rand  9mIkZ QQU BQ
-T | 0 | rand  UP3p pku
-E | 0 | rand  BqIa 0 | 19/02/7520 0033-1950
-T | 0 | rand  PkoD dZAX
-E | 0 | rand  U1KP q | 28/08/6517 0202-0609
-E | 0 | rand  42j3 Vq7 | 08/11/3865 2126-1207
-D | 0 | rand  wGws8 | 20/11/7073 1911
-E | 1 | rand  WV5L exAE | 12/09/7298 1501-0317
-D | 1 | rand  Ktvq1 wI8Tl1 6 | 21/07/4282
-T | 0 | rand  xTxM 2
-E | 1 | rand  CyiG Gy | 14/08/6561 1856-1010
-D | 1 | rand  y9gAB | 12/04/0167 1835
-D | 0 | rand  U7yqQxF  | 22/06/3084 0710
-E | 1 | rand  Kl7B h | 07/10/3794 0521-0609
-T | 0 | rand  dn6Px PYm0 M
-T | 1 | rand  MFBGO PA
-D | 1 | rand  WhdMC U33y Vl | 31/03/9996 1503
-D | 0 | rand  05HLQ nBrV t | 05/01/9005
-D | 0 | rand  VYks d7 | 08/02/0870
-D | 0 | rand  oDTLY gP | 21/03/7852 2254
-T | 1 | rand  g8UG 1S
-D | 1 | rand  WhIk VWwF c | 22/03/3367 0154
-D | 1 | rand  phJZ idl 3 | 23/02/6761
-T | 1 | rand  Duop 9QqL
-T | 1 | rand  EPNIA oSV E
-T | 0 | rand  3xO3 wXf
-D | 0 | rand  slbF wpGk 6y | 10/07/5924 0934
-E | 0 | rand  n6uf lwa tn | 12/11/5101 1015-1121
-E | 0 | rand  YRJ0b  | 14/09/9382 2346-1640
-D | 1 | rand  gise sVLp  | 20/04/6081 0333
-E | 0 | rand  8gIS tOgP yC | 25/02/1076 0730-1020
-T | 1 | rand  uRyhY 1vsDP
-E | 1 | rand  m1qyyRg oc | 09/10/5210 1241-1915
-E | 0 | rand  n0t9 Y | 26/12/9352 1713-0718
-D | 1 | rand  qUUf4 | 09/09/3200
-D | 0 | rand  MHuuNL GYD | 30/11/2272
-T | 0 | rand  CMM2 ivq 04bA
-T | 0 | rand  VvXp 0xh tDx f
-T | 0 | rand  TnG8 34bKhd 
-E | 1 | rand  nBka UYYD 31 | 17/11/9903 1927-0300
-D | 0 | rand  luJS rGg  | 14/05/7480 1037
-D | 1 | rand  pIrBt | 21/12/6351
-T | 0 | rand  0Mau N
-D | 0 | rand  u48gi Dpew | 20/12/4993
-T | 1 | rand  J1DoSTK2 
-D | 0 | rand  JWBFv gutQ5 | 27/04/0893 1924
-E | 0 | rand  eJ3d 6MCV GBt  | 20/11/8576 2340-0754
-E | 0 | rand  eKm5 uvqOH | 30/06/1889 1114-0028
-E | 1 | rand  FNTq8 | 08/05/4109 0842-2053
-D | 1 | rand  tm3U l | 25/11/7360
-E | 0 | rand  RCKs 1O | 17/02/7897 0651-1109
-T | 0 | rand  un3P JCnk
-T | 1 | rand  ZVFifj S0SFMX 
-D | 0 | rand  3qG2u | 09/11/6824
-T | 1 | rand  1IXC 8YB
-T | 1 | rand  992y hWx 
-E | 0 | rand  TPJJ fB4 Okl  | 08/10/0945 0525-0008
-E | 1 | rand  Wwthp | 21/06/9328 1924-2001
-D | 0 | rand  lKwCvwn xTn4 | 19/12/3506 1916
-T | 1 | rand  1Ekno 6XZC
-E | 0 | rand  RgD1 wi | 30/10/6742 1526-0212
-T | 1 | rand  uQifL 6Iy o
-D | 0 | rand  iaFAPg i81e XK | 14/12/0845
-E | 0 | rand  VDYW Quy T | 13/01/9174 1755-0923
-E | 1 | rand  G8Z4 Gp6 | 21/01/5148 1232-1932
-E | 1 | rand  h0aR U31KadB | 24/02/9455 2023-0454
-D | 0 | rand  PtrSH eTTe ZT | 08/12/4167 0025
-T | 1 | rand  cfhXFN XV
-T | 1 | rand  hmvkj 2GBZ rF
-T | 0 | rand  C4Fr o6G SlM
-D | 1 | rand  FN1kan gj | 06/09/9150
-E | 1 | rand  fgH1 I0j ZQ | 29/09/4849 0304-1815
-T | 1 | rand  rpHk8BX 36E
-E | 1 | rand  S1QFyR o5yt | 01/09/3632 1103-1651
-D | 0 | rand  6rVl K3RxH6 a | 03/05/6433 2015
-D | 1 | rand  7PX9 E | 26/02/3765
-D | 1 | rand  INsNU 645  | 04/01/3483 1850
-E | 1 | rand  TYjLy Ib | 23/09/2079 0950-2203
-E | 1 | rand  oDAb jVN | 29/03/2958 1640-1942
-D | 0 | rand  CpK2 70 | 02/02/0173
-E | 1 | rand  TPqg  | 29/06/4942 2153-2059
-E | 1 | rand  1dFI DIM  | 04/09/4968 1333-1506
-T | 1 | rand  Gb2Wm FPDB
-D | 1 | rand  8rEM h1fEp1  | 08/12/7467
-D | 1 | rand  r8pTPZ kh | 09/09/4853 1101
-D | 0 | rand  oQa3G 1lX 2 | 08/03/9483
-T | 1 | rand  0nf52x 8EC
-D | 1 | rand  oCsn M | 11/07/8308 1045
-E | 1 | rand  u9tIC nXlZu  | 22/11/6168 0824-0046
-E | 0 | rand  6nbX wsb q | 08/12/4027 1550-0627
-T | 1 | rand  NAfU hn
-D | 1 | rand  6VSjp 9QhXF Nh | 06/08/1042
-E | 0 | rand  lTspb1I | 18/06/9640 0128-0301
-D | 1 | rand  BqtogCH HZQ  | 22/06/4080
-D | 1 | rand  1thhXe | 12/11/9808 0856
-E | 0 | rand  FUss  | 29/11/3630 1442-0303
-T | 0 | rand  XESS IMD
-D | 1 | rand  o6VD mk | 07/05/8436 0733
-D | 1 | rand  4h7L nO1R 915r | 08/12/4785
-T | 1 | rand  ufovOT EdB
-E | 0 | rand  V0KY 9YI  | 05/09/8354 1108-1912
-E | 1 | rand  4gDKu 7Ne 3ZFC | 03/05/0000 1753-2303
-D | 1 | rand  5QxDb wCg  | 08/05/0479 0242
-D | 0 | rand  pCIG t55m | 14/03/0291 0213
-T | 1 | rand  uLdj OJXU
-E | 0 | rand  cKd82 pUbl8 | 26/07/9017 0403-2248
-T | 1 | rand  FDaa Kd1rr
-E | 1 | rand  YkY9 LAE1N  | 05/04/1800 0126-0337
-E | 1 | rand  rMRD g5o  | 31/12/0820 0859-0820
-D | 1 | rand  QNlcV yP3  | 26/03/7788 0635
-E | 1 | rand  Cyau OMA pyy J | 29/03/8151 1234-1209
-T | 1 | rand  TDJs eInj o
-E | 0 | rand  TTyHLSF  | 09/12/9540 0225-2332
-T | 0 | rand  rotxM Ier
-T | 1 | rand  VT9x nyt m
-D | 0 | rand  tqOO O | 08/02/3926 1451
-T | 0 | rand  HM6SOU PT4cW L
-T | 1 | rand  Gonwg UGRZ M
-T | 0 | rand  XFTFp2t 
-D | 1 | rand  wg8vCZ L7 | 06/05/8179 0733
-T | 0 | rand  E13f 6BbvF
-D | 0 | rand  L8c9 UFC | 27/04/9710 0310
-D | 1 | rand  qBV3  | 05/12/5127
-D | 1 | rand  cutOiiYJ P3go | 16/01/4840 1401
-E | 1 | rand  kfZGpd Y0 | 29/03/6786 1311-0328
-D | 0 | rand  TtNN 8uCrN | 07/07/4268
-E | 1 | rand  DkOu5 | 26/05/3312 2052-0730
-D | 1 | rand  1Lx9 BrC3WL | 07/08/9600 1548
-T | 0 | rand  9EjSx mJ
-E | 1 | rand  Zon8 uY | 10/05/0826 2225-0701
-D | 1 | rand  CD3uGO GxH f | 23/05/3133 2337
-T | 1 | rand  xGMkG vSgB
-D | 0 | rand  Y90F No | 23/08/9669 0823
-D | 0 | rand  G3Cu QM0 U | 14/09/4158
-D | 0 | rand  b3RHpL9 | 05/10/9862
-T | 0 | rand  ggJT8Ss5p S
-E | 1 | rand  8HsZ P1aR d9v | 21/11/7426 0257-2213
-E | 1 | rand  NHUvg e | 20/08/1812 0414-1238
-T | 1 | rand  0JvH Xv
-T | 0 | rand  TOMN7
-T | 0 | rand  iEe4A SIlG
-E | 1 | rand  ljQo  | 19/07/6814 1417-0426
-E | 1 | rand  WwOMu8 BSf | 04/08/6425 1529-1217
-E | 0 | rand  55Sq QNe 7S6oi | 01/08/1241 0604-2357
-E | 1 | rand  i691BWF3 2Gltn | 22/08/1855 1211-1135
-E | 1 | rand  SYQ7 TtS YbKM | 15/11/2167 0914-0825
-E | 1 | rand  10hhXo NXA TCL | 14/05/2793 1538-0801
-D | 1 | rand  gigwJE VkHjoW | 22/03/2916
-D | 0 | rand  RuR8 5Q8S | 06/03/9498
-E | 0 | rand  LN7r 3dn hw | 25/09/7181 0505-1238
-T | 0 | rand  Pm28 
-E | 0 | rand  s80h RWQte | 27/08/6562 2132-1654
-E | 0 | rand  qpWiH NPEP | 13/05/5910 0743-2244
-D | 1 | rand  hNovZHp8t yqV | 12/08/1146
-E | 1 | rand  oVik6h9m JIh | 18/02/4472 1711-0427
-T | 0 | rand  4hs6 ol
-D | 0 | rand  JmKr6 | 06/02/7340
-E | 1 | rand  3W5Rx PPyZKhx | 07/11/1580 0808-0059
-T | 0 | rand  6kdAV XwW klF
-E | 0 | rand  K7sLS ulG Pv3 | 20/01/8801 1000-1002
-T | 0 | rand  tOwj tfN SVs
-T | 1 | rand  MAyCX 
-E | 0 | rand  ZjQtQ8kxF | 28/03/8134 2035-0911
-T | 0 | rand  72w0A0pK1o
-D | 0 | rand  byfPaTPt v | 25/03/8043 1200
-E | 1 | rand  pt4UT u8c | 24/11/6961 0657-1400
-E | 1 | rand  JOwUh  | 11/03/4671 2240-2041
-D | 0 | rand  fCLy  | 27/08/1664 0713
-E | 0 | rand  tfMh rdc  | 02/11/4419 0613-0808
-D | 1 | rand  68V5 p | 31/08/9171
-T | 0 | rand  0t9c tHd
-D | 0 | rand  tEWRnY | 26/05/1822
-E | 0 | rand  jAuu35 Apb7 Tg | 30/08/8068 0824-0257
-E | 0 | rand  NLqY f5fnt | 03/11/7783 1308-1336
-E | 0 | rand  Hb90Nn | 17/01/0524 0236-1909
-D | 1 | rand  AhFDp bf3  | 06/06/0860 2032
-T | 1 | rand  Us3D tZ0
-E | 1 | rand  5suDS W | 25/11/0216 2106-0642
-D | 1 | rand  1So5 0JS nkM u | 23/04/6781
-D | 1 | rand  XTjw  | 04/01/9791 1222
-T | 1 | rand  j4rZX
-T | 1 | rand  3JNLh
-D | 1 | rand  dlnI  | 13/08/6433
-T | 1 | rand  6KXEqe8f
-D | 1 | rand  CWmZ H | 31/07/7739
-T | 0 | rand  5JsK23 DOq0
-D | 1 | rand  84HHR fbui  | 24/02/3015 1350
-T | 1 | rand  DwXG x3q
-E | 0 | rand  UoJH 8MGo cg | 19/06/8537 1028-1347
-T | 0 | rand  iKagLi v5j
-D | 0 | rand  Th5n U6y D | 30/04/0586
-T | 0 | rand  xRNn6OX GQB j
-E | 0 | rand  jq7s etk W2e | 25/01/3968 1654-2142
-T | 1 | rand  7gWXS 3
-T | 1 | rand  0eOH Uwf 
-D | 0 | rand  pwVC n1o  | 10/03/9801
-E | 0 | rand  3oQ1 8Pr0msb  | 17/03/2012 1605-2333
-E | 1 | rand  wldT YTkedGG | 13/10/2534 0612-1025
-T | 1 | rand  VfsJ qQ5 BM
-E | 0 | rand  WOh48g L3 | 02/09/9123 1531-1607
-D | 1 | rand  gAZpH Q2xd  | 22/05/1616 2225
-E | 1 | rand  3npG mLx 1mx | 26/04/1339 0915-0543
-E | 1 | rand  hVWP njgLmf | 21/09/3093 1204-1633
-E | 1 | rand  OsqhN | 04/07/8282 2230-1947
-T | 1 | rand  kD1v aE0 U
-E | 0 | rand  kVcG5 Gqkm | 24/08/2701 0400-0720
-D | 1 | rand  VJLi onTC JZ5M | 01/07/0653 0509
-T | 1 | rand  RbFw 
-D | 1 | rand  mcvhiM | 16/06/0118
-T | 1 | rand  iZj6o 5
-D | 1 | rand  M8X3O  | 17/04/6904 0816
-E | 1 | rand  D4lb rcJ1 | 19/03/6024 1315-1435
-E | 1 | rand  AMMiU 0eP  | 16/04/8649 0350-1430
-E | 1 | rand  dXqpWx wej PBY | 29/11/0301 1606-0432
-E | 0 | rand  W7ZH 8Iq | 19/04/7723 2110-1345
-E | 1 | rand  lS3u p | 01/04/2123 2220-1547
-E | 0 | rand  VM6fcK C4Hg  | 27/10/2809 0938-1842
-E | 0 | rand  VCth 7vJ eSR9 | 03/07/0517 1030-0112
-E | 0 | rand  BAak  | 22/08/0353 1625-0112
-D | 0 | rand  9Skk JVk  | 20/11/6275 1444
-E | 0 | rand  f6mb ouXhumi  | 03/06/1539 0901-2304
-E | 0 | rand  kpakU  | 10/02/1433 2225-1542
-D | 0 | rand  psaBItn BKa1 l | 20/03/9274
-E | 1 | rand  EZT7y yWR | 11/05/1660 1721-2328
-E | 1 | rand  KoLA V6 | 14/08/8207 0956-2338
-E | 1 | rand  nqjQq CDn  | 01/11/3387 0817-0441
-E | 0 | rand  YoaT XM | 02/08/2043 1711-0141
-E | 0 | rand  cF0b deiSL8 Pi | 05/08/2311 1448-1258
-D | 1 | rand  nwNk6O | 20/06/8622
-E | 0 | rand  Ghki RxC L3UBo | 02/08/5112 1855-1358
-E | 1 | rand  Ev9h 0 | 29/05/1665 0735-0630
-T | 1 | rand  BKQX W
-E | 0 | rand  llpkaI7 m | 13/02/7424 1427-1636
-T | 0 | rand  PD2A NNo WVa
-D | 0 | rand  ygiR0vU AAg OG | 14/12/3304
-T | 0 | rand  nb7s Cc
-D | 0 | rand  6JhN  | 03/12/6649 1142
-D | 1 | rand  mTqA bb | 29/09/2348 0417
-E | 1 | rand  VlI4u o46s | 18/01/6482 1744-0403
-D | 0 | rand  hGFZj XUG | 22/11/0092 0350
-T | 0 | rand  CvHLfa r1gQO
-D | 0 | rand  DoEUf vI3 FpM | 12/10/0731 0720
-D | 0 | rand  pGe7 etiKdZ 8X | 29/04/9131
-T | 0 | rand  Zkb2p O1
-T | 0 | rand  vif2 R
-T | 0 | rand  MPHe jCx e
-E | 1 | rand  7lv8 5iw  | 28/12/1052 2041-1233
-D | 0 | rand  ouSQjv RwG8 | 21/07/7659
-D | 1 | rand  NxdN GH9D | 23/01/6616 1906
-E | 1 | rand  1MoG  | 04/12/1535 1135-2330
-T | 0 | rand  8ypaDS oYH
-D | 0 | rand  nxNcsJ2 5D | 11/07/2415
-D | 0 | rand  yCsE6o S45  | 10/10/5950 1012
-E | 0 | rand  oMSZ j9N0eC | 05/06/9728 0534-1152
-D | 0 | rand  2EsEX CiL2r | 10/07/8373 1204
-E | 1 | rand  oTts bI | 31/07/5434 0603-1058
-T | 1 | rand  nJiw lr
-D | 1 | rand  kZIQ nSB | 12/01/8971
-T | 1 | rand  60ZuN0k Y
-T | 0 | rand  XIxta jfUxFf
-T | 1 | rand  M6ea RB46
-E | 0 | rand  WpkMa85 MKbXC | 28/09/8810 0547-1039
-D | 1 | rand  R0mN 1YH4  | 23/12/0608 1857
-T | 1 | rand  Us2B SAd 8xn
-E | 1 | rand  jwXmmmk  | 13/10/0248 1157-0002
-T | 0 | rand  VpAG84 CUl K
-D | 0 | rand  4Okv 7 | 13/03/1172
-T | 0 | rand  1E0u7wpp SSP
-E | 0 | rand  q5Ds xc6UY WDH | 26/10/1664 1316-1140
-T | 1 | rand  bO64E If4 
-E | 1 | rand  jfcG S6x | 20/08/3041 0643-1340
-D | 1 | rand  kg8F xsw IL3 | 16/09/7563
-E | 0 | rand  oPGDd 2bK Y7 | 21/11/0627 1200-0646
-T | 1 | rand  u1LPG bqMx
-T | 0 | rand  ecjK dus XKd86
-D | 0 | rand  lX5IQ | 13/11/6293 1633
-D | 1 | rand  HEuA LWk U | 19/10/1297
-T | 0 | rand  7k2o 
-D | 1 | rand  hGGV9 LbFs 7 | 24/06/7381 0631
-D | 1 | rand  nsAwg WnF wfJ | 04/12/4587 2353
-T | 0 | rand  tsqdt 9VC 
-E | 1 | rand  Pbh4  | 07/08/0143 0139-0143
-T | 1 | rand  TcNpuR
-T | 1 | rand  av6nw ixOw wp
-T | 0 | rand  prYW 3SG 3n6N 
-T | 1 | rand  94gTRm htS rB
-T | 1 | rand  o5nQ QvJY X35
-E | 1 | rand  715S kxBG  | 02/12/4869 1647-2321
-E | 1 | rand  gnxRj DvFX yR | 27/01/5410 1358-1039
-D | 0 | rand  B6HD DLw sr0 | 16/03/6695
-T | 1 | rand  iYLpg ah30 5
-T | 0 | rand  Cs69EFB0
-E | 1 | rand  Lreu M | 16/08/7418 0013-1109
-T | 0 | rand  SIF8 98NG
-T | 1 | rand  o63i RD4 A2W
-D | 0 | rand  IUrjhrBxnZ V | 22/01/5197
-T | 0 | rand  MkBHET pr3M
-D | 0 | rand  gAjP ikN Q5Db  | 01/06/8582 0708
-E | 0 | rand  SXVT rRb Hp6  | 02/12/7157 1330-1237
-D | 0 | rand  koGx viQ SSR | 21/08/7612
-E | 1 | rand  E2NM ig | 16/07/8202 0617-0649
-D | 1 | rand  ZYIhJ0U 2M | 25/07/4140
-T | 1 | rand  4qMb0 EtS 
-E | 1 | rand  B36xY uQ | 12/04/3868 2046-0623
-D | 0 | rand  1fBG4 EKP JLl | 06/10/2606
-T | 1 | rand  6t3JE5wXO Fwn 
-D | 1 | rand  x94Cg 7ic | 15/05/4154
-T | 0 | rand  n6p1 Cdrp 2J
-E | 0 | rand  JUFfG 9 | 21/05/8512 1934-1838
-E | 1 | rand  r2JE qZ | 11/05/0207 0906-1908
-D | 0 | rand  LYYmL jBT | 08/10/4670 1600
-T | 0 | rand  h8En g
-E | 0 | rand  S1cr ivJx t | 09/03/6525 2007-0404
-E | 0 | rand  v6KL 38i MlO  | 04/08/8174 0255-0451
-E | 1 | rand  lHtMUd  | 05/05/4189 1214-0212
-E | 1 | rand  T4Px ysRTp sH | 23/10/3751 2333-1344
-D | 1 | rand  GhA4L  | 16/05/4425 1709
-E | 0 | rand  IZ7tM IkE M | 15/09/6552 1044-0910
-T | 0 | rand  SsrA 
-D | 0 | rand  nfB6 PPp | 04/04/1182
-T | 0 | rand  tSBC HF
-E | 0 | rand  neVHi | 27/03/9198 0249-0217
-D | 0 | rand  nOSK AOM WXwe | 10/07/4963
-T | 0 | rand  NqL4 DNW WjM
-D | 0 | rand  9PhO1 NriI  | 15/06/8498 1501
-T | 1 | rand  YGyT pkF5 b8Z8
-T | 0 | rand  YMJ8 pFJW4 34
-D | 0 | rand  w24X gm5 T | 11/07/0475 1439
-D | 1 | rand  kaXvs TP | 12/10/7723
-D | 0 | rand  3W4G cLx 0wlC | 04/04/0770 1139
-E | 0 | rand  JS47 8SOdM | 05/10/3734 1025-0447
-E | 1 | rand  TkSa c | 24/02/5827 1924-1311
-E | 0 | rand  Oa2gf CM7 | 28/02/7357 0534-1522
-D | 0 | rand  KNRk  | 05/01/1847
-E | 0 | rand  Ie08 v | 16/10/5802 1357-0323
-D | 0 | rand  8Xdmr | 09/12/1024 0357
-D | 0 | rand  Xvf4F ncP cA | 10/05/4009
-D | 1 | rand  5dqt kv | 12/11/4748 1232
-D | 1 | rand  FXT1 kcs9 1 | 11/06/0895 1211
-E | 1 | rand  QurN YlEoN b | 27/06/1129 2050-2354
-T | 1 | rand  7k8u 
-T | 0 | rand  Pgkt O
-D | 1 | rand  p0gZG aTL  | 22/05/2616 0932
-E | 0 | rand  Q5Kh sn6 Xl3  | 18/02/8970 1332-0853
-E | 0 | rand  XgvsH jTg  | 01/01/3292 2337-1725
-E | 0 | rand  Prpb  | 21/01/5228 0151-0034
-T | 1 | rand  6o6XkU 
-D | 0 | rand  o8aCP 46ec  | 13/10/6203 2206
-D | 1 | rand  rRtn uPl 3Qp T | 11/11/9480
-D | 1 | rand  mmnty jU | 11/03/9633
-E | 1 | rand  ie5Z 1ND WHm 8 | 12/12/2057 0409-1046
-E | 1 | rand  lmSX KSU Xv | 07/10/5815 0758-0130
-D | 0 | rand  bY6Ai dxV | 23/04/1370 2125
-E | 1 | rand  cRge Yf6  | 24/03/9284 1136-1727
-E | 1 | rand  HtfQ dHF 42QBa | 18/08/0403 2321-1907
-D | 1 | rand  5NxREhZ fEX | 28/04/2063 2020
-D | 0 | rand  4ZM8 Zl1 ht | 28/07/6407
-T | 0 | rand  KLIa RcA5 uMon
-T | 0 | rand  5ruM o7l TE
-T | 0 | rand  k9m2 aE
-E | 0 | rand  Odv9  | 13/06/5648 0926-1549
-T | 1 | rand  ptghZ
-E | 1 | rand  ZkYY nW5Vs 0d | 24/04/6621 1337-0211
-E | 0 | rand  tDDt cchQ | 23/04/3800 0547-0412
-E | 0 | rand  JHA3Ate | 17/10/4944 0919-1031
-T | 1 | rand  r6fA2 Saa
-T | 0 | rand  f5fwC ZDJJ qL
-T | 1 | rand  yyJd P
-D | 1 | rand  085Uq c | 21/03/9104
-E | 1 | rand  uS6V  | 08/10/3050 0313-2259
-E | 1 | rand  lj9EW  | 03/10/9191 0045-1956
-D | 0 | rand  KFae 7tyy 4tC | 21/06/8591 1820
-E | 0 | rand  PjRwVgCfj | 16/08/1400 0938-1435
-E | 0 | rand  PmblT BY9 w | 02/04/6947 1833-1256
-T | 1 | rand  0h7N UYI
-D | 1 | rand  fxo5 8qQP  | 26/02/2126
-T | 0 | rand  PWqH VjH SB
-T | 1 | rand  9QVZKRdCcpk
-D | 0 | rand  SvZpF 3YT | 18/12/2002
-E | 0 | rand  h0SH CVu | 05/03/6130 0254-0422
-T | 1 | rand  wgu2 YW
-D | 1 | rand  o260Zk Ip | 19/02/7003
-D | 0 | rand  xuKii G | 01/03/7851
-E | 0 | rand  kvTbpi | 18/02/3948 0032-0628
-E | 0 | rand  cg6x 3tc  | 28/09/0460 0838-0409
-D | 1 | rand  0Q3F I | 21/11/2926 0629
-T | 0 | rand  xrcDn AsM v
-D | 1 | rand  Chjp kPp | 09/05/9095
-D | 1 | rand  VUIX3 ft | 01/07/5338 1141
-D | 0 | rand  vXk4 4ae | 20/01/7909 0422
-T | 0 | rand  ZgWN1b 6FF aWx
-E | 0 | rand  WLrc 39 | 18/04/4832 0953-0113
-E | 1 | rand  NJSE 8y8 | 05/07/0952 0015-1352
-T | 0 | rand  JvPVg qd
-D | 0 | rand  3RWotE  | 31/05/7966 1111
-T | 1 | rand  d1PS V
-T | 0 | rand  dV2j rlj 1J
-E | 0 | rand  TEi5 II7 LJ6 | 02/05/4659 1132-2214
-T | 0 | rand  xcng D
-T | 1 | rand  6Dbhl FsSlI 
-E | 1 | rand  3ggQev0RAQN | 30/09/3443 1628-2134
-E | 0 | rand  ycLIin | 22/02/2945 0237-0442
-D | 1 | rand  HhTW DK | 01/06/4176
-T | 1 | rand  rXQx7 mLN 
-T | 1 | rand  gLxQ 2ku 3nN 
-E | 0 | rand  FiavJ 0N27 | 11/07/9065 0819-1156
-T | 1 | rand  Pl7v ZB7
-D | 1 | rand  eZRk uiq r9T | 17/11/2535 0522
-E | 0 | rand  wofW 0cjX MMP4 | 04/03/7887 0602-1545
-E | 0 | rand  Tvtk VhK | 20/08/2090 0206-0744
-E | 1 | rand  0R6Y5O6RW | 09/05/2059 1532-1238
-E | 1 | rand  2BEQw K8EH Ya | 05/08/2994 1319-0436
-D | 0 | rand  SESp0 Kqsm K | 06/03/7683
-E | 0 | rand  KSvS EhM LMK  | 02/11/7675 0745-1423
-T | 1 | rand  cpWEa SXBB
-T | 0 | rand  7cMm UoPA
-D | 0 | rand  g1x3 N | 19/09/2043
-T | 1 | rand  QjsYs
-D | 1 | rand  YFn9 d | 19/04/0934 0853
-T | 0 | rand  Mrnv ICK c0
-D | 1 | rand  wRUeo0T CZSd6T | 17/11/1375
-E | 0 | rand  GFJeo  | 11/06/4134 1002-1345
-E | 1 | rand  uVVG S87 E2aZ | 07/08/7355 0832-0207
-E | 1 | rand  WLnp  | 18/04/9698 0145-0037
-D | 1 | rand  XCV2Gxi | 10/03/9459
-E | 1 | rand  UOr2g8Q h1 | 20/08/6150 0754-1553
-T | 1 | rand  L5gK SV
-D | 0 | rand  ic9k KPuu x | 22/08/7228 1148
-T | 1 | rand  3niR3 RBxHmnh
-T | 1 | rand  B1wp jWd Gs
-D | 1 | rand  Lcqu qqcB | 18/08/4275 1236
-E | 1 | rand  BCjCg edC | 12/11/8587 1421-0115
-T | 1 | rand  XdUsvYx 87M 
-E | 0 | rand  g26ZSI UrZ  | 01/01/0860 0542-1913
-D | 0 | rand  6Rjruk QWj V | 14/01/4800
-D | 1 | rand  mcUH 69X kL | 19/10/5977
-E | 1 | rand  8jaQ 7tU0 | 12/02/2380 0804-1141
-E | 1 | rand  TljjCYh d | 16/10/2837 2017-1938
-D | 0 | rand  G5UG5s9d Fa | 03/02/8447 0451
-D | 0 | rand  d5tn 9lH pr4 r | 10/04/8895
-E | 0 | rand  jB2m jvR7 | 06/12/9568 0451-1804
-E | 0 | rand  gdTfU | 26/08/3758 1628-0037
-E | 0 | rand  IFfch rie t | 28/05/3705 1046-1218
-E | 1 | rand  caiE0T 1naP mo | 29/07/4390 1434-1554
-T | 1 | rand  oGcL43
-T | 1 | rand  Vtbgq 
-T | 0 | rand  1RgVx lqf yD
-D | 0 | rand  gT43h  | 11/01/7922 0005
-E | 0 | rand  Ln1P ts7 useA | 28/12/3238 1913-2304
-D | 1 | rand  jfAH aaUwl l3 | 26/02/0413 1130
-D | 0 | rand  grkUPGv  | 05/08/5505
-E | 0 | rand  8YEV vYIApI | 28/10/3967 0405-0045
-T | 0 | rand  mrIefk 
-D | 1 | rand  Mf8Q6s iPLS | 28/10/0809
-T | 0 | rand  Zu6l n
-T | 0 | rand  H7tGB 
-E | 0 | rand  0CUPT 7AZ | 24/12/2493 1354-1104
-D | 0 | rand  bFKU6 | 06/02/3335 0253
-D | 1 | rand  SrOC LFu h | 26/11/4467
-E | 0 | rand  ohHj Ku | 21/08/6855 1130-0328
-E | 1 | rand  ixiP gaoVk | 25/12/9447 0802-0452
-T | 0 | rand  UV56VR38 2
-E | 0 | rand  MMP8  | 01/06/3510 1029-0739
-E | 1 | rand  DjZcU5 CvdA | 12/10/5960 0737-0902
-T | 0 | rand  FWx1F
-D | 0 | rand  ALhul | 11/08/0236
-D | 1 | rand  kiPD F8 | 10/11/4010 1811
-D | 1 | rand  0YFQYJE  | 28/01/6222
-D | 0 | rand  L3oU  | 22/02/9170
-E | 1 | rand  3siJ n5 | 12/09/8240 1258-2111
-T | 0 | rand  qKcA gyF jf7Ja
-D | 0 | rand  bhiT 303 PdXA | 30/01/8035
-T | 0 | rand  Qy8HkCOUo
-T | 1 | rand  I1a5 pu6U 
-D | 1 | rand  rcTF ZK5 | 14/09/6207 0726
-D | 0 | rand  ZrU9 uWB  | 04/12/6409
-D | 0 | rand  IVCZY WaUr  | 29/04/6466 0148
-D | 0 | rand  E6NE rbKo Hdx  | 13/10/6672
-E | 0 | rand  YRmW 7VT VZw v | 31/03/7225 0150-0901
-T | 1 | rand  OS4Ne vTrK
-E | 0 | rand  gVDk LYH RDcD  | 22/10/3168 1332-1153
-E | 1 | rand  cwtj ojw | 01/09/1637 1126-0536
-D | 0 | rand  d4hH g | 21/01/3435
-E | 1 | rand  QbRewA JnIy  | 20/05/3796 2230-0155
-E | 0 | rand  KQVZ O9w1 | 24/03/9484 1648-0910
-D | 1 | rand  avcl42 8lfd | 19/05/2533
-E | 1 | rand  SOB7Qx h8r  | 14/06/7936 0858-1935
-E | 0 | rand  ff7ByK 9Bbj i | 16/08/5692 0129-1919
-E | 1 | rand  ySYSly EM9x q | 11/10/0478 1859-0916
-T | 1 | rand  mXOsM h
-D | 0 | rand  3ZMU epOd ojO | 25/02/2195 2135
-T | 1 | rand  0PUV lgy E
-E | 0 | rand  94tA1 NYgBj I | 11/07/1868 1325-0849
-D | 0 | rand  S2UMo 8dZ3 | 07/07/5433
-D | 0 | rand  PmJvjG | 10/06/0546 0847
-D | 1 | rand  JUYU8 I8Vsh3  | 01/07/6439 1800
-D | 1 | rand  GIAW Hg9 SQEI | 02/09/6462 0931
-D | 0 | rand  lGSd x | 10/12/8992 0459
-E | 0 | rand  CZqt jCNkU K | 13/05/8339 0717-0326
-D | 0 | rand  LSSe 0Tw WgKA0 | 02/11/2103 2228
-E | 0 | rand  whsE hpVh1  | 07/11/0107 0039-1511
-T | 1 | rand  oqne7 n0
-T | 0 | rand  3TZrx ItbM
-E | 1 | rand  uqjA dp | 19/03/5169 0327-0539
-T | 0 | rand  0HNx e5ey8l RZ
-E | 1 | rand  mMnB x6q qDf  | 27/03/2625 0929-0113
-E | 0 | rand  VJqh ZJo Xa | 28/09/4594 1033-0900
-D | 0 | rand  mphqd w8w | 21/06/2155
-T | 0 | rand  LcJW JW
-D | 0 | rand  ousdD aX2  | 24/06/1641
-E | 1 | rand  BG27 q5CCF 1s | 07/04/0904 1158-0600
-D | 1 | rand  3DGX jRhM 2E7 | 12/05/8851
-D | 1 | rand  vfjCe 1t0 PQE  | 30/01/8630
-D | 0 | rand  2pLf WvG QJ | 29/05/3591 0749
-D | 1 | rand  tJJI TapF9 Nl | 30/03/7138 1755
-D | 0 | rand  tbWlZxG sQU  | 27/08/6833
-E | 1 | rand  HbJ815 FEG | 23/09/8005 1518-1218
-D | 0 | rand  ct0d sQ | 29/10/9977
-T | 1 | rand  mMGtl hlsK 
-E | 1 | rand  JZ4O  | 31/12/9203 2218-1232
-E | 1 | rand  M360qmT kcU Q | 10/04/6398 0233-1515
-D | 1 | rand  YDHw  | 06/08/3591 0521
-T | 1 | rand  NglsMH
-T | 1 | rand  pZyt Pt4 Ta8My
-E | 0 | rand  kaZBos | 26/05/2968 1338-1633
-T | 1 | rand  qmbe wVc0
-E | 1 | rand  LSZ0 h0C p | 14/09/8239 0437-2303
-T | 1 | rand  njx7IZq lh
-T | 1 | rand  D696 J
-E | 1 | rand  dPBW bs3M | 11/01/6184 0230-2202
-T | 0 | rand  NDOUEn fn
-T | 1 | rand  PwcEb 2eX W
-E | 0 | rand  CgKTyC Eh | 28/06/7466 2326-1616
-D | 0 | rand  3KuC 9I | 15/02/0396
-E | 0 | rand  xZNkM RA | 29/07/6357 1020-2315
-D | 0 | rand  9QM3jc  | 01/01/8250 0148
-E | 1 | rand  YmAbl d | 27/04/9189 1903-0402
-T | 1 | rand  5UST axk
-T | 1 | rand  ohEZXDD n
-D | 1 | rand  i9MC Gt4 REQ N | 11/04/4810 1846
-D | 0 | rand  Lso3 JPp  | 07/08/6202 2329
-T | 0 | rand  6UnSLbp
-D | 0 | rand  pUpi s8uY C3m5 | 25/01/7154
-D | 0 | rand  jel2 PUpC IQF  | 15/06/9917 0411
-D | 1 | rand  nKQg Ovh5 x | 28/04/3240 1108
-E | 1 | rand  yrBNs I | 06/02/4520 1957-0320
-D | 0 | rand  DNPJe  | 29/04/2557
-D | 0 | rand  hEer 6st hvT | 07/01/5278 0533
-T | 1 | rand  cElR7ir k
-E | 0 | rand  CXe3 DRD GSB | 23/06/1734 2236-1214
-E | 0 | rand  atyQ ofi yud  | 23/12/8578 1626-1935
-T | 1 | rand  Wy2j itd
-T | 1 | rand  iAZofle c
-E | 0 | rand  yEA8 UP | 16/04/5917 0106-0928
-E | 0 | rand  sBAFg PWU OVc | 21/12/4789 1419-0602
-T | 1 | rand  X8FL eBLZ 8VD
-T | 1 | rand  oGR96 d5B o9Wp
-E | 1 | rand  JU7vf 0aqgJ y | 07/12/4124 1759-0808
-E | 1 | rand  CCUk NlDa 1 | 16/03/8223 1241-2116
-T | 1 | rand  wNPwCAnO MIF c
-T | 0 | rand  y937ej kn
-E | 1 | rand  OtaO0 | 02/12/5153 1833-1209
-E | 0 | rand  4fT2 xIb toO  | 06/09/3173 0208-1940
-D | 1 | rand  hYZJ LIA | 18/07/1333 0153
-E | 1 | rand  yGvR wtJ | 05/02/6505 0454-0447
-D | 1 | rand  0kyL q0 | 21/02/2685 0830
-D | 0 | rand  iIZo J1D 3lEMf | 17/06/7164 1015
-T | 1 | rand  gxpLbLW 
-T | 1 | rand  lc7VE Xk
-E | 1 | rand  dr26  | 20/05/8500 0857-0930
-E | 0 | rand  PX7LrOn YK | 11/08/6840 1311-1417
-D | 1 | rand  RhpEd3 mx | 04/07/1472 1050
-E | 1 | rand  EqL8B | 25/01/9880 1828-2210
-E | 1 | rand  5fCmN5 o | 14/12/5419 1319-1056
-D | 0 | rand  7ZsvAd xraY1  | 12/06/5026 1920
-D | 1 | rand  CWGMlss | 18/12/2536
-T | 1 | rand  BjC1 w
-D | 0 | rand  wrpTSPh | 09/09/9267 2351
-T | 0 | rand  9rqo4Q Qr7
-D | 1 | rand  NEuc T | 18/04/6589 2107
-T | 0 | rand  tPR5yi
-E | 1 | rand  EaTe sR | 23/02/5228 2326-0158
-D | 1 | rand  64Qw rG | 09/08/4142
-D | 1 | rand  BDJs  | 22/01/0234
-D | 1 | rand  oOQu Mr3 N | 18/06/7778
-D | 0 | rand  uKVy uW | 24/08/7188
-T | 0 | rand  66ee 
-T | 0 | rand  gZgR BKCjy
-E | 0 | rand  1pkh 4 | 18/10/8765 0123-0539
-E | 0 | rand  6Vr9S | 18/11/5839 1607-2042
-T | 0 | rand  1RBT 
-E | 1 | rand  BYZ3F 22 | 24/12/5149 1936-0727
-E | 1 | rand  b1ttIb  | 22/04/2396 0808-1511
-T | 1 | rand  rWwI Knx P3fK
-E | 0 | rand  R4aXtB cOf 1 | 08/04/0321 0627-0512
-E | 1 | rand  gYBn GaH5B | 04/03/5930 1546-2047
-E | 0 | rand  bMko EK1 6dvNh | 21/07/7654 0225-0425
-E | 0 | rand  fyltV7  | 24/10/4896 0857-0210
-E | 1 | rand  BslFZ8 YcgLW | 29/11/1068 0600-1036
-E | 1 | rand  UjUsJ seK  | 18/03/9920 1604-0235
-T | 1 | rand  uxvS dMe
-T | 0 | rand  lpRtJc
-D | 0 | rand  gpOB 3vD  | 26/02/3917 0327
-D | 0 | rand  TEi8 i2 | 28/11/9251
-D | 0 | rand  C9XQD | 21/01/4730 0928
-E | 0 | rand  R06XA | 05/05/4906 0621-1817
-E | 0 | rand  27piug RYi  | 28/12/2367 0955-0939
-D | 1 | rand  XXOY lQr 9PTk | 17/09/1174 1538
-D | 0 | rand  8LYlRm  | 01/06/1449 0508
-D | 0 | rand  TWRk v | 09/01/2873 1955
-D | 0 | rand  wVSsI 9ZE 8ly | 08/03/8138
-D | 1 | rand  LRjmp4 Xtg | 31/12/9809
-T | 0 | rand  2WSjWTD
-D | 1 | rand  HN9v WWFF Hs | 22/07/3526
-T | 1 | rand  mAIl bqpQWb 1
-D | 1 | rand  lc4EE wlr 1Oj | 30/03/5722 0340
-D | 0 | rand  2VuQ nW8 u | 21/03/0234 2119
-T | 0 | rand  YXosO AaP 9re
-D | 1 | rand  iFn1 f | 26/02/1700
-T | 1 | rand  w8K2M JrP ro
-T | 1 | rand  sWAk 
-D | 0 | rand  M6Cp Ts | 23/03/3687
-D | 0 | rand  kiJ0c 1BN | 12/01/6302
-D | 0 | rand  nGE4Al wQ2  | 26/05/9065
-T | 0 | rand  LhNt fxf TLor
-T | 0 | rand  O3TkGt XdrhQ
-T | 0 | rand  9M3m 
-D | 1 | rand  Mn53 fRMAB | 24/06/2585 1054
-E | 0 | rand  sxKhA 9dk | 16/11/1350 1415-2229
-E | 1 | rand  rCin ud7 RSO | 04/07/2960 0109-1759
-E | 1 | rand  hp3O Rq1  | 01/07/8408 0346-0048
-T | 0 | rand  PTVqI
-T | 0 | rand  JUF5 h0Tw NWSK
-D | 0 | rand  Mgoi j | 30/11/6620
-E | 0 | rand  ld0F V5h RF | 18/05/3031 1348-0248
-E | 1 | rand  u3fyN Fu | 08/11/8778 1857-2001
-E | 0 | rand  cnJUOu | 29/11/2514 1214-2153
-T | 1 | rand  txQIX SNk 
-D | 0 | rand  rfU5r t5PYo eD | 29/03/5130 0345
-D | 1 | rand  essB iofSbd 01 | 21/05/0550
-T | 0 | rand  h1eQGD3 KeKAY
-E | 1 | rand  HRQIxuja 44A | 02/02/9862 1902-2214
-T | 0 | rand  LfergdP cf7 
-E | 0 | rand  M3qp  | 03/02/4413 1509-0221
-E | 1 | rand  ewm8GcuIJ 4Lrx | 05/07/2773 1540-1047
-D | 0 | rand  sNVPrU ceh qD | 23/12/9844 2045
-T | 1 | rand  bS3dX
-T | 0 | rand  Hu5t l
-T | 0 | rand  rrWR 
-T | 1 | rand  sxgB 4ambi7A D
-T | 0 | rand  JDGehv I9Q b
-D | 1 | rand  Yinl l | 17/01/2038 1643
-D | 1 | rand  6Bo6 HWj M | 21/01/7156 2022
-D | 1 | rand  pAJbE  | 29/01/3911 2101
-T | 0 | rand  Xp8cDfq UaQL
-D | 1 | rand  Hoa4 cV | 16/04/1716
-D | 1 | rand  xS2W nNMT UDx  | 06/11/3238 1738
-E | 0 | rand  ixby WkC  | 16/05/1462 1924-0546
-T | 1 | rand  pMER2PS
-E | 0 | rand  gN2yyL | 07/08/9774 1141-2306
-D | 0 | rand  7dime ou2p 5 | 24/03/8914 0539
-T | 1 | rand  5VL4K s4w qi
-E | 0 | rand  QOs5BH e | 04/06/9423 0052-0905
-T | 1 | rand  X0xP KiXT wR
-D | 1 | rand  iQI5bu9f | 06/10/8307 2304
-E | 0 | rand  7ft8 P | 21/11/7264 0218-2244
-E | 0 | rand  t2N2Xw vT3 | 15/03/6764 0804-2331
-E | 0 | rand  pEoqM ZCU MdV | 31/03/1801 1503-1345
-E | 1 | rand  gwZ0 opYH | 18/07/0994 1734-0839
-D | 1 | rand  TdxG J | 01/12/5802 1037
-E | 1 | rand  vHPL o6J Mk | 13/05/0537 1636-1109
-T | 1 | rand  31Xe U1Z
-D | 0 | rand  UdxCn4 L5 | 26/03/2359
-T | 0 | rand  eumo5 V2cx fH
-T | 0 | rand  Mtg9n a9
-T | 1 | rand  IXDa MZC
-E | 0 | rand  jIWY uFO i | 20/11/3764 0512-2010
-E | 1 | rand  XPkH rUI | 23/01/1685 1152-2343
-D | 0 | rand  nytF v | 14/02/0378
-D | 1 | rand  vPOO ran dB0  | 07/06/5496 0144
-T | 1 | rand  cNsti cm2 o
-T | 1 | rand  Gl7T Pm
-D | 1 | rand  AwiI msqV | 31/10/6020 2313
-T | 0 | rand  0cB6g H
-D | 0 | rand  V3Bh xn | 20/05/0469 2018
-T | 1 | rand  s3hD rQj4 Br9
-E | 1 | rand  eHPc0 4xRW EO5 | 09/09/6317 1723-0855
-T | 0 | rand  VOHGR U74 2B0 
-T | 1 | rand  PG4hAXN 2
-D | 0 | rand  hXrmB q | 09/12/2689 0714
-T | 1 | rand  rM7ljl Xd
-T | 1 | rand  yXdu DAnu
-T | 0 | rand  RpNsg5
-T | 0 | rand  1uGsBO crG Lm
-E | 0 | rand  mQvn K0U YKm5 | 20/11/4664 1012-2227
-E | 0 | rand  2qyy1 OsR aYZ  | 08/02/4862 0944-0653
-D | 0 | rand  SwU2V 9FA9 5 | 28/03/0830 1342
-E | 1 | rand  aBvn Iv8r6S  | 26/06/9638 0158-2108
-D | 1 | rand  uP1Z  | 19/01/0624 1726
-T | 0 | rand  jK6a 9PY
-T | 1 | rand  s3S0 Fx
-E | 1 | rand  TMHT 6Um SP | 21/04/0547 0959-0739
-T | 1 | rand  dDlveRrQd
-T | 1 | rand  6DDF Yngs 
-T | 0 | rand  HtXQ ZNK 
-D | 1 | rand  Lxh2k 48H | 27/04/2707
-D | 1 | rand  mU7APEiE | 21/10/2427 2133
-T | 0 | rand  0vwVu ilh ix7
-E | 0 | rand  6aHN4D  | 14/07/5369 2039-0541
-D | 0 | rand  i4LZ BjS yi | 08/05/7278 2015
-D | 1 | rand  IE0KU | 25/06/0282
-T | 0 | rand  4NTj p3v46D 
-D | 1 | rand  6cgh qfxB 7 | 11/01/3802 1539
-D | 0 | rand  idKg FX | 02/07/9763 1514
-E | 0 | rand  rNluTA  | 22/09/5885 0722-2154
-D | 0 | rand  M6b2A2 dfB l | 19/08/5253
-D | 0 | rand  WQ7gv XlV  | 16/07/8570
-D | 1 | rand  BriTq  | 16/10/8273
-T | 1 | rand  hxT3 fnl E9e1U
-E | 0 | rand  tlsrHrZm  | 14/08/3471 0820-0603
-D | 1 | rand  5QS5C  | 08/09/2791
-D | 0 | rand  YKPm 1hG  | 25/06/2952
-D | 0 | rand  oTiw lY0 | 26/06/8030
-E | 1 | rand  hT1V 9 | 12/05/2517 1145-0825
-E | 0 | rand  PAjhoYW SdiuU | 27/03/1303 0730-1749
-D | 1 | rand  C1rS yI | 18/05/3130
-D | 0 | rand  cgOT1 | 11/09/8804 1738
-T | 1 | rand  3Uxi 
-T | 0 | rand  0UEe 7AZY 
-D | 1 | rand  HFHT H4R 84k | 27/01/3976 1036
-D | 1 | rand  wKTyIi Dn7fu2 | 27/05/6683
-E | 1 | rand  NcOL  | 11/08/8989 0025-0037
+T | 1 | rand  oTw7vU Me5 k
+T | 0 | rand  YSwgvJ CS4d 
+D | 1 | rand  SyRCg BZM | 12/05/1983
+T | 0 | rand  58Yk r9f
+D | 1 | rand  ZwRu 6cK | 30/06/4649 1756
+E | 1 | rand  veIq mR8Kqng | 10/10/4128 2313-0530
+D | 1 | rand  dCqU GsY 8l7y | 10/11/3630
+D | 1 | rand  iiWFs IKc IW1  | 20/08/2177 0937
+T | 1 | rand  2qomg 9V
+E | 0 | rand  e6cm HwsP  | 15/03/2128 1728-0103
+T | 0 | rand  9yiDx h
+E | 1 | rand  Vbog nDCif19 | 15/03/5907 1344-0022
+E | 0 | rand  Dlr8c 0jLsp  | 16/09/2958 0019-1822
+T | 1 | rand  Iy1M 7Q7b uEC
+T | 1 | rand  IFWfi 0GP
+T | 1 | rand  9PulcZ 
+E | 0 | rand  Tc0g YFo S | 17/09/9087 0406-0930
+T | 0 | rand  bBkW RDp2 yA
+T | 1 | rand  6mXmZ DLT R
+D | 0 | rand  vFBki 5v6  | 27/05/7763 1811
+T | 0 | rand  eWud 49O LPA 4
+D | 0 | rand  SP5KLpUMe | 07/05/7164 0118
+D | 0 | rand  OVsQw kKqT U | 01/04/4276
+D | 0 | rand  pHe0 U9jD 8q | 16/02/0971 1113
+D | 0 | rand  UsuflPC p03  | 18/02/2673
+E | 1 | rand  H5HYaw  | 19/11/0859 0319-1732
+T | 1 | rand  gYCaV
+E | 1 | rand  LmY18 TNx d4w | 03/08/2935 0946-1217
+D | 0 | rand  ooedP S2 | 04/10/1458 1331
+D | 0 | rand  VZ0vhrbZ 5 | 21/06/2789
+D | 1 | rand  JKlSRR gNQx  | 28/01/8940
+E | 1 | rand  aVGDo Itc | 02/11/5486 0517-0733
+E | 0 | rand  UgDO Wug | 22/02/2079 0458-0147
+E | 1 | rand  OcVSaWVK yqZ  | 13/05/5388 1404-2101
+D | 0 | rand  FnBi UWn Ju4a  | 03/04/6894
+E | 0 | rand  wyLL mjq303B i | 01/11/3857 1444-0312
+T | 1 | rand  xWQK Ik
+T | 1 | rand  h5Fah FNFbh
+T | 0 | rand  4K8H Mew 
+T | 1 | rand  kiPVOa Z
+E | 0 | rand  rV4V8 | 06/11/9191 1207-1148
+D | 0 | rand  gQ40 PDd | 26/04/3354
+E | 1 | rand  h0nGL ToOx | 10/08/3876 1130-1927
+E | 0 | rand  Xwxj6 P9 | 16/03/9978 0929-0310
+E | 1 | rand  5H3ttV S | 26/12/4203 0613-0202
+T | 0 | rand  6Irl sD
+T | 0 | rand  EHOydV
+E | 1 | rand  WTym deM D | 08/08/1132 0834-0823
+T | 0 | rand  nJAKE 
+E | 0 | rand  WYMM c | 13/08/0179 1440-0818
+D | 0 | rand  1jDH 459 | 21/08/0787 0724
+D | 0 | rand  S24KbY QEQA  | 26/08/5781 2110
+E | 1 | rand  tp2XfB 8Am 5 | 11/04/2076 0659-1933
+D | 1 | rand  CI4h1 cSINW | 30/06/3577
+E | 0 | rand  27vK PMk | 28/04/6883 1153-0548
+D | 0 | rand  Mf1O 9U4  | 25/08/4212 1540
+D | 0 | rand  GKmP OJe X2 | 20/09/1718 0918
+T | 0 | rand  Jkue p
+T | 0 | rand  RmrkX O
+D | 1 | rand  mvok vEeUyf 3M | 25/05/3769 1309
+E | 1 | rand  cTCq  | 27/04/1838 1321-1549
+T | 0 | rand  rlV6 
+D | 1 | rand  R095 E27 6K8 0 | 23/12/7007 1036
+E | 0 | rand  P7oP6n | 26/04/4287 0617-0904
+E | 1 | rand  mgQG X | 17/08/0052 0647-2100
+T | 1 | rand  hgV9 LXB 88axe
+D | 0 | rand  noGK dGvE wvF | 11/01/3604 1617
+D | 0 | rand  MKpO n4w KmW o | 01/03/6767
+T | 0 | rand  ek48 R5An x
+D | 0 | rand  skkjqS sGb | 07/08/1261 1714
+T | 1 | rand  il5V0Rie83 MZj
+E | 1 | rand  bfyo nql w0U x | 19/03/4993 0309-0705
+D | 1 | rand  CQRH78 hOK | 11/06/8250
+T | 1 | rand  YjxX dYFw obg
+T | 0 | rand  q1oDl 
+E | 0 | rand  fvkp jtE6  | 27/11/0009 0741-0000
+E | 0 | rand  djKT  | 19/07/2744 1900-0021
+D | 0 | rand  UnF4f 5 | 05/05/8369
+D | 1 | rand  HhjqT | 21/03/9844
+D | 1 | rand  lifj 6 | 10/05/0183
+D | 1 | rand  Z37U eI | 16/07/9052
+E | 1 | rand  tpbps | 03/05/2040 1106-0457
+T | 1 | rand  gZP61Q Qsky
+D | 0 | rand  PZjkG apP | 17/11/1573 0838
+D | 1 | rand  DJImf 6J | 07/03/6766
+T | 1 | rand  iq33 
+D | 1 | rand  5hfQq1 C | 14/02/3894
+E | 0 | rand  Y1Xn 7gdxm | 08/11/8803 1036-0225
+T | 0 | rand  Ia45 rg7 6m
+T | 0 | rand  ZTpVL itC sBHS
+D | 1 | rand  76k8 9iDp Er | 21/08/9016
+T | 0 | rand  HbmJJ b
+D | 1 | rand  EwWJ ga6l6 | 22/06/6657 1616
+E | 1 | rand  Jpr4wm Mif D | 16/06/6755 0739-1841
+T | 1 | rand  9b7eGPa5 MZ8
+E | 0 | rand  FwBQI NGs fUp | 21/06/1033 1921-2241
+T | 1 | rand  xxrMWg
+D | 1 | rand  6gNr 76Po PXj  | 27/09/3753
+D | 1 | rand  srdq iZ | 11/05/3390
+T | 1 | rand  HO9TO mP
+E | 0 | rand  mKvc vel 5ql w | 20/09/1558 0342-0051
+T | 0 | rand  nQog q
+T | 0 | rand  20S34 Xc0x0C
+E | 0 | rand  2tap8CoA  | 18/10/0804 2144-1326
+T | 0 | rand  C0t7 3Y
+T | 1 | rand  XI8c sjF
+T | 0 | rand  nP7QJ
+T | 0 | rand  UWTu Vv
+E | 0 | rand  Dg9v o2A | 16/01/6096 0248-0155
+D | 0 | rand  ak1s Hvc | 14/01/5553 0229
+T | 1 | rand  tDW8TS RS2
+D | 0 | rand  Ib9Ti HqcL  | 17/08/4106
+D | 0 | rand  VcM0Ewm | 31/07/0548
+E | 1 | rand  uhXo a5KnR jr5 | 11/12/6237 2020-1313
+T | 1 | rand  eEgSAhvo h
+T | 1 | rand  LXvuFP 
+D | 0 | rand  URZm1 | 08/03/3280
+D | 1 | rand  V9Rr M3dGDv Hj | 20/04/3909 1817
+T | 1 | rand  I6i2L8 QAe 
+D | 1 | rand  IuYxRQs tZ | 06/10/2460 0532
+E | 1 | rand  7WP8 Ys | 15/12/7088 2048-0148
+T | 0 | rand  s9j0 P4K 6fx
+E | 1 | rand  XIblucD 8yI3  | 31/01/4356 0044-0750
+E | 1 | rand  ddwZ Dn4B R | 16/08/3430 0807-1632
+E | 1 | rand  5VD4  | 28/05/4018 1948-1808
+D | 1 | rand  YQem U41  | 08/02/5745 1047
+D | 0 | rand  9U146k vWJ  | 22/12/7395 1819
+E | 1 | rand  C50W 94 | 19/09/9073 0248-2034
+D | 0 | rand  DH1pB | 15/08/2269
+T | 1 | rand  2i9Sjcn q
+E | 0 | rand  oP7D Frw MFgCb | 17/08/7728 0935-1530
+D | 0 | rand  n8eEjoN  | 12/11/0433 0005
+T | 0 | rand  0nIYOA OSf x
+E | 1 | rand  1uyXVo dgL1J | 25/09/9354 2221-2352
+E | 0 | rand  971h  | 07/06/8644 0932-1931
+E | 1 | rand  EoR3o  | 12/08/2347 1141-1048
+D | 0 | rand  12XDk AG | 07/09/8208 2116
+D | 0 | rand  1raDOpX533 7xQ | 20/11/2027 0150
+D | 0 | rand  ScMf lKpO | 04/04/8704
+T | 1 | rand  T2yG Ea54
+T | 1 | rand  7xVtu iY
+D | 0 | rand  NsjDfu | 05/04/4931
+T | 0 | rand  Wq31fd fj30 To
+T | 1 | rand  U1fZ7q mMo
+E | 0 | rand  irt16Y  | 01/06/1976 0249-1922
+T | 1 | rand  pVvpSi9 i
+D | 1 | rand  3MHth ofCI gtx | 27/01/2067
+D | 0 | rand  kR2pjZ U | 24/08/8827
+E | 0 | rand  CIrD eCVI 13Q | 16/09/8806 2309-1634
+D | 1 | rand  4AbH D9D  | 05/03/7712 2043
+E | 1 | rand  mVC9x xxvQ q9V | 03/01/7119 0435-1936
+D | 1 | rand  2Fa7ThW | 13/06/3093
+E | 0 | rand  Dcct 3i | 09/03/7281 0948-1726
+T | 0 | rand  tPPV uXB
+D | 1 | rand  dmHm yEPC | 29/08/0912 0103
+D | 1 | rand  J5d3 4 | 05/04/7879 1324
+T | 1 | rand  Pv6R Vmv FH
+T | 1 | rand  4n9V NAe
+E | 0 | rand  UvMKjT ov8 | 27/05/1807 0143-0534
+E | 1 | rand  0ZbZg D | 11/03/0588 2007-1623
+T | 1 | rand  L3Ag 0wO 
+T | 1 | rand  wPHnK9
+T | 1 | rand  U4Hv 
+T | 1 | rand  HqnL Do9
+D | 1 | rand  DrGomU Js | 16/06/9097 2116
+T | 1 | rand  ElhZ 
+T | 0 | rand  2gWlp 
+E | 0 | rand  JIkrJa d | 04/07/2164 0509-1745
+T | 1 | rand  rchr9 8G
+E | 1 | rand  NrALP | 09/12/3884 0409-2115
+E | 1 | rand  hIlqJk l | 18/01/2686 1847-0331
+E | 0 | rand  tpnF u | 26/10/3632 1733-0847
+T | 0 | rand  SJkSh udGjtSu 
+T | 0 | rand  PX39pi 
+T | 0 | rand  lqoux akf E4lx
+D | 1 | rand  asFg PPab w1P  | 14/01/4148 0452
+T | 1 | rand  rJ0fy ClX
+T | 1 | rand  skt7 E2S yfRh
+T | 1 | rand  J1QY FVp
+T | 1 | rand  ViEp mQ
+E | 1 | rand  Cb401G | 08/05/4939 2142-1429
+E | 0 | rand  X0RR wsE | 26/02/8911 0353-0932
+E | 0 | rand  DwLA Q4t qE | 21/10/1764 0045-0533
+E | 1 | rand  79HJn QRjt Ur | 01/11/7892 1245-1126
+T | 1 | rand  vmAr 
+D | 1 | rand  246woZ | 07/11/7298
+E | 1 | rand  1herZMi 0G | 30/01/7057 0528-2021
+D | 0 | rand  VDEsmaP Ucw | 12/02/4199
+E | 1 | rand  Oqs1 Z5eof  | 15/06/1892 1236-1454
+T | 0 | rand  hhELrdn 9
+T | 1 | rand  gwDWgT
+T | 0 | rand  tMwwkML
+T | 1 | rand  47vU lkD 
+E | 0 | rand  ZlmRp | 29/10/1517 0617-1223
+T | 1 | rand  y52MW A
+T | 0 | rand  9fJo3Z NQow v4
+E | 1 | rand  pi5lS RRd 7d | 15/10/1834 0224-0141
+E | 1 | rand  xMWpqfr FSc KM | 09/11/7750 0649-1408
+E | 0 | rand  ijMRlJ 8fH P | 04/03/9292 1340-0847
+D | 1 | rand  472Kv  | 20/10/8566
+E | 0 | rand  cxUkc DNQC Uy | 13/07/6871 0534-0222
+E | 0 | rand  Vox39 gPpYia | 16/08/7258 2331-0533
+E | 0 | rand  ARxw IPK  | 20/12/3371 0726-2056
+T | 0 | rand  k7CUea x9f
+T | 0 | rand  FDuR d3B fB
+T | 0 | rand  uMKye
+T | 0 | rand  rrhpji SJs 
+E | 0 | rand  3etlNN 2Up o | 29/10/3417 1716-0839
+T | 1 | rand  NHfKech
+D | 0 | rand  r1tI6  | 19/01/3076
+T | 0 | rand  Gh21l 5Pc V0K 
+T | 1 | rand  6TK2ManoYRWi
+T | 0 | rand  BDxPq n
+D | 0 | rand  5axc 0KC  | 04/11/4288 1804
+T | 0 | rand  JIWVg V883 l9i
+T | 1 | rand  LuRo 
+E | 0 | rand  Wa81M  | 20/11/3067 1241-0345
+E | 0 | rand  cg7B WcBm CWo3 | 10/04/8072 2027-0500
+T | 1 | rand  5vdJCt Pya 1sf
+T | 0 | rand  EaBDs 8Ts sA
+T | 0 | rand  dG7Icb u2R0i
+T | 0 | rand  KOKJ njD yN
+E | 1 | rand  VtssR occ d | 21/12/7184 1229-1242
+D | 1 | rand  b7rE 4P | 29/02/9632 2257
+T | 0 | rand  CHOd 6ss sN8 
+D | 0 | rand  QoiQW1P xl | 15/01/6561 1251
+T | 0 | rand  0ATU8W iRe
+T | 1 | rand  4pboo NrUAx
+E | 0 | rand  19CN t6MI | 25/08/1933 0635-2127
+E | 0 | rand  wjcnky ypfKsD | 28/06/3598 2216-2146
+E | 0 | rand  iRBsgU 5XAC6h | 15/09/4755 1816-1108
+E | 0 | rand  uPjCG cVE  | 01/09/3126 0409-0432
+E | 1 | rand  khu5ML KllAr  | 29/08/8416 2113-1522
+E | 0 | rand  0J761 J3E t | 22/04/9382 1335-2134
+E | 0 | rand  pb583 uRTvt | 03/01/3837 0421-0012
+T | 1 | rand  5KQ8 7cx
+T | 1 | rand  LcZN MvH 
+E | 0 | rand  OXR0J uA2 | 18/04/9448 1034-0702
+T | 0 | rand  ScAD N
+E | 0 | rand  9uHMJUf4J BynH | 17/06/6418 0323-2331
+T | 1 | rand  GIWGR lgpd 
+D | 1 | rand  MTHmx w6o | 23/08/1432
+E | 0 | rand  ny3i sWZ | 22/05/3499 1753-0943
+T | 1 | rand  k7whad BkP WD
+D | 0 | rand  tAGbv fTx R27 | 25/01/6453 2132
+E | 1 | rand  0Lva LPCW  | 01/10/9586 0057-1620
+E | 1 | rand  vNUHY n2h 8M | 04/06/3260 0608-0006
+D | 0 | rand  pisq  | 16/06/4813 0000
+D | 0 | rand  g2Ly  | 12/05/7828 0142
+T | 1 | rand  QuHGsII Au7
+D | 0 | rand  UWx6h 7Qv | 30/01/6101 1352
+D | 1 | rand  RfXb iZy | 06/09/7822
+T | 1 | rand  bddw 
+E | 1 | rand  aXB0 Mjg b | 20/09/8984 1747-2317
+T | 0 | rand  47uZ qqHY y
+T | 1 | rand  MTOb mYK 62yx 
+T | 0 | rand  wRfPY vuW oN
+D | 0 | rand  NtQe Jyk ZJ | 28/07/3805
+E | 1 | rand  mZbm  | 05/05/2517 0908-2150
+D | 1 | rand  au5WxUS FPZt | 31/10/5887 1011
+D | 0 | rand  wSAj1 83l  | 07/08/1709 1049
+E | 0 | rand  R4u0a | 01/09/1584 1757-1416
+T | 1 | rand  22hgl kCa2fc
+E | 1 | rand  3FGF R5 | 29/04/7605 0531-1600
+T | 1 | rand  ZAV8 nSiJ 1H
+T | 0 | rand  vc5f gxxIj 
+D | 0 | rand  iFYXP | 29/06/4318 0954
+T | 0 | rand  tS4d g5fnI Q
+E | 1 | rand  KSZ2  | 10/12/1874 1111-2050
+T | 0 | rand  ONi1 RAq Hd
+E | 0 | rand  LKku73X gp | 10/11/6232 1650-0513
+E | 0 | rand  7KCj6nAS c7l g | 17/08/5427 2310-1120
+D | 0 | rand  D415  | 15/03/9941
+T | 0 | rand  p2yw VXi 
+E | 0 | rand  WRcrxT cVL | 18/06/7503 1759-1244
+D | 1 | rand  Wqllae JWOp3 | 11/02/1040 0915
+E | 0 | rand  2cPUZ | 23/09/4241 0046-1717
+D | 1 | rand  YqoEoR | 29/06/6998 0837
+E | 1 | rand  u28U1o Jan 7 | 10/09/4869 0502-0913
+D | 0 | rand  Nm6pZ g0jE7 bG | 28/06/3007 0940
+D | 1 | rand  6Xtqj Ck8t  | 06/04/3726 1259
+T | 0 | rand  pwnvStOM Ht
+D | 0 | rand  jEBaTx xp | 03/11/6114
+E | 0 | rand  Ip4e 9rbXs | 06/11/1806 1434-1331
+T | 0 | rand  ZQMe bae 
+D | 0 | rand  sQ36 uRBl rX7 | 21/09/7114 0634
+D | 1 | rand  Si7P TDp | 12/03/6823
+D | 0 | rand  6AO1 P6k roX | 07/11/0498
+T | 0 | rand  qLPTco SAGW 
+T | 0 | rand  LVxe 
+E | 0 | rand  XLS0YFS  | 13/07/8987 1419-0445
+T | 0 | rand  MkK59 yX2 8by
+E | 1 | rand  CuQt  | 09/12/8267 2055-1910
+D | 1 | rand  yf6I jrhg3Q  | 09/01/8418
+D | 0 | rand  bL8Y cAr DP5 k | 28/12/2200 0315
+T | 1 | rand  JYAU WYE 
+T | 0 | rand  te3J 2K
+T | 1 | rand  m0iuZx s
+D | 1 | rand  4gOe0 aD72 | 11/08/1008 1228
+D | 1 | rand  L4XF mvl 4 | 19/08/5362
+E | 1 | rand  UuXo FjcU e | 12/07/3822 1856-0427
+E | 1 | rand  Xk0N Z | 18/04/5802 0039-1835
+E | 1 | rand  vrkm Fu | 04/02/1400 2234-1448
+E | 0 | rand  rEpK Qa3c | 11/06/2826 1526-0739
+D | 0 | rand  TUFumj  | 07/05/0957
+T | 0 | rand  0WqOvISr H
+D | 0 | rand  QJV3e l2g | 09/08/3895
+E | 1 | rand  XPEyL | 25/08/7328 2111-1211
+T | 0 | rand  3ABCu hi
+T | 0 | rand  yiGK hh
+D | 1 | rand  4Ts5w TA | 01/05/6081 0507
+D | 0 | rand  xn5g4i0 y | 07/02/4475
+E | 0 | rand  yi2x Rjy 5IC | 27/12/6568 1913-0045
+D | 1 | rand  yDYR mG | 05/08/8410
+D | 0 | rand  KZG7x yRYP r | 07/04/4806 0118
+E | 0 | rand  DGy17c tM | 24/08/8778 1151-1918
+E | 0 | rand  d82Cm 7 | 15/06/6894 0805-1942
+D | 0 | rand  P7Cx KfH 0d | 16/09/9986
+E | 1 | rand  uYiV9 tGKFFT | 27/01/2396 2042-2039
+T | 0 | rand  qb3W ucg yva
+T | 0 | rand  pLwD mcjEAG
+E | 0 | rand  bnqe DsD | 20/04/7767 0319-0610
+D | 0 | rand  ByBUAZ4j Do | 30/11/5707 1819
+D | 1 | rand  PYRc YWe 9 | 09/12/1545 1522
+E | 0 | rand  4IIV gH | 24/10/4578 2052-0205
+T | 1 | rand  wH45uor
+E | 1 | rand  WwhUl  | 07/12/3759 1900-1041
+T | 0 | rand  VXEwK
+D | 1 | rand  cy0P2s9 | 24/07/4091
+T | 0 | rand  YZQAO5V 
+T | 0 | rand  giPWt 6K5
+E | 0 | rand  QXQE PNHp | 02/09/1573 2225-0356
+D | 1 | rand  AHqvb1 BRQ | 08/05/5651
+T | 0 | rand  iqCjZl TAF yRw
+D | 0 | rand  JFnL 18bnA Y | 26/07/1877
+D | 1 | rand  NDxW Bp2 YfT | 04/10/0402
+T | 1 | rand  FC0TVb
+T | 0 | rand  croR 4TVRRmQ 
+D | 0 | rand  sJ8caYQ vH | 18/04/4401
+D | 0 | rand  0UP9Y Ug | 26/11/8556
+D | 1 | rand  OmDN  | 11/02/3653
+D | 0 | rand  8EUBL yGWr mw1 | 01/06/8182 1606
+E | 1 | rand  Y9jFf | 21/07/4581 1326-2109
+D | 1 | rand  yKnaK ZUv9 u | 27/03/6411
+E | 1 | rand  K3c2 JMlV | 04/02/3456 0614-0125
+D | 1 | rand  eImE6 CGK  | 12/04/2648
+D | 0 | rand  Sx05 R | 30/09/5077 0212
+D | 0 | rand  vx0fvo3 | 11/02/8432
+E | 1 | rand  o8Kh4iaLT 6I | 26/10/9114 1134-0930
+T | 0 | rand  xMs9 VUn 
+T | 1 | rand  gugW BYLojr Qk
+D | 0 | rand  4bNw uF6S Bp | 09/04/4468
+E | 0 | rand  TE4g rHp V | 07/04/9179 2314-0030
+T | 0 | rand  DX71y BQB
+D | 1 | rand  KnUl PZm tRD | 23/12/4630
+E | 0 | rand  jI7J2 c | 23/03/3656 1508-1247
+E | 1 | rand  suiUPE Hk9SV | 28/07/3264 2145-0712
+E | 1 | rand  jrkYf qvy 2N | 15/08/9530 1109-2317
+E | 1 | rand  EX5JWF | 12/12/5416 1118-1247
+T | 1 | rand  J6Wen PA
+T | 1 | rand  Px3N div Qt
+E | 0 | rand  E4Hkck nH1 | 10/11/0885 1646-1153
+T | 0 | rand  KFeo9D WSy
+T | 0 | rand  lsEhap hdD9 l
+T | 1 | rand  hrP5O wH
+E | 0 | rand  iOr3 R | 04/01/4235 1117-1730
+T | 1 | rand  IOhN aa
+E | 0 | rand  0l1dRS8 nnH mV | 03/09/5214 2301-0627
+D | 1 | rand  kMTIPX6g 9m | 02/11/5105
+E | 0 | rand  gddY l5 | 08/03/4804 1335-0637
+D | 0 | rand  82CyC lXk 4 | 23/01/6733
+T | 0 | rand  OSyTGxl 0wD
+E | 0 | rand  eBht TbW  | 12/04/6005 1633-2018
+E | 0 | rand  ZrvuHRp | 21/03/8131 1110-0438
+T | 0 | rand  XS9t Fgv
+E | 0 | rand  tmNbyLO kLod  | 07/09/6688 0439-0805
+E | 0 | rand  kLSf Zak | 02/04/7932 0327-2308
+T | 1 | rand  LvWRS 4pG 4AK 
+D | 0 | rand  DieX cym  | 10/06/4345 0152
+D | 1 | rand  0wa4 L65H2  | 14/11/5853
+T | 1 | rand  t5eM f8jl
+T | 1 | rand  9dHkef G5l8 eH
+D | 1 | rand  eCbV agm aNI  | 29/01/0099 2159
+T | 1 | rand  Sbka UTqPo3Rn
+D | 1 | rand  KX1J8Oj  | 17/05/4032
+D | 1 | rand  UM0o0V ZnZ ILi | 04/08/4595
+T | 1 | rand  J773 uUPa 
+E | 0 | rand  dA5r Amt E | 13/12/0379 1635-0603
+E | 0 | rand  etkjW MOR  | 17/01/0987 1934-1327
+T | 0 | rand  jLfA uvb
+D | 0 | rand  3ama q8 | 15/09/9952 0714
+E | 1 | rand  0buE D | 04/10/5008 1011-2221
+D | 1 | rand  H4qA 7vT 86B | 30/04/4932 1001
+T | 0 | rand  YN9nk BH0 C69
+T | 0 | rand  NDJB 1esjje 0
+E | 0 | rand  Mmuf B | 01/01/3696 0338-1159
+D | 0 | rand  SrXHO K | 08/02/4936
+D | 1 | rand  4fj6a3 uTk2sB  | 11/10/2424
+E | 1 | rand  0lvGHs | 10/08/7036 0133-2149
+D | 1 | rand  5oM8 NrA 4vg  | 23/01/0574 2214
+D | 1 | rand  IPQeH v4 | 23/09/4035
+E | 0 | rand  gFZY sSSK | 06/09/8621 0708-1643
+T | 1 | rand  MLEEcy9 05k
+T | 1 | rand  APtF uc5 rI7Z 
+D | 0 | rand  axhv iZq g | 24/03/6169
+E | 1 | rand  R14X 8XQc7OE Z | 24/09/1120 1007-0325
+E | 1 | rand  7VHH 1CC JiX | 11/07/5641 1817-1525
+E | 1 | rand  1EyS4 | 01/05/3261 0609-0053
+D | 0 | rand  ACoGY ShMx  | 01/09/2177 2352
+D | 0 | rand  oaBu T4K | 06/02/8897 1420
+T | 0 | rand  IAEc9ry Cseg 
+E | 0 | rand  VBnL aTR  | 20/08/4807 0436-2141
+T | 0 | rand  jIwp 0q
+T | 0 | rand  kLqhP
+T | 0 | rand  4E2gau
+E | 1 | rand  ofZNQYQ LJ | 06/06/3097 1234-1250
+T | 1 | rand  nhkvBw EyFiC M
+E | 0 | rand  CRFQ WL6 | 12/04/2454 1918-0137
+T | 1 | rand  KQ6QVn NRBC
+T | 0 | rand  vI95w Jt6
+T | 0 | rand  jjjd 6va TH4h3
+E | 0 | rand  qtvqc | 11/01/5333 1612-0550
+D | 0 | rand  Sb0k lH | 22/04/5269
+E | 0 | rand  MnRHaI  | 07/01/2912 0051-1904
+D | 0 | rand  Py5Rk I3 | 13/08/2160
+D | 0 | rand  LvvGf 9U | 17/02/2348
+D | 1 | rand  xmWL 9vxN O | 13/12/4343
+D | 1 | rand  gJ9O EE | 10/01/1512 1459
+E | 1 | rand  Vfop hrCI Oxe1 | 29/05/8149 1225-0653
+T | 1 | rand  guEo3 4nZ
+E | 1 | rand  vpn0JM Ge2 | 30/12/3336 0855-2200
+D | 1 | rand  9Oaqd | 15/06/9841 0839
+D | 0 | rand  AZMrJ kie  | 24/07/1203
+E | 0 | rand  Zn5KxJ  | 17/11/0051 1511-0323
+D | 0 | rand  FToIk | 02/12/4801
+D | 1 | rand  nGmtHfya  | 02/05/2546 0432
+E | 0 | rand  6KVYx GNL  | 13/02/1775 0052-0559
+E | 1 | rand  JagV eEM3Pm Wf | 19/07/2092 1109-0905
+E | 0 | rand  DOgJ srYMCf  | 31/12/2099 1917-0354
+D | 0 | rand  mOvH l0PA Tg3 | 07/11/7600 0346
+T | 1 | rand  8PGX o7v Y
+E | 1 | rand  lliEgq 6NA QA | 26/05/5899 1710-2311
+E | 1 | rand  q8K2 ECOC | 01/07/5495 1847-1437
+E | 1 | rand  UiU9 EJb | 19/09/4861 0601-1858
+T | 0 | rand  SfMuj
+D | 0 | rand  GvCIDil qH | 15/11/4064
+E | 1 | rand  tddDM | 13/01/3173 0047-2210
+T | 1 | rand  UcUN iy5v 
+E | 1 | rand  lYuU uS | 25/04/4465 0011-2202
+D | 1 | rand  yM7Stk | 05/07/8949
+T | 1 | rand  Z9pM uQ0
+T | 1 | rand  OSl3 VjE6 
+E | 0 | rand  bcGYF | 13/10/8875 0937-1632
+T | 1 | rand  Lbdei AwS jKim
+E | 1 | rand  6N43c 4cqu | 11/11/8275 1959-1135
+T | 1 | rand  bXEYCT
+T | 1 | rand  WTt6 1Y3A
+E | 0 | rand  mkPE eWO kGSj  | 10/07/7537 1925-0734
+D | 1 | rand  jCvba Wxi | 24/02/8116
+D | 1 | rand  BdKt lHbr V | 14/01/3789
+T | 1 | rand  41A6u
+D | 0 | rand  pkEE ucb  | 30/03/2309 0712
+D | 1 | rand  qRESZ Lt | 01/10/4030
+E | 1 | rand  XX9ln | 24/05/4888 1533-1528
+T | 0 | rand  JJ9p NUj 
+E | 1 | rand  rB6hqmT u55 E | 09/01/6598 1109-0843
+T | 1 | rand  TL6GUAx jT
+E | 0 | rand  Psrw sqlr  | 02/09/3195 2130-1122
+T | 1 | rand  JSjd nOHl L
+E | 1 | rand  TALcv yeF T | 18/09/3118 0911-1610
+D | 0 | rand  8xuk IV | 05/08/1645
+E | 1 | rand  1IVt y | 02/09/8631 1000-2014
+D | 1 | rand  33rQ a | 19/02/2131
+D | 0 | rand  PEqRN9 jD | 01/05/8264
+D | 0 | rand  5CGxA kgr  | 25/01/7940 0316
+T | 0 | rand  45m6 
+D | 1 | rand  FiwN DXXH vGh | 09/07/1061
+E | 1 | rand  b7Ci TM | 13/05/6677 1055-1834
+D | 0 | rand  ipMhej U9yT9g | 28/04/6641 1224
+D | 0 | rand  CHXA4 0B | 24/05/8997
+E | 0 | rand  4Okp8 whCU 9 | 05/07/3929 1514-2151
+D | 0 | rand  FdiqDa NdS1 | 11/11/7525
+T | 0 | rand  K2uhJ ZKx 
+E | 1 | rand  RE6q tI | 09/06/7920 2100-1053
+E | 1 | rand  UK06 HKI BjC | 06/01/9193 0544-2129
+D | 0 | rand  LuLKT wjvU 5hu | 29/05/7243 0947
+E | 1 | rand  rbeP R | 15/05/5658 2345-0520
+D | 0 | rand  vJmsN1 Z5p | 20/02/2088
+D | 0 | rand  kHuuXH WRq | 16/11/8197 0951
+T | 1 | rand  3AIS 
+E | 0 | rand  cAVK isJ Vh2nR | 10/10/1651 1926-0425
+D | 1 | rand  FDKt BLI c | 14/09/1440 0900
+E | 1 | rand  XVpFo0Zg bTFN | 13/12/8969 0543-1251
+T | 1 | rand  CCclG
+E | 1 | rand  xgvm bSa wiwh  | 24/02/7497 1955-1333
+D | 1 | rand  HGgWxMr Qkf t | 22/10/7445
+D | 0 | rand  mqvp IG8QA | 04/08/5811 1042
+E | 0 | rand  h663 IxL j4e l | 14/09/3168 1002-0605
+T | 1 | rand  PZC3 AXg FY
+E | 1 | rand  rnHmp | 21/09/0060 2354-2036
+T | 1 | rand  XmFc0p rod
+D | 1 | rand  boxTM3QLj J1a | 31/05/2598
+T | 1 | rand  LZHQCSc sU
+T | 0 | rand  PAAL U
+D | 0 | rand  tHAto amR c0R | 21/11/7303 1438
+E | 1 | rand  uFSLX JUlT  | 20/08/7570 0051-0705
+E | 0 | rand  durm TSk | 29/01/4478 2106-0702
+T | 0 | rand  vNsJDq1l M
+D | 1 | rand  05JQp  | 11/06/8342 0753
+D | 1 | rand  cUWD X0mW 41 | 07/05/7567 0344
+E | 0 | rand  Jgrtd Eq8 | 23/12/6432 0058-1719
+T | 1 | rand  NEZf 7Mt
+D | 1 | rand  xc62fs QZn j | 14/09/2875 0029
+D | 1 | rand  8k3V XoUse | 06/09/8701 1737
+E | 1 | rand  ZAx6ctX5 | 15/07/0694 1141-2131
+D | 1 | rand  6m1r vId 3 | 16/06/1434 1253
+E | 0 | rand  Wc11K nmooJI  | 26/06/9636 0656-0657
+E | 1 | rand  qVED Yw | 11/03/7285 1158-0529
+T | 1 | rand  6c1m qNDsTn 
+T | 1 | rand  49ji oFdcB o
+E | 0 | rand  SVqeRxy HnV | 11/06/7246 1256-1241
+E | 1 | rand  AeiP hf1 | 13/05/5287 1614-0349
+E | 1 | rand  ewqqb 0IR AA7 | 25/03/7046 0433-0643
+T | 0 | rand  Ec40Y usi
+T | 0 | rand  LnrK 2GJ 
+E | 0 | rand  PDMfcYLV | 16/03/3090 0145-0236
+T | 0 | rand  b4Gt DuS
+D | 0 | rand  TVQD  | 22/08/2672
+T | 1 | rand  uDnc OdA aKw 
+D | 1 | rand  xes6j 0MQM pnI | 01/02/6020
+E | 1 | rand  jnvQKC oLf Jy | 15/02/2692 2057-1925
+D | 1 | rand  juYl xg3 DC | 26/06/9365
+E | 0 | rand  d4O5 NcL  | 15/10/1129 0256-0627
+D | 1 | rand  eXwte Q4Ge | 14/02/8730 1607
+E | 1 | rand  hTVNy VHGAq v | 18/11/3056 2320-1728
+E | 0 | rand  E7CBr 7fM | 29/10/5836 1114-1737
+E | 1 | rand  MJZqn  | 12/10/7679 0642-0803
+D | 0 | rand  wBLP au | 09/09/7408 0331
+E | 0 | rand  ogyq 7aq GF | 10/11/4301 1416-1627
+E | 0 | rand  NZZN Qhi | 11/04/4629 0830-0053
+E | 1 | rand  kDmE sa2o lr | 18/02/8388 1733-0642
+D | 0 | rand  JT4ZjEt SuRG2 | 14/05/9249
+E | 0 | rand  A3jb mOts  | 09/12/3237 1534-1438
+E | 1 | rand  Ltgr YLHT | 04/02/0994 1914-0455
+E | 0 | rand  V4ZSVK3 Ivr | 23/12/4301 1139-1417
+T | 1 | rand  GOyQ T9l QkI
+E | 0 | rand  tEoy Eco cp0 | 28/02/1581 1814-0914
+E | 0 | rand  93hl B | 24/01/4461 0121-0831
+E | 0 | rand  54bfdOy  | 28/02/4035 0955-0148
+T | 0 | rand  F31n 5
+T | 0 | rand  5IEBWOE bjn 5
+D | 0 | rand  tCpUQ ugg 1 | 15/01/2176 0723
+T | 1 | rand  ZcYH0q 5sY NK4
+T | 0 | rand  ffwrA Jp
+E | 0 | rand  RECayi | 10/06/3577 0540-0357
+E | 0 | rand  ylV0 ODh  | 02/11/8384 2047-0644
+D | 0 | rand  QCoux  | 20/02/9030
+D | 0 | rand  MMGxmK 85w  | 18/10/9789 2050
+E | 0 | rand  m74G WofL | 11/10/5705 1618-0021
+E | 1 | rand  YJIU fs8t  | 11/06/9216 1134-0305
+E | 0 | rand  e9SAim TA | 03/09/4766 2311-0800
+E | 0 | rand  0SuQi mhC  | 06/12/9984 1017-1341
+T | 1 | rand  P48u RwM 
+T | 0 | rand  FaXG xnU 2a
+D | 1 | rand  smg3 bG3 jn | 26/12/0560 1614
+T | 0 | rand  StJBCrGVNkY 9
+E | 0 | rand  e5P0 MQd0  | 25/10/1227 0651-0613
+D | 1 | rand  AkPY F5 | 19/01/3077
+E | 1 | rand  Dclw Ooq UA | 09/04/0418 2003-0339
+E | 0 | rand  ApPm3oa  | 14/09/5222 0948-0847
+E | 0 | rand  cALf 4KW ki | 05/07/8756 0955-2132
+T | 0 | rand  iY5SZR iZCN 
+D | 0 | rand  TbduEB 4kc  | 15/04/5775
+E | 0 | rand  9Tpe  | 21/11/1880 0654-1200
+D | 0 | rand  pZKvq I8Hu u | 26/01/0875
+T | 1 | rand  ocZhH
+T | 1 | rand  eMDyKi 
+E | 0 | rand  ow6Rf | 12/10/0757 1943-0255
+D | 1 | rand  W61i wYr r | 04/06/7307
+D | 0 | rand  bdU9E PqC Edx  | 10/01/7135 0912
+D | 0 | rand  VAi5jr  | 14/12/3270 1221
+D | 0 | rand  pkcAlko7 VQ | 29/03/2322
+E | 0 | rand  Ub7Pw p | 06/01/7539 0721-2321
+E | 0 | rand  TJAjO ygB EUj  | 12/12/4089 0710-0814
+E | 1 | rand  A8ten 40c | 19/07/3412 2046-1740
+E | 0 | rand  YYWmN qP | 02/11/5053 0239-1526
+T | 1 | rand  iXHb jy1 k4
+D | 1 | rand  77aOPUy dNDmJ | 13/11/2925 0842
+T | 1 | rand  Eg5O IAQU
+T | 1 | rand  GXG6 Efuo u
+T | 1 | rand  7mATck 
+D | 0 | rand  aHqU HvUIa | 29/12/5748 0350
+E | 0 | rand  7PBuX  | 07/12/4425 1549-2055
+D | 0 | rand  rF18 4UP a | 27/12/4089
+D | 1 | rand  XUBV if | 13/07/6442 1816
+E | 0 | rand  fcJG9B | 24/05/9543 0847-1545
+E | 1 | rand  sQLE M8 | 10/06/5934 1334-2341
+T | 1 | rand  MGEr 
+E | 0 | rand  veJZ43 e8Jj9 | 19/08/2861 0511-2216
+T | 1 | rand  S8sgmd kbwl
+E | 0 | rand  6nGT uif SfK | 14/01/9945 0853-1007
+D | 0 | rand  XDryO | 13/03/5640
+E | 1 | rand  cqbtX 9qp NDM | 03/01/4674 1218-1610
+E | 0 | rand  e3gn P0P 5T | 29/07/5425 1722-0939
+T | 0 | rand  A6XY7Td WUh y
+T | 0 | rand  U3sZBmgq
+E | 1 | rand  87tPo1B S | 24/06/2929 1519-0102
+D | 0 | rand  3h76 ws | 13/09/1532
+E | 0 | rand  h78v bJkTa | 30/06/1017 1541-2220
+T | 0 | rand  8sOU H4xqco
+E | 0 | rand  mTVLg EK5im  | 17/03/1958 1937-2205
+E | 1 | rand  lT59 cqt | 01/02/9948 1725-2319
+T | 1 | rand  J1ZZikF 53V
+D | 1 | rand  PTt9V | 30/10/9202
+D | 1 | rand  sqgd  | 20/03/6098 0118
+E | 1 | rand  QPTDM | 31/08/0890 0645-0459
+D | 1 | rand  uhN9 L8td9 | 01/06/5896
+D | 0 | rand  X3A8V | 29/05/2297 2029
+D | 0 | rand  wNJ0j6 | 10/09/4493
+E | 1 | rand  X829k 8OT | 18/07/2707 1013-1820
+T | 0 | rand  EohP 
+T | 1 | rand  iwGol
+D | 1 | rand  3HWLJ | 11/12/9812 2350
+D | 0 | rand  rwiD 1uK v7m  | 03/02/3801 0425
+D | 1 | rand  Z8Ba LRp ms | 21/12/4389 0817
+E | 1 | rand  q04t8 7Ce | 25/04/3979 1034-1523
+T | 0 | rand  LRYLr3 HdKD1VJ
+D | 1 | rand  BPASI ua | 27/09/3260
+E | 0 | rand  ECXbS DoJ 5Vk | 05/07/4025 1547-1958
+E | 0 | rand  RMFN9c  | 20/09/0460 1424-1306
+E | 1 | rand  pD9p HSK GC2  | 09/07/5376 1922-0808
+T | 0 | rand  lwLm Ai
+E | 0 | rand  fBrJ cDAF | 21/01/1173 0757-0300
+D | 1 | rand  BZmOI WG | 18/05/2377
+E | 0 | rand  sA56ST Jbu | 17/02/0380 2048-0910
+E | 1 | rand  cFgv8 LfTpl | 15/07/9924 0848-1212
+D | 1 | rand  cWkZn NN | 06/04/3481 2032
+E | 0 | rand  PKtd B7k | 06/06/5718 0326-1221
+E | 1 | rand  XIPcy5mg | 02/02/7421 1911-0817
+T | 1 | rand  rEFMrX dm8U 1I
+T | 1 | rand  ONXtwpEH rb
+D | 0 | rand  WV8W kpL dpk | 17/06/9242
+T | 0 | rand  gotHRmc i
+D | 0 | rand  yMnD 975 7q | 14/09/0555
+T | 1 | rand  xPQkT
+T | 0 | rand  qAZD Ao
+T | 0 | rand  nPI6q x1ys
+E | 1 | rand  9eZRRR oqn DSB | 27/12/2744 0855-1144
+E | 1 | rand  Y9HQAP | 15/03/5212 2044-0716
+D | 0 | rand  fAnY TIM bS | 16/04/6442 0716
+E | 0 | rand  Q46n3R fAf A9P | 31/05/2628 0311-0353
+D | 1 | rand  iTAku  | 15/08/4098 0246
+T | 0 | rand  CS9SQy
+T | 0 | rand  35l8E 
+E | 1 | rand  nF0U Tn | 13/04/4127 0826-0006
+D | 1 | rand  B0LH HSt Ae5I | 11/02/2200 1925
+D | 0 | rand  vwem ITi q | 22/10/6412 2325
+T | 1 | rand  lWHt 
+E | 1 | rand  9D4m 0eBrHM | 14/10/2405 1125-0750
+E | 0 | rand  AJJ2OQ  | 27/01/5336 0632-0452
+T | 1 | rand  h7X8L0 I
+E | 0 | rand  rwenZ OxO ftr | 16/06/9369 0502-1831
+T | 1 | rand  KohA IEwcr 
+T | 1 | rand  dSTJ 2e63 C7I 
+E | 0 | rand  Opn5Rv4I wUq6 | 27/05/8907 0623-1755
+D | 0 | rand  RI25 bwW Yt | 28/11/1339
+T | 1 | rand  8Tim JOly4 rE
+D | 0 | rand  AmQKX q7Au  | 04/06/5549
+T | 1 | rand  MmXj UeLKaqo 4
+E | 0 | rand  juVL FsJ | 10/01/5756 1721-1931
+E | 0 | rand  Dbto CPf2 UoQD | 14/08/3356 1732-2146
+E | 0 | rand  If28tF sO5  | 26/01/8886 1048-1325
+D | 1 | rand  dQFgc bq | 06/02/3956
+E | 1 | rand  Zgx6  | 23/10/7961 0216-1431
+D | 1 | rand  QJST GFxiOat  | 11/05/9567
+T | 1 | rand  IDAA7fv
+T | 0 | rand  PgjW0H 
+E | 1 | rand  GAZE E698I | 11/10/3945 1737-1859
+E | 1 | rand  7clKpA VEyd a4 | 24/11/7690 1410-0242
+E | 1 | rand  C0I6 QT2 I | 17/02/0567 0348-0738
+D | 1 | rand  BQqCEM F5wN | 11/10/6592
+T | 1 | rand  iiGaW vhVIv
+E | 0 | rand  J6qU Jp5ly | 20/04/4474 0409-2250
+D | 1 | rand  krCmuR j | 17/12/5436 1537
+T | 1 | rand  XOF5X1U 2bP R
+T | 1 | rand  fqo9 ruk
+T | 0 | rand  tTUx 3iQM0c Q4
+D | 1 | rand  4ZZl Yoa  | 14/05/8899 2128
+D | 0 | rand  r6pHKTI 2nO CB | 03/06/0586 1957
+D | 0 | rand  hbLeXx  | 27/12/2678 1941
+T | 1 | rand  bf7Ds NBn kIqf
+E | 0 | rand  4LqeMq C4i h | 04/08/6039 1502-1400
+T | 0 | rand  wNUt mIyh 5WH
+E | 1 | rand  JvCv Ypi l | 17/12/7403 2152-2349
+T | 1 | rand  ppxq lN
+E | 0 | rand  sYwT sZK3 6VE  | 12/05/6395 2350-1641
+D | 0 | rand  mPmm7 CQ2G | 30/11/0826
+E | 1 | rand  C38S Wei | 09/06/3665 2111-1544
+D | 1 | rand  Dm2Qt D3pWSm V | 14/03/5368 0534
+D | 0 | rand  04bhFR9s T | 13/11/1687
+D | 1 | rand  XUPFP  | 27/04/8306
+D | 1 | rand  4T62 jdX | 05/08/1699 1200
+E | 1 | rand  j1yg  | 01/05/6718 1441-1659
+E | 0 | rand  oJHO RFL | 17/02/8090 1655-1255
+E | 1 | rand  0YNj5 x | 29/04/9761 1810-0625
+D | 0 | rand  2OE5n 2MM 8C | 10/03/6828
+E | 0 | rand  hjIK 5as | 09/07/4563 0052-1721
+E | 0 | rand  3jUyC 9J | 04/06/7996 1255-0440
+D | 0 | rand  VH1b Wio | 21/03/9218 2344
+D | 1 | rand  RIdx O | 21/01/6743 0519
+D | 1 | rand  ODBkqmUT1 2iC | 24/04/7406 0111
+E | 0 | rand  wrvA cmM | 26/06/3526 1916-2237
+D | 1 | rand  ruC2 Q4gJ Jm | 20/02/9154 1220
+D | 1 | rand  4cVE Hbb fpV | 07/08/7425 2010
+D | 0 | rand  3yXYMQ I4Pi  | 09/03/6369 1741
+T | 1 | rand  8QDccPm G
+E | 0 | rand  ZWcS lem | 26/11/2862 0719-1937
+D | 0 | rand  KGKn Ebj  | 27/10/5798 1803
+T | 1 | rand  M1wX7 QCh UOYt
+D | 0 | rand  23XGk ckS N | 01/08/3492
+E | 1 | rand  wUPN sCh lOI | 24/07/0900 2022-0933
+E | 0 | rand  4yHds xI8cq | 15/02/6321 2150-2258
+T | 1 | rand  bFen 
+E | 1 | rand  56YYXc 00N AR | 12/09/6158 1954-2044
+D | 0 | rand  JXyI9 rla 09k | 13/02/8619 1752
+E | 1 | rand  TAmOd | 08/09/0778 2147-0030
+D | 0 | rand  1GAJm JL | 16/01/0676
+T | 1 | rand  htsLi LM5
+D | 0 | rand  Q77tZScv | 28/03/2083 1714
+E | 0 | rand  YXCh ja4tP | 20/08/2376 1822-0741
+E | 0 | rand  u79lI  | 12/09/9563 1216-1552
+E | 1 | rand  FaMJ Wxt UlUu | 30/10/9374 0656-2106
+T | 0 | rand  veJv rMoTZ TIV
+E | 1 | rand  UXRF0 lcNF | 24/12/0033 2222-0920
+T | 1 | rand  fIfJJ 
+T | 0 | rand  K1lo uy1blj Dr
+E | 1 | rand  Kp4ucwbOC | 21/10/9064 1611-0431
+E | 1 | rand  HqAsbip XHa Pv | 15/02/0129 1057-1935
+T | 1 | rand  ZYpLw
+D | 0 | rand  si6X 9GX | 21/02/4023 0814
+T | 1 | rand  6WJ34 0
+T | 1 | rand  BvX8 xnv lEI
+D | 1 | rand  sBIe oWM KDb | 10/03/3477 1644
+T | 0 | rand  fyaMP5 cp4
+E | 0 | rand  AKbZb dox | 06/10/4690 0726-0922
+D | 1 | rand  nArI mk | 28/02/7214 2349
+E | 1 | rand  fH07 67q otw | 23/09/6280 1557-1033
+E | 1 | rand  Knaf afc sE | 13/04/9307 0233-0339
+D | 0 | rand  W0AksGKdB qg | 07/12/4625 2056
+E | 0 | rand  kAl2 F1T We | 24/10/5316 0542-2251
+T | 1 | rand  cddY lu7 n
+D | 0 | rand  K5oxJ Tv0R8  | 28/12/7031
+T | 1 | rand  0sfw tvj Jnq2 
+E | 0 | rand  Lhbbd | 24/12/4169 0438-1948
+D | 0 | rand  hIje aPIY kgn  | 10/02/9256
+E | 1 | rand  jb3TO dV | 27/05/1813 1154-2034
+T | 1 | rand  8BBbxX
+T | 0 | rand  I0lV8 AtTQ 
+D | 0 | rand  ux5rp 2 | 01/07/0797
+T | 0 | rand  fZiDS 9uU q
+E | 0 | rand  eKnA ZK8P  | 05/05/8172 0137-2222
+E | 0 | rand  KtxP2  | 12/02/7676 2219-0112
+D | 0 | rand  ctR2  | 13/10/3514
+E | 1 | rand  CXSc qZG | 22/08/5824 0140-0336
+T | 0 | rand  58CB 04eBy
+T | 1 | rand  snWj 
+D | 1 | rand  PdCv Y | 19/10/9447 0158
+E | 1 | rand  XZ0AAsi ylX | 19/03/2173 2113-1435
+T | 1 | rand  B1nL w
+T | 1 | rand  xg6ou FL7
+D | 0 | rand  LOJL EBxme fGt | 02/11/8584
+D | 1 | rand  IxNk 80b t5gH | 03/05/8578 1746
+E | 1 | rand  mpZkIR 0ap | 26/10/9899 0816-2301
+T | 1 | rand  8uX6nv UVh 
+E | 1 | rand  Ay6r LqU | 17/12/3174 0827-1744
+D | 0 | rand  wKuUv  | 30/01/1908
+E | 1 | rand  nniJU aNytp g | 25/03/8752 1034-1410
+D | 1 | rand  T0VIu JPF | 25/02/4711 1313
+D | 0 | rand  0JWA vuk VF | 19/09/8058
+E | 0 | rand  UoPZ7BC | 30/11/1754 1344-1427
+E | 0 | rand  kcBqq M4ag uh | 13/07/9488 0232-1639
+T | 1 | rand  Yg2Td guxr 
+T | 1 | rand  PvYn 7TiD
+E | 1 | rand  VZIt D | 02/05/2092 1340-1455
+D | 0 | rand  MhPAx | 15/09/4959
+D | 0 | rand  87QgP 5vClLc  | 11/01/9800
+D | 1 | rand  wRIr W8 | 04/08/1273
+E | 0 | rand  uPhYF W | 27/05/8360 0430-0854
+T | 1 | rand  04hbZW 21dR xP
+E | 0 | rand  6A9n asq QeP  | 23/08/3623 1857-1247
+D | 0 | rand  IoKl I | 07/12/1313 0709
+D | 0 | rand  X5Lo hNQY8Q | 25/11/9979 2257
+E | 1 | rand  FDtlo SMt | 27/09/9738 1945-1757
+E | 1 | rand  EBv5 f | 19/07/6900 1039-1205
+T | 0 | rand  Kx3mp MMnOv 3T
+T | 0 | rand  plGm4
+E | 1 | rand  fNbgV YdGX  | 07/11/8383 1042-1022
+E | 0 | rand  bOhk6c 1rTA  | 30/05/7967 0646-2028
+D | 1 | rand  9oy5fh  | 25/12/8725
+T | 1 | rand  p5Cd J
+E | 0 | rand  7rhf wtKt 1P | 19/12/3949 1937-1752
+D | 1 | rand  tPTJRE | 28/02/6492 1727
+E | 1 | rand  cdMvc MxMCA | 09/02/6337 0617-1355
+D | 0 | rand  RdSih fdT a0v | 09/02/3673 1413
+E | 0 | rand  n2b5 FLD 4so  | 24/09/1415 1109-0155
+D | 0 | rand  5y6hbIap Kom X | 19/04/4580
+T | 0 | rand  LkEf 2l0 hU1
+E | 1 | rand  gSIiXf h7s  | 07/06/6835 2217-0353
+T | 0 | rand  rrGKIo UiI 
+D | 1 | rand  D6ecQ2W hWwP  | 12/10/6864 0245
+E | 0 | rand  bCbHR | 04/09/5289 0110-0922
+D | 1 | rand  2J3gVJ 5y6ZwV | 04/01/4832
+E | 1 | rand  15xo TQYX e2L | 13/10/0528 0104-1708
+T | 0 | rand  DnoUh Fe2 ZRl
+T | 0 | rand  RIyO fp
+T | 1 | rand  TwKb VL
+T | 1 | rand  tdReN 
+D | 1 | rand  FRGX r2O Z | 22/01/4732
+T | 1 | rand  SPRaEwvF5y n3
+D | 1 | rand  ZxgD xgp 0MbC | 23/01/9122
+E | 1 | rand  hTQce iRf LKei | 22/04/1529 0109-1518
+D | 1 | rand  yRAx  | 11/03/9820
+E | 0 | rand  sl7ZL q | 18/01/1310 1706-2345
+E | 1 | rand  g26gy I | 06/07/7991 2132-0020
+E | 0 | rand  ZREK slt h2 | 12/01/3742 1444-0211
+E | 1 | rand  nsljO tn | 19/05/8198 0003-1509
+D | 0 | rand  uNAZuAr LoudH | 12/07/4898
+E | 1 | rand  tPFs PEdy n | 11/02/8641 0544-1435
+D | 0 | rand  N8Pi w5pPxQ mk | 17/05/0157
+T | 1 | rand  8AQo WvNHE AUc
+E | 0 | rand  3kHe 9m | 10/04/4642 1012-1039
+D | 1 | rand  lBRm5 aCqh | 06/08/4520 1203
+D | 0 | rand  5rUA0 YCt f | 08/04/7500
+D | 0 | rand  c5NX hmyo | 08/06/4516 0345
+T | 1 | rand  4DvU P3jv O
+E | 1 | rand  SWPf vAqR | 03/12/8170 1846-0437
+E | 0 | rand  MnXn BL5 | 20/05/7310 0055-2153
+E | 1 | rand  4ngOcfyOv io | 06/06/6116 1942-0208
+E | 1 | rand  DSPOve n | 04/06/3052 0533-0123
+D | 0 | rand  tJu8 R3V UCo | 07/03/0461
+D | 1 | rand  HL0HGB | 30/12/4787 2251
+E | 0 | rand  SQxaEY 3dj42d | 24/12/8999 0456-1037
+E | 1 | rand  iePFG SUw vN | 18/05/2195 1726-2048
+E | 1 | rand  kmog Ym | 13/03/2305 0942-1557
+D | 1 | rand  gGaT NrO QU | 18/01/0415
+D | 1 | rand  Dm8P WHG  | 18/06/6868 2303
+T | 0 | rand  b7JhI 
+D | 1 | rand  IysX wYdb Dd7 | 21/01/6140
+D | 0 | rand  uiTBmy | 11/11/2300
+D | 1 | rand  jwB4JPaxd 4 | 03/07/1528 2304
+E | 1 | rand  vffF sBBY  | 31/05/7374 0406-2119
+E | 1 | rand  TuW8S nDoJ Uyx | 18/04/0557 2224-2037
+D | 1 | rand  YZuI Ln4  | 23/09/5034 1028
+E | 0 | rand  9MKRp Yd9bN | 06/06/4127 1705-1121
+D | 1 | rand  KAA3 BL8 Va | 29/12/6548 1219
+D | 1 | rand  MP8N JcdBLD t | 19/04/0205
+E | 0 | rand  330j0PJ MVS b | 26/09/1881 2249-2128
+E | 0 | rand  1QweQvc SYy  | 29/09/9970 0722-1855
+T | 1 | rand  i071Y1 b0iEg
+D | 1 | rand  P8h5 04XU G0E  | 01/02/7793
+D | 0 | rand  sbOx x164 OEg | 02/02/9382 0508
+E | 0 | rand  4qLB KZJLX 4 | 05/02/9187 1151-2302
+T | 0 | rand  mHoXjpQV 
+T | 1 | rand  mv13w1 nT3 FJA
+T | 0 | rand  e8IqN SLE 
+D | 0 | rand  rBYmq0 Qvx R6a | 26/12/7446
+D | 0 | rand  AMiq  | 04/03/0864
+T | 1 | rand  DfKL 
+D | 1 | rand  ZdnQU  | 31/08/2795
+T | 0 | rand  3NxQA7nL J5
+E | 1 | rand  v55F dD5H | 11/12/0241 1747-1919
+D | 0 | rand  AFo0 O | 13/02/5806 1748
+T | 0 | rand  Tk8mT xVp pg8
+T | 1 | rand  oY1CA 9gk 5
+E | 0 | rand  JyLO OBeN | 16/04/3699 1541-2036
+E | 0 | rand  iRfuQ | 05/06/2455 1613-1231
+T | 0 | rand  AdXK bUo H
+T | 1 | rand  9JZeG Z4
+D | 0 | rand  le4h u | 17/11/4855 1814
+T | 1 | rand  7rTHDi pdh 
+E | 0 | rand  c1IAT 2FG vvU | 11/08/4969 0530-1836
+T | 1 | rand  hMtA vQM Uy
+D | 1 | rand  dI1NTZ  | 03/09/8524
+T | 1 | rand  vkyH 
+T | 0 | rand  CDWHB eg8 VK
+E | 0 | rand  jT5u6 SNSimn | 02/04/4729 0835-0201
+T | 1 | rand  T65Ud F7x 
+D | 1 | rand  Btd5 9tK Nstjh | 21/07/1308 1627
+T | 0 | rand  kd8jr
+T | 0 | rand  MjU8 CGpoaw 
+D | 0 | rand  SR76 x0p iwgH  | 29/05/2619
+E | 0 | rand  au6w NVa | 19/10/3927 0656-2347
+E | 1 | rand  xxCGEv UhY SDU | 04/07/9762 0339-2201
+T | 1 | rand  74YXo
+T | 0 | rand  ypUJO V5
+E | 1 | rand  91BJ LrL | 14/05/9589 0854-1856
+E | 1 | rand  kLOn S5j  | 02/09/8538 0910-1118
+E | 1 | rand  PHJO S | 10/12/4724 1438-1721
+T | 0 | rand  gH30K N92P 8H
+E | 1 | rand  4Ki9 SCx  | 02/06/7733 0234-1201
+T | 1 | rand  XXWO oO
+D | 0 | rand  88N9V y5Og  | 24/05/0711
+E | 0 | rand  k1sk 1cl ugC | 19/07/0770 0752-1309
+T | 1 | rand  AZei KbLI
+D | 0 | rand  cKyp Jh8  | 27/05/7344
+D | 1 | rand  XnUMb VKcr pv | 15/01/2770 0615
+E | 0 | rand  4TVuLLr Fan 2K | 27/03/5538 2303-1832
+E | 1 | rand  W9a5  | 04/11/1455 0755-0700
+T | 1 | rand  27fo qOO YH
+D | 0 | rand  glXY h | 11/11/0919 0455
+D | 0 | rand  v4Tqm ZEt2 3K | 16/08/1443 1840
+D | 1 | rand  iX1p Gh0 | 05/03/6024 1029
+E | 0 | rand  6QJ7 pR1 l | 25/03/8680 1719-0736
+E | 1 | rand  5RrHe  | 01/02/1395 0128-1602
+E | 0 | rand  rabNCF y9W l | 07/10/6499 2129-0829
+E | 0 | rand  RLebY | 20/11/5376 0333-1710
+D | 0 | rand  FnbI jjx | 14/10/6094
+T | 0 | rand  KQoY 8OY 
+D | 1 | rand  e0jLlHM dR6 Vd | 24/01/8894 0404
+E | 1 | rand  pjCIc | 11/02/0844 0817-2309
+T | 0 | rand  esMK 
+T | 1 | rand  MAE7i Iv
+D | 1 | rand  08R6y AEe | 03/12/6888
+E | 0 | rand  GfqS kMF | 07/12/4829 1821-0924
+D | 0 | rand  ZNCwx e5J HW | 04/10/1470 1116
+T | 0 | rand  8NAh7ow 
+D | 1 | rand  8EsnUNb rEv | 30/08/4257 0355
+E | 0 | rand  OsCIg HCNY  | 11/04/8892 1900-0154
+T | 1 | rand  vEIea I0G Ba
+D | 0 | rand  sXHD  | 06/11/6474 2244
+D | 0 | rand  vIpbS | 02/08/2995 0848
+T | 0 | rand  VAg8M 
+T | 1 | rand  xUqC wyJ ik
+D | 0 | rand  uDFX OaapB 7 | 05/06/2366 1638
+T | 1 | rand  y6QB 1
+T | 0 | rand  Jbtp UuG
+E | 1 | rand  x0OH fRy xy | 30/03/3368 1215-0411
+T | 1 | rand  iT8d eD7W
+T | 0 | rand  jmKIVl0go 
+T | 1 | rand  8Nv9 tO
+T | 0 | rand  afREtt Mw5 OP9
+T | 1 | rand  Pv3S vEP oJu 
+E | 1 | rand  mvKQ  | 20/07/2629 2224-1616
+T | 0 | rand  0H9trB caOnrE
+T | 0 | rand  sifNX
+D | 0 | rand  Ayn2fj1 BrO | 23/09/4600
+D | 1 | rand  VLPy AWC RaX V | 17/04/1947 2312
+D | 0 | rand  GUuRT | 01/03/7715
+T | 0 | rand  ej9vN
+D | 0 | rand  XBb2 OT2J | 01/03/8747 0428
+D | 1 | rand  CVnZ Tv0 eRg | 04/06/5193
+T | 0 | rand  tsIp H
+T | 0 | rand  SZuR XYc6 VfI 
+E | 0 | rand  d6gh Kfp | 07/11/2660 1200-1803
+T | 1 | rand  MnhiC 
+T | 0 | rand  seGHw 
+T | 1 | rand  J1MLa
+D | 0 | rand  QLKM tf | 05/04/9274 1204
+T | 0 | rand  6ZYE hpQCAb 
+T | 0 | rand  wjvF 
+T | 1 | rand  CK27E 6E
+T | 1 | rand  PYKhH6 RvE 
+D | 1 | rand  N2kYx 6IH | 07/02/6031
+D | 1 | rand  X2u1 XYf lP | 22/09/3628 2223
+E | 0 | rand  25PH  | 22/03/2882 0119-0148
+D | 0 | rand  Mk7nw c0p | 16/10/0776
+E | 0 | rand  nCME d6e 1p | 13/03/1104 2342-0011
+E | 1 | rand  ulIONf a2F | 30/01/2367 2237-0126
+T | 0 | rand  eQKj FMR c
+D | 1 | rand  KRVP7 8QT5 rW | 07/10/2672 1921
+D | 1 | rand  RdHG ZtI5l Cp | 28/03/8428 2113
+E | 0 | rand  yZJs mGdp qZ | 20/08/1596 0746-0216
+T | 1 | rand  GcHgh
+E | 1 | rand  h08pmT3 | 28/07/3938 0615-1142
+D | 0 | rand  kVto 13wv n5X  | 31/08/0547
+D | 0 | rand  ftEM157 u5b | 23/10/7173
+T | 0 | rand  yPBe C
+T | 0 | rand  smyJ4lkDq ek
+D | 1 | rand  yiJo4u f | 07/10/6667
+E | 0 | rand  ks9VI6 AJ | 10/07/2335 0824-0706
+T | 1 | rand  o3SbwEX
+D | 0 | rand  MNeKS bjsB SV1 | 17/03/4465 2107
+E | 1 | rand  G184  | 09/10/0934 0747-0146
+E | 1 | rand  otns wPsT  | 06/06/1773 1139-0212
+T | 1 | rand  mbDm K
+T | 0 | rand  yAps ThEB
+D | 1 | rand  9Ts6J8mXr H | 07/06/4945 1942
+E | 0 | rand  7ixBD nl | 30/10/7977 1648-2119
+D | 1 | rand  Hg4xl | 31/03/0598 1152
+E | 1 | rand  tq3oQ | 17/08/2155 0320-0838
+E | 1 | rand  AEP3U  | 15/06/5876 1858-1852
+E | 0 | rand  qKj6v PPrJg B | 02/06/9573 1043-2350
+D | 1 | rand  CxOD hAb  | 05/01/4100
+T | 1 | rand  2gZU EXpo0
+E | 0 | rand  7CTXn Q | 25/12/0328 0347-1657
+D | 0 | rand  KJL8Se 25y | 11/05/7218 0455
+T | 0 | rand  qpMZ Iek
+T | 0 | rand  3vXQ 1
+E | 1 | rand  XSPQ5 g | 17/08/1752 2306-2248
+D | 1 | rand  altjS lu | 07/06/9081 0845

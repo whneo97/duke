@@ -60,7 +60,7 @@ public class RedoCommand extends Command {
                     }
                 }
             }
-            this.duke.setTaskList(tasks);
+            this.duke.setTaskList(resTasks);
             ui.showRedoMessage(iterations);
             storage.save(tasks, ui);
         } catch (DukeException ex) {
