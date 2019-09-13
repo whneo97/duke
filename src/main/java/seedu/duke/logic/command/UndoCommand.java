@@ -47,7 +47,7 @@ public class UndoCommand extends Command {
             for (int i = 0; i < iterations; i++) {
                 try {
                     resTasks = this.duke.getTaskListHistory().undo();
-                } catch (CannotUndoException ex){
+                } catch (CannotUndoException ex) {
                     if (i > 0) {
                         this.duke.setTaskList(tasks);
                         ui.showMaxUndoMessageReached(i);

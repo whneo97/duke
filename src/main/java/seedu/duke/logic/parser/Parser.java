@@ -40,6 +40,7 @@ public class Parser {
     /**
      * Returns a Command object given a full line of text.
      * @param fullCommand Line of instructions presumably from user input.
+     * @param duke Instance of Duke which calls this method and contains the relevant attribute for TaskList history.
      * @return Command object based on information extracted from full command given.
      * @throws DukeException If full command taken in is invalid and cannot be used to return any Command.
      */

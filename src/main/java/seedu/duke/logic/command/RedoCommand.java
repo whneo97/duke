@@ -49,7 +49,7 @@ public class RedoCommand extends Command {
             for (int i = 0; i < iterations; i++) {
                 try {
                     resTasks = this.duke.getTaskListHistory().redo();
-                } catch (CannotRedoException ex){
+                } catch (CannotRedoException ex) {
                     if (i > 0) {
                         this.duke.setTaskList(tasks);
                         ui.showMaxRedoMessageReached(i);

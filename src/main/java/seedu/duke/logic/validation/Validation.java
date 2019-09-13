@@ -103,6 +103,8 @@ public class Validation {
     /**
      * Returns a validated natural number from a String.
      * @param taskString String to be converted to a positive non-zero integer.
+     * @param canBeEmpty Denotes whether the String taken in is allowed to be empty, in which case a value of
+     *                   1 will be returned.
      * @return A validated natural number converted from the given String.
      * @throws InvalidNumberFormatException If the numeric representation of the given String is not a natural number.
      */
@@ -127,8 +129,8 @@ public class Validation {
                 return n;
             }
         } catch (NumberFormatException ex) {
-            throw new InvalidNumberFormatException("Please enter only a valid natural number after the intended " +
-                    " command (separated by a space).");
+            throw new InvalidNumberFormatException("Please enter only a valid natural number after the intended "
+                    + " command (separated by a space).");
         }
     }
 
