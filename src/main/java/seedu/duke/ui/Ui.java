@@ -41,20 +41,25 @@ public class Ui {
      * @return An about message to display to the user information about this Duke program.
      */
     public static String aboutMessage() {
-        String intro = "Hi! I'm Weihong and I'm the developer for this particular implementation of Duke, "
-                + "a task-managing chatbot designed at NUS for educational purposes. It's details are as follows!\n\n";
+        String intro = "Hi! I'm Weihong, developer for this implementation of Duke - "
+                + "a task-managing chatbot designed at NUS for educational purposes, with details as follows!\n\n";
 
         String productInfo = "Product Name: Duke\n"
                 + "Version: V2.2\n"
                 + "Category: Personal Assistant Chatbot\n"
+                + "Software Requirements: Java 11; Mac / Linux / Windows OS\n"
                 + "Developer: Neo Weihong\n\n";
 
         String codeInfo = "This product is free for non-commercial use and its code is "
                 + "publicly available open-source via: https://github.com/whneo97/duke.\n\n";
 
+        String credits = "Space background by Andy Holmes (https://unsplash.com/photos/LUpDjlJv4_c)\n"
+                + "User profile icon by Smashicons (https://www.flaticon.com/authors/smashicons)\n"
+                + "Duke profile icon by Freepik (https://www.flaticon.com/authors/freepik)\n\n";
+
         String conclusion = "Hope you'll enjoy trying out this simple program!";
 
-        return intro + productInfo + codeInfo + conclusion;
+        return intro + productInfo + codeInfo + credits + conclusion;
     }
 
     /**
