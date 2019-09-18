@@ -1,7 +1,4 @@
-T | 0 | buy milk
-E | 0 | concert | 21/02/2019 1500-1700
+E | 1 | concert | 21/02/2019 1500-1700
 E | 0 | football match | 20/09/2019 2300-0100
-D | 0 | submit report | 25/09/2019
-E | 0 | joe hisaishi concert | 21/02/2020 1930-2100
-T | 0 | buy chocolate
-D | 0 | submit report on buying and selling | 20/09/2019 2359
+D | 1 | submit report | 25/09/2019
+E | 1 | joe hisaishi concert | 21/02/2020 1930-2100

@@ -49,13 +49,15 @@ Users may view information about the developer and software by keying in "about"
 This Duke program automatically validates input, requiring them to be in the format specified. Precision of validation is such that it checks for the number of days in the month - even for leap years!.
 
 ### Cross-Platform Compatibility
-This Duke program is known to work for both Windows and Mac.
+This Duke program is designed to work for both Windows and Mac.
 
 ## Usage
 
 ### `about` - Shows information about the developer and this Duke program.
 
 Program displays the developer's photo and a short message from the developer, followed by brief details of the software, as well as credit for photos labeled free for use that have been used in this Duke program.
+
+Requires input to be in the format `about`.
 
 Example of usage: 
 
@@ -85,6 +87,8 @@ Hope you'll enjoy trying out this simple program!
 
 Program displays a goodbye message and waits for 0.9 seconds (for user to read the message) before closing.
 
+Requires input to be in the format `bye`.
+
 Example of usage: 
 
 `bye`
@@ -95,7 +99,9 @@ Expected outcome:
 
 ### `clearcache` - allows user to clear all stored versions of the tasklist except for the current active version.
 
-Removes all versions of task lists in the timeline used for undo and redo operations, except for the current version.
+Removes all versions of task lists in the timeline used for undo and redo operations, except for the current version. Since this operation cannot be under, after the user's command, the program will prompt for user to confirm by keying in 'CoNfiRMtOclEaR' before proceeding. This operation may be useful if the size of the timeline happens to get too large and slows down other operational procedures. The key will not be recognised on it's own without first  entering 'clearcache'. The process is aborted if input right after 'clearcache' does not match the required key and the user will have to enter 'clearcache' again if he/ she intends to re-initiate the process.
+
+Requires input to be in the format `clearcache`.
 
 Example of usage: 
 
@@ -119,6 +125,8 @@ Expected outcome:
 
 Adds a deadline into the tasklist, and displays a confirmation message to the user if addition of the deadline into the tasklist is successful, with the new number of tasks in the tasklist.
 
+Requires input to be in the format `deadline [task] /by [DD/MM/YYYY]`, or `deadline [task] /by [DD/MM/YYYY] [HHMM]`, where dates and times (24-hour clock) are valid.
+
 Example of usage: 
 
 `deadline submit presentation slides /by 23/12/2019`
@@ -135,15 +143,20 @@ Now you have 5 tasks in the list.
 
 Deletes a task or groups of tasks from the tasklist, and displays a confirmation message to the user if deletion of the task from the tasklist is successful, with the new number of tasks in the tasklist.
 
+Requires input to be in the format `delete [number representing task in tasklist]` or 
+`delete [range1, range2, range3, ...]` or `delete all` to remove all tasks.
+
 Example of usage: 
 
-`delete 5`
+`delete 6-7, 1`
 
 Expected outcome:
 
 ```
-Noted. I've removed this task:
-[D][ ] submit presentation slides (by: 23/12/2019)
+Noted. I've removed these tasks:
+1.[D][ ] submit report on buying and selling (by: 20/09/2019 2359)
+2.[T][ ] buy chocolate
+3.[T][ ] buy milk
 Now you have 4 tasks in the list.
 ```
 
@@ -151,20 +164,27 @@ Now you have 4 tasks in the list.
 
 Marks a task or groups of tasks from the tasklist to be done, and displays a confirmation message to the user if marking of the task as done in the tasklist is successful.
 
+Requires input to be in the format `done [number representing task in tasklist]` or 
+`done [range1, range2, range3, ...]` or `done all` to mark all tasks as done.
+
 Example of usage: 
 
-`done 4`
+`done 2, 4-5`
 
 Expected outcome:
 
 ```
-Nice! I've marked this task as done:
-[D][+] submit report (by: 25/09/2019)
+Nice! I've marked these tasks as done:
+1.[E][+] concert (at: 21/02/2019 1500-1700)
+2.[D][+] submit report (by: 25/09/2019)
+3.[E][+] joe hisaishi concert (at: 21/02/2020 1930-2100)
 ```
 
 ### `event` - Adds an event into the tasklist.
 
 Adds an event into the tasklist, and displays a confirmation message to the user if addition of the event into the tasklist is successful, with the new number of tasks in the tasklist.
+
+Requires input to be in the format `event [task] /at [DD/MM/YYYY] [HHMM]`, where dates and times (24-hour clock) are valid.
 
 Example of usage: 
 
@@ -181,7 +201,9 @@ Now you have 5 tasks in the list.
 ### `find` - Find tasks in the tasklist given keywords.
 
 
-Finds tasks in the tasklist using given keywords specified by the user. Keywords may include type of task, task description, date / time and state of whether task is done / undone.
+Finds tasks in the tasklist using given keywords specified by the user. Keywords are not case sensitive and could be names of tasks, substrings of it, type of tasks, date in DD/MM/YYYY format, time in HHMM format, whether or not the task is done in the form `done`, `not done`, or `undone`, or   `at` (for events) / `by` (for deadlines).
+
+Requires input to be in the format `find [keyword]`. 
 
 Example of usage: 
 
@@ -199,6 +221,9 @@ Here are the matching tasks in your list:
 ### `help` - Displays commands and their descriptions.
 
 Shows a list of specified commands or all known commands so far, sorted in alphabetical order.
+
+Requires input to be in the format `help` or `help [command1] [command2] etc.`.
+
 
 Example of usage: 
 
@@ -229,6 +254,8 @@ Input 'help' for the full list of commands known to the this program and informa
 
 Displays a list of all tasks stored in the current tasklist. If the tasklist has yet to be sorted, it is by default sorted in chronological order (i.e. newest item is added to the back of the list).
 
+Requires input to be in the format `list`.
+
 Example of usage: 
 
 `list`
@@ -249,7 +276,9 @@ Here are the tasks in your list:
 
 ### `random` - Generates a random list of tasks.
 
-Generates a list of tasks that are randomly generated. Users are required to specify the number of random tasks to generate.
+Generates a list of tasks that are randomly generated. Users are required to specify the number of random tasks to generate. This command OVERRIDES the existing list. An overriden list, however, may be retrieved using the 'undo' command.
+
+Requires input to be in the format `random [size of random list]`.
 
 Example of usage: 
 
@@ -272,6 +301,9 @@ To revert back to the previous version of the TaskList, use the 'undo' command o
 
 Reverts, if possible, the tasklist to the version before the most recent undo command was executed, or executes redo the number of times specified by the user.
 
+Requires input to be in the format `redo` (performs redo once) or `redo [number of times to redo]`.
+
+
 Example of usage:
 
 `redo 2`
@@ -287,6 +319,20 @@ Input 'list' to see the version of the tasklist we have retrieved and saved for 
 ### `sort` - Sorts the list based on the specified criteria.
 
 Sorts the list (and saves it) based on the criteria requested for by the user. Criteria include alphabetical order of task type, done state, alphabetical order of task description and chronological order of date / time.
+
+Requires input to be in the format `sort [criteria]`.
+
+List of `[criteria]`: 
+* `description`: Sorts the list of tasks by order of task descriptions in alphabetical order.
+* `revdescription`: Sorts the list of tasks by order of task descriptions in reversed alphabetical order.
+* `type`: Sorts the list of tasks by order of type of task in alphabetical order.
+* `revtype`: Sorts the list of tasks by order of type of task in reversed alphabetical order.
+* `date`: Sorts the list of tasks by order of date from soonest to latest.
+* `revdate`: Sorts the list of tasks by order of date from latest to soonest.
+* `id`: Sorts the list of tasks by order of creation from earliest to latest.
+* `revid`: Sorts the list of tasks by order of creation from latest to earliest.
+* `done`: Sorts the list of tasks by order of done status with done tasks arranged first.
+* `undone`: Sorts the list of tasks by order of done status with undone tasks arranged first.
 
 Example of usage:
 
@@ -309,6 +355,8 @@ Sorting successful! Here are the tasks in your list:
 
 Adds a todo into the tasklist, and displays a confirmation message to the user if addition of the todo into the tasklist is successful, with the new number of tasks in the tasklist.
 
+Requires input to be in the format `todo [task]`.
+
 Example of usage: 
 
 `todo buy bread`
@@ -324,6 +372,8 @@ Now you have 8 tasks in the list.
 ### `undo` - Reverts tasklist to an older version / older versions.
 
 Reverts, if possible, the tasklist to the version before the most recent command was executed, or executes undo the number of times specified by the user.
+
+Requires input to be in the format `undo` (performs undo once) or `undo [number of times to undo]`.
 
 Example of usage:
 
@@ -343,6 +393,9 @@ Input 'list' to see the version of the tasklist we have retrieved and saved for 
 ### `undone` - Marks a task or multiple tasks from the tasklist as yet to be completed.
 
 Marks a task or groups of tasks from the tasklist to be undone, and displays a confirmation message to the user if marking of the task as undone in the tasklist is successful.
+
+Requires input to be in the format `done [number representing task in tasklist]` or 
+`undone [range1, range2, range3, ...]` or `undone all` to mark all tasks as undone.
 
 Example of usage: 
 
