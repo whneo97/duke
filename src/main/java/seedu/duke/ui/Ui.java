@@ -1,8 +1,8 @@
 package seedu.duke.ui;
 
-import seedu.duke.model.task.TaskList;
-
 import java.util.Scanner;
+
+import seedu.duke.model.task.TaskList;
 
 /**
  * Defines a Ui class.
