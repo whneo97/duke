@@ -4,9 +4,9 @@
 
 ### Adding Tasks
 Allows users to add three different types of tasks to the tasklist including tasks of Todo, Deadline and Event type.
-Todo: Task that have no date required to be associated with it.
-Deadline: Task with a deadline associated with it (may either be a date or both date and time)
-Event: Task that has a date, start time and end time associated with it.
+* Todo: Task that have no date required to be associated with it.
+* Deadline: Task with a deadline associated with it (may either be a date or both date and time)
+* Event: Task that has a date, start time and end time associated with it.
 All tasks have an attribute that allows users to view and modify whether it has been completed.
 
 ### Listing Tasks
