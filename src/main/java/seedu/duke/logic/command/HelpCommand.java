@@ -1,10 +1,10 @@
 package seedu.duke.logic.command;
 
+import java.util.Arrays;
+
 import seedu.duke.model.task.TaskList;
 import seedu.duke.storage.Storage;
 import seedu.duke.ui.Ui;
-
-import java.util.Arrays;
 
 /**
  * Defines a Command object that lists out command definitions specified.
@@ -57,13 +57,15 @@ public class HelpCommand extends Command {
             + "eg. find done\n"
             + "eg. find undone\n"
             + "eg. find not done";
-    private static final String UNDOHELP = "undo: Reverts the tasklist to the version before the most recent command "
-            + "was executed.\n" + "Requires input to be in the format \'undo\' (performs undo once) or "
+    private static final String UNDOHELP = "undo: Reverts, if possible, the tasklist to the version before the most "
+            + "recent command was executed, or executes undo the number of times specified by the user.\n"
+            + "Requires input to be in the format \'undo\' (performs undo once) or "
             + "\'undo [number of times to undo]\'.\n"
             + "eg. undo\n"
             + "eg. undo 5";
-    private static final String REDOHELP = "redo: Reverts the tasklist to the version before the most recent undo "
-            + "command was executed.\n" + "Requires input to be in the format \'redo\' (performs redo once) or "
+    private static final String REDOHELP = "redo: Reverts, if possible, the tasklist to the version before the most "
+            + "recent undo command was executed, or executes redo the number of times specified by the user.\n"
+            + "Requires input to be in the format \'redo\' (performs redo once) or "
             + "\'redo [number of times to redo]\'.\n"
             + "eg. redo\n"
             + "eg. redo 5";
@@ -94,7 +96,8 @@ public class HelpCommand extends Command {
     private static final String BYEHELP = "bye: Instructs the program to exit.\n"
             + "Requires input to be in the format \'bye\'.\n"
             + "eg. bye";
-    private static final String HELPHELP = "help: Shows a list of specified commands or all known commands so far.\n"
+    private static final String HELPHELP = "help: Shows a list of specified commands or all known commands so far, "
+            + "sorted by alphabetical order.\n"
             + "Requires input to be in the format \'help\' or \'help [command1] [command2] etc.\'.\n"
             + "eg. help\n"
             + "eg. help todo sort unknown undo bye ";
