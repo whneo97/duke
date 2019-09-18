@@ -177,7 +177,7 @@ Expected outcome:
 Nice! I've marked these tasks as done:
 1.[E][+] concert (at: 21/02/2019 1500-1700)
 2.[D][+] submit report (by: 25/09/2019)
-3.[E][+] joe hisaishi concert (at: 21/02/2020 1930-2100)
+3.[E][+] annual concert (at: 25/02/2020 2000-2200)
 ```
 
 ### `event` - Adds an event into the tasklist.
@@ -188,13 +188,13 @@ Requires input to be in the format `event [task] /at [DD/MM/YYYY] [HHMM]`, where
 
 Example of usage: 
 
-`event joe hisaishi concert /at 21/02/2020 1930-2100`
+`event annual concert /at 21/02/2020 1930-2100`
 
 Expected outcome:
 
 ```
 Got it. I've added this task:
-  [E][ ] joe hisaishi concert (at: 21/02/2020 1930-2100)
+  [E][ ] annual concert (at: 25/02/2020 2000-2200)
 Now you have 5 tasks in the list.
 ```
 
@@ -269,7 +269,7 @@ Here are the tasks in your list:
 2.[E][ ] concert (at: 21/02/2019 1500-1700)
 3.[E][ ] football match (at: 20/09/2019 2300-0100)
 4.[D][+] submit report (by: 25/09/2019)
-5.[E][ ] joe hisaishi concert (at: 21/02/2020 1930-2100)
+5.[E][ ] annual concert (at: 25/02/2020 2000-2200)
 6.[T][ ] buy chocolate
 7.[D][ ] submit report on buying and selling (by: 20/09/2019 2359)
 ```
@@ -344,7 +344,7 @@ Expected outcome:
 Sorting successful! Here are the tasks in your list:
 1.[T][ ] buy chocolate
 2.[T][ ] buy milk
-3.[E][ ] joe hisaishi concert (at: 21/02/2020 1930-2100)
+3.[E][ ] annual concert (at: 25/02/2020 2000-2200)
 4.[D][+] submit report (by: 25/09/2019)
 5.[D][ ] submit report on buying and selling (by: 20/09/2019 2359)
 6.[E][ ] football match (at: 20/09/2019 2300-0100)
