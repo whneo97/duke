@@ -47,8 +47,8 @@ public class HelpCommand extends Command {
     private static final String FINDHELP = "find: Finds tasks in the tasklist given keywords.\n"
             + "Requires input to be in the format \'find [keyword]\'.\n"
             + "Keywords could be name of tasks, substrings of it, type of tasks, date in DD/MM/YYYY format, "
-            + "time in HHMM format, or whether or not the task is done in the form \'done\', \'not done\', "
-            +  "or \'undone\'.\n"
+            + "time in HHMM format, whether or not the task is done in the form \'done\', \'not done\', "
+            +  "or \'undone\', or   `at` (for events) / `by` (for deadlines).\n"
             + "Keywords are not case-sensitive."
             + "eg. find buy milk\n"
             + "eg. find event\n"
@@ -97,7 +97,7 @@ public class HelpCommand extends Command {
             + "Requires input to be in the format \'bye\'.\n"
             + "eg. bye";
     private static final String HELPHELP = "help: Shows a list of specified commands or all known commands so far, "
-            + "sorted by alphabetical order.\n"
+            + "sorted in alphabetical order.\n"
             + "Requires input to be in the format \'help\' or \'help [command1] [command2] etc.\'.\n"
             + "eg. help\n"
             + "eg. help todo sort unknown undo bye ";
@@ -121,6 +121,9 @@ public class HelpCommand extends Command {
     private static final String ADDITIONALINFO = "Note that all commands are NOT case sensitive.";
     private static final String FURTHERPROMPT = "Can't find what you're looking for?\nInput \'help\' "
             + "for the full list of commands known to the this program and information on their usage.";
+    private static final String USERGUIDE = "You may also refer to this program's user guide via: "
+            + "http://whneo97.github.io/duke";
+
 
     private String taskString;
 
@@ -201,6 +204,9 @@ public class HelpCommand extends Command {
             helpDefinitions = getHelpDefinitions(taskString.split(" ")) + "\n\n"
                     + ADDITIONALINFO + "\n\n" + FURTHERPROMPT;
         }
+
+        helpDefinitions += "\n\n" + USERGUIDE;
+
         ui.showHelpMessage(helpDefinitions);
     }
 }

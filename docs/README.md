@@ -246,6 +246,8 @@ Note that all commands are NOT case sensitive.
 
 Can't find what you're looking for?
 Input 'help' for the full list of commands known to the this program and information on their usage.
+
+You may also refer to this program's user guide via: http://whneo97.github.io/duke
 ```
 
 ### 

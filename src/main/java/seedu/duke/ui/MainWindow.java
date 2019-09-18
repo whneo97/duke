@@ -67,7 +67,7 @@ public class MainWindow extends AnchorPane {
         String response = duke.getResponse(input);
         assert userImage != null : "User profile image is null.";
         assert dukeImage != null : "Duke profile image is null.";
-        
+
         Image outputImage = dukeImage;
 
         if (Ui.aboutMessage().equals(response)) {
