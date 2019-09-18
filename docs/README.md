@@ -63,7 +63,8 @@ Example of usage:
 
 Expected outcome:
 
-`Hi! I'm Weihong, developer for this implementation of Duke - a task-managing chatbot designed at NUS for educational purposes, with details as follows!
+```
+Hi! I'm Weihong, developer for this implementation of Duke - a task-managing chatbot designed at NUS for educational purposes, with details as follows!
 
 Product Name: Duke
 Version: V2.2
@@ -77,12 +78,10 @@ Space background by Andy Holmes (https://unsplash.com/photos/LUpDjlJv4_c)
 User profile icon by Smashicons (https://www.flaticon.com/authors/smashicons)
 Duke profile icon by Freepik (https://www.flaticon.com/authors/freepik)
 
-Hope you'll enjoy trying out this simple program!`
+Hope you'll enjoy trying out this simple program!
+```
 
-### `about` - Shows information about the developer and this Duke program.
-
-
-### `Bye` - Instructs the program to exit.
+### `bye` - Instructs the program to exit.
 
 Program displays a goodbye message and waits for 0.9 seconds (for user to read the message) before closing.
 
@@ -104,9 +103,11 @@ Example of usage:
 
 Expected outcome:
 
-`WARNING: THIS ACTION CANNOT BE UNDONE. Once executed, all versions other than the current version of the tasklist will be deleted and the undo / redo command will no longer be able to retrieve them even within this same session.
+```
+WARNING: THIS ACTION CANNOT BE UNDONE. Once executed, all versions other than the current version of the tasklist will be deleted and the undo / redo command will no longer be able to retrieve them even within this same session.
 
-To confirm clearing of cache, type "CoNfiRMtOclEaR" with the same lettering cases. Otherwise, input any other character or string of text to cancel this operation.`
+To confirm clearing of cache, type "CoNfiRMtOclEaR" with the same lettering cases. Otherwise, input any other character or string of text to cancel this operation.
+```
 
 User confirmation:
 `CoNfiRMtOclEaR`
@@ -124,9 +125,11 @@ Example of usage:
 
 Expected outcome:
 
-`Got it. I've added this task:
+```
+Got it. I've added this task:
   [D][ ] submit presentation slides (by: 23/12/2019)
-Now you have 5 tasks in the list.`
+Now you have 5 tasks in the list.
+```
 
 ### `delete` - Deletes a task or multiple tasks from the tasklist.
 
@@ -138,9 +141,11 @@ Example of usage:
 
 Expected outcome:
 
-`Noted. I've removed this task:
+```
+Noted. I've removed this task:
 [D][ ] submit presentation slides (by: 23/12/2019)
-Now you have 4 tasks in the list.`
+Now you have 4 tasks in the list.
+```
 
 ### `done` - Marks a task or multiple tasks from the tasklist to be completed.
 
@@ -152,8 +157,10 @@ Example of usage:
 
 Expected outcome:
 
-`Nice! I've marked this task as done:
-[D][+] submit report (by: 25/09/2019)`
+```
+Nice! I've marked this task as done:
+[D][+] submit report (by: 25/09/2019)
+```
 
 ### `event` - Adds an event into the tasklist.
 
@@ -165,9 +172,11 @@ Example of usage:
 
 Expected outcome:
 
-`Got it. I've added this task:
+```
+Got it. I've added this task:
   [E][ ] joe hisaishi concert (at: 21/02/2020 1930-2100)
-Now you have 5 tasks in the list.`
+Now you have 5 tasks in the list.
+```
 
 ### `find` - Find tasks in the tasklist given keywords.
 
@@ -180,10 +189,12 @@ Example of usage:
 
 Expected outcome:
 
-`Here are the matching tasks in your list:
+```
+Here are the matching tasks in your list:
 1.[T][ ] buy milk
 2.[T][ ] buy chocolate
-3.[D][ ] submit report on buying and selling (by: 20/09/2019 2359)`
+3.[D][ ] submit report on buying and selling (by: 20/09/2019 2359)
+```
 
 ### `help` - Displays commands and their descriptions.
 
@@ -195,7 +206,8 @@ Example of usage:
 
 Expected outcome:
 
-`bye: Instructs the program to exit.
+```
+bye: Instructs the program to exit.
 Requires input to be in the format 'bye'.
 eg. bye
 
@@ -208,7 +220,8 @@ unknown: Unknown command.
 Note that all commands are NOT case sensitive.
 
 Can't find what you're looking for?
-Input 'help' for the full list of commands known to the this program and information on their usage.`
+Input 'help' for the full list of commands known to the this program and information on their usage.
+```
 
 ### 
 
@@ -222,7 +235,8 @@ Example of usage:
 
 Expected outcome:
 
-`Input 'help' for the full list of commands known to the this program and information on their usage.
+```
+Input 'help' for the full list of commands known to the this program and information on their usage.
 Here are the tasks in your list:
 1.[T][ ] buy milk
 2.[E][ ] concert (at: 21/02/2019 1500-1700)
@@ -230,7 +244,8 @@ Here are the tasks in your list:
 4.[D][+] submit report (by: 25/09/2019)
 5.[E][ ] joe hisaishi concert (at: 21/02/2020 1930-2100)
 6.[T][ ] buy chocolate
-7.[D][ ] submit report on buying and selling (by: 20/09/2019 2359)`
+7.[D][ ] submit report on buying and selling (by: 20/09/2019 2359)
+```
 
 ### `random` - Generates a random list of tasks.
 
@@ -242,14 +257,16 @@ Example of usage:
 
 Expected outcome:
 
-`Here are your randomly-generated list of Tasks:
+```
+Here are your randomly-generated list of Tasks:
 1.[E][ ] rand  8cu7 xZnrw 8h (at: 27/11/4256 0244-1601)
 2.[T][+] rand  M7FG VYi
 3.[T][ ] rand  sVZDcm nP
 4.[E][ ] rand  w0e6 T (at: 20/09/1140 1330-0725)
 5.[E][+] rand  COPJ mn (at: 17/02/4833 1119-0405)
 
-To revert back to the previous version of the TaskList, use the 'undo' command or input 'help' for more information on all commands known to Duke.`
+To revert back to the previous version of the TaskList, use the 'undo' command or input 'help' for more information on all commands known to Duke.
+```
 
 ### `redo` - Reverts tasklist to a newer version / newer versions.
 
@@ -261,9 +278,11 @@ Example of usage:
 
 Expected outcome:
 
-`Redo successful. Current task list is now 2 versions newer than the one before redo was executed.
+```
+Redo successful. Current task list is now 2 versions newer than the one before redo was executed.
 
-Input 'list' to see the version of the tasklist we have retrieved and saved for you.`
+Input 'list' to see the version of the tasklist we have retrieved and saved for you.
+```
 
 ### `sort` - Sorts the list based on the specified criteria.
 
@@ -275,14 +294,16 @@ Example of usage:
 
 Expected outcome:
 
-`Sorting successful! Here are the tasks in your list:
+```
+Sorting successful! Here are the tasks in your list:
 1.[T][ ] buy chocolate
 2.[T][ ] buy milk
 3.[E][ ] joe hisaishi concert (at: 21/02/2020 1930-2100)
 4.[D][+] submit report (by: 25/09/2019)
 5.[D][ ] submit report on buying and selling (by: 20/09/2019 2359)
 6.[E][ ] football match (at: 20/09/2019 2300-0100)
-7.[E][ ] concert (at: 21/02/2019 1500-1700)`
+7.[E][ ] concert (at: 21/02/2019 1500-1700)
+```
 
 ### `todo` - Adds a todo into the tasklist.
 
@@ -294,9 +315,11 @@ Example of usage:
 
 Expected outcome:
 
-`Got it. I've added this task:
+```
+Got it. I've added this task:
   [T][ ] buy bread
-Now you have 8 tasks in the list.`
+Now you have 8 tasks in the list.
+```
 
 ### `undo` - Reverts tasklist to an older version / older versions.
 
@@ -308,12 +331,14 @@ Example of usage:
 
 Expected outcome:
 
-`Undo successful. Current task list is now 2 versions older than the one before undo was executed.
+```
+Undo successful. Current task list is now 2 versions older than the one before undo was executed.
 
 Input 'list' to see the version of the tasklist we have retrieved and saved for you.
 
 
-Input 'list' to see the version of the tasklist we have retrieved and saved for you.`
+Input 'list' to see the version of the tasklist we have retrieved and saved for you.
+```
 
 ### `undone` - Marks a task or multiple tasks from the tasklist as yet to be completed.
 
@@ -325,5 +350,7 @@ Example of usage:
 
 Expected outcome:
 
-`Nice! I've marked this task as undone:
-[D][ ] submit report (by: 25/09/2019)`
+```
+Nice! I've marked this task as undone:
+[D][ ] submit report (by: 25/09/2019)
+```
