@@ -45,7 +45,7 @@ public class Ui {
                 + "a task-managing chatbot designed at NUS for educational purposes, with details as follows!\n\n";
 
         String productInfo = "Product Name: Duke\n"
-                + "Version: V2.2\n"
+                + "Version: V2.4\n"
                 + "Category: Personal Assistant Chatbot\n"
                 + "Software Requirements: Java 11; Mac / Linux / Windows OS\n"
                 + "Developer: Neo Weihong\n\n";

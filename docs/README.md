@@ -49,7 +49,7 @@ Users may view information about the developer and software by keying in "about"
 This Duke program automatically validates input, requiring them to be in the format specified. Precision of validation is such that it checks for the number of days in the month - even for leap years! An error message is displayed to the user in the event that the input data is invalid.
 
 ### Cross-Platform Compatibility
-This Duke program is designed to work for Mac, Windows and Linux OS. Presently, the font family feature is known to work best on Mac OS, though the main font used has been selected such that any visible differences when using the program on platforms other than Mac OS are minute and largely unnoticeable. This small variation in the display of fonts does not affect the main functionalities of the program, which appears to work homogenously well across different platforms.
+This Duke program is designed to work for Mac, Windows and Linux OS. Presently, the font family feature is known to work best on Mac OS, although the main font used has been selected such that any visible differences when using the program on platforms other than Mac OS are minute and may not be significantly noticeable. This small variation in the display of fonts does not affect the main functionalities of the program, which appears to work homogenously well across different platforms. In the most recent version of this Duke program, the Duke logo has also become completely unaffected, as the implementation now uses an image to the display the logo rather than text.
 
 ## Usage
 
@@ -385,9 +385,6 @@ Expected outcome:
 
 ```
 Undo successful. Current task list is now 2 versions older than the one before undo was executed.
-
-Input 'list' to see the version of the tasklist we have retrieved and saved for you.
-
 
 Input 'list' to see the version of the tasklist we have retrieved and saved for you.
 ```

@@ -1,5 +1,9 @@
 package seedu.duke.storage;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
 import seedu.duke.commons.exceptions.DukeException;
 import seedu.duke.commons.exceptions.loadexceptions.LoadException;
 import seedu.duke.commons.exceptions.storageexceptions.SavingUnsuccessfulException;
@@ -8,10 +12,6 @@ import seedu.duke.model.dateandtime.DateAndTime;
 import seedu.duke.model.task.Task;
 import seedu.duke.model.task.TaskList;
 import seedu.duke.ui.Ui;
-
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 
 /**
  * Defines a Storage object.

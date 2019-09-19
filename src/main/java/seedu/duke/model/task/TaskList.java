@@ -1,10 +1,11 @@
 package seedu.duke.model.task;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 import seedu.duke.commons.exceptions.listexceptions.InvalidSortCriteriaException;
 import seedu.duke.model.dateandtime.DateAndTime;
 import seedu.duke.storage.Storage;
-
-import java.util.ArrayList;
 
 /**
  * Defines a TaskList object that stores instances of Task.
@@ -166,6 +167,8 @@ public class TaskList {
                         + "but the difference in sizes of the lists before and after is not 1.";
             }
         }
+
+        Collections.reverse(deletedTasks.taskList);
 
         String s = "";
 

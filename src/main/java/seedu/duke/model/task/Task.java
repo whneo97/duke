@@ -1,11 +1,11 @@
 package seedu.duke.model.task;
 
+import java.util.Comparator;
+import java.util.Random;
+
 import seedu.duke.model.dateandtime.Date;
 import seedu.duke.model.dateandtime.DateAndTime;
 import seedu.duke.model.dateandtime.Time;
-
-import java.util.Comparator;
-import java.util.Random;
 
 /**
  * Defines a Task object that represents a task.
@@ -25,6 +25,8 @@ public class Task {
 
     private static int count;
     private int id;
+
+    private int listIndex;
 
     // Comparators used to compare Task objects based on different criteria.
     private static Comparator<Task> stringComparator = Comparator.comparing((Task x) -> x.taskString);
