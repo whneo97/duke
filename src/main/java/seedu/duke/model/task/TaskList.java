@@ -144,7 +144,6 @@ public class TaskList {
      *         that have been deleted.
      */
     public String removeRanges(ArrayList<ArrayList<Integer>> rangeList) {
-        int prevSize = this.size();
 
         for (ArrayList<Integer> range : rangeList) {
             for (int i = range.get(1); i >= range.get(0); i--) {
@@ -171,6 +170,7 @@ public class TaskList {
         Collections.reverse(deletedTasks.taskList);
 
         String s = "";
+        int prevSize = this.size();
 
         if (deletedTasks.size() == prevSize) {
             return "Noted. I've removed all tasks in the task list.";
