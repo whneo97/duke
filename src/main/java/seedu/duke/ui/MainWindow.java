@@ -34,6 +34,7 @@ public class MainWindow extends AnchorPane {
     private Image dukeImage = new Image(this.getClass().getResourceAsStream("/images/Duke.png"));
     private Image developerImage = new Image(this.getClass().getResourceAsStream("/images/Developer.png"));
     private Image exceptionImage = new Image(this.getClass().getResourceAsStream("/images/Oops.png"));
+    private Image logoImage = new Image(this.getClass().getResourceAsStream("/images/LogoV3.png"));
 
     /**
      * Initialises the program.
@@ -44,7 +45,7 @@ public class MainWindow extends AnchorPane {
     public void initialize() {
         scrollPane.vvalueProperty().bind(dialogContainer.heightProperty());
         dialogContainer.getChildren().addAll(
-                DialogBox.getDukeDialog(Ui.showLogo(), dukeImage),
+                LogoDialog.getDukeLogo(logoImage, dukeImage),
                 DialogBox.getDukeDialog(Ui.showWelcome(), dukeImage));
     }
 
