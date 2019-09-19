@@ -8,9 +8,9 @@
 
 <fx:root alignment="TOP_RIGHT" maxHeight="Infinity" maxWidth="1.7976931348623157E308" prefWidth="400.0" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label fx:id="dialog" maxHeight="Infinity" text="Label" wrapText="true" HBox.hgrow="ALWAYS">
+      <Label fx:id="dialog" maxHeight="Infinity" text="Label" wrapText="true" HBox.hgrow="ALWAYS" styleClass = "dialogBox">
          <font>
-            <Font name="Calibri" size="16.0" />
+            <Font name="Calibri" size="14.0" />
          </font></Label>
       <ImageView fx:id="displayPicture" fitHeight="76.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true" />
    </children>

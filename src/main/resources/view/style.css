@@ -6,6 +6,11 @@
     -fx-background-position: center center;
 }
 
+#dialog{
+    -fx-font-family: 'Callibri';
+    -fx-font-size: 14px;    
+}
+
 #scrollPane{
     -fx-background-color: transparent;
     -fx-border-color: rgb(255, 255, 255);
@@ -24,6 +29,11 @@
 
 #sendButton{
     -fx-background-color: rgba(255,255,255,0.15)
+}
+
+.dialogBox{
+    -fx-font-family: 'Callibri';
+    -fx-font-size: 14px;
 }
 
 .scrollables{
