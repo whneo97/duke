@@ -22,7 +22,7 @@ If the data file or folder containing the data file has been deleted halfway thr
 Allows users to mark a tasks or groups of tasks to be completed, or yet to be completed.
 
 ### Deleting Tasks
-Allows users to delete tasks from the tasklist 
+Allows users to delete tasks from the tasklist.
 
 ### Finding Tasks using Keywords
 Allows users to find tasks using keywords (including type of task, task description, date / time and state of whether task is done / undone)
@@ -46,10 +46,10 @@ Users may view the description and usage of any command or group of commands, or
 Users may view information about the developer and software by keying in "about". Credits to users for external sources of photos labeled to be free for use are also displayed here.
 
 ### Data Validation
-This Duke program automatically validates input, requiring them to be in the format specified. Precision of validation is such that it checks for the number of days in the month - even for leap years!.
+This Duke program automatically validates input, requiring them to be in the format specified. Precision of validation is such that it checks for the number of days in the month - even for leap years! An error message is displayed to the user in the event that the input data is invalid.
 
 ### Cross-Platform Compatibility
-This Duke program is designed to work for both Windows and Mac.
+This Duke program is designed to work for Mac, Windows and Linux OS. Presently, the fonts feature is known to work best on Mac OS X.
 
 ## Usage
 
