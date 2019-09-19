@@ -49,7 +49,7 @@ Users may view information about the developer and software by keying in "about"
 This Duke program automatically validates input, requiring them to be in the format specified. Precision of validation is such that it checks for the number of days in the month - even for leap years! An error message is displayed to the user in the event that the input data is invalid.
 
 ### Cross-Platform Compatibility
-This Duke program is designed to work for Mac, Windows and Linux OS. Presently, the fonts feature is known to work best on Mac OS X.
+This Duke program is designed to work for Mac, Windows and Linux OS. Presently, the font family feature is known to work best on Mac OS, though the main font used has been selected such that any visible differences when using the program on platforms other than Mac OS are minute and largely unnoticeable. This small variation in the display of fonts does not affect the main functionalities of the program, which appears to work homogenously well across different platforms.
 
 ## Usage
 
