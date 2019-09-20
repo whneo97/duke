@@ -97,7 +97,7 @@ Expected outcome:
 
 `Bye. Hope to see you again soon!`
 
-### `clearcache` - Allows user to clear all stored versions of the tasklist except for the current active version.
+### `clearcache` - Clear all stored versions of the tasklist (except for the current active version).
 
 Removes all versions of task lists in the timeline used for undo and redo operations, except for the current version. Since this operation cannot be under, after the user's command, the program will prompt for user to confirm by keying in 'CoNfiRMtOclEaR' before proceeding. This operation may be useful if the size of the timeline happens to get too large and slows down other operational procedures. The key will not be recognised on it's own without first  entering 'clearcache'. The process is aborted if input right after 'clearcache' does not match the required key and the user will have to enter 'clearcache' again if he/ she intends to re-initiate the process.
 
