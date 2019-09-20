@@ -5,6 +5,7 @@ import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
@@ -24,6 +25,9 @@ public class Main extends Application {
      */
     @Override
     public void start(Stage stage) {
+
+        Image dukeImage = new Image(this.getClass().getResourceAsStream("/images/Duke.png"));
+
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("/view/MainWindow.fxml"));
             assert fxmlLoader != null : "fxmlLoader for Main class is null";
@@ -37,6 +41,7 @@ public class Main extends Application {
             Font font = Font.loadFont(fontName, 15);
 
             scene.getStylesheets().addAll(this.getClass().getResource("/view/style.css").toExternalForm());
+            stage.getIcons().add(dukeImage);
             stage.setTitle("Duke V2.5");
             stage.setScene(scene);
             fxmlLoader.<MainWindow>getController().setDuke(duke);
