@@ -14,8 +14,6 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
 
 /**
  * A custom control using FXML that represents a dialog box.
@@ -42,8 +40,6 @@ public class DialogBox extends HBox {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        dialog.setFont(Font.font("Calibri", 14));
-        dialog.setTextFill(Color.WHITE);
         dialog.setText(text);
         displayPicture.setImage(img);
     }
@@ -68,8 +64,6 @@ public class DialogBox extends HBox {
     public static DialogBox getUserDialog(String text, Image img) {
         assert img != null : "User profile image is null.";
         var db = new DialogBox(text, img);
-        //Colour Experimentation
-        //db.dialog.setTextFill(Color.rgb(150, 255, 160));
         return db;
     }
 
@@ -82,10 +76,6 @@ public class DialogBox extends HBox {
     public static DialogBox getDukeDialog(String text, Image img) {
         assert img != null : "Duke profile image is null.";
         var db = new DialogBox(text, img);
-        //Colour Experimentation:
-        //if (!text.equals(Ui.showLogo())) {
-        //db.dialog.setTextFill(Color.rgb(255, 255, 180));
-        //}
         db.flip();
         return db;
     }

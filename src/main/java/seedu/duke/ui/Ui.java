@@ -45,7 +45,7 @@ public class Ui {
                 + "a task-managing chatbot designed at NUS for educational purposes, with details as follows!\n\n";
 
         String productInfo = "Product Name: Duke\n"
-                + "Version: V2.4\n"
+                + "Version: V2.5\n"
                 + "Category: Personal Assistant Chatbot\n"
                 + "Software Requirements: Java 11; Mac / Linux / Windows OS\n"
                 + "Developer: Neo Weihong\n\n";
@@ -55,7 +55,8 @@ public class Ui {
 
         String credits = "Space background by Andy Holmes (https://unsplash.com/photos/LUpDjlJv4_c)\n"
                 + "User profile icon by Smashicons (https://www.flaticon.com/authors/smashicons)\n"
-                + "Duke profile icon by Freepik (https://www.flaticon.com/authors/freepik)\n\n";
+                + "Duke profile icon by Freepik (https://www.flaticon.com/authors/freepik)\n"
+                + "Font by Andreas Larsen (https://github.com/larsenwork/Gidole)\n\n";
 
         String conclusion = "Hope you'll enjoy trying out this simple program!";
 

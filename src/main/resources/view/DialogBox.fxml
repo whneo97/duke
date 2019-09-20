@@ -10,8 +10,8 @@
    <children>
       <Label fx:id="dialog" maxHeight="Infinity" text="Label" wrapText="true" HBox.hgrow="ALWAYS" styleClass = "dialogBox">
          <font>
-            <Font name="Calibri" size="14.0" />
-         </font></Label>
+         </font>
+     </Label>
       <ImageView fx:id="displayPicture" fitHeight="76.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true" />
    </children>
    <padding>
