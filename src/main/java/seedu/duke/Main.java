@@ -35,7 +35,6 @@ public class Main extends Application {
             // caused font compatibility issues across platforms.
             String fontName = Main.class.getResource("/fonts/Gidole-Regular.ttf").toExternalForm();
             Font font = Font.loadFont(fontName, 15);
-            System.out.println(font);
 
             scene.getStylesheets().addAll(this.getClass().getResource("/view/style.css").toExternalForm());
             stage.setTitle("Duke V2.5");
