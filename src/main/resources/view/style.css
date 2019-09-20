@@ -6,9 +6,13 @@
     -fx-background-position: center center;
 }
 
+/*Font by Andreas Larsen via: https://github.com/larsenwork/Gidole
+*/
+/*Credits to Ong Bing Jue (https://github.com/bjhoohaha) for helping to spot and resolve bug that caused font compatibility issues across platforms.*/
 #dialog{
-    -fx-font-family: 'Callibri';
-    -fx-font-size: 14px;    
+    -fx-font-family: "Gidole Regular";
+    -fx-font-size: 15px;
+    -fx-text-fill: rgb(255, 255, 255);    
 }
 
 #scrollPane{
@@ -29,11 +33,6 @@
 
 #sendButton{
     -fx-background-color: rgba(255,255,255,0.15)
-}
-
-.dialogBox{
-    -fx-font-family: 'Callibri';
-    -fx-font-size: 14px;
 }
 
 .scrollables{

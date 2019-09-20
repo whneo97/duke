@@ -6,6 +6,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import seedu.duke.model.Duke;
 import seedu.duke.ui.MainWindow;
@@ -28,8 +29,15 @@ public class Main extends Application {
             assert fxmlLoader != null : "fxmlLoader for Main class is null";
             AnchorPane ap = fxmlLoader.load();
             Scene scene = new Scene(ap);
+
+            // Font by Andreas Larsen via: https://github.com/larsenwork/Gidole
+            // Credits to Ong Bing Jue (https://github.com/bjhoohaha) for helping to spot and resolve bug that
+            // caused font compatibility issues across platforms.
+            String fontName = Main.class.getResource("/fonts/Gidole-Regular.ttf").toExternalForm();
+            Font font = Font.loadFont(fontName, 15);
+
             scene.getStylesheets().addAll(this.getClass().getResource("/view/style.css").toExternalForm());
-            stage.setTitle("Duke V2.4");
+            stage.setTitle("Duke V2.5");
             stage.setScene(scene);
             fxmlLoader.<MainWindow>getController().setDuke(duke);
             stage.show();

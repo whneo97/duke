@@ -49,7 +49,7 @@ Users may view information about the developer and software by keying in "about"
 This Duke program automatically validates input, requiring them to be in the format specified. Precision of validation is such that it checks for the number of days in the month - even for leap years! An error message is displayed to the user in the event that the input data is invalid.
 
 ### Cross-Platform Compatibility
-This Duke program is designed to work for Mac, Windows and Linux OS. Presently, the font family feature is known to work best on Mac OS, although the main font used has been selected such that any visible differences when using the program on platforms other than Mac OS are minute and may not be significantly noticeable. This small variation in the display of fonts does not affect the main functionalities of the program, which appears to work homogenously well across different platforms. In the most recent version of this Duke program, the Duke logo has also become completely unaffected, as the implementation now uses an image to the display the logo rather than text.
+This Duke program is designed to work for Mac, Windows and Linux OS. Previous issues with font compatibility across platforms have now been resolved in the latest release of Duke (V2.5). Credits to Ong Bing Jue (https://github.com/bjhoohaha) for helping to spot and resolve the bug that caused font compatibility issues across platforms.
 
 ## Usage
 
@@ -406,3 +406,10 @@ Expected outcome:
 Nice! I've marked this task as undone:
 [D][ ] submit report (by: 25/09/2019)
 ```
+
+## Credits
+
+* Space background by Andy Holmes: https://unsplash.com/photos/LUpDjlJv4_c
+* User profile icon by Smashicons: https://www.flaticon.com/authors/smashicons
+* Duke profile icon by Freepik via: https://www.flaticon.com/authors/freepik
+* Font by Andreas Larsen via:  https://github.com/larsenwork/Gidole
