@@ -409,18 +409,18 @@ Nice! I've marked this task as undone:
 
 ## Credits
 
-* Space background by Andy Holmes: [https://unsplash.com/photos/LUpDjlJv4_c][https://unsplash.com/photos/LUpDjlJv4_c]
-* User profile icon by Smashicons: [https://www.flaticon.com/authors/smashicons][https://www.flaticon.com/authors/smashicons]
-* Duke profile icon by Freepik via: [https://www.flaticon.com/authors/freepik][https://www.flaticon.com/authors/freepik]
-* Font by Andreas Larsen via: [https://github.com/larsenwork/Gidole][https://github.com/larsenwork/Gidole]
-* Ong Bing Jue ([https://github.com/bjhoohaha][https://github.com/bjhoohaha]) for help in spotting and resolving bug that caused font compatibility issues across platforms.
+* Space background by Andy Holmes: https://unsplash.com/photos/LUpDjlJv4_c
+* User profile icon by Smashicons: https://www.flaticon.com/authors/smashicons
+* Duke profile icon by Freepik via: https://www.flaticon.com/authors/freepik
+* Font by Andreas Larsen via: https://github.com/larsenwork/Gidole
+* Ong Bing Jue (https://github.com/bjhoohaha) for help in spotting and resolving bug that caused font compatibility issues across platforms.
 
 
 ## References
 
-* Scrollbar styling: [https://blog.ngopal.com.np/2012/07/11/customize-scrollbar-via-css][https://blog.ngopal.com.np/2012/07/11/customize-scrollbar-via-css]
-* Setting font family: [http://java-buddy.blogspot.com/2013/02/load-true-type-font-ttf-in-javafx.html][http://java-buddy.blogspot.com/2013/02/load-true-type-font-ttf-in-javafx.html]
-* Setting font colour: [https://stackoverflow.com/questions/24702542/how-to-change-the-color-of-text-in-javafx-textfield][https://stackoverflow.com/questions/24702542/how-to-change-the-color-of-text-in-javafx-textfield]
-* Maintaining background aspect ratio: [https://stackoverflow.com/questions/41559817/how-to-keep-aspect-ratio-of-a-background-image][https://stackoverflow.com/questions/41559817/how-to-keep-aspect-ratio-of-a-background-image]
-* Setting scrollpane transparency: [https://stackoverflow.com/questions/40253661/javafx-scrollpane-how-set-transparent-background][https://stackoverflow.com/questions/40253661/javafx-scrollpane-how-set-transparent-background]
-* Setting background image: [https://stackoverflow.com/questions/16630487/correct-way-to-set-the-path-of-a-backgroundimage-in-javafx-css][https://stackoverflow.com/questions/16630487/correct-way-to-set-the-path-of-a-backgroundimage-in-javafx-css]
+* Scrollbar styling: https://blog.ngopal.com.np/2012/07/11/customize-scrollbar-via-css
+* Setting font family: http://java-buddy.blogspot.com/2013/02/load-true-type-font-ttf-in-javafx.html
+* Setting font colour: https://stackoverflow.com/questions/24702542/how-to-change-the-color-of-text-in-javafx-textfield
+* Maintaining background aspect ratio: https://stackoverflow.com/questions/41559817/how-to-keep-aspect-ratio-of-a-background-image
+* Setting scrollpane transparency: https://stackoverflow.com/questions/40253661/javafx-scrollpane-how-set-transparent-background
+* Setting background image: https://stackoverflow.com/questions/16630487/correct-way-to-set-the-path-of-a-backgroundimage-in-javafx-css
