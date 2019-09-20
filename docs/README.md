@@ -49,7 +49,7 @@ Users may view information about the developer and software by keying in "about"
 This Duke program automatically validates input, requiring them to be in the format specified. Precision of validation is such that it checks for the number of days in the month - even for leap years! An error message is displayed to the user in the event that the input data is invalid.
 
 ### Cross-Platform Compatibility
-This Duke program is designed to work for Mac, Windows and Linux OS. Previous issues with font compatibility across platforms have now been resolved in the latest release of Duke (V2.5). Credits to Ong Bing Jue (https://github.com/bjhoohaha) for helping to spot and resolve the bug that caused font compatibility issues across platforms.
+This Duke program is designed to work for Mac, Windows and Linux OS. Previous issues with font compatibility across platforms have now been resolved in the latest release of Duke (V2.5). Credits to Ong Bing Jue ([https://github.com/bjhoohaha][https://github.com/bjhoohaha]) for helping to spot and resolve the bug that caused font compatibility issues across platforms.
 
 ## Usage
 
@@ -409,7 +409,18 @@ Nice! I've marked this task as undone:
 
 ## Credits
 
-* Space background by Andy Holmes: https://unsplash.com/photos/LUpDjlJv4_c
-* User profile icon by Smashicons: https://www.flaticon.com/authors/smashicons
-* Duke profile icon by Freepik via: https://www.flaticon.com/authors/freepik
-* Font by Andreas Larsen via:  https://github.com/larsenwork/Gidole
+* Space background by Andy Holmes: [https://unsplash.com/photos/LUpDjlJv4_c][https://unsplash.com/photos/LUpDjlJv4_c]
+* User profile icon by Smashicons: [https://www.flaticon.com/authors/smashicons][https://www.flaticon.com/authors/smashicons]
+* Duke profile icon by Freepik via: [https://www.flaticon.com/authors/freepik][https://www.flaticon.com/authors/freepik]
+* Font by Andreas Larsen via: [https://github.com/larsenwork/Gidole][https://github.com/larsenwork/Gidole]
+* Ong Bing Jue ([https://github.com/bjhoohaha][https://github.com/bjhoohaha]) for help in spotting and resolving bug that caused font compatibility issues across platforms.
+
+
+## References
+
+* Scrollbar styling: [https://blog.ngopal.com.np/2012/07/11/customize-scrollbar-via-css][https://blog.ngopal.com.np/2012/07/11/customize-scrollbar-via-css]
+* Setting font family: [http://java-buddy.blogspot.com/2013/02/load-true-type-font-ttf-in-javafx.html][http://java-buddy.blogspot.com/2013/02/load-true-type-font-ttf-in-javafx.html]
+* Setting font colour: [https://stackoverflow.com/questions/24702542/how-to-change-the-color-of-text-in-javafx-textfield][https://stackoverflow.com/questions/24702542/how-to-change-the-color-of-text-in-javafx-textfield]
+* Maintaining background aspect ratio: [https://stackoverflow.com/questions/41559817/how-to-keep-aspect-ratio-of-a-background-image][https://stackoverflow.com/questions/41559817/how-to-keep-aspect-ratio-of-a-background-image]
+* Setting scrollpane transparency: [https://stackoverflow.com/questions/40253661/javafx-scrollpane-how-set-transparent-background][https://stackoverflow.com/questions/40253661/javafx-scrollpane-how-set-transparent-background]
+* Setting background image: [https://stackoverflow.com/questions/16630487/correct-way-to-set-the-path-of-a-backgroundimage-in-javafx-css][https://stackoverflow.com/questions/16630487/correct-way-to-set-the-path-of-a-backgroundimage-in-javafx-css]
