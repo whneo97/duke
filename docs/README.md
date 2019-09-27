@@ -48,6 +48,9 @@ Users may view information about the developer and software by keying in "about"
 ### Data Validation
 This Duke program automatically validates input, requiring them to be in the format specified. Precision of validation is such that it checks for the number of days in the month - even for leap years! An error message is displayed to the user in the event that the input data is invalid.
 
+### Detection of Duplicate Tasks
+Tasks with the exact same attributes (i.e. task type, description, date and time) as an existing task in the tasklist will not be allowed to be added into the tasklist. This ensures that a user does not accidentally add a duplicate task into the list.
+
 ### Cross-Platform Compatibility
 This Duke program is designed to work for Mac, Windows and Linux OS. Previous issues with font compatibility across platforms have now been resolved in the latest release of Duke (V2.5). Credits to Ong Bing Jue ([https://github.com/bjhoohaha][https://github.com/bjhoohaha]) for helping to spot and resolve the bug that caused font compatibility issues across platforms.
 
